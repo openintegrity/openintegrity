@@ -9,8 +9,17 @@ projects[admin_menu][version] = "3.0-rc4"
 
 projects[ctools][version] = "1.3"
 
+projects[deploy][version] = "2.0-alpha1"
+
 projects[entity][version] = "1.1"
+
+projects[entity_dependency][version] = "1.0-alpha1"
 
 projects[entityreference][version] = "1.0"
 
 projects[features][version] = "2.0-beta2"
+
+projects[uuid][version] = "1.0-alpha4"
+
+projects[uuid_features][version] = "1.0-alpha3"
+
