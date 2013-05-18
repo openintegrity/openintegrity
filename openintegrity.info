@@ -1,0 +1,6 @@
+name = OpenIntegrity
+core = 7.x
+package = OpenIntegrity
+version = 7.x-1.0-dev
+project = openintegrity
+features[features_api][] = api:1
