@@ -9,6 +9,8 @@ projects[admin_menu][version] = "3.0-rc4"
 
 projects[ctools][version] = "1.3"
 
+projects[bundle_inherit][version] = "1.0-alpha2"
+
 projects[deploy][version] = "2.0-alpha1"
 
 projects[entity][version] = "1.1"

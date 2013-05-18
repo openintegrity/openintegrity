@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the OpenIntegrity feature.
  */
+
+include_once 'openintegrity.features.inc';
