@@ -21,7 +21,13 @@ projects[entityreference][version] = "1.0"
 
 projects[features][version] = "2.0-beta2"
 
+projects[rules][version] = "2.3"
+
 projects[uuid][version] = "1.0-alpha4"
 
 projects[uuid_features][version] = "1.0-alpha3"
+
+projects[views][version] = "3.7"
+
+projects[views_rules][version] = "1.0"
 
