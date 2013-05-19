@@ -7,13 +7,18 @@ projects[drupal][version] = "7.x"
 ; Modules
 projects[admin_menu][version] = "3.0-rc4"
 
+projects[auto_entitylabel][version] = "1.1"
+
 projects[ctools][version] = "1.3"
 
 projects[bundle_inherit][version] = "1.0-alpha2"
 
+projects[cer][version] = "2.x-dev"
+
 projects[deploy][version] = "2.0-alpha1"
 
-projects[entity][version] = "1.1"
+projects[entity][version] = "1.1+1-dev"
+projects[entity][patch][] = "http://drupal.org/files/entity-entity_node_access-1780646-97.patch"
 
 projects[entity_dependency][version] = "1.0-alpha1"
 
