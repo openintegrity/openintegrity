@@ -42,7 +42,7 @@ function openintegrity_field_default_field_bases() {
   // Exported field_base: 'field_entry_score'
   $field_bases['field_entry_score'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => 3,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_entry_score',
@@ -64,6 +64,11 @@ function openintegrity_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
         'sort' => array(
           'type' => 'none',
         ),

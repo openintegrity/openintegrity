@@ -80,11 +80,12 @@ function openintegrity_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_entry_score',
     'label' => 'Entry_Score',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
         'match_operator' => 'CONTAINS',
