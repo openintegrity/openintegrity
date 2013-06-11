@@ -54,6 +54,46 @@ function openintegrity_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-claim-field_claim_criteria'
+  $field_instances['node-claim-field_claim_criteria'] = array(
+    'bundle' => 'claim',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_claim_criteria',
+    'label' => 'Claim Criteria',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-claim-field_claim_index'
   $field_instances['node-claim-field_claim_index'] = array(
     'bundle' => 'claim',
@@ -93,12 +133,12 @@ function openintegrity_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete_tags',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
-  // Exported field_instance: 'node-claim-field_evidence_proof_type'
-  $field_instances['node-claim-field_evidence_proof_type'] = array(
+  // Exported field_instance: 'node-claim-field_claim_type'
+  $field_instances['node-claim-field_claim_type'] = array(
     'bundle' => 'claim',
     'default_value' => NULL,
     'deleted' => 0,
@@ -109,7 +149,7 @@ function openintegrity_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 2,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -119,8 +159,8 @@ function openintegrity_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_evidence_proof_type',
-    'label' => 'Proof Type',
+    'field_name' => 'field_claim_type',
+    'label' => 'Claim Type',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -210,13 +250,19 @@ function openintegrity_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'inline_entity_form',
       'settings' => array(
+        'fields' => array(),
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
+        'type_settings' => array(
+          'allow_existing' => 0,
+          'delete_references' => 0,
+          'match_operator' => 'CONTAINS',
+        ),
       ),
-      'type' => 'entityreference_autocomplete_tags',
+      'type' => 'inline_entity_form',
       'weight' => -3,
     ),
   );
@@ -295,53 +341,20 @@ function openintegrity_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => -3,
-    ),
-  );
-
-  // Exported field_instance: 'node-index-field_index_claim'
-  $field_instances['node-index-field_index_claim'] = array(
-    'bundle' => 'index',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_index_claim',
-    'label' => 'Index Claim',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'term_reference_tree',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
+        'cascading_selection' => 0,
+        'filter_view' => '',
+        'leaves_only' => 0,
+        'max_depth' => 1,
+        'parent_term_id' => '',
+        'select_parents' => 0,
+        'start_minimized' => 0,
+        'token_display' => '',
+        'track_list' => 0,
       ),
-      'type' => 'entityreference_autocomplete_tags',
-      'weight' => 1,
+      'type' => 'term_reference_tree',
+      'weight' => -3,
     ),
   );
 
@@ -388,15 +401,243 @@ function openintegrity_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-index-field_index_subindex'
+  $field_instances['node-index-field_index_subindex'] = array(
+    'bundle' => 'index',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_index_subindex',
+    'label' => 'Index SubIndex',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'inline_entity_form',
+      'settings' => array(
+        'fields' => array(),
+        'type_settings' => array(
+          'allow_existing' => 1,
+          'delete_references' => 1,
+          'match_operator' => 'CONTAINS',
+        ),
+      ),
+      'type' => 'inline_entity_form',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-page-body'
+  $field_instances['node-page-body'] = array(
+    'bundle' => 'page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'body',
+    'label' => 'Body',
+    'required' => FALSE,
+    'settings' => array(
+      'display_summary' => TRUE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => -4,
+    ),
+  );
+
+  // Exported field_instance: 'node-subindex-body'
+  $field_instances['node-subindex-body'] = array(
+    'bundle' => 'subindex',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'body',
+    'label' => 'Body',
+    'required' => FALSE,
+    'settings' => array(
+      'display_summary' => TRUE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => -4,
+    ),
+  );
+
+  // Exported field_instance: 'node-subindex-field_subcriteria'
+  $field_instances['node-subindex-field_subcriteria'] = array(
+    'bundle' => 'subindex',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_subcriteria',
+    'label' => 'SubCriteria',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'term_reference_tree',
+      'settings' => array(
+        'cascading_selection' => 0,
+        'filter_view' => '',
+        'leaves_only' => 1,
+        'max_depth' => '',
+        'parent_term_id' => '',
+        'select_parents' => 0,
+        'start_minimized' => 0,
+        'token_display' => '',
+        'track_list' => 0,
+      ),
+      'type' => 'term_reference_tree',
+      'weight' => -2,
+    ),
+  );
+
+  // Exported field_instance: 'node-subindex-field_subindex_claim'
+  $field_instances['node-subindex-field_subindex_claim'] = array(
+    'bundle' => 'subindex',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_subindex_claim',
+    'label' => 'SubIndex Claim',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'inline_entity_form',
+      'settings' => array(
+        'fields' => array(),
+        'type_settings' => array(
+          'allow_existing' => 1,
+          'delete_references' => 1,
+          'match_operator' => 'CONTAINS',
+        ),
+      ),
+      'type' => 'inline_entity_form',
+      'weight' => -3,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Claim Criteria');
   t('Claim Index');
+  t('Claim Type');
   t('Criteria');
   t('Entry Index');
-  t('Index Claim');
   t('Index Entry');
-  t('Proof Type');
+  t('Index SubIndex');
+  t('SubCriteria');
+  t('SubIndex Claim');
 
   return $field_instances;
 }

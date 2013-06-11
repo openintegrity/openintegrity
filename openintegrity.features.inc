@@ -43,6 +43,22 @@ function openintegrity_node_info() {
       'title_label' => t('Name'),
       'help' => '',
     ),
+    'page' => array(
+      'name' => t('Page'),
+      'base' => 'node_content',
+      'description' => t('A simple static page'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'subindex' => array(
+      'name' => t('SubIndex'),
+      'base' => 'node_content',
+      'description' => t('SubIndex scores attached to SubCriteria'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
   );
   return $items;
 }
