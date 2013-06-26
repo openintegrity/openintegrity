@@ -1,4 +1,2 @@
-openintegrity
-=============
-
 Open Integrity Index
+====================
