@@ -66,6 +66,8 @@ projects[search_api_autocomplete][version] = "1.0"
 
 projects[submitted_by][version] = "1.x-dev"
 
+projects[strongarm][version] = "2.0"
+
 projects[uuid][version] = "1.0-alpha4"
 
 projects[uuid_features][version] = "1.0-alpha3"

@@ -122,3 +122,85 @@ function openintegrity_default_search_api_index() {
   }');
   return $items;
 }
+
+/**
+ * Implements hook_default_search_api_server().
+ */
+function openintegrity_default_search_api_server() {
+  $items = array();
+  $items['database'] = entity_import('search_api_server', '{
+    "name" : "Database",
+    "machine_name" : "database",
+    "description" : "",
+    "class" : "search_api_db_service",
+    "options" : {
+      "database" : "default:default",
+      "min_chars" : "1",
+      "indexes" : { "default_node_index" : {
+          "type" : {
+            "table" : "search_api_db_default_node_index_type",
+            "type" : "string",
+            "boost" : "1.0"
+          },
+          "title" : {
+            "table" : "search_api_db_default_node_index_title",
+            "type" : "text",
+            "boost" : "5.0"
+          },
+          "promote" : {
+            "table" : "search_api_db_default_node_index_promote",
+            "type" : "boolean",
+            "boost" : "1.0"
+          },
+          "sticky" : {
+            "table" : "search_api_db_default_node_index_sticky",
+            "type" : "boolean",
+            "boost" : "1.0"
+          },
+          "created" : {
+            "table" : "search_api_db_default_node_index_created",
+            "type" : "date",
+            "boost" : "1.0"
+          },
+          "changed" : {
+            "table" : "search_api_db_default_node_index_changed",
+            "type" : "date",
+            "boost" : "1.0"
+          },
+          "author" : {
+            "table" : "search_api_db_default_node_index_author",
+            "type" : "integer",
+            "boost" : "1.0"
+          },
+          "comment_count" : {
+            "table" : "search_api_db_default_node_index_comment_count",
+            "type" : "integer",
+            "boost" : "1.0"
+          },
+          "search_api_language" : {
+            "table" : "search_api_db_default_node_index_search_api_language",
+            "type" : "string",
+            "boost" : "1.0"
+          },
+          "body:value" : {
+            "table" : "search_api_db_default_node_index_body_value",
+            "type" : "text",
+            "boost" : "1.0"
+          },
+          "field_entry_type" : {
+            "table" : "search_api_db_default_node_index_field_entry_type",
+            "type" : "integer",
+            "boost" : "1.0"
+          },
+          "field_entry_type:name" : {
+            "table" : "search_api_db_default_node_index_field_entry_type_name",
+            "type" : "text",
+            "boost" : "1.0"
+          }
+        }
+      }
+    },
+    "enabled" : "1"
+  }');
+  return $items;
+}
