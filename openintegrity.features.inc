@@ -15,6 +15,13 @@ function openintegrity_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function openintegrity_views_api() {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function openintegrity_node_info() {
@@ -72,9 +79,10 @@ function openintegrity_default_search_api_index() {
     "name" : "Default node index",
     "machine_name" : "default_node_index",
     "description" : "An automatically created search index for indexing node data. Might be configured to specific needs.",
-    "server" : null,
+    "server" : "database",
     "item_type" : "node",
     "options" : {
+      "index_directly" : 1,
       "cron_limit" : "50",
       "data_alter_callbacks" : { "search_api_alter_node_access" : { "status" : 1, "weight" : "0", "settings" : [] } },
       "processors" : {
@@ -103,11 +111,13 @@ function openintegrity_default_search_api_index() {
         "changed" : { "type" : "date" },
         "author" : { "type" : "integer", "entity_type" : "user" },
         "comment_count" : { "type" : "integer" },
+        "field_entry_type" : { "type" : "integer", "entity_type" : "taxonomy_term" },
         "search_api_language" : { "type" : "string" },
-        "body:value" : { "type" : "text" }
+        "body:value" : { "type" : "text" },
+        "field_entry_type:name" : { "type" : "text" }
       }
     },
-    "enabled" : "0",
+    "enabled" : "1",
     "read_only" : "0"
   }');
   return $items;
