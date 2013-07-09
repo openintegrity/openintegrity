@@ -75,6 +75,7 @@ projects[uuid][version] = "1.0-alpha4"
 projects[uuid_features][version] = "1.0-alpha3"
 
 projects[views][version] = "3.7"
+projects[views][patch][] = "https://drupal.org/files/views-grouping-level-always-is-zero-1488744-3_0.patch" 
 
 projects[views_accordion][version] = "1.0-rc2"
 
