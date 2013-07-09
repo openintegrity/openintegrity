@@ -64,6 +64,8 @@ projects[search_api_db][version] = "1.0-rc1"
 
 projects[search_api_autocomplete][version] = "1.0"
 
+projects[search_api_solr][version] = "1.0"
+
 projects[submitted_by][version] = "1.x-dev"
 
 projects[strongarm][version] = "2.0"
@@ -75,6 +77,8 @@ projects[uuid_features][version] = "1.0-alpha3"
 projects[views][version] = "3.7"
 
 projects[views_accordion][version] = "1.0-rc2"
+
+projects[views_content_cache][version] = "3.0-alpha2"
 
 projects[views_rules][version] = "1.0"
 
