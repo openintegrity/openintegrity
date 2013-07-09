@@ -11,11 +11,11 @@ projects[afb][version] = "1.0"
 
 projects[auto_entitylabel][version] = "1.2"
 
-projects[bootstrap][version] = "2.1"
-
-projects[ctools][version] = "1.3"
+projects[better_exposed_filters][version] = "3.0-beta3"
 
 projects[block_class][version] = "2.0"
+
+projects[bootstrap][version] = "2.1"
 
 projects[bundle_inherit][version] = "1.0-alpha2"
 
@@ -24,6 +24,8 @@ projects[bundle_inherit][version] = "1.0-alpha2"
 projects[conditional_fields][version] = "3.x-dev"
 
 projects[context][version] = "3.0-beta6"
+
+projects[ctools][version] = "1.3"
 
 projects[custom_formatters][version] = "2.2"
 
