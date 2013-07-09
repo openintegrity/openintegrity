@@ -81,6 +81,8 @@ projects[views_accordion][version] = "1.0-rc2"
 
 projects[views_content_cache][version] = "3.0-alpha2"
 
+projects[views_field_view][version] = "1.1"
+
 projects[views_rules][version] = "1.0"
 
 ; Libraries
