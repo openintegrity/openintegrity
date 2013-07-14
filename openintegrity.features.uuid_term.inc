@@ -71,6 +71,14 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Yes/No/NA',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 1,
+    'uuid' => '1b9fb5f1-a1bd-4bb3-ab1f-ddaa69da29fa',
+    'vocabulary_machine_name' => 'evidence_type',
+  );
+  $terms[] = array(
     'name' => 'Bug releases',
     'description' => NULL,
     'format' => NULL,
@@ -95,6 +103,14 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Mobile Client Application',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 0,
+    'uuid' => '2e354102-8eb9-435d-b76b-316db2d7b62d',
+    'vocabulary_machine_name' => 'entry_type',
+  );
+  $terms[] = array(
     'name' => 'Experienced Auditor',
     'description' => NULL,
     'format' => NULL,
@@ -117,6 +133,14 @@ function openintegrity_uuid_features_default_terms() {
       0 => '97085641-b2f6-436d-969a-0fd15f86d85a',
       1 => '97085641-b2f6-436d-969a-0fd15f86d85a',
     ),
+  );
+  $terms[] = array(
+    'name' => 'Experienced/Not Experienced/Automated',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 3,
+    'uuid' => '378af51b-9d61-492b-af10-f30a1e78a022',
+    'vocabulary_machine_name' => 'evidence_type',
   );
   $terms[] = array(
     'name' => 'Ongoing verified, significant, under resolution policy breach report',
@@ -170,6 +194,26 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Audit with NDA',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 0,
+    'uuid' => '481846ec-fd46-47a1-8734-8b1ab53530f3',
+    'vocabulary_machine_name' => 'criteria',
+    'parent' => array(
+      0 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
+      1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
+    ),
+  );
+  $terms[] = array(
+    'name' => 'All fixed/some fixed/no fixed',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 0,
+    'uuid' => '492fa878-83a1-4849-8363-eacf52aef150',
+    'vocabulary_machine_name' => 'evidence_type',
+  );
+  $terms[] = array(
     'name' => 'Sharing of user data documented',
     'description' => NULL,
     'format' => NULL,
@@ -192,6 +236,14 @@ function openintegrity_uuid_features_default_terms() {
       0 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
       1 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
     ),
+  );
+  $terms[] = array(
+    'name' => 'Opposing',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 0,
+    'uuid' => '580a9945-e101-4d4f-a812-987b9c4d473c',
+    'vocabulary_machine_name' => 'evidence_status',
   );
   $terms[] = array(
     'name' => 'Practical to replicate',
@@ -233,12 +285,48 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Deterministic build process',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => -3,
+    'uuid' => '5d9862ee-5180-4b7f-af95-2dc2875746ba',
+    'vocabulary_machine_name' => 'criteria',
+    'parent' => array(
+      0 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
+      1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Open audit agreement (anyone can audit)',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => -2,
+    'uuid' => '5e7d02b3-dc47-466c-99ac-27aa7ef0bb5f',
+    'vocabulary_machine_name' => 'criteria',
+    'parent' => array(
+      0 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
+      1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
+    ),
+  );
+  $terms[] = array(
     'name' => 'Disputed',
     'description' => NULL,
     'format' => NULL,
     'weight' => 0,
     'uuid' => '653b0dfb-3534-43d1-8071-2286d88f9e94',
     'vocabulary_machine_name' => 'claim_status',
+  );
+  $terms[] = array(
+    'name' => 'Open audit agreement (anyone can publish)',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => -1,
+    'uuid' => '68547e34-86c9-4609-befe-7a4a67905046',
+    'vocabulary_machine_name' => 'criteria',
+    'parent' => array(
+      0 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
+      1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
+    ),
   );
   $terms[] = array(
     'name' => 'Externally Reviewed',
@@ -301,6 +389,14 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Yes/No',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 0,
+    'uuid' => '7838b56a-17c8-4948-9bb4-49668f52c952',
+    'vocabulary_machine_name' => 'evidence_type',
+  );
+  $terms[] = array(
     'name' => 'Functional build tree',
     'description' => NULL,
     'format' => NULL,
@@ -323,6 +419,14 @@ function openintegrity_uuid_features_default_terms() {
       0 => 'ebffbaaf-58c9-4d6d-8dd0-a0588234539c',
       1 => 'ebffbaaf-58c9-4d6d-8dd0-a0588234539c',
     ),
+  );
+  $terms[] = array(
+    'name' => 'All',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 2,
+    'uuid' => '845ada2e-17e3-4481-b454-7b903c1f0c71',
+    'vocabulary_machine_name' => 'score',
   );
   $terms[] = array(
     'name' => 'Roadmap available',
@@ -428,6 +532,30 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Online Service',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 0,
+    'uuid' => 'a35433fc-bd5d-4e89-83f5-b5e25cf794a8',
+    'vocabulary_machine_name' => 'entry_type',
+  );
+  $terms[] = array(
+    'name' => 'Date',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 2,
+    'uuid' => 'a6e272f7-8dd5-401d-b0eb-fcc408c4735a',
+    'vocabulary_machine_name' => 'evidence_type',
+  );
+  $terms[] = array(
+    'name' => 'Server Application',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 0,
+    'uuid' => 'afad8527-c8a7-4e82-9e7f-13a8b78bf3e5',
+    'vocabulary_machine_name' => 'entry_type',
+  );
+  $terms[] = array(
     'name' => 'Verified, significant, under resolution policy breach report',
     'description' => NULL,
     'format' => NULL,
@@ -496,6 +624,14 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'None',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 0,
+    'uuid' => 'bfe2b4ca-b289-41bf-b611-0332d4a92048',
+    'vocabulary_machine_name' => 'score',
+  );
+  $terms[] = array(
     'name' => 'Open audit agreement (anyone can audit)',
     'description' => '',
     'format' => 'plain_text',
@@ -539,6 +675,14 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Supporting',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 0,
+    'uuid' => 'deb874a4-ca74-49ba-b18f-48f66411c2c3',
+    'vocabulary_machine_name' => 'evidence_status',
+  );
+  $terms[] = array(
     'name' => 'Secure distribution',
     'description' => '',
     'format' => 'plain_text',
@@ -575,12 +719,40 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Some',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 1,
+    'uuid' => 'e7e50066-3bed-4364-bfd6-cb128e3ac55c',
+    'vocabulary_machine_name' => 'score',
+  );
+  $terms[] = array(
     'name' => 'Policy',
     'description' => '',
     'format' => 'plain_text',
     'weight' => 0,
     'uuid' => 'ebffbaaf-58c9-4d6d-8dd0-a0588234539c',
     'vocabulary_machine_name' => 'criteria',
+  );
+  $terms[] = array(
+    'name' => 'Desktop Client Application',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => 0,
+    'uuid' => 'edd526e2-59e0-476f-b0a8-4663e00a2456',
+    'vocabulary_machine_name' => 'entry_type',
+  );
+  $terms[] = array(
+    'name' => 'Open Source License',
+    'description' => '',
+    'format' => 'plain_text',
+    'weight' => -4,
+    'uuid' => 'f5416e14-562d-466b-9d00-837ef5b3c3b7',
+    'vocabulary_machine_name' => 'criteria',
+    'parent' => array(
+      0 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
+      1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
+    ),
   );
   $terms[] = array(
     'name' => 'Audit with NDA',

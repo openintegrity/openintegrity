@@ -13,6 +13,18 @@ function openintegrity_ctools_plugin_api() {
     return array("version" => "1");
   }
   list($module, $api) = func_get_args();
+  if ($module == "context" && $api == "context") {
+    return array("version" => "3");
+  }
+  list($module, $api) = func_get_args();
+  if ($module == "custom_formatters" && $api == "custom_formatters") {
+    return array("version" => "2");
+  }
+  list($module, $api) = func_get_args();
+  if ($module == "password_policy" && $api == "default_password_policy") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -79,6 +91,62 @@ function openintegrity_node_info() {
       'help' => '',
     ),
   );
+  return $items;
+}
+
+/**
+ * Implements hook_default_profile2_type().
+ */
+function openintegrity_default_profile2_type() {
+  $items = array();
+  $items['community'] = entity_import('profile2_type', '{
+    "userCategory" : true,
+    "userView" : true,
+    "type" : "community",
+    "label" : "Community",
+    "weight" : "0",
+    "data" : { "registration" : 0 }
+  }');
+  $items['developer'] = entity_import('profile2_type', '{
+    "userCategory" : true,
+    "userView" : true,
+    "type" : "developer",
+    "label" : "Developer",
+    "weight" : "0",
+    "data" : { "registration" : 0 }
+  }');
+  $items['main'] = entity_import('profile2_type', '{
+    "userCategory" : true,
+    "userView" : true,
+    "type" : "main",
+    "label" : "Main",
+    "weight" : "0",
+    "data" : { "registration" : 0 }
+  }');
+  $items['peer_reviewer'] = entity_import('profile2_type', '{
+    "userCategory" : true,
+    "userView" : true,
+    "type" : "peer_reviewer",
+    "label" : "Peer-reviewer",
+    "weight" : "0",
+    "data" : { "registration" : 0 }
+  }');
+  return $items;
+}
+
+/**
+ * Implements hook_default_search_api_autocomplete_search().
+ */
+function openintegrity_default_search_api_autocomplete_search() {
+  $items = array();
+  $items['search_api_views_browse'] = entity_import('search_api_autocomplete_search', '{
+    "machine_name" : "search_api_views_browse",
+    "name" : "Browse",
+    "index_id" : "default_node_index",
+    "type" : "search_api_views",
+    "enabled" : "1",
+    "options" : { "result count" : true, "fields" : [] }
+  }');
   return $items;
 }
 
@@ -225,6 +293,27 @@ function openintegrity_default_search_api_server() {
       }
     },
     "enabled" : "0"
+  }');
+  $items['solr'] = entity_import('search_api_server', '{
+    "name" : "Solr",
+    "machine_name" : "solr",
+    "description" : "",
+    "class" : "search_api_solr_service",
+    "options" : {
+      "scheme" : "http",
+      "host" : "localhost",
+      "port" : "8080",
+      "path" : "\\/solr",
+      "http_user" : "root",
+      "http_pass" : "ABMs44#clerk",
+      "excerpt" : 0,
+      "retrieve_data" : 0,
+      "highlight_data" : 0,
+      "http_method" : "POST",
+      "autocorrect_spell" : 1,
+      "autocorrect_suggest_words" : 1
+    },
+    "enabled" : "1"
   }');
   return $items;
 }
