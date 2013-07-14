@@ -13,9 +13,13 @@ projects[auto_entitylabel][version] = "1.2"
 
 projects[better_exposed_filters][version] = "3.0-beta3"
 
+projects[better_formats][version] = "1.0-beta1"
+
 projects[block_class][version] = "2.0"
 
 projects[bootstrap][version] = "2.1"
+
+projects[botcha][version] = "3.2"
 
 projects[bundle_inherit][version] = "1.0-alpha2"
 
@@ -25,13 +29,19 @@ projects[conditional_fields][version] = "3.x-dev"
 
 projects[context][version] = "3.0-beta6"
 
+projects[compact_forms][version] = "2.0"
+
 projects[ctools][version] = "1.3"
 
 projects[custom_formatters][version] = "2.2"
 
+projects[date][version] = "2.6"
+
 projects[deploy][version] = "2.0-alpha1"
 
 ; projects[ds][version] = "2.4"
+
+projects[email_registration][version] = "1.1"
 
 projects[entity][version] = "1.x-dev"
 projects[entity][patch][] = "http://drupal.org/files/entity-entity_node_access-1780646-97.patch"
@@ -40,13 +50,26 @@ projects[entitycache][version] = "1.1"
 
 projects[entity_dependency][version] = "1.0-alpha1"
 
+
+projects[entity_view_mode][version] = "1.0-rc1"
+
 projects[entityreference][version] = "1.0"
 
 projects[eva][version] = "1.2"
 
+projects[exclude_node_title][version] = "1.6"
+
 projects[features][version] = "2.0-rc1"
 
+projects[field_collection][version] = "1.0-beta5"
+
+projects[field_permissions][version] = "1.0-beta2"
+
 projects[filefield_sources][version] = "1.8"
+
+projects[formblock][version] = "1.x-dev"
+
+projects[fpa][version] = "2.3"
 
 projects[inline_entity_form][version] = "1.2"
 
@@ -57,6 +80,20 @@ projects[less][version] = "3.0-rc1"
 projects[libraries][version] = "2.1"
 
 projects[link][version] = "1.1"
+
+projects[logintoboggan][version] = "1.3"
+
+projects[moopapi][version] = "1.2"
+
+projects[password_policy][version] = "2.0-alpha1"
+
+projects[password_tab][version] = "1.x-dev"
+
+projects[profile2][version] = "1.3"
+
+projects[profile2_regpath][version] = "2.0-beta3"
+
+projects[registration_toboggan][version] = "0.4"
 
 projects[rules][version] = "2.3"
 
@@ -80,6 +117,8 @@ projects[views][version] = "3.7"
 projects[views][patch][] = "https://drupal.org/files/views-grouping-level-always-is-zero-1488744-3_0.patch" 
 
 projects[views_accordion][version] = "1.0-rc2"
+
+projects[views_block_area][version] = "1.1"
 
 projects[views_content_cache][version] = "3.0-alpha2"
 

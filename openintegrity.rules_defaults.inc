@@ -12,41 +12,42 @@ function openintegrity_default_rules_configuration() {
   $items['rules_create_entry_index_subindex_claim'] = entity_import('rules_config', '{ "rules_create_entry_index_subindex_claim" : {
       "LABEL" : "Create Entry Index SubIndex Claim",
       "PLUGIN" : "reaction rule",
-      "REQUIRES" : [ "rules", "views_rules", "devel" ],
+      "REQUIRES" : [ "rules", "views_rules" ],
       "ON" : [ "node_insert" ],
       "IF" : [
         { "node_is_of_type" : { "node" : [ "node" ], "type" : { "value" : { "entry" : "entry" } } } }
       ],
       "DO" : [
         { "VIEW LOOP" : {
-            "VIEW" : "create_entry_index_subindex_claim",
+            "VIEW" : "iterate_criteria",
             "DISPLAY" : "views_rules_2",
-            "ROW VARIABLES" : { "index" : { "index" : "Index" } },
+            "ROW VARIABLES" : { "criteria" : { "criteria" : "Criteria" } },
             "DO" : [
               { "entity_create" : {
                   "USING" : {
                     "type" : "node",
                     "param_type" : "index",
-                    "param_title" : "[node:title] \\u003E [index:name]",
+                    "param_title" : "[criteria:name]",
                     "param_author" : [ "node:author" ]
                   },
                   "PROVIDE" : { "entity_created" : { "index_created" : "Created Index" } }
                 }
               },
-              { "data_set" : { "data" : [ "index-created:field-criteria" ], "value" : [ "index" ] } },
+              { "data_set" : { "data" : [ "index-created:field-criteria" ], "value" : [ "criteria" ] } },
               { "data_set" : { "data" : [ "index-created:field-index-entry" ], "value" : [ "node" ] } },
+              { "data_set" : { "data" : [ "index-created:field-index-score" ], "value" : "68" } },
               { "entity_save" : { "data" : [ "index-created" ], "immediate" : 1 } },
               { "VIEW LOOP" : {
-                  "VIEW" : "create_entry_index_subindex_claim",
+                  "VIEW" : "iterate_criteria",
                   "DISPLAY" : "views_rules_3",
-                  "USING" : { "parent" : "[index:name]" },
-                  "ROW VARIABLES" : { "subindex" : { "subindex" : "SubIndex" } },
+                  "USING" : { "parent" : [ "criteria:tid" ] },
+                  "ROW VARIABLES" : { "subcriteria" : { "subcriteria" : "SubCriteria" } },
                   "DO" : [
                     { "entity_create" : {
                         "USING" : {
                           "type" : "node",
                           "param_type" : "subindex",
-                          "param_title" : "[node:title] \\u003E [index:name] \\u003E [subindex:name]",
+                          "param_title" : "[subcriteria:name]",
                           "param_author" : [ "node:author" ]
                         },
                         "PROVIDE" : { "entity_created" : { "subindex_created" : "Created SubIndex" } }
@@ -54,7 +55,7 @@ function openintegrity_default_rules_configuration() {
                     },
                     { "data_set" : {
                         "data" : [ "subindex-created:field-subcriteria" ],
-                        "value" : [ "subindex" ]
+                        "value" : [ "subcriteria" ]
                       }
                     },
                     { "data_set" : {
@@ -62,21 +63,41 @@ function openintegrity_default_rules_configuration() {
                         "value" : [ "index-created" ]
                       }
                     },
+                    { "data_set" : {
+                        "data" : [ "subindex-created:field-subindex-summary-score" ],
+                        "value" : "68"
+                      }
+                    },
+                    { "data_set" : {
+                        "data" : [ "subindex-created:field-subindex-developer-score" ],
+                        "value" : "68"
+                      }
+                    },
+                    { "data_set" : {
+                        "data" : [ "subindex-created:field-subindex-community-score" ],
+                        "value" : "68"
+                      }
+                    },
+                    { "data_set" : {
+                        "data" : [ "subindex-created:field-subindex-peer-review-score" ],
+                        "value" : "68"
+                      }
+                    },
                     { "entity_save" : { "data" : [ "subindex-created" ], "immediate" : 1 } },
                     { "VIEW LOOP" : {
-                        "VIEW" : "create_entry_index_subindex_claim",
+                        "VIEW" : "iterate_criteria",
                         "DISPLAY" : "views_rules_4",
-                        "USING" : { "index" : "[index:name]", "subindex" : "[subindex:name]" },
+                        "USING" : { "subindex" : [ "subcriteria:tid" ] },
                         "ROW VARIABLES" : { "claim" : { "claim" : "Claim" } },
                         "DO" : [
                           { "entity_create" : {
                               "USING" : {
                                 "type" : "node",
                                 "param_type" : "claim",
-                                "param_title" : "[node:title] \\u003E [index:name] \\u003E [subindex:name] \\u003E [claim:name]",
+                                "param_title" : "[claim:name]",
                                 "param_author" : [ "node:author" ]
                               },
-                              "PROVIDE" : { "entity_created" : { "claim_created" : "Created Claim" } }
+                              "PROVIDE" : { "entity_created" : { "claim_created" : "Created Claim Instance" } }
                             }
                           },
                           { "data_set" : { "data" : [ "claim-created:field-claim-type" ], "value" : [ "claim" ] } },
@@ -85,8 +106,7 @@ function openintegrity_default_rules_configuration() {
                               "value" : [ "subindex-created" ]
                             }
                           },
-                          { "devel_debug" : { "value" : [ "claim" ] } },
-                          { "devel_debug" : { "value" : [ "claim-created" ] } },
+                          { "data_set" : { "data" : [ "claim-created:field-claim-status" ], "value" : "22" } },
                           { "entity_save" : { "data" : [ "claim-created" ], "immediate" : 1 } }
                         ]
                       }
