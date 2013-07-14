@@ -300,7 +300,7 @@ function openintegrity_default_rules_configuration() {
   $items['rules_test_entry_index_subindex_claim'] = entity_import('rules_config', '{ "rules_test_entry_index_subindex_claim" : {
       "LABEL" : "Test Entry Index SubIndex Claim",
       "PLUGIN" : "reaction rule",
-      "REQUIRES" : [ "views_rules", "rules" ],
+      "REQUIRES" : [ "views_rules", "rules", "php" ],
       "ON" : [],
       "DO" : [
         { "VIEW LOOP" : {
@@ -362,7 +362,7 @@ function openintegrity_default_rules_configuration() {
       "LABEL" : "Update Index Score",
       "PLUGIN" : "reaction rule",
       "TAGS" : [ "Update" ],
-      "REQUIRES" : [ "rules" ],
+      "REQUIRES" : [ "rules", "php" ],
       "ON" : [ "node_update", "node_insert" ],
       "IF" : [
         { "node_is_of_type" : { "node" : [ "node" ], "type" : { "value" : { "index" : "index" } } } }
