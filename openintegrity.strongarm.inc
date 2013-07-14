@@ -104,13 +104,6 @@ function openintegrity_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'auto_entitylabel_pattern_taxonomy_term_claim';
-  $strongarm->value = '[term:field-claim-subcriteria:parent]>[term:field-claim-subcriteria]>[term:name]';
-  $export['auto_entitylabel_pattern_taxonomy_term_claim'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'auto_entitylabel_pattern_taxonomy_term_claim_status';
   $strongarm->value = '';
   $export['auto_entitylabel_pattern_taxonomy_term_claim_status'] = $strongarm;
@@ -132,23 +125,9 @@ function openintegrity_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'auto_entitylabel_php_taxonomy_term_claim';
-  $strongarm->value = 0;
-  $export['auto_entitylabel_php_taxonomy_term_claim'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'auto_entitylabel_php_taxonomy_term_claim_status';
   $strongarm->value = '';
   $export['auto_entitylabel_php_taxonomy_term_claim_status'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'auto_entitylabel_taxonomy_term_claim';
-  $strongarm->value = '0';
-  $export['auto_entitylabel_taxonomy_term_claim'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -251,7 +230,7 @@ entry-node-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'mpxxvl';
+  $strongarm->value = 'mpxzo0';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1133,26 +1112,6 @@ entry-node-form';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_taxonomy_term__claim';
-  $strongarm->value = array(
-    'view_modes' => array(),
-    'extra_fields' => array(
-      'form' => array(
-        'name' => array(
-          'weight' => '-5',
-        ),
-        'description' => array(
-          'weight' => '0',
-        ),
-      ),
-      'display' => array(),
-    ),
-  );
-  $export['field_bundle_settings_taxonomy_term__claim'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_taxonomy_term__claim_status';
   $strongarm->value = array();
   $export['field_bundle_settings_taxonomy_term__claim_status'] = $strongarm;
@@ -1266,7 +1225,7 @@ entry-node-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'less_dir';
-  $strongarm->value = 'rok7RDFOCusrS4sh_3LaCE0iCzvfrBwIPZZnSVUYmQU';
+  $strongarm->value = 'JIdW5oFq_MkfOfE_7u91ezkQ5LZ18nvpg4yc7_Z4vSI';
   $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();

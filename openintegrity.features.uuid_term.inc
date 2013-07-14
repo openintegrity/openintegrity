@@ -167,21 +167,6 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Open audit agreement (anyone can publish)',
-    'description' => '',
-    'format' => 'plain_text',
-    'weight' => -1,
-    'uuid' => '47a81ed0-cf55-48ce-97fb-96481c924ede',
-    'vocabulary_machine_name' => 'claim',
-    'field_claim_subcriteria' => array(
-      'und' => array(
-        0 => array(
-          'tid' => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
-        ),
-      ),
-    ),
-  );
-  $terms[] = array(
     'name' => 'Transparent Development',
     'description' => '',
     'format' => 'plain_text',
@@ -267,21 +252,6 @@ function openintegrity_uuid_features_default_terms() {
     'parent' => array(
       0 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
       1 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Open Source License',
-    'description' => '',
-    'format' => 'plain_text',
-    'weight' => -4,
-    'uuid' => '5bef9726-9acb-4f00-938b-7c5ed14cf411',
-    'vocabulary_machine_name' => 'claim',
-    'field_claim_subcriteria' => array(
-      'und' => array(
-        0 => array(
-          'tid' => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
-        ),
-      ),
     ),
   );
   $terms[] = array(
@@ -489,21 +459,6 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Deterministic build process',
-    'description' => '',
-    'format' => 'plain_text',
-    'weight' => -3,
-    'uuid' => '92323973-343f-46a5-ac36-cbeda4f3d778',
-    'vocabulary_machine_name' => 'claim',
-    'field_claim_subcriteria' => array(
-      'und' => array(
-        0 => array(
-          'tid' => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
-        ),
-      ),
-    ),
-  );
-  $terms[] = array(
     'name' => 'Security',
     'description' => '',
     'format' => 'plain_text',
@@ -632,21 +587,6 @@ function openintegrity_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'score',
   );
   $terms[] = array(
-    'name' => 'Open audit agreement (anyone can audit)',
-    'description' => '',
-    'format' => 'plain_text',
-    'weight' => -2,
-    'uuid' => 'ca8f5540-f8ee-4f84-b238-270f1e278e4e',
-    'vocabulary_machine_name' => 'claim',
-    'field_claim_subcriteria' => array(
-      'und' => array(
-        0 => array(
-          'tid' => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
-        ),
-      ),
-    ),
-  );
-  $terms[] = array(
     'name' => 'Disproved',
     'description' => NULL,
     'format' => NULL,
@@ -752,21 +692,6 @@ function openintegrity_uuid_features_default_terms() {
     'parent' => array(
       0 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
       1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Audit with NDA',
-    'description' => '',
-    'format' => 'plain_text',
-    'weight' => 0,
-    'uuid' => 'fc0789a0-ee69-4eb0-b4dd-306e8aa48857',
-    'vocabulary_machine_name' => 'claim',
-    'field_claim_subcriteria' => array(
-      'und' => array(
-        0 => array(
-          'tid' => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
-        ),
-      ),
     ),
   );
   $terms[] = array(

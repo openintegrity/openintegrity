@@ -9,14 +9,6 @@
  */
 function openintegrity_taxonomy_default_vocabularies() {
   return array(
-    'claim' => array(
-      'name' => 'Claim',
-      'machine_name' => 'claim',
-      'description' => '',
-      'hierarchy' => 1,
-      'module' => 'taxonomy',
-      'weight' => 0,
-    ),
     'claim_status' => array(
       'name' => 'Claim Status',
       'machine_name' => 'claim_status',

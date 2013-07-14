@@ -109,7 +109,7 @@ projects[submitted_by][version] = "1.x-dev"
 
 projects[strongarm][version] = "2.0"
 
-projects[uuid][version] = "1.0-alpha4"
+projects[uuid][version] = "1.0-alpha5"
 
 projects[uuid_features][version] = "1.0-alpha3"
 
