@@ -46,6 +46,14 @@ function openintegrity_node_info() {
       'title_label' => t('Name'),
       'help' => '',
     ),
+    'evidence' => array(
+      'name' => t('Evidence'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'index' => array(
       'name' => t('Index'),
       'base' => 'node_content',
