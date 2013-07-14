@@ -59,7 +59,8 @@ projects[eva][version] = "1.2"
 
 projects[exclude_node_title][version] = "1.6"
 
-projects[features][version] = "2.0-rc1"
+projects[features][version] = "2.0-dev"
+projects[features][patch][] = "https://drupal.org/files/1867910-dont-cry.patch"
 
 projects[field_collection][version] = "1.0-beta5"
 
