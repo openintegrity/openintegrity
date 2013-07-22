@@ -882,15 +882,16 @@ date Desc|Newest first',
   $handler->display->display_options['footer']['php']['table'] = 'views';
   $handler->display->display_options['footer']['php']['field'] = 'php';
   $handler->display->display_options['footer']['php']['php_output'] = '<?php
-module_load_include(\'inc\', \'node\', \'node.pages\');
+/* module_load_include(\'inc\', \'node\', \'node.pages\');
 
 $form = node_add(\'evidence\');
 //echo dprint_r($form[\'field_evidence_claim\'],true);
 //echo dprint_r($view->args[0],true);
+$form[\'field_evidence_claim\'][\'#ajax\']=1;
 $form[\'field_evidence_claim\'][\'und\'][0][\'target_id\'][\'#value\']=$view->args[0];
 $form[\'field_evidence_claim\'][\'und\'][0][\'target_id\'][\'#access\'] = 0;
 $output = drupal_render($form);
-echo $output;
+echo $output; */
 ?>';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
