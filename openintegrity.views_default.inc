@@ -820,7 +820,6 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['view']['field'] = 'view';
   $handler->display->display_options['fields']['view']['label'] = '';
   $handler->display->display_options['fields']['view']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['view']['view'] = 'entry_evidence';
   $handler->display->display_options['fields']['view']['arguments'] = '[nid]';
   /* Sort criterion: Content: Post date */
@@ -906,6 +905,31 @@ date Desc|Newest first',
   $handler->display->display_options['footer']['php']['table'] = 'views';
   $handler->display->display_options['footer']['php']['field'] = 'php';
   $handler->display->display_options['footer']['php']['php_output'] = '<?php
+global $user;
+module_load_include(\'inc\', \'node\', \'node.pages\');
+$node = (object) array(\'uid\' => $user->uid, \'name\' => (isset($user->name) ? $user->name : \'\'), \'type\' => \'evidence\', \'language\' => LANGUAGE_NONE);
+$form = drupal_get_form(\'evidence_node_form\',$node);
+//echo dprint_r($view->args[0],true);
+//$form[\'field_evidence_claim\'][\'#ajax\']=1;
+$claim = node_load($view->args[0]);
+//echo dprint_r($claim,true);
+$subindex = node_load($claim->field_claim_subindex[\'und\'][0][\'target_id\']);
+$index = node_load($subindex->field_subindex_index[\'und\'][0][\'target_id\']);
+$entry = node_load($index->field_index_entry[\'und\'][0][\'target_id\']);
+$form[\'field_evidence_claim\'][\'und\'][0][\'target_id\'][\'#value\']=$entry->title . \' - \' . $claim->title . \' (\' . $view->args[0] . \')\';
+$form[\'field_evidence_claim\'][\'#type\'] = \'hidden\';
+$form[\'field_evidence_claim\'][\'#attributes\'][\'style\'][] = \'display:none;\';
+//echo dprint_r($form[\'field_evidence_claim\'],true);
+$output = drupal_render($form);
+echo $output; 
+?>';
+  /* No results behavior: Global: PHP */
+  $handler->display->display_options['empty']['php']['id'] = 'php';
+  $handler->display->display_options['empty']['php']['table'] = 'views';
+  $handler->display->display_options['empty']['php']['field'] = 'php';
+  $handler->display->display_options['empty']['php']['empty'] = TRUE;
+  $handler->display->display_options['empty']['php']['php_output'] = '<h4>No Evidence to support this Claim. Please submit evidence using the form below</h4>
+<?php
 global $user;
 module_load_include(\'inc\', \'node\', \'node.pages\');
 $node = (object) array(\'uid\' => $user->uid, \'name\' => (isset($user->name) ? $user->name : \'\'), \'type\' => \'evidence\', \'language\' => LANGUAGE_NONE);
