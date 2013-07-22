@@ -25,6 +25,30 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Automated',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 2,
+    'uuid' => '077ba1c2-3b8c-4311-842b-36b449bfae23',
+    'vocabulary_machine_name' => 'claim_variables',
+    'parent' => array(
+      0 => '6b895e49-9f08-45c3-8bfb-1c51943d7cf5',
+      1 => '6b895e49-9f08-45c3-8bfb-1c51943d7cf5',
+    ),
+  );
+  $terms[] = array(
+    'name' => 'All fixed',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '0801b372-6074-4a56-a11f-6de29838d8bd',
+    'vocabulary_machine_name' => 'claim_variables',
+    'parent' => array(
+      0 => 'a20e14f3-74d4-4789-b016-d08aad771bbe',
+      1 => 'a20e14f3-74d4-4789-b016-d08aad771bbe',
+    ),
+  );
+  $terms[] = array(
     'name' => 'Audit available',
     'description' => NULL,
     'format' => NULL,
@@ -287,6 +311,18 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Experienced',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '5a90e8d1-8a96-4c62-889a-5d7e0a5afec6',
+    'vocabulary_machine_name' => 'claim_variables',
+    'parent' => array(
+      0 => '6b895e49-9f08-45c3-8bfb-1c51943d7cf5',
+      1 => '6b895e49-9f08-45c3-8bfb-1c51943d7cf5',
+    ),
+  );
+  $terms[] = array(
     'name' => 'Logging documented',
     'description' => NULL,
     'format' => NULL,
@@ -451,6 +487,18 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Not Experienced',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 1,
+    'uuid' => '8156c354-7d4e-4697-9bb5-1bd3c315780a',
+    'vocabulary_machine_name' => 'claim_variables',
+    'parent' => array(
+      0 => '6b895e49-9f08-45c3-8bfb-1c51943d7cf5',
+      1 => '6b895e49-9f08-45c3-8bfb-1c51943d7cf5',
+    ),
+  );
+  $terms[] = array(
     'name' => 'Net Neutral',
     'description' => '',
     'format' => 'plain_text',
@@ -573,6 +621,14 @@ function openintegrity_uuid_features_default_terms() {
       0 => 'ebffbaaf-58c9-4d6d-8dd0-a0588234539c',
       1 => 'ebffbaaf-58c9-4d6d-8dd0-a0588234539c',
     ),
+  );
+  $terms[] = array(
+    'name' => 'Fixes',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 6,
+    'uuid' => 'a20e14f3-74d4-4789-b016-d08aad771bbe',
+    'vocabulary_machine_name' => 'claim_variables',
   );
   $terms[] = array(
     'name' => 'Online Service',
@@ -766,6 +822,18 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Some fixed',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 1,
+    'uuid' => 'dc79c0d5-b68b-4da3-aaea-b67d9c10920a',
+    'vocabulary_machine_name' => 'claim_variables',
+    'parent' => array(
+      0 => 'a20e14f3-74d4-4789-b016-d08aad771bbe',
+      1 => 'a20e14f3-74d4-4789-b016-d08aad771bbe',
+    ),
+  );
+  $terms[] = array(
     'name' => 'Supporting',
     'description' => '',
     'format' => 'plain_text',
@@ -853,6 +921,18 @@ function openintegrity_uuid_features_default_terms() {
     'parent' => array(
       0 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
       1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
+    ),
+  );
+  $terms[] = array(
+    'name' => 'None fixed',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 2,
+    'uuid' => 'fc68f21a-8401-470d-b4af-8ea3f403b742',
+    'vocabulary_machine_name' => 'claim_variables',
+    'parent' => array(
+      0 => 'a20e14f3-74d4-4789-b016-d08aad771bbe',
+      1 => 'a20e14f3-74d4-4789-b016-d08aad771bbe',
     ),
   );
   $terms[] = array(
