@@ -23,6 +23,7 @@ function openintegrity_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Browse';
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -30,8 +31,12 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['query']['options']['search_api_bypass_access'] = 0;
   $handler->display->display_options['query']['options']['entity_access'] = 0;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['autosubmit'] = TRUE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['row_class'] = 'index-browse';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
@@ -61,6 +66,7 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h4';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_entity'] = 1;
@@ -73,6 +79,20 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['rendered_entity']['link_to_entity'] = 1;
   $handler->display->display_options['fields']['rendered_entity']['display'] = 'view';
   $handler->display->display_options['fields']['rendered_entity']['view_mode'] = 'static_badge';
+  /* Field: Indexed Node: Title */
+  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
+  $handler->display->display_options['fields']['title_1']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['title_1']['field'] = 'title';
+  $handler->display->display_options['fields']['title_1']['label'] = '';
+  $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title_1']['element_wrapper_type'] = 'h4';
+  $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title_1']['link_to_entity'] = 1;
+  /* Sort criterion: Indexed Node: Date changed */
+  $handler->display->display_options['sorts']['changed']['id'] = 'changed';
+  $handler->display->display_options['sorts']['changed']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['sorts']['changed']['field'] = 'changed';
+  $handler->display->display_options['sorts']['changed']['order'] = 'DESC';
   /* Filter criterion: Indexed Node: Content type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'search_api_index_default_node_index';
@@ -108,13 +128,16 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['filters']['field_entry_type']['value'] = array();
   $handler->display->display_options['filters']['field_entry_type']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_entry_type']['expose']['operator_id'] = 'field_entry_type_op';
-  $handler->display->display_options['filters']['field_entry_type']['expose']['label'] = 'Category';
   $handler->display->display_options['filters']['field_entry_type']['expose']['operator'] = 'field_entry_type_op';
   $handler->display->display_options['filters']['field_entry_type']['expose']['identifier'] = 'field_entry_type';
   $handler->display->display_options['filters']['field_entry_type']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
     3 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
   );
   $handler->display->display_options['filters']['field_entry_type']['expose']['reduce'] = 0;
 
@@ -689,6 +712,7 @@ function openintegrity_views_default_views() {
       'rendered_strip' => 0,
     ),
   );
+  $handler->display->display_options['style_options']['row_class'] = 'container';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Relationship: Entity Reference: Referencing entity */
@@ -882,16 +906,23 @@ date Desc|Newest first',
   $handler->display->display_options['footer']['php']['table'] = 'views';
   $handler->display->display_options['footer']['php']['field'] = 'php';
   $handler->display->display_options['footer']['php']['php_output'] = '<?php
-/* module_load_include(\'inc\', \'node\', \'node.pages\');
-
-$form = node_add(\'evidence\');
-//echo dprint_r($form[\'field_evidence_claim\'],true);
+global $user;
+module_load_include(\'inc\', \'node\', \'node.pages\');
+$node = (object) array(\'uid\' => $user->uid, \'name\' => (isset($user->name) ? $user->name : \'\'), \'type\' => \'evidence\', \'language\' => LANGUAGE_NONE);
+$form = drupal_get_form(\'evidence_node_form\',$node);
 //echo dprint_r($view->args[0],true);
-$form[\'field_evidence_claim\'][\'#ajax\']=1;
-$form[\'field_evidence_claim\'][\'und\'][0][\'target_id\'][\'#value\']=$view->args[0];
-$form[\'field_evidence_claim\'][\'und\'][0][\'target_id\'][\'#access\'] = 0;
+//$form[\'field_evidence_claim\'][\'#ajax\']=1;
+$claim = node_load($view->args[0]);
+//echo dprint_r($claim,true);
+$subindex = node_load($claim->field_claim_subindex[\'und\'][0][\'target_id\']);
+$index = node_load($subindex->field_subindex_index[\'und\'][0][\'target_id\']);
+$entry = node_load($index->field_index_entry[\'und\'][0][\'target_id\']);
+$form[\'field_evidence_claim\'][\'und\'][0][\'target_id\'][\'#value\']=$entry->title . \' - \' . $claim->title . \' (\' . $view->args[0] . \')\';
+$form[\'field_evidence_claim\'][\'#type\'] = \'hidden\';
+$form[\'field_evidence_claim\'][\'#attributes\'][\'style\'][] = \'display:none;\';
+//echo dprint_r($form[\'field_evidence_claim\'],true);
 $output = drupal_render($form);
-echo $output; */
+echo $output; 
 ?>';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -1616,6 +1647,7 @@ echo $output; */
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Recent Activity';
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -1623,6 +1655,9 @@ echo $output; */
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '1';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['row_class'] = 'index-activity';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
@@ -1656,6 +1691,16 @@ echo $output; */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
+  /* Relationship: User: Profile */
+  $handler->display->display_options['relationships']['profile']['id'] = 'profile';
+  $handler->display->display_options['relationships']['profile']['table'] = 'users';
+  $handler->display->display_options['relationships']['profile']['field'] = 'profile';
+  $handler->display->display_options['relationships']['profile']['relationship'] = 'uid';
+  $handler->display->display_options['relationships']['profile']['bundle_types'] = array(
+    'developer' => 'developer',
+    'community' => 'community',
+    'peer_reviewer' => 'peer_reviewer',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
@@ -1672,13 +1717,15 @@ echo $output; */
   $handler->display->display_options['fields']['field_entry_score']['relationship'] = 'field_index_entry_target_id';
   $handler->display->display_options['fields']['field_entry_score']['label'] = '';
   $handler->display->display_options['fields']['field_entry_score']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_entry_score']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_entry_score']['element_wrapper_class'] = 'oii-badge';
+  $handler->display->display_options['fields']['field_entry_score']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_entry_score']['type'] = 'custom_formatters_static_badge';
   $handler->display->display_options['fields']['field_entry_score']['settings'] = array(
     'view_mode' => 'token',
   );
   $handler->display->display_options['fields']['field_entry_score']['group_column'] = 'tid';
   $handler->display->display_options['fields']['field_entry_score']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_entry_score']['multi_type'] = 'ul';
   /* Field: Content: Evidence Claim */
   $handler->display->display_options['fields']['field_evidence_claim']['id'] = 'field_evidence_claim';
   $handler->display->display_options['fields']['field_evidence_claim']['table'] = 'field_data_field_evidence_claim';
@@ -1698,6 +1745,7 @@ echo $output; */
   $handler->display->display_options['fields']['field_evidence_status']['label'] = '';
   $handler->display->display_options['fields']['field_evidence_status']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_evidence_status']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_evidence_status']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
@@ -1706,6 +1754,21 @@ echo $output; */
   $handler->display->display_options['fields']['created']['exclude'] = TRUE;
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'time ago';
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: User: Roles */
+  $handler->display->display_options['fields']['rid']['id'] = 'rid';
+  $handler->display->display_options['fields']['rid']['table'] = 'users_roles';
+  $handler->display->display_options['fields']['rid']['field'] = 'rid';
+  $handler->display->display_options['fields']['rid']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['rid']['label'] = '';
+  $handler->display->display_options['fields']['rid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['rid']['type'] = 'ul';
   /* Field: User: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
@@ -1713,7 +1776,7 @@ echo $output; */
   $handler->display->display_options['fields']['name']['relationship'] = 'uid';
   $handler->display->display_options['fields']['name']['label'] = '';
   $handler->display->display_options['fields']['name']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['name']['alter']['text'] = 'Evidence submitted [created] by [name]';
+  $handler->display->display_options['fields']['name']['alter']['text'] = '<a href="[path]">[field_evidence_status] evidence</a> submitted [created] by [name]';
   $handler->display->display_options['fields']['name']['element_type'] = 'div';
   $handler->display->display_options['fields']['name']['element_class'] = 'evidence';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;

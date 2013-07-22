@@ -28,7 +28,7 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_evidence';
-  $strongarm->value = 'edit-display';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -265,7 +265,8 @@ function openintegrity_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'compact_forms_ids';
   $strongarm->value = 'user-login-form
-entry-node-form';
+entry-node-form
+views-exposed-form-browse-page';
   $export['compact_forms_ids'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -293,21 +294,21 @@ entry-node-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_last';
-  $strongarm->value = 1373833663;
+  $strongarm->value = 1374456600;
   $export['cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'mpy0go';
+  $strongarm->value = 'mqbh64';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ctools_last_cron';
-  $strongarm->value = 1373800778;
+  $strongarm->value = 1374442358;
   $export['ctools_last_cron'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -935,21 +936,21 @@ entry-node-form';
   $strongarm->name = 'features_codecache';
   $strongarm->value = array(
     'openintegrity' => array(
-      'uuid_term' => 'b4f8bc568dfaee18a4e50e8e107c533a',
-      'field_base' => 'dbe826658064a8546a8628506f7119c1',
-      'field_instance' => '8c1c23f7b6d126b976cb8bf92bd948d3',
-      'taxonomy' => '96d2eb06330649c3fc58890ef07acd66',
-      'dependencies' => '68ddbd58757c2d36c68b982674abecc5',
+      'uuid_term' => '303cb675f98afd9c0a3240912907b393',
+      'field_base' => 'bd748d1d6351bbb9462fb85ebedab7be',
+      'field_instance' => 'bf004cbacc9a82aba5abdc5203028950',
+      'taxonomy' => '1b05e679d02bab2d045a2d657c1db95a',
+      'dependencies' => 'e37ae845e7326cc865cdc93dbc0da345',
       'node' => '716f584cbc8ec453bb8b9a70c0e6a4dd',
       'cer' => '53fa2b876a05aa40c961f2008f570428',
       'search_api_index' => '8b89525a4d1e60f49ac0a9ddcbddf4f8',
       'search_api_server' => '95070ced1251c82ecd8a7f78f50ff7b5',
-      'rules_config' => 'ca12423d018f6341d5ddf08746c282d7',
-      'views_view' => 'baf9a2318bfe4fa567c13dda548b12f0',
-      'variable' => '2d8a8cd978775717c68ca6fc80fac00f',
+      'rules_config' => 'c977fea42815f748fe38480a771285c5',
+      'views_view' => 'f9db6aed5911d0acb97b1e2c435d32a3',
+      'variable' => 'b4871dad7c06fad9b32aa1bb5138adc9',
       'filter' => 'db80d3dfc82807134cabb809175857e3',
       'user_role' => 'b6a5d1146c74b8f6323c7607a9d7e846',
-      'user_permission' => '7dc66ca34a2705312b69f1ac304808c4',
+      'user_permission' => '2cb8c3ff4d78b59f9f9a4e19d0c8d06a',
       'context' => '98847c1ecdaacb6bff592951b6308aae',
       'formatters' => 'df2ece27814fd7b884a180c1535ac336',
       'profile2_type' => '7f2e522f5575e3cd0a05eaf369c9b6e2',
@@ -1064,6 +1065,9 @@ entry-node-form';
       ),
       'static_badge' => array(
         'custom_settings' => TRUE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
       ),
     ),
     'extra_fields' => array(
@@ -1218,7 +1222,20 @@ entry-node-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_taxonomy_term__criteria';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'name' => array(
+          'weight' => '-5',
+        ),
+        'description' => array(
+          'weight' => '0',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
   $export['field_bundle_settings_taxonomy_term__criteria'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1302,7 +1319,7 @@ entry-node-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'jquery_update_compression_type';
-  $strongarm->value = 'min';
+  $strongarm->value = 'none';
   $export['jquery_update_compression_type'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1323,7 +1340,7 @@ entry-node-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'less_dir';
-  $strongarm->value = 'UD-eZxySZjn0bVU0hw2OJJ-yet3w1dvtGEXRegRB2Tw';
+  $strongarm->value = 'InmQtP26vBrE0Eepml9miQV4u3GBlTAPCsYXcC9Rg98';
   $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1433,34 +1450,35 @@ entry-node-form';
     15 => 121,
     16 => 117,
     17 => 112,
-    18 => 63,
-    19 => 62,
-    20 => 61,
-    21 => 60,
-    22 => 59,
-    23 => 58,
-    24 => 56,
-    25 => 44,
-    26 => 31,
-    27 => 30,
-    28 => 29,
-    29 => 28,
-    30 => 27,
-    31 => 26,
-    32 => 24,
-    33 => 23,
-    34 => 21,
-    35 => 15,
-    36 => 14,
-    37 => 13,
-    38 => 12,
-    39 => 11,
-    40 => 7,
-    41 => 6,
-    42 => 5,
-    43 => 3,
-    44 => 2,
-    45 => 1,
+    18 => 96,
+    19 => 63,
+    20 => 62,
+    21 => 61,
+    22 => 60,
+    23 => 59,
+    24 => 58,
+    25 => 56,
+    26 => 44,
+    27 => 31,
+    28 => 30,
+    29 => 29,
+    30 => 28,
+    31 => 27,
+    32 => 26,
+    33 => 24,
+    34 => 23,
+    35 => 21,
+    36 => 15,
+    37 => 14,
+    38 => 13,
+    39 => 12,
+    40 => 11,
+    41 => 7,
+    42 => 6,
+    43 => 5,
+    44 => 3,
+    45 => 2,
+    46 => 1,
   );
   $export['menu_masks'] = $strongarm;
 
@@ -1566,7 +1584,7 @@ entry-node-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_evidence';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1722,7 +1740,7 @@ entry-node-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'search_api_solr_last_optimize';
-  $strongarm->value = 1373800773;
+  $strongarm->value = 1374442350;
   $export['search_api_solr_last_optimize'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1802,8 +1820,9 @@ entry-node-form';
     'full' => '[node:field-evidence-status] evidence submitted [node:changed:since] ago by [node:author:name]',
     'teaser' => '[node:field-evidence-status] evidence submitted [node:changed:since] ago by [node:author:name]',
     'rss' => '',
+    'diff_standard' => '',
+    'static_badge' => '',
     'token' => '',
-    'revision' => '',
   );
   $export['submitted_by_evidence'] = $strongarm;
 
@@ -1848,14 +1867,14 @@ entry-node-form';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1373833674;
+  $strongarm->value = 1374456616;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_email_notification';
-  $strongarm->value = 1373833663;
+  $strongarm->value = 1374442350;
   $export['update_last_email_notification'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1898,8 +1917,9 @@ entry-node-form';
     0 => 'full',
     1 => 'teaser',
     2 => 'rss',
-    3 => 'token',
-    4 => 'revision',
+    3 => 'diff_standard',
+    4 => 'static_badge',
+    5 => 'token',
   );
   $export['view_modes_evidence'] = $strongarm;
 
