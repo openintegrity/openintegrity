@@ -64,6 +64,7 @@ dependencies[] = logintoboggan
 dependencies[] = masquerade
 dependencies[] = menu
 dependencies[] = moopapi
+dependencies[] = node
 dependencies[] = number
 dependencies[] = options
 dependencies[] = password_policy
