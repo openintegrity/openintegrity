@@ -34,12 +34,6 @@ function openintegrity_default_fe_block_settings() {
         'theme' => 'bootstrap',
         'weight' => 3,
       ),
-      'simpleclean' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'simpleclean',
-        'weight' => 0,
-      ),
     ),
     'title' => '',
     'visibility' => 1,
