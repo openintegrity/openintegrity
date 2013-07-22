@@ -300,7 +300,7 @@ function openintegrity_default_rules_configuration() {
   $items['rules_test_entry_index_subindex_claim'] = entity_import('rules_config', '{ "rules_test_entry_index_subindex_claim" : {
       "LABEL" : "Test Entry Index SubIndex Claim",
       "PLUGIN" : "reaction rule",
-      "REQUIRES" : [ "views_rules", "rules", "php" ],
+      "REQUIRES" : [ "views_rules", "rules" ],
       "ON" : [],
       "DO" : [
         { "VIEW LOOP" : {
@@ -362,22 +362,26 @@ function openintegrity_default_rules_configuration() {
       "LABEL" : "Update Index Score",
       "PLUGIN" : "reaction rule",
       "TAGS" : [ "Update" ],
-      "REQUIRES" : [ "rules", "php" ],
+      "REQUIRES" : [ "rules" ],
       "ON" : [ "node_update", "node_insert" ],
       "IF" : [
-        { "node_is_of_type" : { "node" : [ "node" ], "type" : { "value" : { "index" : "index" } } } }
+        { "node_is_of_type" : {
+            "node" : [ "node" ],
+            "type" : { "value" : { "subindex" : "subindex" } }
+          }
+        }
       ],
       "DO" : [
         { "entity_fetch" : {
             "USING" : {
               "type" : "node",
-              "id" : [ "node:field-index-entry:nid" ],
-              "revision_id" : [ "node:field-index-entry:vid" ]
+              "id" : [ "node:field-subindex-index:nid" ],
+              "revision_id" : [ "node:field-subindex-index:vid" ]
             },
-            "PROVIDE" : { "entity_fetched" : { "entry" : "Entry" } }
+            "PROVIDE" : { "entity_fetched" : { "index" : "Index" } }
           }
         },
-        { "drupal_message" : { "message" : "\\u003C?php\\r\\nif (isset($entry-\\u003Efield_entry_score[\\u0027und\\u0027])) {\\r\\n  foreach ($entry-\\u003Efield_entry_score[\\u0027und\\u0027] as $item) {\\r\\n     $fc_item = field_collection_item_load($item[\\u0027value\\u0027]);\\r\\n     if ($fc_item-\\u003Efield_criteria[\\u0027und\\u0027][0][\\u0027tid\\u0027] == $node-\\u003Efield_criteria[\\u0027und\\u0027][0][\\u0027tid\\u0027]) {\\r\\n       $term_before = taxonomy_term_load($fc_item-\\u003Efield_index_score[\\u0027und\\u0027][0][\\u0027tid\\u0027]);\\r\\n       $term_after = taxonomy_term_load($node-\\u003Efield_index_score[\\u0027und\\u0027][0][\\u0027tid\\u0027]);\\r\\n       echo \\u0027Updating parent entry [entry:title] \\/ [node:field-criteria] (\\u0027 . $term_before-\\u003Ename . \\u0027 -\\u003E \\u0027 . $term_after-\\u003Ename . \\u0027)\\u0027;\\r\\n       $fc_item-\\u003Efield_index_score[\\u0027und\\u0027][0][\\u0027tid\\u0027] = $node-\\u003Efield_index_score[\\u0027und\\u0027][0][\\u0027tid\\u0027];\\r\\n       $fc_item-\\u003Esave(true);\\r\\n       echo \\u0027 ... Done.\\u0027; \\r\\n     }\\r\\n  }\\r\\n} \\r\\nelse {\\r\\n  echo \\u0022field_entry_score not available...\\u0022;\\r\\n}\\r\\n?\\u003E" } }
+        { "drupal_message" : { "message" : "\\u003C?php\\r\\n\\/\\/ If all subindex or all but one -\\u003E Index = All...\\r\\n\\r\\n\\/* From Update Entry Score \\r\\nif (isset($entry-\\u003Efield_entry_score[\\u0027und\\u0027])) {\\r\\n  foreach ($entry-\\u003Efield_entry_score[\\u0027und\\u0027] as $item) {\\r\\n     $fc_item = field_collection_item_load($item[\\u0027value\\u0027]);\\r\\n     if ($fc_item-\\u003Efield_criteria[\\u0027und\\u0027][0][\\u0027tid\\u0027] == $node-\\u003Efield_criteria[\\u0027und\\u0027][0][\\u0027tid\\u0027]) {\\r\\n       $term_before = taxonomy_term_load($fc_item-\\u003Efield_index_score[\\u0027und\\u0027][0][\\u0027tid\\u0027]);\\r\\n       $term_after = taxonomy_term_load($node-\\u003Efield_index_score[\\u0027und\\u0027][0][\\u0027tid\\u0027]);\\r\\n       echo \\u0027Updating parent index [entry:title] \\/ [node:field-criteria] (\\u0027 . $term_before-\\u003Ename . \\u0027 -\\u003E \\u0027 . $term_after-\\u003Ename . \\u0027)\\u0027;\\r\\n       $fc_item-\\u003Efield_index_score[\\u0027und\\u0027][0][\\u0027tid\\u0027] = $node-\\u003Efield_index_score[\\u0027und\\u0027][0][\\u0027tid\\u0027];\\r\\n       $fc_item-\\u003Esave(true);\\r\\n       echo \\u0027 ... Done.\\u0027; \\r\\n     }\\r\\n  }\\r\\n} \\r\\nelse {\\r\\n  echo \\u0022field_entry_score not available...\\u0022;\\r\\n} *\\/\\r\\n?\\u003E" } }
       ]
     }
   }');
