@@ -636,7 +636,7 @@ function openintegrity_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'custom_formatters',
         'settings' => array(),
         'type' => 'custom_formatters_static_badge',
@@ -680,7 +680,7 @@ function openintegrity_field_default_field_instances() {
     'description' => 'We currently only support the type of tools listed.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
@@ -783,11 +783,11 @@ function openintegrity_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'index-full',
         ),
         'type' => 'image',
         'weight' => 4,
@@ -856,52 +856,6 @@ function openintegrity_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-entry-field_test'
-  $field_instances['node-entry-field_test'] = array(
-    'bundle' => 'entry',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 6,
-      ),
-      'static_badge' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_test',
-    'label' => 'Test',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 7,
-    ),
-  );
-
   // Exported field_instance: 'node-evidence-body'
   $field_instances['node-evidence-body'] = array(
     'bundle' => 'evidence',
@@ -962,7 +916,7 @@ function openintegrity_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -1008,7 +962,7 @@ function openintegrity_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 6,
+      'weight' => 1,
     ),
   );
 
@@ -1061,7 +1015,7 @@ function openintegrity_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -1115,7 +1069,7 @@ function openintegrity_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -1156,8 +1110,8 @@ function openintegrity_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-evidence-field_evidence_type'
-  $field_instances['node-evidence-field_evidence_type'] = array(
+  // Exported field_instance: 'node-evidence-field_evidence_variable'
+  $field_instances['node-evidence-field_evidence_variable'] = array(
     'bundle' => 'evidence',
     'default_value' => NULL,
     'deleted' => 0,
@@ -1165,22 +1119,22 @@ function openintegrity_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
+        'type' => 'list_default',
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_evidence_type',
-    'label' => 'Evidence Type',
-    'required' => 1,
+    'field_name' => 'field_evidence_variable',
+    'label' => 'Evidence Variable',
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -1189,7 +1143,7 @@ function openintegrity_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 
@@ -1729,6 +1683,117 @@ function openintegrity_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-criteria-field_claim_variable'
+  $field_instances['taxonomy_term-criteria-field_claim_variable'] = array(
+    'bundle' => 'criteria',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_claim_variable',
+    'label' => 'Claim Variable',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'term_reference_tree',
+      'settings' => array(
+        'cascading_selection' => 0,
+        'filter_view' => '',
+        'leaves_only' => 0,
+        'max_depth' => '',
+        'parent_term_id' => '',
+        'select_parents' => 0,
+        'start_minimized' => 0,
+        'token_display' => '',
+        'track_list' => 0,
+      ),
+      'type' => 'term_reference_tree',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-criteria-field_decision_matrix'
+  $field_instances['taxonomy_term-criteria-field_decision_matrix'] = array(
+    'bundle' => 'criteria',
+    'default_value' => array(
+      0 => array(
+        'tablefield' => array(
+          'cell_0_0' => '',
+          'cell_0_1' => '',
+          'cell_0_2' => '',
+          'cell_0_3' => '',
+          'cell_0_4' => '',
+          'cell_1_0' => '',
+          'cell_1_1' => '',
+          'cell_1_2' => '',
+          'cell_1_3' => '',
+          'cell_1_4' => '',
+          'cell_2_0' => '',
+          'cell_2_1' => '',
+          'cell_2_2' => '',
+          'cell_2_3' => '',
+          'cell_2_4' => '',
+          'cell_3_0' => '',
+          'cell_3_1' => '',
+          'cell_3_2' => '',
+          'cell_3_3' => '',
+          'cell_3_4' => '',
+          'cell_4_0' => '',
+          'cell_4_1' => '',
+          'cell_4_2' => '',
+          'cell_4_3' => '',
+          'cell_4_4' => '',
+          'import' => array(
+            'rebuild_field_decision_matrix_0' => 'Upload CSV',
+            'tablefield_csv_field_decision_matrix_0' => '',
+          ),
+          'rebuild' => array(
+            'count_cols' => 5,
+            'count_rows' => 5,
+            'rebuild' => 'Rebuild Table',
+          ),
+        ),
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'tablefield',
+        'settings' => array(),
+        'type' => 'default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_decision_matrix',
+    'label' => 'Decision Matrix',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'tablefield',
+      'settings' => array(),
+      'type' => 'tablefield',
+      'weight' => 2,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('A link to the tool\'s download page (Do not directly link to the executable or download package)');
@@ -1736,8 +1801,10 @@ function openintegrity_field_default_field_instances() {
   t('Claim Status');
   t('Claim SubIndex');
   t('Claim Type');
+  t('Claim Variable');
   t('Comment');
   t('Criteria');
+  t('Decision Matrix');
   t('Description');
   t('Download');
   t('Entry Score');
@@ -1746,7 +1813,7 @@ function openintegrity_field_default_field_instances() {
   t('Evidence Date');
   t('Evidence Link');
   t('Evidence Status');
-  t('Evidence Type');
+  t('Evidence Variable');
   t('Explanation');
   t('Home Page');
   t('Index Entry');
@@ -1762,7 +1829,6 @@ function openintegrity_field_default_field_instances() {
   t('SubIndex Peer Review Score');
   t('SubIndex Summary Score');
   t('Submit new tools to the Open Integrity Index or search for tools that have already submitted to claim them.');
-  t('Test');
   t('Tool Details');
   t('We currently only support the type of tools listed.');
 

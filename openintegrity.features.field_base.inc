@@ -184,6 +184,44 @@ function openintegrity_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
+  // Exported field_base: 'field_claim_variable'
+  $field_bases['field_claim_variable'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_claim_variable',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'claim_variables',
+          'parent' => 0,
+        ),
+      ),
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
   // Exported field_base: 'field_criteria'
   $field_bases['field_criteria'] = array(
     'active' => 1,
@@ -216,6 +254,30 @@ function openintegrity_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_decision_matrix'
+  $field_bases['field_decision_matrix'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_decision_matrix',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'tablefield',
+    'settings' => array(
+      'cell_processing' => 0,
+      'export' => 0,
+      'lock_values' => 0,
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'tablefield',
   );
 
   // Exported field_base: 'field_download'
@@ -453,38 +515,33 @@ function openintegrity_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_evidence_type'
-  $field_bases['field_evidence_type'] = array(
+  // Exported field_base: 'field_evidence_variable'
+  $field_bases['field_evidence_variable'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_evidence_type',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
+    'field_name' => 'field_evidence_variable',
+    'field_permissions' => array(
+      'type' => 0,
     ),
+    'foreign keys' => array(),
     'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
+      'value' => array(
+        0 => 'value',
       ),
     ),
     'locked' => 0,
-    'module' => 'taxonomy',
+    'module' => 'list',
     'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'evidence_type',
-          'parent' => 0,
-        ),
-      ),
+      'allowed_values' => array(),
+      'allowed_values_function' => 'dereference_list_allowed_list_values',
+      'dereferenced_field' => 'field_claim_type',
+      'entityreference_field' => 'field_evidence_claim',
+      'profile2_private' => FALSE,
     ),
     'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_home'
@@ -843,35 +900,6 @@ function openintegrity_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
-  );
-
-  // Exported field_base: 'field_test'
-  $field_bases['field_test'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_test',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
   );
 
   // Exported field_base: 'field_tool'
