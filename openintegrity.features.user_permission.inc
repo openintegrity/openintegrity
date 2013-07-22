@@ -284,7 +284,9 @@ function openintegrity_user_default_permissions() {
   // Exported permission: administer image styles.
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'image',
   );
 

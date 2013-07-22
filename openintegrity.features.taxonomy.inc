@@ -17,6 +17,14 @@ function openintegrity_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'claim_variables' => array(
+      'name' => 'Claim Variables',
+      'machine_name' => 'claim_variables',
+      'description' => '',
+      'hierarchy' => 1,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'criteria' => array(
       'name' => 'Criteria',
       'machine_name' => 'criteria',
