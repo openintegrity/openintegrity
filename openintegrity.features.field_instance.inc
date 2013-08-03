@@ -1845,47 +1845,6 @@ function openintegrity_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-criteria-field_claim_variable'
-  $field_instances['taxonomy_term-criteria-field_claim_variable'] = array(
-    'bundle' => 'criteria',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_claim_variable',
-    'label' => 'Claim Variable',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'term_reference_tree',
-      'settings' => array(
-        'cascading_selection' => 0,
-        'filter_view' => '',
-        'leaves_only' => 0,
-        'max_depth' => '',
-        'parent_term_id' => '',
-        'select_parents' => 0,
-        'start_minimized' => 0,
-        'token_display' => '',
-        'track_list' => 0,
-      ),
-      'type' => 'term_reference_tree',
-      'weight' => 1,
-    ),
-  );
-
   // Exported field_instance: 'taxonomy_term-criteria-field_entry_type'
   $field_instances['taxonomy_term-criteria-field_entry_type'] = array(
     'bundle' => 'criteria',
@@ -1925,7 +1884,6 @@ function openintegrity_field_default_field_instances() {
   t('Claim Status');
   t('Claim SubIndex');
   t('Claim Type');
-  t('Claim Variable');
   t('Comment');
   t('Criteria');
   t('Description');

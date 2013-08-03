@@ -17,7 +17,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 1,
     'uuid' => '059541f8-00ce-41b0-b7ea-0e6d20bb14d2',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '97085641-b2f6-436d-969a-0fd15f86d85a',
@@ -31,7 +30,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => '097b3647-bd02-46c6-909b-195fb8c1213e',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '709c334a-5352-4437-886d-62fab676ca1d',
@@ -45,7 +43,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 1,
     'uuid' => '0b3b0d46-e84a-4c7c-9832-6a19e7c8019f',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '709c334a-5352-4437-886d-62fab676ca1d',
@@ -59,7 +56,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 4,
     'uuid' => '149346c9-9cff-4e7f-b5f1-100cd96f0f31',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => 'ebffbaaf-58c9-4d6d-8dd0-a0588234539c',
@@ -73,7 +69,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => -5,
     'uuid' => '1595167a-1d87-4436-b7af-ec2e305b32bd',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
@@ -95,7 +90,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => '21909323-2dac-450e-bec5-5148a41ca056',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
@@ -109,7 +103,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 1,
     'uuid' => '2972ce3f-3150-47ea-93f8-0a637d996bd8',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => 'd7ab321e-034a-4aa3-943b-c59bc724225a',
@@ -131,7 +124,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 1,
     'uuid' => '2e5c711a-0d46-4939-9ed4-1d11e0ce66c1',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '709c334a-5352-4437-886d-62fab676ca1d',
@@ -145,7 +137,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 2,
     'uuid' => '35802634-3643-45bd-b1a3-c6b0ac037fff',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '97085641-b2f6-436d-969a-0fd15f86d85a',
@@ -167,7 +158,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 1,
     'uuid' => '435fb0cd-66ba-427a-b5d9-bd7e3692baa8',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
@@ -181,13 +171,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => -1,
     'uuid' => '46bf5e11-1c0d-4836-9e52-5ad1162b9dd3',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(
-      'und' => array(
-        0 => array(
-          'tid' => 76,
-        ),
-      ),
-    ),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '709c334a-5352-4437-886d-62fab676ca1d',
@@ -201,7 +184,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 1,
     'uuid' => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => 'ebffbaaf-58c9-4d6d-8dd0-a0588234539c',
@@ -210,19 +192,27 @@ function openintegrity_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Audit with NDA',
-    'description' => '',
+    'description' => 'The tool developers allow organisations to audit their tool under an non disclosure agreement.',
     'format' => 'plain_text',
     'weight' => 0,
     'uuid' => '481846ec-fd46-47a1-8734-8b1ab53530f3',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(
+    'field_entry_type' => array(
       'und' => array(
         0 => array(
-          'tid' => 76,
+          'tid' => 'edd526e2-59e0-476f-b0a8-4663e00a2456',
+        ),
+        1 => array(
+          'tid' => '2e354102-8eb9-435d-b76b-316db2d7b62d',
+        ),
+        2 => array(
+          'tid' => 'afad8527-c8a7-4e82-9e7f-13a8b78bf3e5',
+        ),
+        3 => array(
+          'tid' => 'a35433fc-bd5d-4e89-83f5-b5e25cf794a8',
         ),
       ),
     ),
-    'field_entry_type' => array(),
     'parent' => array(
       0 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
       1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
@@ -243,7 +233,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => -2,
     'uuid' => '51c85ed1-1bb9-4df1-a2e0-6948228068f6',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
@@ -257,7 +246,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => -4,
     'uuid' => '578b0119-08b5-4733-b11a-1541062efe8d',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
@@ -279,7 +267,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => -3,
     'uuid' => '58db7236-8e24-4752-9a1e-71a0ea21caef',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '149346c9-9cff-4e7f-b5f1-100cd96f0f31',
@@ -293,7 +280,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => -3,
     'uuid' => '5b4f42eb-16b2-45a4-b069-957eb528745f',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
@@ -302,13 +288,27 @@ function openintegrity_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Deterministic build process',
-    'description' => '',
+    'description' => 'The system can be compiled or built and consistently create the same binary files.',
     'format' => 'plain_text',
     'weight' => -3,
     'uuid' => '5d9862ee-5180-4b7f-af95-2dc2875746ba',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
-    'field_entry_type' => array(),
+    'field_entry_type' => array(
+      'und' => array(
+        0 => array(
+          'tid' => 'edd526e2-59e0-476f-b0a8-4663e00a2456',
+        ),
+        1 => array(
+          'tid' => '2e354102-8eb9-435d-b76b-316db2d7b62d',
+        ),
+        2 => array(
+          'tid' => 'afad8527-c8a7-4e82-9e7f-13a8b78bf3e5',
+        ),
+        3 => array(
+          'tid' => 'a35433fc-bd5d-4e89-83f5-b5e25cf794a8',
+        ),
+      ),
+    ),
     'parent' => array(
       0 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
       1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
@@ -321,8 +321,22 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => -2,
     'uuid' => '5e7d02b3-dc47-466c-99ac-27aa7ef0bb5f',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
-    'field_entry_type' => array(),
+    'field_entry_type' => array(
+      'und' => array(
+        0 => array(
+          'tid' => 'edd526e2-59e0-476f-b0a8-4663e00a2456',
+        ),
+        1 => array(
+          'tid' => '2e354102-8eb9-435d-b76b-316db2d7b62d',
+        ),
+        2 => array(
+          'tid' => 'afad8527-c8a7-4e82-9e7f-13a8b78bf3e5',
+        ),
+        3 => array(
+          'tid' => 'a35433fc-bd5d-4e89-83f5-b5e25cf794a8',
+        ),
+      ),
+    ),
     'parent' => array(
       0 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
       1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
@@ -343,7 +357,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 2,
     'uuid' => '709c334a-5352-4437-886d-62fab676ca1d',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => 'ebffbaaf-58c9-4d6d-8dd0-a0588234539c',
@@ -357,7 +370,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => -1,
     'uuid' => '75a0ed10-3447-4677-b56a-3bd78c696243',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '149346c9-9cff-4e7f-b5f1-100cd96f0f31',
@@ -371,7 +383,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 1,
     'uuid' => '75b12edd-5060-437e-8896-2973c48691e6',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '709c334a-5352-4437-886d-62fab676ca1d',
@@ -385,7 +396,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 3,
     'uuid' => '7679c053-253e-431d-b8b2-52c1a571f4f0',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '97085641-b2f6-436d-969a-0fd15f86d85a',
@@ -394,13 +404,27 @@ function openintegrity_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Public code repository',
-    'description' => NULL,
-    'format' => NULL,
+    'description' => 'The source code is publicly available on the internet.',
+    'format' => 'full_html',
     'weight' => -5,
     'uuid' => '76e5d2fc-0f5b-4920-a63a-bb187283c827',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
-    'field_entry_type' => array(),
+    'field_entry_type' => array(
+      'und' => array(
+        0 => array(
+          'tid' => 'edd526e2-59e0-476f-b0a8-4663e00a2456',
+        ),
+        1 => array(
+          'tid' => '2e354102-8eb9-435d-b76b-316db2d7b62d',
+        ),
+        2 => array(
+          'tid' => 'afad8527-c8a7-4e82-9e7f-13a8b78bf3e5',
+        ),
+        3 => array(
+          'tid' => 'a35433fc-bd5d-4e89-83f5-b5e25cf794a8',
+        ),
+      ),
+    ),
     'parent' => array(
       0 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
       1 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
@@ -421,7 +445,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => -2,
     'uuid' => '7c836c53-dd58-4f8d-a8ec-750e34337f7a',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '149346c9-9cff-4e7f-b5f1-100cd96f0f31',
@@ -435,7 +458,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 5,
     'uuid' => '81afbcc8-f229-4b46-88a6-8c1bcd74cf3a',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => 'ebffbaaf-58c9-4d6d-8dd0-a0588234539c',
@@ -457,7 +479,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 1,
     'uuid' => '85263771-c208-443d-b9a4-b964a4f4abb3',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
@@ -471,7 +492,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => -6,
     'uuid' => '861cdbe0-cd2d-4076-9ed2-c399957826bd',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
@@ -479,14 +499,28 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Source available upon request',
-    'description' => NULL,
-    'format' => NULL,
+    'name' => 'Code available on request',
+    'description' => 'The source code is available on request.',
+    'format' => 'full_html',
     'weight' => -4,
     'uuid' => '87dfedde-4457-452d-b428-8179564aac99',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
-    'field_entry_type' => array(),
+    'field_entry_type' => array(
+      'und' => array(
+        0 => array(
+          'tid' => 'edd526e2-59e0-476f-b0a8-4663e00a2456',
+        ),
+        1 => array(
+          'tid' => '2e354102-8eb9-435d-b76b-316db2d7b62d',
+        ),
+        2 => array(
+          'tid' => 'afad8527-c8a7-4e82-9e7f-13a8b78bf3e5',
+        ),
+        3 => array(
+          'tid' => 'a35433fc-bd5d-4e89-83f5-b5e25cf794a8',
+        ),
+      ),
+    ),
     'parent' => array(
       0 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
       1 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
@@ -499,7 +533,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => '896490e6-12f2-4755-9cc2-84cfdf1d23fa',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => 'd7ab321e-034a-4aa3-943b-c59bc724225a',
@@ -513,7 +546,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 4,
     'uuid' => '8a8844b9-15ff-4466-98aa-43d480efb05c',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '97085641-b2f6-436d-969a-0fd15f86d85a',
@@ -527,7 +559,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 1,
     'uuid' => '97085641-b2f6-436d-969a-0fd15f86d85a',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
   );
   $terms[] = array(
@@ -545,7 +576,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 3,
     'uuid' => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => 'ebffbaaf-58c9-4d6d-8dd0-a0588234539c',
@@ -583,7 +613,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => 'b32f27b9-ba87-4adc-bbaa-9132b2c25550',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
@@ -597,7 +626,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 2,
     'uuid' => 'b599c21e-7428-4442-9f22-fd988aabe11b',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => 'd7ab321e-034a-4aa3-943b-c59bc724225a',
@@ -606,13 +634,27 @@ function openintegrity_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Activity of issue tracker',
-    'description' => NULL,
-    'format' => NULL,
+    'description' => 'The most recent activity on the issue tracker occured in the past 6 months, as a reflection of the activity of issue posting and resolution.',
+    'format' => 'full_html',
     'weight' => -2,
     'uuid' => 'b74e6c21-0fd6-4c17-b73f-527e5177a5b1',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
-    'field_entry_type' => array(),
+    'field_entry_type' => array(
+      'und' => array(
+        0 => array(
+          'tid' => 'edd526e2-59e0-476f-b0a8-4663e00a2456',
+        ),
+        1 => array(
+          'tid' => '2e354102-8eb9-435d-b76b-316db2d7b62d',
+        ),
+        2 => array(
+          'tid' => 'afad8527-c8a7-4e82-9e7f-13a8b78bf3e5',
+        ),
+        3 => array(
+          'tid' => 'a35433fc-bd5d-4e89-83f5-b5e25cf794a8',
+        ),
+      ),
+    ),
     'parent' => array(
       0 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
       1 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
@@ -633,7 +675,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => 'ebffbaaf-58c9-4d6d-8dd0-a0588234539c',
@@ -647,7 +688,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => -1,
     'uuid' => 'bee1b089-f26c-4b88-a658-50c2517a287f',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
@@ -677,7 +717,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 2,
     'uuid' => 'd7ab321e-034a-4aa3-943b-c59bc724225a',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
   );
   $terms[] = array(
@@ -687,7 +726,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => 'd9a491c5-2d89-4dd7-a814-8d7190443b51',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '149346c9-9cff-4e7f-b5f1-100cd96f0f31',
@@ -709,7 +747,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => 'df9fb481-1f2f-40e9-a600-04794ec5e5ce',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '97085641-b2f6-436d-969a-0fd15f86d85a',
@@ -723,7 +760,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => -1,
     'uuid' => 'e20011b1-88cd-4ec3-8b0b-edb97680afba',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
     'parent' => array(
       0 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
@@ -732,13 +768,27 @@ function openintegrity_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Public issue tracker',
-    'description' => NULL,
-    'format' => NULL,
+    'description' => 'There is an issue tracker publicly available to follow the development of the tool.',
+    'format' => 'full_html',
     'weight' => -3,
     'uuid' => 'e704a009-b7bd-4fc5-bb9a-29d602fa2679',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
-    'field_entry_type' => array(),
+    'field_entry_type' => array(
+      'und' => array(
+        0 => array(
+          'tid' => 'edd526e2-59e0-476f-b0a8-4663e00a2456',
+        ),
+        1 => array(
+          'tid' => '2e354102-8eb9-435d-b76b-316db2d7b62d',
+        ),
+        2 => array(
+          'tid' => 'afad8527-c8a7-4e82-9e7f-13a8b78bf3e5',
+        ),
+        3 => array(
+          'tid' => 'a35433fc-bd5d-4e89-83f5-b5e25cf794a8',
+        ),
+      ),
+    ),
     'parent' => array(
       0 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
       1 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
@@ -759,7 +809,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => 'ebffbaaf-58c9-4d6d-8dd0-a0588234539c',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
     'field_entry_type' => array(),
   );
   $terms[] = array(
@@ -777,8 +826,22 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => -4,
     'uuid' => 'f5416e14-562d-466b-9d00-837ef5b3c3b7',
     'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
-    'field_entry_type' => array(),
+    'field_entry_type' => array(
+      'und' => array(
+        0 => array(
+          'tid' => 'edd526e2-59e0-476f-b0a8-4663e00a2456',
+        ),
+        1 => array(
+          'tid' => '2e354102-8eb9-435d-b76b-316db2d7b62d',
+        ),
+        2 => array(
+          'tid' => 'afad8527-c8a7-4e82-9e7f-13a8b78bf3e5',
+        ),
+        3 => array(
+          'tid' => 'a35433fc-bd5d-4e89-83f5-b5e25cf794a8',
+        ),
+      ),
+    ),
     'parent' => array(
       0 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
       1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
