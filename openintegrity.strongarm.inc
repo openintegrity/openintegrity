@@ -912,18 +912,18 @@ views-exposed-form-browse-page';
   $strongarm->name = 'features_codecache';
   $strongarm->value = array(
     'openintegrity' => array(
-      'uuid_term' => 'abb75592095537678e51a6c787e166d8',
-      'field_base' => 'bd748d1d6351bbb9462fb85ebedab7be',
-      'field_instance' => 'bf004cbacc9a82aba5abdc5203028950',
-      'taxonomy' => '1b05e679d02bab2d045a2d657c1db95a',
+      'uuid_term' => '67d5df646fa6328871d52423f9cec9f5',
+      'field_base' => '99a370520bdbfa25d29c09d89a7f0382',
+      'field_instance' => '92adbf920432c6cb636e21e10d25c7fb',
+      'taxonomy' => '151bb062c8204cf2a6b99092635bff7f',
       'dependencies' => 'ab089ab56fdba042d5fe803c91b4f87d',
       'node' => '716f584cbc8ec453bb8b9a70c0e6a4dd',
       'cer' => '53fa2b876a05aa40c961f2008f570428',
       'search_api_index' => '8b89525a4d1e60f49ac0a9ddcbddf4f8',
       'search_api_server' => '95070ced1251c82ecd8a7f78f50ff7b5',
       'rules_config' => 'eb36c9c5701646bdfffced4c5001ff81',
-      'views_view' => 'b8b25861585007920339efd2bf625fc9',
-      'variable' => 'b4871dad7c06fad9b32aa1bb5138adc9',
+      'views_view' => '3f2542cee9c8ecb634c65f7926641c5c',
+      'variable' => 'd4c5651b584a193ede70cf476da65e1d',
       'filter' => 'db80d3dfc82807134cabb809175857e3',
       'user_role' => 'b6a5d1146c74b8f6323c7607a9d7e846',
       'user_permission' => '2cb8c3ff4d78b59f9f9a4e19d0c8d06a',
@@ -1338,7 +1338,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'less_dir';
-  $strongarm->value = 'EESqq2FNDRchsfu2wA0I9kMX2yLb8iLr2uxki8hydM4';
+  $strongarm->value = 'qBI7VZkxWNKYrDskCjzoy6T-hK4anVz48UtjTvNRuvM';
   $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();

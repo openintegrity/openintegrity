@@ -1886,76 +1886,6 @@ function openintegrity_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-criteria-field_decision_matrix'
-  $field_instances['taxonomy_term-criteria-field_decision_matrix'] = array(
-    'bundle' => 'criteria',
-    'default_value' => array(
-      0 => array(
-        'tablefield' => array(
-          'cell_0_0' => '',
-          'cell_0_1' => '',
-          'cell_0_2' => '',
-          'cell_0_3' => '',
-          'cell_0_4' => '',
-          'cell_1_0' => '',
-          'cell_1_1' => '',
-          'cell_1_2' => '',
-          'cell_1_3' => '',
-          'cell_1_4' => '',
-          'cell_2_0' => '',
-          'cell_2_1' => '',
-          'cell_2_2' => '',
-          'cell_2_3' => '',
-          'cell_2_4' => '',
-          'cell_3_0' => '',
-          'cell_3_1' => '',
-          'cell_3_2' => '',
-          'cell_3_3' => '',
-          'cell_3_4' => '',
-          'cell_4_0' => '',
-          'cell_4_1' => '',
-          'cell_4_2' => '',
-          'cell_4_3' => '',
-          'cell_4_4' => '',
-          'import' => array(
-            'rebuild_field_decision_matrix_0' => 'Upload CSV',
-            'tablefield_csv_field_decision_matrix_0' => '',
-          ),
-          'rebuild' => array(
-            'count_cols' => 5,
-            'count_rows' => 5,
-            'rebuild' => 'Rebuild Table',
-          ),
-        ),
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'tablefield',
-        'settings' => array(),
-        'type' => 'default',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_decision_matrix',
-    'label' => 'Decision Matrix',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'tablefield',
-      'settings' => array(),
-      'type' => 'tablefield',
-      'weight' => 2,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('A link to the tool\'s download page (Do not directly link to the executable or download package)');
@@ -1967,7 +1897,6 @@ function openintegrity_field_default_field_instances() {
   t('Claim Variable');
   t('Comment');
   t('Criteria');
-  t('Decision Matrix');
   t('Description');
   t('Developer');
   t('Download');

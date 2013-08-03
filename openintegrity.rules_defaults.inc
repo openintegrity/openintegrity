@@ -300,6 +300,7 @@ function openintegrity_default_rules_configuration() {
   $items['rules_test_decision_matrix'] = entity_import('rules_config', '{ "rules_test_decision_matrix" : {
       "LABEL" : "Test Decision Matrix",
       "PLUGIN" : "reaction rule",
+      "ACTIVE" : false,
       "REQUIRES" : [ "rules", "taxonomy" ],
       "ON" : [ "taxonomy_term_insert", "taxonomy_term_update" ],
       "IF" : [
