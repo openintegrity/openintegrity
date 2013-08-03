@@ -286,34 +286,6 @@ views-exposed-form-browse-page';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'cron_key';
-  $strongarm->value = 'KWXgd7_0dlCGuw5IDyrHPjLRUIAUtmP0nDaQ41eX67c';
-  $export['cron_key'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'cron_last';
-  $strongarm->value = 1375552567;
-  $export['cron_last'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'mqyvmd';
-  $export['css_js_query_string'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'ctools_last_cron';
-  $strongarm->value = 1375491445;
-  $export['ctools_last_cron'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'date_api_version';
   $strongarm->value = '7.2';
   $export['date_api_version'] = $strongarm;
