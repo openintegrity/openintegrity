@@ -179,6 +179,7 @@ features[field_instance][] = node-subindex-field_subindex_peer_review_score
 features[field_instance][] = node-subindex-field_subindex_summary_score
 features[field_instance][] = profile2-developer-field_tool
 features[field_instance][] = taxonomy_term-criteria-field_claim_variable
+features[field_instance][] = taxonomy_term-criteria-field_entry_type
 features[filter][] = full_html
 features[filter][] = php_code
 features[filter][] = plain_text
