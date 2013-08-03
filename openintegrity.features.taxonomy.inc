@@ -29,7 +29,7 @@ function openintegrity_taxonomy_default_vocabularies() {
       'name' => 'Criteria',
       'machine_name' => 'criteria',
       'description' => 'Criteria',
-      'hierarchy' => 1,
+      'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
     ),

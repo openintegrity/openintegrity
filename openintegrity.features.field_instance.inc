@@ -1876,6 +1876,45 @@ function openintegrity_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-criteria-field_expiration'
+  $field_instances['taxonomy_term-criteria-field_expiration'] = array(
+    'bundle' => 'criteria',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'interval',
+        'settings' => array(),
+        'type' => 'interval_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_expiration',
+    'label' => 'Expiration',
+    'required' => 0,
+    'settings' => array(
+      'allowed_periods' => array(
+        'day' => 0,
+        'fortnight' => 0,
+        'month' => 'month',
+        'quarter' => 0,
+        'week' => 0,
+        'year' => 'year',
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'interval',
+      'settings' => array(),
+      'type' => 'interval_default',
+      'weight' => 4,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('A link to the tool\'s download page (Do not directly link to the executable or download package)');
@@ -1895,6 +1934,7 @@ function openintegrity_field_default_field_instances() {
   t('Evidence Link');
   t('Evidence Status');
   t('Evidence Variable');
+  t('Expiration');
   t('Explanation');
   t('Home Page');
   t('Index Entry');

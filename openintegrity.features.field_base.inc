@@ -600,6 +600,34 @@ function openintegrity_field_default_field_bases() {
     'type' => 'list_text',
   );
 
+  // Exported field_base: 'field_expiration'
+  $field_bases['field_expiration'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_expiration',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(),
+    'indexes' => array(
+      'interval' => array(
+        0 => 'interval',
+      ),
+      'period' => array(
+        0 => 'period',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'interval',
+    'settings' => array(
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'interval',
+  );
+
   // Exported field_base: 'field_home'
   $field_bases['field_home'] = array(
     'active' => 1,
