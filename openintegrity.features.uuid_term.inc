@@ -351,8 +351,8 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Open audit agreement (anyone can audit)',
-    'description' => '',
+    'name' => 'Open audit agreement',
+    'description' => 'The system developers allow any organisation to perform and publish an audit of their code.',
     'format' => 'plain_text',
     'weight' => -2,
     'uuid' => '5e7d02b3-dc47-466c-99ac-27aa7ef0bb5f',
@@ -371,20 +371,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => '653b0dfb-3534-43d1-8071-2286d88f9e94',
     'vocabulary_machine_name' => 'claim_status',
-  );
-  $terms[] = array(
-    'name' => 'Open audit agreement (anyone can publish)',
-    'description' => '',
-    'format' => 'plain_text',
-    'weight' => -1,
-    'uuid' => '68547e34-86c9-4609-befe-7a4a67905046',
-    'vocabulary_machine_name' => 'criteria',
-    'field_claim_variable' => array(),
-    'field_decision_matrix' => array(),
-    'parent' => array(
-      0 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
-      1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
-    ),
   );
   $terms[] = array(
     'name' => 'Auditor\'s Experience',

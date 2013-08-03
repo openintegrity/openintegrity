@@ -33,6 +33,14 @@ function openintegrity_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'entry_category' => array(
+      'name' => 'Entry Category',
+      'machine_name' => 'entry_category',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'entry_type' => array(
       'name' => 'Entry Type',
       'machine_name' => 'entry_type',

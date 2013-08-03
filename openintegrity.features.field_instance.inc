@@ -504,10 +504,9 @@ function openintegrity_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
+        'type' => 'hidden',
+        'weight' => 8,
       ),
       'static_badge' => array(
         'label' => 'hidden',
@@ -564,7 +563,7 @@ function openintegrity_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 6,
     ),
   );
 
@@ -577,10 +576,9 @@ function openintegrity_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 2,
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'static_badge' => array(
         'label' => 'above',
@@ -612,9 +610,9 @@ function openintegrity_field_default_field_instances() {
       ),
       'enable_tokens' => 1,
       'rel_remove' => 'default',
-      'title' => 'none',
+      'title' => 'value',
       'title_maxlength' => 128,
-      'title_value' => '',
+      'title_value' => 'Download',
       'url' => 0,
       'user_register_form' => FALSE,
       'validate_url' => 1,
@@ -624,7 +622,104 @@ function openintegrity_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 5,
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-entry-field_entry_category'
+  $field_instances['node-entry-field_entry_category'] = array(
+    'bundle' => 'entry',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
+      'static_badge' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_entry_category',
+    'label' => 'Category',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-entry-field_entry_developer'
+  $field_instances['node-entry-field_entry_developer'] = array(
+    'bundle' => 'entry',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 2,
+      ),
+      'static_badge' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_entry_developer',
+    'label' => 'Developer',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'inline_entity_form',
+      'settings' => array(
+        'fields' => array(),
+        'type_settings' => array(
+          'allow_existing' => 1,
+          'delete_references' => 0,
+          'match_operator' => 'CONTAINS',
+        ),
+      ),
+      'type' => 'inline_entity_form',
+      'weight' => 2,
     ),
   );
 
@@ -640,7 +735,7 @@ function openintegrity_field_default_field_instances() {
         'module' => 'custom_formatters',
         'settings' => array(),
         'type' => 'custom_formatters_static_badge',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'static_badge' => array(
         'label' => 'hidden',
@@ -668,7 +763,7 @@ function openintegrity_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 2,
+      'weight' => 5,
     ),
   );
 
@@ -680,11 +775,11 @@ function openintegrity_field_default_field_instances() {
     'description' => 'We currently only support the type of tools listed.',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'static_badge' => array(
         'label' => 'above',
@@ -702,7 +797,7 @@ function openintegrity_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_entry_type',
-    'label' => 'Entry Type',
+    'label' => 'Type',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -716,6 +811,74 @@ function openintegrity_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-entry-field_entry_version'
+  $field_instances['node-entry-field_entry_version'] = array(
+    'bundle' => 'entry',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'static_badge' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_entry_version',
+    'label' => 'Version',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'full_html' => 'full_html',
+          'php_code' => 'php_code',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'full_html' => array(
+              'weight' => 0,
+            ),
+            'php_code' => array(
+              'weight' => 11,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-entry-field_home'
   $field_instances['node-entry-field_home'] = array(
     'bundle' => 'entry',
@@ -725,10 +888,9 @@ function openintegrity_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 1,
+        'type' => 'hidden',
+        'weight' => 9,
       ),
       'static_badge' => array(
         'label' => 'above',
@@ -760,9 +922,9 @@ function openintegrity_field_default_field_instances() {
       ),
       'enable_tokens' => 1,
       'rel_remove' => 'default',
-      'title' => 'none',
+      'title' => 'value',
       'title_maxlength' => 128,
-      'title_value' => '',
+      'title_value' => 'Home Page',
       'url' => 0,
       'user_register_form' => FALSE,
       'validate_url' => 1,
@@ -772,7 +934,7 @@ function openintegrity_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 4,
+      'weight' => 7,
     ),
   );
 
@@ -790,7 +952,7 @@ function openintegrity_field_default_field_instances() {
           'image_style' => 'index-full',
         ),
         'type' => 'image',
-        'weight' => 4,
+        'weight' => 0,
       ),
       'static_badge' => array(
         'label' => 'above',
@@ -852,7 +1014,7 @@ function openintegrity_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 6,
+      'weight' => 9,
     ),
   );
 
@@ -1679,7 +1841,7 @@ function openintegrity_field_default_field_instances() {
         ),
       ),
       'type' => 'inline_entity_form',
-      'weight' => 1,
+      'weight' => 0,
     ),
   );
 
@@ -1798,6 +1960,7 @@ function openintegrity_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('A link to the tool\'s download page (Do not directly link to the executable or download package)');
   t('Body');
+  t('Category');
   t('Claim Status');
   t('Claim SubIndex');
   t('Claim Type');
@@ -1806,9 +1969,9 @@ function openintegrity_field_default_field_instances() {
   t('Criteria');
   t('Decision Matrix');
   t('Description');
+  t('Developer');
   t('Download');
   t('Entry Score');
-  t('Entry Type');
   t('Evidence Claim');
   t('Evidence Date');
   t('Evidence Link');
@@ -1830,6 +1993,8 @@ function openintegrity_field_default_field_instances() {
   t('SubIndex Summary Score');
   t('Submit new tools to the Open Integrity Index or search for tools that have already submitted to claim them.');
   t('Tool Details');
+  t('Type');
+  t('Version');
   t('We currently only support the type of tools listed.');
 
   return $field_instances;

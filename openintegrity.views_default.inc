@@ -58,7 +58,7 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['field_logo']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_logo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_logo']['settings'] = array(
-    'image_style' => 'thumbnail',
+    'image_style' => 'logo-list',
     'image_link' => 'content',
   );
   /* Field: Indexed Node: Title */
@@ -115,13 +115,15 @@ function openintegrity_views_default_views() {
     2 => '2',
     1 => 0,
     3 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
   );
   $handler->display->display_options['filters']['search_api_views_fulltext']['fields'] = array(
     'title' => 'title',
-    'body:value' => 'body:value',
-    'field_entry_type:name' => 'field_entry_type:name',
   );
-  /* Filter criterion: Indexed Node: Entry Type */
+  /* Filter criterion: Indexed Node: Type */
   $handler->display->display_options['filters']['field_entry_type']['id'] = 'field_entry_type';
   $handler->display->display_options['filters']['field_entry_type']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['filters']['field_entry_type']['field'] = 'field_entry_type';
