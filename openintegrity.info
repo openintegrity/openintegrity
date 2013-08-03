@@ -199,7 +199,6 @@ features[rules_config][] = rules_create_entry_index_subindex_claim
 features[rules_config][] = rules_create_index_subindex_claim
 features[rules_config][] = rules_set_entry_score
 features[rules_config][] = rules_test_data_integrity
-features[rules_config][] = rules_test_decision_matrix
 features[rules_config][] = rules_test_entry_index_subindex_claim
 features[rules_config][] = rules_update_claim_status
 features[rules_config][] = rules_update_entry_score
