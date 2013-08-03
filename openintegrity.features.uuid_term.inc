@@ -110,10 +110,10 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Mobile Client Application',
+    'name' => 'Mobile Software',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 1,
     'uuid' => '2e354102-8eb9-435d-b76b-316db2d7b62d',
     'vocabulary_machine_name' => 'entry_type',
   );
@@ -520,10 +520,10 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Online Service',
+    'name' => 'Hosted Platform',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 3,
     'uuid' => 'a35433fc-bd5d-4e89-83f5-b5e25cf794a8',
     'vocabulary_machine_name' => 'entry_type',
   );
@@ -536,10 +536,10 @@ function openintegrity_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'evidence_type',
   );
   $terms[] = array(
-    'name' => 'Server Application',
+    'name' => 'Server Software',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 2,
     'uuid' => 'afad8527-c8a7-4e82-9e7f-13a8b78bf3e5',
     'vocabulary_machine_name' => 'entry_type',
   );
@@ -719,7 +719,7 @@ function openintegrity_uuid_features_default_terms() {
     'field_claim_variable' => array(),
   );
   $terms[] = array(
-    'name' => 'Desktop Client Application',
+    'name' => 'Desktop Software',
     'description' => '',
     'format' => 'plain_text',
     'weight' => 0,

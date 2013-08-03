@@ -1338,7 +1338,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'less_dir';
-  $strongarm->value = 'NbwXutPy7MpC6QLtUP1QO5XhMZi1nYpL5L0bBn3Q_ig';
+  $strongarm->value = 'F9e4mTf0i_j61JHo2DFWmZRucUy7u-maky5S_zgjv6k';
   $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();

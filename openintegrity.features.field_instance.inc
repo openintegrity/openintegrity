@@ -772,7 +772,7 @@ function openintegrity_field_default_field_instances() {
     'bundle' => 'entry',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'We currently only support the type of tools listed.',
+    'description' => 'We currently only support the type of tools listed. If the client software required an online service to function, please select also hosted platform.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -806,7 +806,7 @@ function openintegrity_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(),
-      'type' => 'options_select',
+      'type' => 'options_buttons',
       'weight' => 1,
     ),
   );
@@ -1924,7 +1924,7 @@ function openintegrity_field_default_field_instances() {
   t('Tool Details');
   t('Type');
   t('Version');
-  t('We currently only support the type of tools listed.');
+  t('We currently only support the type of tools listed. If the client software required an online service to function, please select also hosted platform.');
 
   return $field_instances;
 }
