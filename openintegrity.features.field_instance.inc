@@ -1270,43 +1270,6 @@ function openintegrity_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-evidence-field_evidence_variable'
-  $field_instances['node-evidence-field_evidence_variable'] = array(
-    'bundle' => 'evidence',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_evidence_variable',
-    'label' => 'Evidence Variable',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 3,
-    ),
-  );
-
   // Exported field_instance: 'node-index-body'
   $field_instances['node-index-body'] = array(
     'bundle' => 'index',
@@ -1931,7 +1894,6 @@ function openintegrity_field_default_field_instances() {
   t('Evidence Date');
   t('Evidence Link');
   t('Evidence Status');
-  t('Evidence Variable');
   t('Expiration');
   t('Explanation');
   t('Home Page');

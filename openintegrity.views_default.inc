@@ -822,6 +822,7 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['view']['field'] = 'view';
   $handler->display->display_options['fields']['view']['label'] = '';
   $handler->display->display_options['fields']['view']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['view']['view'] = 'entry_evidence';
   $handler->display->display_options['fields']['view']['arguments'] = '[nid]';
   /* Sort criterion: Content: Post date */
