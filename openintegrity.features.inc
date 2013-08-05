@@ -191,13 +191,14 @@ function openintegrity_default_search_api_index() {
         "changed" : { "type" : "date" },
         "author" : { "type" : "integer", "entity_type" : "user" },
         "comment_count" : { "type" : "integer" },
+        "field_entry_type" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_entry_score" : {
           "type" : "list\\u003Cinteger\\u003E",
           "entity_type" : "field_collection_item"
         },
-        "field_entry_type" : { "type" : "integer", "entity_type" : "taxonomy_term" },
         "search_api_language" : { "type" : "string" },
         "body:value" : { "type" : "text" },
+        "field_entry_type:name" : { "type" : "list\\u003Ctext\\u003E" },
         "field_entry_score:item_id" : { "type" : "list\\u003Cinteger\\u003E" },
         "field_entry_score:revision_id" : { "type" : "list\\u003Cinteger\\u003E" },
         "field_entry_score:field_name" : { "type" : "list\\u003Cstring\\u003E" },
@@ -205,8 +206,7 @@ function openintegrity_default_search_api_index() {
         "field_entry_score:uuid" : { "type" : "list\\u003Ctext\\u003E" },
         "field_entry_score:url" : { "type" : "list\\u003Curi\\u003E" },
         "field_entry_score:field_criteria" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
-        "field_entry_score:field_index_score" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
-        "field_entry_type:name" : { "type" : "text" }
+        "field_entry_score:field_index_score" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" }
       }
     },
     "enabled" : "1",

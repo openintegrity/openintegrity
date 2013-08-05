@@ -28,7 +28,7 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_evidence';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-comment';
   $export['additional_settings__active_tab_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -229,7 +229,7 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_form_location_evidence';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['comment_form_location_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -912,10 +912,10 @@ views-exposed-form-browse-page';
   $strongarm->name = 'features_codecache';
   $strongarm->value = array(
     'openintegrity' => array(
-      'uuid_term' => '22ee0042e1f353ebd6ce76d2137d7a23',
-      'field_base' => 'b2c4e4447ec15cebe3325f93a41caa20',
-      'field_instance' => 'd29fd339c59a188521b4f6cd0fb5ec62',
-      'taxonomy' => '151bb062c8204cf2a6b99092635bff7f',
+      'uuid_term' => 'd2a18eda31e18845e170904b4e9b6bef',
+      'field_base' => '5e809623c4eafb3dcffa185bc97048fa',
+      'field_instance' => 'de114c2b4daca91968146cd62a7da6d6',
+      'taxonomy' => 'a734059ca2a4e31407381e0554695141',
       'dependencies' => 'b219fb1a87244bda252f30bf42a0f49f',
       'node' => '716f584cbc8ec453bb8b9a70c0e6a4dd',
       'cer' => '53fa2b876a05aa40c961f2008f570428',
@@ -1338,7 +1338,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'less_dir';
-  $strongarm->value = '4OJAjDGb5YWCxodjxkn-MqWvbLG7dg5PBwVCxbvQbwk';
+  $strongarm->value = 'UrPclRcmWff1jqJVx1vE-XcdDq1xQRkW-cY4_ylKhak';
   $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1738,7 +1738,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'search_api_solr_last_optimize';
-  $strongarm->value = 1375491444;
+  $strongarm->value = 1375639202;
   $export['search_api_solr_last_optimize'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1820,6 +1820,7 @@ views-exposed-form-browse-page';
     'rss' => '',
     'diff_standard' => '',
     'static_badge' => '',
+    'organisation_logo' => '',
     'token' => '',
   );
   $export['submitted_by_evidence'] = $strongarm;
@@ -1865,14 +1866,14 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1375552577;
+  $strongarm->value = 1375722340;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_email_notification';
-  $strongarm->value = 1375491444;
+  $strongarm->value = 1375639202;
   $export['update_last_email_notification'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1917,7 +1918,8 @@ views-exposed-form-browse-page';
     2 => 'rss',
     3 => 'diff_standard',
     4 => 'static_badge',
-    5 => 'token',
+    5 => 'organisation_logo',
+    6 => 'token',
   );
   $export['view_modes_evidence'] = $strongarm;
 
