@@ -361,6 +361,7 @@ function openintegrity_default_rules_configuration() {
   $items['rules_update_claim_status'] = entity_import('rules_config', '{ "rules_update_claim_status" : {
       "LABEL" : "Update Claim Status",
       "PLUGIN" : "reaction rule",
+      "ACTIVE" : false,
       "REQUIRES" : [ "rules" ],
       "ON" : [ "node_insert", "node_update" ],
       "IF" : [
@@ -387,6 +388,7 @@ function openintegrity_default_rules_configuration() {
   $items['rules_update_entry_score'] = entity_import('rules_config', '{ "rules_update_entry_score" : {
       "LABEL" : "Update Entry Score",
       "PLUGIN" : "reaction rule",
+      "ACTIVE" : false,
       "TAGS" : [ "Update" ],
       "REQUIRES" : [ "rules" ],
       "ON" : [ "node_update", "node_insert" ],
@@ -437,6 +439,7 @@ function openintegrity_default_rules_configuration() {
   $items['rules_update_subindex_score'] = entity_import('rules_config', '{ "rules_update_subindex_score" : {
       "LABEL" : "Update SubIndex Score",
       "PLUGIN" : "reaction rule",
+      "ACTIVE" : false,
       "REQUIRES" : [ "rules" ],
       "ON" : [ "node_insert" ],
       "IF" : [
