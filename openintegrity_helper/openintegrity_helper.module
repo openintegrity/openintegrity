@@ -19,10 +19,8 @@ function openintegrity_helper_help($path, $arg) {
   }
 }
 
-function openintegrity_helper_form_alter(&$form, &$form_state) {
-    if (arg(0) == 'node' && arg(1) == 'add') {
-    $form['field_test']['#access'] = 0;
-    }
-
+function openintegrity_helper_form_evidence_node_form_alter(&$form, &$form_state, $form_id) {
+  $form['field_evidence_date']['und']['#access'] = 0;
+  $form['additional_settings']['#access'] = 0;
 }
 

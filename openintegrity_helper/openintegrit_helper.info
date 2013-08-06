@@ -1,7 +1,0 @@
-;$Id$
-
-name = Open Integrity Helper
-description = Helper code for Open Integrity Index
-package = Open Integrity
-core = 7.x
-files[] = openintegrity_helper.module
