@@ -341,10 +341,10 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Opposing',
+    'name' => 'Contradicting',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 1,
     'uuid' => '580a9945-e101-4d4f-a812-987b9c4d473c',
     'vocabulary_machine_name' => 'evidence_status',
   );

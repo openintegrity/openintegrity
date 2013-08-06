@@ -222,7 +222,7 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_evidence';
-  $strongarm->value = '2';
+  $strongarm->value = '1';
   $export['comment_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -913,8 +913,8 @@ views-exposed-form-browse-page';
   $strongarm->value = array(
     'openintegrity' => array(
       'uuid_term' => '259d9fff87e2b64feb1cd87344a6b73f',
-      'field_base' => '5e809623c4eafb3dcffa185bc97048fa',
-      'field_instance' => '9fed5fe7fa427b0fbe57347f82a92dd2',
+      'field_base' => '94445d6c0919b2c6b2ee32c5be808e80',
+      'field_instance' => '904a4f6046438e338e6b7117dc056ff7',
       'taxonomy' => '151bb062c8204cf2a6b99092635bff7f',
       'dependencies' => '619e221d2fbb1cac47307c89fba8bfa6',
       'node' => '716f584cbc8ec453bb8b9a70c0e6a4dd',
@@ -922,7 +922,7 @@ views-exposed-form-browse-page';
       'search_api_index' => 'cf41bdd4a31f184c83927bbc7ad9145b',
       'search_api_server' => '95070ced1251c82ecd8a7f78f50ff7b5',
       'rules_config' => 'a511a1278291cb00468cc55257a449d6',
-      'views_view' => '3f2542cee9c8ecb634c65f7926641c5c',
+      'views_view' => '05a691f156f7bc224e3b538f13df82c1',
       'variable' => '3a73ac59f628bb155eb976fd5bf226f2',
       'filter' => 'db80d3dfc82807134cabb809175857e3',
       'user_role' => 'b6a5d1146c74b8f6323c7607a9d7e846',
@@ -1338,7 +1338,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'less_dir';
-  $strongarm->value = 'puD_vGVRDb8c40B-ZlgFxFHN71Hjn4N7t4QSobLt-z0';
+  $strongarm->value = 'X9FlYZMj4VoPCP9uhlz-TvUHf_iUDIdjwqBJV7fFdI4';
   $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1738,7 +1738,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'search_api_solr_last_optimize';
-  $strongarm->value = 1375639202;
+  $strongarm->value = 1375775702;
   $export['search_api_solr_last_optimize'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1866,14 +1866,14 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1375722340;
+  $strongarm->value = 1375789890;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_email_notification';
-  $strongarm->value = 1375639202;
+  $strongarm->value = 1375775702;
   $export['update_last_email_notification'] = $strongarm;
 
   $strongarm = new stdClass();

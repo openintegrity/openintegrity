@@ -1174,7 +1174,7 @@ function openintegrity_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -1229,7 +1229,7 @@ function openintegrity_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -1238,7 +1238,7 @@ function openintegrity_field_default_field_instances() {
     'bundle' => 'evidence',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Indicate whether the Evidence you are submitting is <strong>Supporting</strong> the claim or <strong>Contradicting</strong> the claim.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1266,7 +1266,7 @@ function openintegrity_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -1899,6 +1899,7 @@ function openintegrity_field_default_field_instances() {
   t('Home Page');
   t('Index Entry');
   t('Index Score');
+  t('Indicate whether the Evidence you are submitting is <strong>Supporting</strong> the claim or <strong>Contradicting</strong> the claim.');
   t('Logo');
   t('Please describe the tool in a few sentences.');
   t('Please provide a link to the Tool\'s home-page.');
