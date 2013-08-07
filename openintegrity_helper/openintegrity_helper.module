@@ -20,7 +20,30 @@ function openintegrity_helper_help($path, $arg) {
 }
 
 function openintegrity_helper_form_evidence_node_form_alter(&$form, &$form_state, $form_id) {
-  $form['field_evidence_date']['und']['#access'] = 0;
+//dprint_r($form);
+//  $form['field_evidence_date']['und']['#access'] = 0;
   $form['additional_settings']['#access'] = 0;
+  $form['actions']['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Submit Evidence'),
+    '#submit' => array('node_form_submit'),
+	'#ajax' => array(
+	       'wrapper' => str_replace('_','-',$form['#form_id']),
+	       'callback' => 'openintegrity_helper_forms_ajax_callback',
+	       'method' => 'replace',
+	       'effect' => 'fade'
+	   )
+  );
 }
 
+function openintegrity_helper_forms_ajax_callback($form, &$form_state){
+  	if(form_get_errors()){
+		return $form;
+	}
+	else{
+		$nd=node_load($form['nid']['#value']);
+		$ret = "Your evidence has been submitted!";
+		$ret .= drupal_render(node_view($nd));
+		return $ret;
+	}
+}
