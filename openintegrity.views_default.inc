@@ -43,10 +43,6 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Relationship: Indexed Node: Logo » The image file. */
-  $handler->display->display_options['relationships']['field_logo_file']['id'] = 'field_logo_file';
-  $handler->display->display_options['relationships']['field_logo_file']['table'] = 'search_api_index_default_node_index';
-  $handler->display->display_options['relationships']['field_logo_file']['field'] = 'field_logo_file';
   /* Field: Indexed Node: Logo */
   $handler->display->display_options['fields']['field_logo']['id'] = 'field_logo';
   $handler->display->display_options['fields']['field_logo']['table'] = 'search_api_index_default_node_index';
@@ -62,14 +58,14 @@ function openintegrity_views_default_views() {
     'image_link' => 'content',
   );
   /* Field: Indexed Node: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'search_api_index_default_node_index';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'h4';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_entity'] = 1;
+  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
+  $handler->display->display_options['fields']['title_1']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['title_1']['field'] = 'title';
+  $handler->display->display_options['fields']['title_1']['label'] = '';
+  $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title_1']['element_wrapper_type'] = 'h4';
+  $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title_1']['link_to_entity'] = 1;
   /* Field: Content: Rendered Node */
   $handler->display->display_options['fields']['rendered_entity']['id'] = 'rendered_entity';
   $handler->display->display_options['fields']['rendered_entity']['table'] = 'views_entity_node';
@@ -79,28 +75,11 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['rendered_entity']['link_to_entity'] = 1;
   $handler->display->display_options['fields']['rendered_entity']['display'] = 'view';
   $handler->display->display_options['fields']['rendered_entity']['view_mode'] = 'static_badge';
-  /* Field: Indexed Node: Title */
-  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
-  $handler->display->display_options['fields']['title_1']['table'] = 'search_api_index_default_node_index';
-  $handler->display->display_options['fields']['title_1']['field'] = 'title';
-  $handler->display->display_options['fields']['title_1']['label'] = '';
-  $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title_1']['element_wrapper_type'] = 'h4';
-  $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['title_1']['link_to_entity'] = 1;
   /* Sort criterion: Indexed Node: Date changed */
   $handler->display->display_options['sorts']['changed']['id'] = 'changed';
   $handler->display->display_options['sorts']['changed']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['sorts']['changed']['field'] = 'changed';
   $handler->display->display_options['sorts']['changed']['order'] = 'DESC';
-  /* Filter criterion: Indexed Node: Content type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'search_api_index_default_node_index';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'entry' => 'entry',
-  );
-  $handler->display->display_options['filters']['type']['group'] = 1;
   /* Filter criterion: Search: Fulltext search */
   $handler->display->display_options['filters']['search_api_views_fulltext']['id'] = 'search_api_views_fulltext';
   $handler->display->display_options['filters']['search_api_views_fulltext']['table'] = 'search_api_index_default_node_index';
@@ -128,6 +107,7 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['filters']['field_entry_type']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['filters']['field_entry_type']['field'] = 'field_entry_type';
   $handler->display->display_options['filters']['field_entry_type']['value'] = array();
+  $handler->display->display_options['filters']['field_entry_type']['group'] = 1;
   $handler->display->display_options['filters']['field_entry_type']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_entry_type']['expose']['operator_id'] = 'field_entry_type_op';
   $handler->display->display_options['filters']['field_entry_type']['expose']['operator'] = 'field_entry_type_op';
@@ -142,6 +122,14 @@ function openintegrity_views_default_views() {
     7 => 0,
   );
   $handler->display->display_options['filters']['field_entry_type']['expose']['reduce'] = 0;
+  /* Filter criterion: Indexed Node: Content type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'entry' => 'entry',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -710,7 +698,7 @@ function openintegrity_views_default_views() {
     ),
     2 => array(
       'field' => 'title_3',
-      'rendered' => 1,
+      'rendered' => 0,
       'rendered_strip' => 0,
     ),
   );
@@ -742,6 +730,7 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['field_index_score']['label'] = '';
   $handler->display->display_options['fields']['field_index_score']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_index_score']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_index_score']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
@@ -750,42 +739,20 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['title_1']['label'] = '';
   $handler->display->display_options['fields']['title_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_1']['alter']['text'] = '[title_1] [field_index_score]';
+  $handler->display->display_options['fields']['title_1']['alter']['text'] = '<div class="container accordion-header-title"><div class="criteria-score"><img src="/sites/all/themes/bootstrap/img/[field_index_score].png"/></div><h2>[title_1]</h2></div>';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['element_wrapper_type'] = 'h1';
   $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
-  /* Field: Content: SubIndex Developer Score */
-  $handler->display->display_options['fields']['field_subindex_developer_score']['id'] = 'field_subindex_developer_score';
-  $handler->display->display_options['fields']['field_subindex_developer_score']['table'] = 'field_data_field_subindex_developer_score';
-  $handler->display->display_options['fields']['field_subindex_developer_score']['field'] = 'field_subindex_developer_score';
-  $handler->display->display_options['fields']['field_subindex_developer_score']['relationship'] = 'reverse_field_subindex_index_node';
-  $handler->display->display_options['fields']['field_subindex_developer_score']['label'] = '';
-  $handler->display->display_options['fields']['field_subindex_developer_score']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_subindex_developer_score']['element_label_colon'] = FALSE;
-  /* Field: Content: SubIndex Community Score */
-  $handler->display->display_options['fields']['field_subindex_community_score']['id'] = 'field_subindex_community_score';
-  $handler->display->display_options['fields']['field_subindex_community_score']['table'] = 'field_data_field_subindex_community_score';
-  $handler->display->display_options['fields']['field_subindex_community_score']['field'] = 'field_subindex_community_score';
-  $handler->display->display_options['fields']['field_subindex_community_score']['relationship'] = 'reverse_field_subindex_index_node';
-  $handler->display->display_options['fields']['field_subindex_community_score']['label'] = '';
-  $handler->display->display_options['fields']['field_subindex_community_score']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_subindex_community_score']['element_label_colon'] = FALSE;
-  /* Field: Content: SubIndex Peer Review Score */
-  $handler->display->display_options['fields']['field_subindex_peer_review_score']['id'] = 'field_subindex_peer_review_score';
-  $handler->display->display_options['fields']['field_subindex_peer_review_score']['table'] = 'field_data_field_subindex_peer_review_score';
-  $handler->display->display_options['fields']['field_subindex_peer_review_score']['field'] = 'field_subindex_peer_review_score';
-  $handler->display->display_options['fields']['field_subindex_peer_review_score']['relationship'] = 'reverse_field_subindex_index_node';
-  $handler->display->display_options['fields']['field_subindex_peer_review_score']['label'] = '';
-  $handler->display->display_options['fields']['field_subindex_peer_review_score']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_subindex_peer_review_score']['element_label_colon'] = FALSE;
-  /* Field: Content: SubIndex Summary Score */
-  $handler->display->display_options['fields']['field_subindex_summary_score']['id'] = 'field_subindex_summary_score';
-  $handler->display->display_options['fields']['field_subindex_summary_score']['table'] = 'field_data_field_subindex_summary_score';
-  $handler->display->display_options['fields']['field_subindex_summary_score']['field'] = 'field_subindex_summary_score';
-  $handler->display->display_options['fields']['field_subindex_summary_score']['relationship'] = 'reverse_field_subindex_index_node';
-  $handler->display->display_options['fields']['field_subindex_summary_score']['label'] = '';
-  $handler->display->display_options['fields']['field_subindex_summary_score']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_subindex_summary_score']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title_1']['link_to_node'] = FALSE;
+  /* Field: Content: SubIndex Score */
+  $handler->display->display_options['fields']['field_subindex_score']['id'] = 'field_subindex_score';
+  $handler->display->display_options['fields']['field_subindex_score']['table'] = 'field_data_field_subindex_score';
+  $handler->display->display_options['fields']['field_subindex_score']['field'] = 'field_subindex_score';
+  $handler->display->display_options['fields']['field_subindex_score']['relationship'] = 'reverse_field_subindex_index_node';
+  $handler->display->display_options['fields']['field_subindex_score']['label'] = '';
+  $handler->display->display_options['fields']['field_subindex_score']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_subindex_score']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_subindex_score']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -794,11 +761,12 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['text'] = '[title] [field_subindex_developer_score] [field_subindex_community_score] [field_subindex_peer_review_score] [field_subindex_summary_score]';
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<h2><span class="container"><span class="index-trigger">+</span><span class="subcriteria-score"><img src="/sites/all/themes/bootstrap/img/[field_subindex_score]Small.png"/></span><span class="accordion-title">[title]</span><span class="subcriteria-info">x/x claims ave evidence | <span class="disputed-claim">x claim disputed</span></span></span></h2>';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
@@ -807,6 +775,50 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  /* Field: Content: Claim Status */
+  $handler->display->display_options['fields']['field_claim_status']['id'] = 'field_claim_status';
+  $handler->display->display_options['fields']['field_claim_status']['table'] = 'field_data_field_claim_status';
+  $handler->display->display_options['fields']['field_claim_status']['field'] = 'field_claim_status';
+  $handler->display->display_options['fields']['field_claim_status']['relationship'] = 'reverse_field_claim_subindex_node';
+  $handler->display->display_options['fields']['field_claim_status']['label'] = '';
+  $handler->display->display_options['fields']['field_claim_status']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_claim_status']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_claim_status']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_claim_status']['delta_offset'] = '0';
+  /* Field: Content: Claim Score */
+  $handler->display->display_options['fields']['field_claim_score']['id'] = 'field_claim_score';
+  $handler->display->display_options['fields']['field_claim_score']['table'] = 'field_data_field_claim_score';
+  $handler->display->display_options['fields']['field_claim_score']['field'] = 'field_claim_score';
+  $handler->display->display_options['fields']['field_claim_score']['relationship'] = 'reverse_field_claim_subindex_node';
+  $handler->display->display_options['fields']['field_claim_score']['label'] = '';
+  $handler->display->display_options['fields']['field_claim_score']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_claim_score']['element_label_colon'] = FALSE;
+  /* Field: Global: PHP */
+  $handler->display->display_options['fields']['php']['id'] = 'php';
+  $handler->display->display_options['fields']['php']['table'] = 'views';
+  $handler->display->display_options['fields']['php']['field'] = 'php';
+  $handler->display->display_options['fields']['php']['label'] = '';
+  $handler->display->display_options['fields']['php']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['php']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['php']['use_php_setup'] = 0;
+  $handler->display->display_options['fields']['php']['php_value'] = '$ret ="";
+$claim = node_load($data->field_claim_subindex_node_nid);
+$claim_statuses = $claim->field_claim_status[\'und\'];
+foreach ($claim_statuses as $claim_status) {
+  $term = taxonomy_term_load($claim_status[\'tid\']);
+  switch($term->name) {
+    case "Disputed":
+      $ret .= " disputed";
+      break;
+    case "Stale":
+      $ret .= " stale";
+      break;
+  }
+}
+return $ret;';
+  $handler->display->display_options['fields']['php']['php_output'] = '<?php echo $value;?>';
+  $handler->display->display_options['fields']['php']['use_php_click_sortable'] = '0';
+  $handler->display->display_options['fields']['php']['php_click_sortable'] = '';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title_3']['id'] = 'title_3';
   $handler->display->display_options['fields']['title_3']['table'] = 'node';
@@ -814,7 +826,12 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['title_3']['relationship'] = 'reverse_field_claim_subindex_node';
   $handler->display->display_options['fields']['title_3']['label'] = '';
   $handler->display->display_options['fields']['title_3']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title_3']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title_3']['alter']['text'] = '<h3 class="nested-title[php]"><span class="container"><span class="index-trigger">+</span><span class="claim-score">[field_claim_score]</span><span class="claim-status[php]">[field_claim_status]</span><span class="nested-title">[title_3]</span></span></h3>';
+  $handler->display->display_options['fields']['title_3']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title_3']['element_wrapper_type'] = 'span';
+  $handler->display->display_options['fields']['title_3']['element_wrapper_class'] = 'container';
   $handler->display->display_options['fields']['title_3']['link_to_node'] = FALSE;
   /* Field: Global: View */
   $handler->display->display_options['fields']['view']['id'] = 'view';
