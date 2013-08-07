@@ -190,26 +190,7 @@ function openintegrity_default_rules_configuration() {
                         "value" : [ "index-created" ]
                       }
                     },
-                    { "data_set" : {
-                        "data" : [ "subindex-created:field-subindex-summary-score" ],
-                        "value" : "68"
-                      }
-                    },
-                    { "data_set" : {
-                        "data" : [ "subindex-created:field-subindex-developer-score" ],
-                        "value" : "68"
-                      }
-                    },
-                    { "data_set" : {
-                        "data" : [ "subindex-created:field-subindex-community-score" ],
-                        "value" : "68"
-                      }
-                    },
-                    { "data_set" : {
-                        "data" : [ "subindex-created:field-subindex-peer-review-score" ],
-                        "value" : "68"
-                      }
-                    },
+                    { "data_set" : { "data" : [ "subindex-created:field-subindex-score" ], "value" : "68" } },
                     { "entity_save" : { "data" : [ "subindex-created" ], "immediate" : 1 } },
                     { "VIEW LOOP" : {
                         "VIEW" : "iterate_criteria",
@@ -300,6 +281,7 @@ function openintegrity_default_rules_configuration() {
   $items['rules_test_entry_index_subindex_claim'] = entity_import('rules_config', '{ "rules_test_entry_index_subindex_claim" : {
       "LABEL" : "Test Entry Index SubIndex Claim",
       "PLUGIN" : "reaction rule",
+      "ACTIVE" : false,
       "REQUIRES" : [ "views_rules", "rules" ],
       "ON" : [],
       "DO" : [
