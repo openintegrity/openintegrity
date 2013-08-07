@@ -439,7 +439,7 @@ function openintegrity_uuid_features_default_terms() {
     'name' => 'Disputed',
     'description' => NULL,
     'format' => NULL,
-    'weight' => 0,
+    'weight' => 2,
     'uuid' => '653b0dfb-3534-43d1-8071-2286d88f9e94',
     'vocabulary_machine_name' => 'claim_status',
   );
@@ -737,7 +737,7 @@ function openintegrity_uuid_features_default_terms() {
     'name' => 'Unsubstantiated',
     'description' => NULL,
     'format' => NULL,
-    'weight' => 1,
+    'weight' => 0,
     'uuid' => '9d7bd3da-2151-460d-8d35-2444ed4be07a',
     'vocabulary_machine_name' => 'claim_status',
   );
@@ -859,7 +859,7 @@ function openintegrity_uuid_features_default_terms() {
     'name' => 'Peer Reviewed',
     'description' => NULL,
     'format' => NULL,
-    'weight' => -3,
+    'weight' => 3,
     'uuid' => 'bbc24dc4-1b7c-4126-bc81-a98d54b89277',
     'vocabulary_machine_name' => 'claim_status',
   );
@@ -884,14 +884,6 @@ function openintegrity_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => 'bfe2b4ca-b289-41bf-b611-0332d4a92048',
     'vocabulary_machine_name' => 'score',
-  );
-  $terms[] = array(
-    'name' => 'Disproved',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => -1,
-    'uuid' => 'cbc87fac-aab3-425f-bc2c-9eb8c16e9e34',
-    'vocabulary_machine_name' => 'claim_status',
   );
   $terms[] = array(
     'name' => 'Privacy',
@@ -1059,10 +1051,10 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Confirmed',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => -2,
+    'name' => 'Sourced',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 1,
     'uuid' => 'ff600325-2379-47c2-9de0-6371c46cf8fa',
     'vocabulary_machine_name' => 'claim_status',
   );

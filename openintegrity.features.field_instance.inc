@@ -369,6 +369,47 @@ function openintegrity_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-claim-field_claim_score'
+  $field_instances['node-claim-field_claim_score'] = array(
+    'bundle' => 'claim',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_claim_score',
+    'label' => 'Claim Score',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-claim-field_claim_status'
   $field_instances['node-claim-field_claim_status'] = array(
     'bundle' => 'claim',
@@ -393,11 +434,12 @@ function openintegrity_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_claim_status',
     'label' => 'Claim Status',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
@@ -1576,80 +1618,6 @@ function openintegrity_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-subindex-field_subindex_community_score'
-  $field_instances['node-subindex-field_subindex_community_score'] = array(
-    'bundle' => 'subindex',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_subindex_community_score',
-    'label' => 'SubIndex Community Score',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance: 'node-subindex-field_subindex_developer_score'
-  $field_instances['node-subindex-field_subindex_developer_score'] = array(
-    'bundle' => 'subindex',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_subindex_developer_score',
-    'label' => 'SubIndex Developer Score',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 5,
-    ),
-  );
-
   // Exported field_instance: 'node-subindex-field_subindex_index'
   $field_instances['node-subindex-field_subindex_index'] = array(
     'bundle' => 'subindex',
@@ -1693,8 +1661,8 @@ function openintegrity_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-subindex-field_subindex_peer_review_score'
-  $field_instances['node-subindex-field_subindex_peer_review_score'] = array(
+  // Exported field_instance: 'node-subindex-field_subindex_score'
+  $field_instances['node-subindex-field_subindex_score'] = array(
     'bundle' => 'subindex',
     'default_value' => NULL,
     'deleted' => 0,
@@ -1705,7 +1673,7 @@ function openintegrity_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1715,8 +1683,8 @@ function openintegrity_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_subindex_peer_review_score',
-    'label' => 'SubIndex Peer Review Score',
+    'field_name' => 'field_subindex_score',
+    'label' => 'SubIndex Score',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1726,44 +1694,7 @@ function openintegrity_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance: 'node-subindex-field_subindex_summary_score'
-  $field_instances['node-subindex-field_subindex_summary_score'] = array(
-    'bundle' => 'subindex',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_subindex_summary_score',
-    'label' => 'SubIndex Summary Score',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 4,
+      'weight' => 8,
     ),
   );
 
@@ -1881,6 +1812,7 @@ function openintegrity_field_default_field_instances() {
   t('A link to the tool\'s download page (Do not directly link to the executable or download package)');
   t('Body');
   t('Category');
+  t('Claim Score');
   t('Claim Status');
   t('Claim SubIndex');
   t('Claim Type');
@@ -1905,11 +1837,8 @@ function openintegrity_field_default_field_instances() {
   t('Please provide a link to the Tool\'s home-page.');
   t('Provide a link to the evidence in the format "http://example.com/link/to/evidence"');
   t('SubCriteria');
-  t('SubIndex Community Score');
-  t('SubIndex Developer Score');
   t('SubIndex Index');
-  t('SubIndex Peer Review Score');
-  t('SubIndex Summary Score');
+  t('SubIndex Score');
   t('Submit new tools to the Open Integrity Index or search for tools that have already submitted to claim them.');
   t('Tool Details');
   t('Type');

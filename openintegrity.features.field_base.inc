@@ -73,13 +73,46 @@ function openintegrity_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_claim_status'
-  $field_bases['field_claim_status'] = array(
+  // Exported field_base: 'field_claim_score'
+  $field_bases['field_claim_score'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
+    'field_name' => 'field_claim_score',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => 'No',
+        1 => 'Yes',
+      ),
+      'allowed_values_function' => '',
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'list_integer',
+  );
+
+  // Exported field_base: 'field_claim_status'
+  $field_bases['field_claim_status'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
     'field_name' => 'field_claim_status',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'foreign keys' => array(
       'tid' => array(
         'columns' => array(
@@ -102,6 +135,7 @@ function openintegrity_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
+      'profile2_private' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
@@ -786,74 +820,6 @@ function openintegrity_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_subindex_community_score'
-  $field_bases['field_subindex_community_score'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_subindex_community_score',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'score',
-          'parent' => 0,
-        ),
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
-
-  // Exported field_base: 'field_subindex_developer_score'
-  $field_bases['field_subindex_developer_score'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_subindex_developer_score',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'score',
-          'parent' => 0,
-        ),
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
-
   // Exported field_base: 'field_subindex_index'
   $field_bases['field_subindex_index'] = array(
     'active' => 1,
@@ -897,13 +863,16 @@ function openintegrity_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_subindex_peer_review_score'
-  $field_bases['field_subindex_peer_review_score'] = array(
+  // Exported field_base: 'field_subindex_score'
+  $field_bases['field_subindex_score'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_subindex_peer_review_score',
+    'field_name' => 'field_subindex_score',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'foreign keys' => array(
       'tid' => array(
         'columns' => array(
@@ -926,40 +895,7 @@ function openintegrity_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
-
-  // Exported field_base: 'field_subindex_summary_score'
-  $field_bases['field_subindex_summary_score'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_subindex_summary_score',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'score',
-          'parent' => 0,
-        ),
-      ),
+      'profile2_private' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
