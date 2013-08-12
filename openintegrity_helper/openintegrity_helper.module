@@ -19,11 +19,22 @@ function openintegrity_helper_help($path, $arg) {
   }
 }
 
+function openintegrity_helper_form_entry_node_form_alter(&$form, &$form_state, $form_id) {
+  $form['field_entry_score']['und']['#access'] = 0;
+  // JUN: Changing the title of the buttons on the inline_entity_form (https://drupal.org/node/1880850#comment-6936976)
+  $form['field_entry_developer']['und']['actions']['ief_add']['#value'] = t('Add Developer');
+  $form['field_entry_developer']['und']['actions']['ief_add_existing']['#value'] = t('Search for a Developer');
+  $form['field_entry_developer']['und']['form']['entity_id']['#title'] = t('Developer');
+  $form['field_entry_developer']['und']['form']['actions']['ief_reference_save']['#value'] = t('Select Developer');
+  $form['field_entry_developer']['und']['form']['#title'] = t('Add Developer');
+  $form['field_entry_developer']['und']['form']['actions']['ief_add_save']['#value'] = t('Save Developer');
+}
+
 function openintegrity_helper_form_evidence_node_form_alter(&$form, &$form_state, $form_id) {
 //dprint_r($form);
 //  $form['field_evidence_date']['und']['#access'] = 0;
   $form['additional_settings']['#access'] = 0;
-  $form['actions']['submit'] = array(
+/*  $form['actions']['submit'] = array(
     '#type' => 'submit',
     '#value' => t('Submit Evidence'),
     '#submit' => array('node_form_submit'),
@@ -33,7 +44,7 @@ function openintegrity_helper_form_evidence_node_form_alter(&$form, &$form_state
 	       'method' => 'replace',
 	       'effect' => 'fade'
 	   )
-  );
+  );*/
 }
 
 function openintegrity_helper_forms_ajax_callback($form, &$form_state){
@@ -41,9 +52,26 @@ function openintegrity_helper_forms_ajax_callback($form, &$form_state){
 		return $form;
 	}
 	else{
-		$nd=node_load($form['nid']['#value']);
+		//$nd=node_load($form['nid']['#value']);
 		$ret = "Your evidence has been submitted!";
-		$ret .= drupal_render(node_view($nd));
+		//$ret .= drupal_render(node_view($nd));
 		return $ret;
 	}
+}
+
+function openintegrity_helper_form_user_register_form_alter(&$form, &$form_state) {
+// JUN: Changing the title of the buttons on the inline_entity_form (https://drupal.org/node/1880850#comment-6936976)
+ 
+//   var_dump($form['profile_developer']['field_tool']['und']['actions']);
+   switch ($form['#action']) {
+     case '/developer/register':
+//      echo dprint_r($form['profile_developer']['field_tool']['und']['form'],true);
+      $form['profile_developer']['field_tool']['und']['actions']['ief_add']['#value'] = t('Submit a new Tool');
+      $form['profile_developer']['field_tool']['und']['actions']['ief_add_existing']['#value'] = t('Search for a Tool');
+      $form['profile_developer']['field_tool']['und']['form']['entity_id']['#title'] = t('Tool name');
+      $form['profile_developer']['field_tool']['und']['form']['actions']['ief_reference_save']['#value'] = t('Select Tool');
+      $form['profile_developer']['field_tool']['und']['form']['#title'] = t('Add your Tool');
+      $form['profile_developer']['field_tool']['und']['form']['actions']['ief_add_save']['#value'] = t('Save your Tool');
+      break;
+  }
 }
