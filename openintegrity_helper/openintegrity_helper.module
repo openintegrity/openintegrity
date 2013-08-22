@@ -19,8 +19,19 @@ function openintegrity_helper_help($path, $arg) {
   }
 }
 
+function openintegrity_helper_locale($op = 'groups') {
+  switch ($op) {
+    case 'groups':
+      return array('openintegrity' => t('Open Integrity'));
+  }
+}
+
+function openintegrity_helper_form_alter(&$form, &$form_state, $form_id) {
+  $form['#attributes']['class'] = 'container';
+}
+
 function openintegrity_helper_form_entry_node_form_alter(&$form, &$form_state, $form_id) {
-  $form['field_entry_score']['und']['#access'] = 0;
+  unset($form['field_entry_score']);
   // JUN: Changing the title of the buttons on the inline_entity_form (https://drupal.org/node/1880850#comment-6936976)
   $form['field_entry_developer']['und']['actions']['ief_add']['#value'] = t('Add Developer');
   $form['field_entry_developer']['und']['actions']['ief_add_existing']['#value'] = t('Search for a Developer');
@@ -28,36 +39,69 @@ function openintegrity_helper_form_entry_node_form_alter(&$form, &$form_state, $
   $form['field_entry_developer']['und']['form']['actions']['ief_reference_save']['#value'] = t('Select Developer');
   $form['field_entry_developer']['und']['form']['#title'] = t('Add Developer');
   $form['field_entry_developer']['und']['form']['actions']['ief_add_save']['#value'] = t('Save Developer');
+//  $form['additional_settings']['#access'] = 0;
 }
 
 function openintegrity_helper_form_evidence_node_form_alter(&$form, &$form_state, $form_id) {
-//dprint_r($form);
 //  $form['field_evidence_date']['und']['#access'] = 0;
-  $form['additional_settings']['#access'] = 0;
-/*  $form['actions']['submit'] = array(
+  $form['#prefix'] = '<div class="entry-form-links"><div class="submit-evidence">Submit evidence to support/contradict this claim<span class="submit-bubble"></span></div><a href="#" class="share-claim">Share this claim</a></div>';
+
+  unset($form['menu']);
+  unset($form['options']);
+  unset($form['revision_information']);
+  unset($form['comment_settings']);
+
+  unset($form['author']);
+
+  $form['#after_build'][] = 'openintegrity_helper_after_build';
+
+  $form['actions']['submit']['#value'] = t('Submit Evidence');
+
+/*
+ * Removing Ajax for now.
+ *
+  $form['#validate'] = array();
+  $form['actions']['submit']['#submit'] = array();
+  $form['actions']['submit'] = array(
     '#type' => 'submit',
     '#value' => t('Submit Evidence'),
-    '#submit' => array('node_form_submit'),
-	'#ajax' => array(
-	       'wrapper' => str_replace('_','-',$form['#form_id']),
-	       'callback' => 'openintegrity_helper_forms_ajax_callback',
-	       'method' => 'replace',
-	       'effect' => 'fade'
-	   )
-  );*/
+    '#ajax' => array(
+        'callback' => 'openintegrity_helper_forms_ajax_callback',
+    ),
+  );
+*/
 }
 
-function openintegrity_helper_forms_ajax_callback($form, &$form_state){
-  	if(form_get_errors()){
-		return $form;
-	}
-	else{
-		//$nd=node_load($form['nid']['#value']);
-		$ret = "Your evidence has been submitted!";
-		//$ret .= drupal_render(node_view($nd));
-		return $ret;
-	}
+function openintegrity_helper_after_build ($form, &$form_state) {
+  $form['path']['#access'] = false;
+  return $form;
 }
+
+/*
+function openintegrity_helper_forms_ajax_callback($form, &$form_state){
+//echo  dprint_r($form['field_evidence_claim_id']['#value'],true);
+//  watchdog('oii', dprint_r($form_state,true));
+  module_load_include('inc', 'node', 'node.pages');
+  node_form_validate($form, $form_state);
+
+  if (!form_get_errors()) {
+    node_form_submit($form, $form_state);
+  }
+
+  $claimid = $form_state['input']['field_evidence_claim_id'];
+//  echo dprint_r($claimid,true);
+  // Get view's content
+  $content = views_embed_view('entry_evidence', 'default', $claimid);
+
+  //watchdog('oii',$content);
+  
+  $commands = array(
+    ajax_command_replace('.view-evidence-claim-' . $claimid, $content),
+  );
+
+  return array('#type' => 'ajax', '#commands' => $commands);
+}
+*/
 
 function openintegrity_helper_form_user_register_form_alter(&$form, &$form_state) {
 // JUN: Changing the title of the buttons on the inline_entity_form (https://drupal.org/node/1880850#comment-6936976)
@@ -73,5 +117,42 @@ function openintegrity_helper_form_user_register_form_alter(&$form, &$form_state
       $form['profile_developer']['field_tool']['und']['form']['#title'] = t('Add your Tool');
       $form['profile_developer']['field_tool']['und']['form']['actions']['ief_add_save']['#value'] = t('Save your Tool');
       break;
+  }
+}
+
+function openintegrity_helper_views_pre_view(&$view, &$display_id, &$args) {
+  if($view->name == "entry_evidence") {
+//    $view->display_handler->set_option('css_class', 'view-evidence-claim-' . $view->args[0]);
+
+    global $user;
+    module_load_include('inc', 'node', 'node.pages');
+    $node = (object) array('uid' => $user->uid, 'name' => (isset($user->name) ? $user->name : ''), 'type' => 'evidence', 'language' => LANGUAGE_NONE);
+    $form = drupal_get_form('evidence_node_form',$node);
+    $claim = node_load($view->args[0]);
+    $subindex = node_load($claim->field_claim_subindex['und'][0]['target_id']);
+    $index = node_load($subindex->field_subindex_index['und'][0]['target_id']);
+    $entry = node_load($index->field_index_entry['und'][0]['target_id']);
+    $form['field_evidence_claim']['und'][0]['target_id']['#value']=$entry->title . ' - ' . $claim->title . ' (' . $view->args[0] . ')';
+    $form['field_evidence_claim_id']=array(
+      '#type' => 'hidden',
+      '#name' => 'field_evidence_claim_id',
+      '#value' => $view->args[0],
+    );
+    $form['#action'] .= "#claim-" . $view->args[0];
+    $form['field_evidence_claim']['#type'] = 'hidden';
+    $form['field_evidence_claim']['#attributes']['style'][] = 'display:none;';
+
+    $output = drupal_render($form);
+
+    $options = array(
+      'id' => 'area',
+      'table' => 'views',
+      'field' => 'area',
+      'empty' => TRUE,
+      'content' => $output,
+      'format' => 'full_html',
+      'tokenize' => 0,
+    );
+    $view->set_item($display_id, 'footer', 'area', $options);
   }
 }
