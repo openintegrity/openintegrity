@@ -10,7 +10,6 @@ sites/*/private
 # Ignore default text files
 .htaccess
 robots.txt
-/CHANGELOG.txt
 /INSTALL*.txt
 /MAINTAINERS.txt
 /UPGRADE.txt

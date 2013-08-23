@@ -1,0 +1,3 @@
+Open Integrity Index 1.0.0 alpha1, 2013-08-23
+---------------------------------------------
+- Initial Release
