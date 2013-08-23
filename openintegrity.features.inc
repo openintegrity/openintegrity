@@ -21,6 +21,10 @@ function openintegrity_ctools_plugin_api() {
     return array("version" => "2");
   }
   list($module, $api) = func_get_args();
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "password_policy" && $api == "default_password_policy") {
     return array("version" => "1");
   }
@@ -35,6 +39,77 @@ function openintegrity_ctools_plugin_api() {
  */
 function openintegrity_views_api() {
   return array("api" => "3.0");
+}
+
+/**
+ * Implements hook_image_default_styles().
+ */
+function openintegrity_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: index-full.
+  $styles['index-full'] = array(
+    'name' => 'index-full',
+    'effects' => array(
+      7 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 52,
+          'height' => 52,
+          'upscale' => 0,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: logo-list.
+  $styles['logo-list'] = array(
+    'name' => 'logo-list',
+    'effects' => array(
+      4 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 26,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => -10,
+      ),
+      6 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => '',
+          'height' => 26,
+          'upscale' => 0,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  return $styles;
 }
 
 /**
@@ -68,6 +143,14 @@ function openintegrity_node_info() {
     ),
     'index' => array(
       'name' => t('Index'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Name'),
+      'help' => '',
+    ),
+    'organisation' => array(
+      'name' => t('Organisation'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
