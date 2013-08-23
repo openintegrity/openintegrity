@@ -81,7 +81,6 @@ function openintegrity_user_default_permissions() {
     'name' => 'access devel information',
     'roles' => array(
       'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
     ),
     'module' => 'devel',
   );
@@ -536,6 +535,8 @@ function openintegrity_user_default_permissions() {
     'name' => 'create evidence content',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'unverified' => 'unverified',
     ),
     'module' => 'node',
   );
@@ -756,15 +757,6 @@ function openintegrity_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: delete terms in 6.
-  $permissions['delete terms in 6'] = array(
-    'name' => 'delete terms in 6',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: delete terms in 7.
   $permissions['delete terms in 7'] = array(
     'name' => 'delete terms in 7',
@@ -936,6 +928,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit own evidence content',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -1022,15 +1015,6 @@ function openintegrity_user_default_permissions() {
   // Exported permission: edit terms in 5.
   $permissions['edit terms in 5'] = array(
     'name' => 'edit terms in 5',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: edit terms in 6.
-  $permissions['edit terms in 6'] = array(
-    'name' => 'edit terms in 6',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -1267,7 +1251,9 @@ function openintegrity_user_default_permissions() {
   // Exported permission: view any developer profile.
   $permissions['view any developer profile'] = array(
     'name' => 'view any developer profile',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'profile2',
   );
 
@@ -1281,7 +1267,9 @@ function openintegrity_user_default_permissions() {
   // Exported permission: view any peer_reviewer profile.
   $permissions['view any peer_reviewer profile'] = array(
     'name' => 'view any peer_reviewer profile',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'profile2',
   );
 
@@ -1299,7 +1287,9 @@ function openintegrity_user_default_permissions() {
   // Exported permission: view own community profile.
   $permissions['view own community profile'] = array(
     'name' => 'view own community profile',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'profile2',
   );
 

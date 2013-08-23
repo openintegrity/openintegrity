@@ -16,6 +16,8 @@ function openintegrity_taxonomy_default_vocabularies() {
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
+      'language' => 'und',
+      'i18n_mode' => 1,
     ),
     'claim_variables' => array(
       'name' => 'Claim Variables',
@@ -24,14 +26,18 @@ function openintegrity_taxonomy_default_vocabularies() {
       'hierarchy' => 1,
       'module' => 'taxonomy',
       'weight' => 0,
+      'language' => 'und',
+      'i18n_mode' => 0,
     ),
     'criteria' => array(
       'name' => 'Criteria',
       'machine_name' => 'criteria',
       'description' => 'Criteria',
-      'hierarchy' => 1,
+      'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
+      'language' => 'und',
+      'i18n_mode' => 1,
     ),
     'entry_category' => array(
       'name' => 'Entry Category',
@@ -40,6 +46,8 @@ function openintegrity_taxonomy_default_vocabularies() {
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
+      'language' => 'und',
+      'i18n_mode' => 1,
     ),
     'entry_type' => array(
       'name' => 'Entry Type',
@@ -48,6 +56,8 @@ function openintegrity_taxonomy_default_vocabularies() {
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
+      'language' => 'und',
+      'i18n_mode' => 1,
     ),
     'evidence_status' => array(
       'name' => 'Evidence Status',
@@ -56,14 +66,8 @@ function openintegrity_taxonomy_default_vocabularies() {
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
-    ),
-    'evidence_type' => array(
-      'name' => 'Evidence Type',
-      'machine_name' => 'evidence_type',
-      'description' => '',
-      'hierarchy' => 0,
-      'module' => 'taxonomy',
-      'weight' => 0,
+      'language' => 'und',
+      'i18n_mode' => 1,
     ),
     'score' => array(
       'name' => 'Score',
@@ -72,6 +76,18 @@ function openintegrity_taxonomy_default_vocabularies() {
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
+      'language' => 'und',
+      'i18n_mode' => 1,
+    ),
+    'subindex_status' => array(
+      'name' => 'SubIndex Status',
+      'machine_name' => 'subindex_status',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'language' => 'und',
+      'i18n_mode' => 1,
     ),
   );
 }

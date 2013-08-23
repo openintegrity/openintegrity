@@ -45,7 +45,7 @@ function openintegrity_node_info() {
     'claim' => array(
       'name' => t('Claim'),
       'base' => 'node_content',
-      'description' => t('Claim that a specific Entry has certain Criteria supported by or opposed by Evidence'),
+      'description' => t('A Claim made about a specific Entry (software or platform) supported by or opposed by Evidence'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
@@ -53,7 +53,7 @@ function openintegrity_node_info() {
     'entry' => array(
       'name' => t('Entry'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('A software, tool, system which provides information and communication features or services to its users.'),
       'has_title' => '1',
       'title_label' => t('Name'),
       'help' => '',
@@ -85,7 +85,7 @@ function openintegrity_node_info() {
     'subindex' => array(
       'name' => t('SubIndex'),
       'base' => 'node_content',
-      'description' => t('SubIndex scores attached to SubCriteria'),
+      'description' => '',
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

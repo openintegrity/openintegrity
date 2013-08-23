@@ -30,6 +30,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Comment',
     'required' => TRUE,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -63,6 +64,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Comment',
     'required' => TRUE,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -96,6 +98,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Comment',
     'required' => TRUE,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -129,6 +132,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Comment',
     'required' => TRUE,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -162,6 +166,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Comment',
     'required' => TRUE,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -195,6 +200,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Comment',
     'required' => TRUE,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -228,6 +234,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Comment',
     'required' => TRUE,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -267,6 +274,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Criteria',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -314,6 +322,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Index Score',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -355,6 +364,7 @@ function openintegrity_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -399,6 +409,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Claim Score',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -436,6 +447,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Claim Status',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -475,6 +487,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Claim SubIndex',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -516,6 +529,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Claim Type',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -558,12 +572,9 @@ function openintegrity_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
@@ -594,6 +605,7 @@ function openintegrity_field_default_field_instances() {
         ),
       ),
       'display_summary' => 0,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -606,6 +618,69 @@ function openintegrity_field_default_field_instances() {
       ),
       'type' => 'text_textarea_with_summary',
       'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-entry-field_dependencies'
+  $field_instances['node-entry-field_dependencies'] = array(
+    'bundle' => 'entry',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '[Experimental] Indicate which software or platform this Entry depends on to function.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'textformatter',
+        'settings' => array(
+          'textformatter_class' => 'textformatter-list',
+          'textformatter_comma_and' => 0,
+          'textformatter_comma_full_stop' => 0,
+          'textformatter_comma_override' => 0,
+          'textformatter_comma_tag' => 0,
+          'textformatter_contrib' => array(
+            'entityreference_link' => 0,
+          ),
+          'textformatter_separator_custom' => '',
+          'textformatter_separator_custom_class' => 'textformatter-separator',
+          'textformatter_separator_custom_tag' => 'span',
+          'textformatter_term_plain' => 0,
+          'textformatter_type' => 'comma',
+        ),
+        'type' => 'textformatter_list',
+        'weight' => 10,
+      ),
+      'static_badge' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_dependencies',
+    'label' => 'Dependencies',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'apply_chosen' => 0,
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 10,
     ),
   );
 
@@ -632,7 +707,7 @@ function openintegrity_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 8,
       ),
     ),
     'entity_type' => 'node',
@@ -651,6 +726,7 @@ function openintegrity_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'value',
       'title_maxlength' => 128,
@@ -692,7 +768,7 @@ function openintegrity_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'node',
@@ -700,6 +776,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Category',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -739,7 +816,7 @@ function openintegrity_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'node',
@@ -747,6 +824,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Developer',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -787,10 +865,11 @@ function openintegrity_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'custom_formatters',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'custom_formatters_static_badge',
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
@@ -798,6 +877,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Entry Score',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -814,7 +894,7 @@ function openintegrity_field_default_field_instances() {
     'bundle' => 'entry',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'We currently only support the type of tools listed. If the client software required an online service to function, please select also hosted platform.',
+    'description' => 'If the client software also requires an online service to function, please select also hosted platform.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -831,9 +911,8 @@ function openintegrity_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 2,
       ),
     ),
@@ -842,12 +921,17 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Type',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => 0,
+        'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
+        'size' => 60,
+      ),
       'type' => 'options_buttons',
       'weight' => 1,
     ),
@@ -877,7 +961,7 @@ function openintegrity_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
     ),
     'entity_type' => 'node',
@@ -907,6 +991,7 @@ function openintegrity_field_default_field_instances() {
           ),
         ),
       ),
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -944,7 +1029,7 @@ function openintegrity_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 9,
       ),
     ),
     'entity_type' => 'node',
@@ -963,6 +1048,7 @@ function openintegrity_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'value',
       'title_maxlength' => 128,
@@ -1003,14 +1089,14 @@ function openintegrity_field_default_field_instances() {
         'weight' => 5,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'image_link' => 'content',
+          'image_style' => 'index-full',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
@@ -1020,6 +1106,7 @@ function openintegrity_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -1109,6 +1196,7 @@ function openintegrity_field_default_field_instances() {
         ),
       ),
       'display_summary' => 0,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1152,6 +1240,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Evidence Claim',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1202,6 +1291,7 @@ function openintegrity_field_default_field_instances() {
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1258,6 +1348,7 @@ function openintegrity_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 0,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'none',
       'title_maxlength' => 128,
@@ -1278,9 +1369,13 @@ function openintegrity_field_default_field_instances() {
   // Exported field_instance: 'node-evidence-field_evidence_status'
   $field_instances['node-evidence-field_evidence_status'] = array(
     'bundle' => 'evidence',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'tid' => 61,
+      ),
+    ),
     'deleted' => 0,
-    'description' => 'Indicate whether the Evidence you are submitting is <strong>Supporting</strong> the claim or <strong>Contradicting</strong> the claim.',
+    'description' => 'Indicate whether the Evidence you are submitting is <strong>Supporting</strong> the claim or <strong>Negating</strong> the claim.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1301,6 +1396,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Evidence Status',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1342,6 +1438,7 @@ function openintegrity_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1382,6 +1479,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Criteria',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1431,6 +1529,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Index Entry',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1472,6 +1571,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Index Score',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1480,6 +1580,53 @@ function openintegrity_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => -1,
+    ),
+  );
+
+  // Exported field_instance: 'node-index-field_index_sum'
+  $field_instances['node-index-field_index_sum'] = array(
+    'bundle' => 'index',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_index_sum',
+    'label' => 'Index Sum',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 0,
     ),
   );
 
@@ -1513,6 +1660,7 @@ function openintegrity_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1557,6 +1705,7 @@ function openintegrity_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1597,6 +1746,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'SubCriteria',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1646,6 +1796,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'SubIndex Index',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1687,6 +1838,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'SubIndex Score',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1695,6 +1847,91 @@ function openintegrity_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-subindex-field_subindex_status'
+  $field_instances['node-subindex-field_subindex_status'] = array(
+    'bundle' => 'subindex',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'i18n_taxonomy',
+        'settings' => array(),
+        'type' => 'i18n_taxonomy_term_reference_link',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_subindex_status',
+    'label' => 'SubIndex Status',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-subindex-field_subindex_sum'
+  $field_instances['node-subindex-field_subindex_sum'] = array(
+    'bundle' => 'subindex',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_subindex_sum',
+    'label' => 'SubIndex Sum',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 10,
     ),
   );
 
@@ -1719,6 +1956,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Tool Details',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1757,6 +1995,7 @@ function openintegrity_field_default_field_instances() {
     'label' => 'Type',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1764,7 +2003,7 @@ function openintegrity_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -1796,6 +2035,7 @@ function openintegrity_field_default_field_instances() {
         'week' => 'week',
         'year' => 'year',
       ),
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1804,6 +2044,47 @@ function openintegrity_field_default_field_instances() {
       'settings' => array(),
       'type' => 'interval_default',
       'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-criteria-field_threshold'
+  $field_instances['taxonomy_term-criteria-field_threshold'] = array(
+    'bundle' => 'criteria',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_threshold',
+    'label' => 'Threshold',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max' => 6,
+      'min' => 0,
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 3,
     ),
   );
 
@@ -1818,6 +2099,7 @@ function openintegrity_field_default_field_instances() {
   t('Claim Type');
   t('Comment');
   t('Criteria');
+  t('Dependencies');
   t('Description');
   t('Developer');
   t('Download');
@@ -1829,9 +2111,11 @@ function openintegrity_field_default_field_instances() {
   t('Expiration');
   t('Explanation');
   t('Home Page');
+  t('If the client software also requires an online service to function, please select also hosted platform.');
   t('Index Entry');
   t('Index Score');
-  t('Indicate whether the Evidence you are submitting is <strong>Supporting</strong> the claim or <strong>Contradicting</strong> the claim.');
+  t('Index Sum');
+  t('Indicate whether the Evidence you are submitting is <strong>Supporting</strong> the claim or <strong>Negating</strong> the claim.');
   t('Logo');
   t('Please describe the tool in a few sentences.');
   t('Please provide a link to the Tool\'s home-page.');
@@ -1839,11 +2123,14 @@ function openintegrity_field_default_field_instances() {
   t('SubCriteria');
   t('SubIndex Index');
   t('SubIndex Score');
+  t('SubIndex Status');
+  t('SubIndex Sum');
   t('Submit new tools to the Open Integrity Index or search for tools that have already submitted to claim them.');
+  t('Threshold');
   t('Tool Details');
   t('Type');
   t('Version');
-  t('We currently only support the type of tools listed. If the client software required an online service to function, please select also hosted platform.');
+  t('[Experimental] Indicate which software or platform this Entry depends on to function.');
 
   return $field_instances;
 }
