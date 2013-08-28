@@ -1182,8 +1182,8 @@ views-exposed-form-browse-page';
   $strongarm->value = array(
     'openintegrity' => array(
       'uuid_term' => 'c42dcb9f925ddd9e866e939b55cace66',
-      'field_base' => 'dd191cab271e11cd77bcd6a832fd3919',
-      'field_instance' => 'da163eeb03ae554ef78250583078eb6c',
+      'field_base' => '35395c813092ffbc9ae4b5b82bca5899',
+      'field_instance' => '3dfea482279119046bfc9e139cd38253',
       'taxonomy' => 'd5f8653bcfd22754cb24635a234c907a',
       'dependencies' => '3d546b32522187b619881177a511682d',
       'node' => '96523e4ef5eb0d97080c03ddb17e423d',
@@ -1194,7 +1194,7 @@ views-exposed-form-browse-page';
       'views_view' => '1527f95b2d537ec9a0e758a82565202e',
       'variable' => 'd32b1e57d50f88d6b8acd57560ab6098',
       'filter' => '441b0a98276c787c23b78630e908a3fe',
-      'user_role' => 'b6a5d1146c74b8f6323c7607a9d7e846',
+      'user_role' => '20d550b4f252fb40fa5984b411570bc0',
       'user_permission' => '6edc6e4b07042520c9dfa3bee374a4eb',
       'context' => '98847c1ecdaacb6bff592951b6308aae',
       'formatters' => '29a2b3f73d5fd8e91604155af155d49f',
@@ -1777,7 +1777,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'less_dir';
-  $strongarm->value = 'VIH-vr6pE8QgusOzf7Bkk364loRkEfOvEVTAoT7wRC8';
+  $strongarm->value = 'j1rTzpW1_Cj-jm7STTi5PSSZhng3IK9QWgnpdnnV5Ms';
   $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();
