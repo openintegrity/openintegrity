@@ -976,6 +976,15 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['field_index_score']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_index_score']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_index_score']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Field: Criteria */
+  $handler->display->display_options['fields']['field_criteria']['id'] = 'field_criteria';
+  $handler->display->display_options['fields']['field_criteria']['table'] = 'field_data_field_criteria';
+  $handler->display->display_options['fields']['field_criteria']['field'] = 'field_criteria';
+  $handler->display->display_options['fields']['field_criteria']['relationship'] = 'reverse_field_index_entry_node';
+  $handler->display->display_options['fields']['field_criteria']['label'] = '';
+  $handler->display->display_options['fields']['field_criteria']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_criteria']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_criteria']['type'] = 'i18n_taxonomy_term_reference_plain';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
@@ -984,7 +993,7 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['title_1']['label'] = '';
   $handler->display->display_options['fields']['title_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_1']['alter']['text'] = '<div class="container accordion-header-title"><div class="criteria-score"><img src="/sites/all/themes/bootstrap/img/[field_index_score].png"/></div><h2>[title_1]</h2></div>';
+  $handler->display->display_options['fields']['title_1']['alter']['text'] = '<div class="container accordion-header-title"><div class="criteria-score"><img src="/sites/all/themes/bootstrap/img/[field_index_score].png"/></div><h2>[field_criteria]</h2></div>';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['element_wrapper_type'] = 'h1';
   $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
@@ -1033,6 +1042,15 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['nid_1']['label'] = '';
   $handler->display->display_options['fields']['nid_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid_1']['element_label_colon'] = FALSE;
+  /* Field: Content: SubCriteria */
+  $handler->display->display_options['fields']['field_subcriteria']['id'] = 'field_subcriteria';
+  $handler->display->display_options['fields']['field_subcriteria']['table'] = 'field_data_field_subcriteria';
+  $handler->display->display_options['fields']['field_subcriteria']['field'] = 'field_subcriteria';
+  $handler->display->display_options['fields']['field_subcriteria']['relationship'] = 'reverse_field_subindex_index_node';
+  $handler->display->display_options['fields']['field_subcriteria']['label'] = '';
+  $handler->display->display_options['fields']['field_subcriteria']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_subcriteria']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_subcriteria']['type'] = 'i18n_taxonomy_term_reference_plain';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -1041,7 +1059,7 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['text'] = '<h2 id="subindex-[nid_1]" class="container"><span class="container span-block"><span class="index-trigger">&#94;</span><span class="subcriteria-score"><img src="/sites/all/themes/bootstrap/img/[field_subindex_score]Small.png"/></span><span class="accordion-title">[title]</span><span class="subcriteria-info">[field_subindex_sum][field_subindex_status]</span></span></h2>';
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<h2 id="subindex-[nid_1]" class="container"><span class="container span-block"><span class="index-trigger">&#94;</span><span class="subcriteria-score"><img src="/sites/all/themes/bootstrap/img/[field_subindex_score]Small.png"/></span><span class="accordion-title">[field_subcriteria]</span><span class="subcriteria-info">[field_subindex_sum][field_subindex_status]</span></span></h2>';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
@@ -1102,6 +1120,15 @@ return $ret;';
   $handler->display->display_options['fields']['php']['php_output'] = '<?php echo $value;?>';
   $handler->display->display_options['fields']['php']['use_php_click_sortable'] = '0';
   $handler->display->display_options['fields']['php']['php_click_sortable'] = '';
+  /* Field: Content: Claim Type */
+  $handler->display->display_options['fields']['field_claim_type']['id'] = 'field_claim_type';
+  $handler->display->display_options['fields']['field_claim_type']['table'] = 'field_data_field_claim_type';
+  $handler->display->display_options['fields']['field_claim_type']['field'] = 'field_claim_type';
+  $handler->display->display_options['fields']['field_claim_type']['relationship'] = 'reverse_field_claim_subindex_node';
+  $handler->display->display_options['fields']['field_claim_type']['label'] = '';
+  $handler->display->display_options['fields']['field_claim_type']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_claim_type']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_claim_type']['type'] = 'i18n_taxonomy_term_reference_plain';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title_3']['id'] = 'title_3';
   $handler->display->display_options['fields']['title_3']['table'] = 'node';
@@ -1110,7 +1137,7 @@ return $ret;';
   $handler->display->display_options['fields']['title_3']['label'] = '';
   $handler->display->display_options['fields']['title_3']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_3']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title_3']['alter']['text'] = '<h3 id="claim-[nid]" class="nested-title[php]"><span class="container span-block"><span class="index-trigger">&#94;</span><span class="claim-score"><img src="/sites/all/themes/bootstrap/img/[field_claim_score]Small.png"/></span><span class="claim-status[php]">[field_claim_status]</span><span class="nested-title">[title_3]</span></span></h3>';
+  $handler->display->display_options['fields']['title_3']['alter']['text'] = '<h3 id="claim-[nid]" class="nested-title[php]"><span class="container span-block"><span class="index-trigger">&#94;</span><span class="claim-score"><img src="/sites/all/themes/bootstrap/img/[field_claim_score]Small.png"/></span><span class="claim-status[php]">[field_claim_status]</span><span class="nested-title">[field_claim_type]</span></span></h3>';
   $handler->display->display_options['fields']['title_3']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title_3']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_3']['element_wrapper_type'] = 'span';
@@ -1203,12 +1230,12 @@ return $ret;';
     t('SubIndex'),
     t('Claim'),
     t('Claim Type Criteria'),
-    t('<div class="container accordion-header-title"><div class="criteria-score"><img src="/sites/all/themes/bootstrap/img/[field_index_score].png"/></div><h2>[title_1]</h2></div>'),
+    t('<div class="container accordion-header-title"><div class="criteria-score"><img src="/sites/all/themes/bootstrap/img/[field_index_score].png"/></div><h2>[field_criteria]</h2></div>'),
     t('[field_subindex_sum] supported claim(s)'),
     t('No supported claims'),
     t(' | <span class="[field_subindex_status]-claim">[field_subindex_status] claims</span>'),
-    t('<h2 id="subindex-[nid_1]" class="container"><span class="container span-block"><span class="index-trigger">&#94;</span><span class="subcriteria-score"><img src="/sites/all/themes/bootstrap/img/[field_subindex_score]Small.png"/></span><span class="accordion-title">[title]</span><span class="subcriteria-info">[field_subindex_sum][field_subindex_status]</span></span></h2>'),
-    t('<h3 id="claim-[nid]" class="nested-title[php]"><span class="container span-block"><span class="index-trigger">&#94;</span><span class="claim-score"><img src="/sites/all/themes/bootstrap/img/[field_claim_score]Small.png"/></span><span class="claim-status[php]">[field_claim_status]</span><span class="nested-title">[title_3]</span></span></h3>'),
+    t('<h2 id="subindex-[nid_1]" class="container"><span class="container span-block"><span class="index-trigger">&#94;</span><span class="subcriteria-score"><img src="/sites/all/themes/bootstrap/img/[field_subindex_score]Small.png"/></span><span class="accordion-title">[field_subcriteria]</span><span class="subcriteria-info">[field_subindex_sum][field_subindex_status]</span></span></h2>'),
+    t('<h3 id="claim-[nid]" class="nested-title[php]"><span class="container span-block"><span class="index-trigger">&#94;</span><span class="claim-score"><img src="/sites/all/themes/bootstrap/img/[field_claim_score]Small.png"/></span><span class="claim-status[php]">[field_claim_status]</span><span class="nested-title">[field_claim_type]</span></span></h3>'),
     t('All'),
     t('Entry Full Report'),
   );
