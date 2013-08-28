@@ -17,9 +17,7 @@ function openintegrity_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'About the Index',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'alter' => TRUE,
     ),
     'module' => 'menu',

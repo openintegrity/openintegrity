@@ -44,20 +44,8 @@ function openintegrity_filter_default_formats() {
     'status' => 1,
     'weight' => 10,
     'filters' => array(
-      'filter_html_escape' => array(
+      'filter_markdown' => array(
         'weight' => 0,
-        'status' => 1,
-        'settings' => array(),
-      ),
-      'filter_url' => array(
-        'weight' => 1,
-        'status' => 1,
-        'settings' => array(
-          'filter_url_length' => 72,
-        ),
-      ),
-      'filter_autop' => array(
-        'weight' => 2,
         'status' => 1,
         'settings' => array(),
       ),

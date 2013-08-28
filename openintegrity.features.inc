@@ -44,6 +44,7 @@ function openintegrity_image_default_styles() {
   // Exported image style: index-full.
   $styles['index-full'] = array(
     'name' => 'index-full',
+    'label' => 'index-full',
     'effects' => array(
       7 => array(
         'label' => 'Scale',
@@ -67,6 +68,7 @@ function openintegrity_image_default_styles() {
   // Exported image style: logo-list.
   $styles['logo-list'] = array(
     'name' => 'logo-list',
+    'label' => 'logo-list',
     'effects' => array(
       4 => array(
         'label' => 'Scale',

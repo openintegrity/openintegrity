@@ -37,7 +37,7 @@ function openintegrity_user_default_roles() {
   // Exported role: unverified.
   $roles['unverified'] = array(
     'name' => 'unverified',
-    'weight' => 6,
+    'weight' => 7,
   );
 
   return $roles;
