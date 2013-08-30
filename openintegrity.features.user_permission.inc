@@ -53,6 +53,7 @@ function openintegrity_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -62,6 +63,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'access content overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -326,6 +328,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -507,6 +510,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'create blog content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -516,6 +520,8 @@ function openintegrity_user_default_permissions() {
     'name' => 'create claim content',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -526,6 +532,8 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+      'developer' => 'developer',
     ),
     'module' => 'node',
   );
@@ -535,6 +543,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'create evidence content',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
       'unverified' => 'unverified',
     ),
@@ -555,6 +564,8 @@ function openintegrity_user_default_permissions() {
     'name' => 'create index content',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -564,6 +575,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'create page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -573,6 +585,8 @@ function openintegrity_user_default_permissions() {
     'name' => 'create subindex content',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -591,6 +605,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'delete any blog content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -636,6 +651,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'delete any page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -654,6 +670,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'delete own blog content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -681,6 +698,8 @@ function openintegrity_user_default_permissions() {
     'name' => 'delete own evidence content',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'developer' => 'developer',
     ),
     'module' => 'node',
   );
@@ -699,6 +718,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'delete own page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -717,6 +737,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'delete revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -778,6 +799,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit any blog content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -787,6 +809,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit any claim content',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'node',
   );
@@ -828,6 +851,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit any index content',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'node',
   );
@@ -844,6 +868,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit any page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -860,6 +885,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit any subindex content',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'node',
   );
@@ -878,6 +904,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit own blog content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -887,6 +914,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit own claim content',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'node',
   );
@@ -910,7 +938,9 @@ function openintegrity_user_default_permissions() {
   // Exported permission: 'edit own developer profile'.
   $permissions['edit own developer profile'] = array(
     'name' => 'edit own developer profile',
-    'roles' => array(),
+    'roles' => array(
+      'developer' => 'developer',
+    ),
     'module' => 'profile2',
   );
 
@@ -919,6 +949,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit own entry content',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'node',
   );
@@ -947,6 +978,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit own index content',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'node',
   );
@@ -965,6 +997,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit own page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -981,6 +1014,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit own subindex content',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'node',
   );
@@ -1097,6 +1131,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'revert revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1296,7 +1331,9 @@ function openintegrity_user_default_permissions() {
   // Exported permission: 'view own developer profile'.
   $permissions['view own developer profile'] = array(
     'name' => 'view own developer profile',
-    'roles' => array(),
+    'roles' => array(
+      'developer' => 'developer',
+    ),
     'module' => 'profile2',
   );
 
@@ -1334,6 +1371,7 @@ function openintegrity_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1343,6 +1381,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'view revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
