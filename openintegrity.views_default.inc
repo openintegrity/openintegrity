@@ -111,19 +111,6 @@ function openintegrity_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'alternatives';
-  $translatables['alternatives'] = array(
-    t('Master'),
-    t('Alternatives'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('no alternatives'),
-    t('All'),
-    t('Page'),
-  );
   $export['alternatives'] = $view;
 
   $view = new view();
@@ -281,25 +268,6 @@ function openintegrity_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'browse';
-  $translatables['browse'] = array(
-    t('Master'),
-    t('Home'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Browse tools'),
-    t('Page'),
-  );
   $export['browse'] = $view;
 
   $view = new view();
@@ -369,24 +337,6 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['filters']['status_node']['value'] = 1;
   $handler->display->display_options['filters']['status_node']['group'] = 1;
   $handler->display->display_options['filters']['status_node']['expose']['operator'] = FALSE;
-  $translatables['claim_comments'] = array(
-    t('Master'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Content'),
-    t('All'),
-  );
   $export['claim_comments'] = $view;
 
   $view = new view();
@@ -847,33 +797,6 @@ function openintegrity_views_default_views() {
       'name' => 'claim',
     ),
   );
-  $translatables['create_entry_index_subindex_claim'] = array(
-    t('Master'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Parent'),
-    t('Grand Parent'),
-    t('Name'),
-    t('PHP'),
-    t('Term ID'),
-    t('.'),
-    t(','),
-    t('Index'),
-    t('SubIndex'),
-    t('All'),
-    t('Claim'),
-  );
   $export['create_entry_index_subindex_claim'] = $view;
 
   $view = new view();
@@ -890,29 +813,7 @@ function openintegrity_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'views_content_cache';
-  $handler->display->display_options['cache']['results_min_lifespan'] = '-1';
-  $handler->display->display_options['cache']['results_max_lifespan'] = '21600';
-  $handler->display->display_options['cache']['output_min_lifespan'] = '-1';
-  $handler->display->display_options['cache']['output_max_lifespan'] = '21600';
-  $handler->display->display_options['cache']['keys'] = array(
-    'comment' => array(
-      'changed' => 0,
-    ),
-    'node' => array(
-      'claim' => 'claim',
-      'entry' => 'entry',
-      'evidence' => 'evidence',
-      'subindex' => 'subindex',
-      'blog' => 0,
-      'index' => 0,
-      'organisation' => 0,
-      'page' => 0,
-    ),
-    'node_only' => array(
-      'node_changed' => 'node_changed',
-    ),
-  );
+  $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
@@ -1202,13 +1103,6 @@ return $ret;';
   $handler->display->display_options['arguments']['field_entry_type_tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['field_entry_type_tid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['field_entry_type_tid']['summary_options']['items_per_page'] = '25';
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
 
   /* Display: Entry Full Report */
   $handler = $view->new_display('entity_view', 'Entry Full Report', 'entity_view_1');
@@ -1218,27 +1112,6 @@ return $ret;';
     0 => 'entry',
   );
   $handler->display->display_options['show_title'] = 1;
-  $translatables['entry'] = array(
-    t('Master'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Index'),
-    t('SubIndex'),
-    t('Claim'),
-    t('Claim Type Criteria'),
-    t('<div class="container accordion-header-title"><div class="criteria-score"><img src="/sites/all/themes/bootstrap/img/[field_index_score].png"/></div><h2>[field_criteria]</h2></div>'),
-    t('[field_subindex_sum] supported claim(s)'),
-    t('No supported claims'),
-    t(' | <span class="[field_subindex_status]-claim">[field_subindex_status] claims</span>'),
-    t('<h2 id="subindex-[nid_1]" class="container"><span class="container span-block"><span class="index-trigger">&#94;</span><span class="subcriteria-score"><img src="/sites/all/themes/bootstrap/img/[field_subindex_score]Small.png"/></span><span class="accordion-title">[field_subcriteria]</span><span class="subcriteria-info">[field_subindex_sum][field_subindex_status]</span></span></h2>'),
-    t('<h3 id="claim-[nid]" class="nested-title[php]"><span class="container span-block"><span class="index-trigger">&#94;</span><span class="claim-score"><img src="/sites/all/themes/bootstrap/img/[field_claim_score]Small.png"/></span><span class="claim-status[php]">[field_claim_status]</span><span class="nested-title">[field_claim_type]</span></span></h3>'),
-    t('All'),
-    t('Entry Full Report'),
-  );
   $export['entry'] = $view;
 
   $view = new view();
@@ -1338,18 +1211,6 @@ date Desc|Newest first',
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'evidence' => 'evidence',
-  );
-  $translatables['entry_evidence'] = array(
-    t('Master'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('<h4>Evidences</h4>'),
-    t('date'),
-    t('All'),
   );
   $export['entry_evidence'] = $view;
 
@@ -2689,33 +2550,6 @@ date Desc|Newest first',
   $handler->display->display_options['menu']['name'] = 'menu-open-integrity-admin';
   $handler->display->display_options['menu']['context'] = 1;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
-  $translatables['entry_utility'] = array(
-    t('Master'),
-    t('Utility'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('SubIndex Index Entry'),
-    t('Delete Index'),
-    t('Type'),
-    t('Title'),
-    t('Evidence'),
-    t('Claim'),
-    t('Claim SubIndex'),
-    t('Claim SubIndex Index'),
-    t('Claim SubIndex Index Entry'),
-    t('SubIndex'),
-    t('Index'),
-    t('Entry'),
-    t('Delete Claim'),
-    t('SubIndex Index'),
-    t('Delete SubIndex'),
-    t('Index Entry'),
-    t('Delete Entry'),
-  );
   $export['entry_utility'] = $view;
 
   $view = new view();
@@ -3092,33 +2926,6 @@ date Desc|Newest first',
       'name' => 'claim',
     ),
   );
-  $translatables['iterate_criteria'] = array(
-    t('Master'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Parent'),
-    t('Grand Parent'),
-    t('Name'),
-    t('PHP'),
-    t('Term ID'),
-    t('.'),
-    t(','),
-    t('Criteria'),
-    t('SubCriteria'),
-    t('All'),
-    t('Claim'),
-  );
   $export['iterate_criteria'] = $view;
 
   $view = new view();
@@ -3419,30 +3226,6 @@ date Desc|Newest first',
       'label' => '(SubCriteria) Field: Type',
       'name' => 'field_entry_type',
     ),
-  );
-  $translatables['iterate_entries'] = array(
-    t('Master'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Entry Index'),
-    t('Nid'),
-    t('All'),
-    t('All Entries'),
-    t('Index SubIndex'),
-    t('Index Subindex'),
-    t('SubIndex Claim Instances'),
-    t('SubIndex Claim'),
   );
   $export['iterate_entries'] = $view;
 
@@ -3802,32 +3585,6 @@ date Desc|Newest first',
       'name' => 'field_entry_type',
     ),
   );
-  $translatables['iterate_entries_for_scoring'] = array(
-    t('Master'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Entry Index'),
-    t('Nid'),
-    t('All'),
-    t('All Entries'),
-    t('Index SubIndex'),
-    t('Index Subindex'),
-    t('SubIndex SubCriteria'),
-    t('SubIndex Claim Instances'),
-    t('SubIndex Claim'),
-    t('Claim Type Criteria'),
-  );
   $export['iterate_entries_for_scoring'] = $view;
 
   $view = new view();
@@ -4124,33 +3881,6 @@ date Desc|Newest first',
   $handler->display->display_options['fields']['name']['element_class'] = 'evidence [rid]';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['element_default_classes'] = FALSE;
-  $translatables['recent_activity'] = array(
-    t('Master'),
-    t('Recent Activity'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Evidence Claim'),
-    t('Claim SubIndex'),
-    t('SubIndex Index'),
-    t('Index Entry'),
-    t('author'),
-    t('Profile'),
-    t('<a href="[path]"><span class="[field_evidence_status]">[field_evidence_status] evidence</span></a> submitted [created] by [name] &#91;[rid]&#93;'),
-    t('Nid'),
-    t('Block'),
-    t('<a href="node/[nid]"><span class="[field_evidence_status]">[field_evidence_status] evidence</span></a> submitted [created] by [name] &#91;[rid]&#93;'),
-  );
   $export['recent_activity'] = $view;
 
   $view = new view();
@@ -4243,26 +3973,6 @@ date Desc|Newest first',
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'entityreference_fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $translatables['select_claim'] = array(
-    t('Master'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Claim Subindex'),
-    t('Subindex Index'),
-    t('Index Entry'),
-    t('Entity Reference'),
-  );
   $export['select_claim'] = $view;
 
   return $export;
