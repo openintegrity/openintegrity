@@ -9,15 +9,6 @@
  */
 function openintegrity_translations_defaults() {
   $translations = array();
-  $translations['ar:blocks'][7444] = array(
-    'lid' => 7444,
-    'source' => '<ul class="social-links"><li><a href="http://twitter/openintegrity">Twitter</a></li><li class="facebook"><a href="http://facebook.com/openintegrity">Facebook</a></li><li class="google"><a href="http://plus.google.com/openintegrity">Google+</a></li></ul>',
-    'context' => 'block:1:body',
-    'location' => 'blocks:block:1:body',
-    'translation' => '<ul class="social-links"><li><a href="http://twitter/openintegrity">تويتر</a></li><li class="facebook"><a href="http://facebook.com/openintegrity">فيسبوك</a></li><li class="google"><a href="http://plus.google.com/openintegrity">Google+</a></li></ul>',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['ar:blocks'][3149] = array(
     'lid' => 3149,
     'source' => 'HOW DOES THE INDEX WORK AND HOW CAN YOU CONTRIBUTE?',
@@ -372,6 +363,15 @@ PRIVACY EDUCATION<br/>
     'context' => '',
     'location' => '',
     'translation' => 'مُرَقَّى للصفحة الرئيسية',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1026] = array(
+    'lid' => 1026,
+    'source' => '%time ago',
+    'context' => '',
+    'location' => '',
+    'translation' => 'منذ %time',
     'plid' => 0,
     'plural' => 0,
   );
@@ -1671,6 +1671,15 @@ PRIVACY EDUCATION<br/>
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1802] = array(
+    'lid' => 1802,
+    'source' => 'text',
+    'context' => '',
+    'location' => '',
+    'translation' => 'نص',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3594] = array(
     'lid' => 3594,
     'source' => 'Method',
@@ -2073,6 +2082,15 @@ PRIVACY EDUCATION<br/>
     'context' => '',
     'location' => '; misc/collapse.js',
     'translation' => 'إخفاء',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][3085] = array(
+    'lid' => 3085,
+    'source' => 'Administer rule configurations',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تسيير إعدادات قاعدة',
     'plid' => 0,
     'plural' => 0,
   );
@@ -2777,6 +2795,15 @@ PRIVACY EDUCATION<br/>
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1554] = array(
+    'lid' => 1554,
+    'source' => 'Value',
+    'context' => '',
+    'location' => '',
+    'translation' => 'القيمة',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][2066] = array(
     'lid' => 2066,
     'source' => 'Open',
@@ -3060,7 +3087,7 @@ PRIVACY EDUCATION<br/>
     'lid' => 276,
     'source' => 'Edit',
     'context' => '',
-    'location' => '; misc/machine-name.js; sites/all/modules/features/features.js',
+    'location' => '; misc/machine-name.js',
     'translation' => 'تحرير',
     'plid' => 0,
     'plural' => 0,
@@ -3893,6 +3920,15 @@ PRIVACY EDUCATION<br/>
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1817] = array(
+    'lid' => 1817,
+    'source' => 'Condition set (OR)',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مجموعة شروط (أو)',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][2073] = array(
     'lid' => 2073,
     'source' => 'Users cannot post comments.',
@@ -4061,6 +4097,15 @@ PRIVACY EDUCATION<br/>
     'context' => '',
     'location' => '',
     'translation' => 'التاريخ الذي تم به آخر تحديث للتعليق.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1818] = array(
+    'lid' => 1818,
+    'source' => 'Condition set (AND)',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مجموعة شروط (و)',
     'plid' => 0,
     'plural' => 0,
   );
@@ -4244,6 +4289,15 @@ PRIVACY EDUCATION<br/>
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1819] = array(
+    'lid' => 1819,
+    'source' => 'Action set',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مجموعة إجراءات',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3611] = array(
     'lid' => 3611,
     'source' => 'Singapore',
@@ -4397,6 +4451,15 @@ PRIVACY EDUCATION<br/>
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1820] = array(
+    'lid' => 1820,
+    'source' => 'Rule',
+    'context' => '',
+    'location' => '',
+    'translation' => 'قاعدة',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][2076] = array(
     'lid' => 2076,
     'source' => 'Provide a menu link',
@@ -4547,6 +4610,15 @@ PRIVACY EDUCATION<br/>
     'context' => '',
     'location' => '',
     'translation' => 'سرد الروابط',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1821] = array(
+    'lid' => 1821,
+    'source' => 'Rule set',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مجموعة قواعد',
     'plid' => 0,
     'plural' => 0,
   );
@@ -4826,6 +4898,24 @@ PRIVACY EDUCATION<br/>
     'context' => '',
     'location' => '',
     'translation' => '@count إجراء يتيم (%orphans) موجود في جدول الإجراءات. !link',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][31] = array(
+    'lid' => 31,
+    'source' => 'Normal',
+    'context' => '',
+    'location' => '',
+    'translation' => 'طبيعي',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][543] = array(
+    'lid' => 543,
+    'source' => 'Log message',
+    'context' => '',
+    'location' => '',
+    'translation' => 'رسالة السجل',
     'plid' => 0,
     'plural' => 0,
   );
@@ -5630,6 +5720,15 @@ PRIVACY EDUCATION<br/>
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1829] = array(
+    'lid' => 1829,
+    'source' => 'Data comparison',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مقارنة بيانات',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3365] = array(
     'lid' => 3365,
     'source' => 'Request new password via e-mail.',
@@ -6014,6 +6113,33 @@ PRIVACY EDUCATION<br/>
     'context' => '',
     'location' => '',
     'translation' => 'يحتوي %archive_file على إصدار %name غير متوافق مع دروبال !version',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1064] = array(
+    'lid' => 1064,
+    'source' => 'Entities',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الكيانات',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1576] = array(
+    'lid' => 1576,
+    'source' => 'The name of the menu.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'اسم القائمة.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1832] = array(
+    'lid' => 1832,
+    'source' => 'Operator',
+    'context' => '',
+    'location' => '',
+    'translation' => 'عملية',
     'plid' => 0,
     'plural' => 0,
   );
@@ -6746,6 +6872,15 @@ PRIVACY EDUCATION<br/>
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][813] = array(
+    'lid' => 813,
+    'source' => 'Rules',
+    'context' => '',
+    'location' => '',
+    'translation' => 'Rules',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1069] = array(
     'lid' => 1069,
     'source' => 'Development tools.',
@@ -7205,6 +7340,15 @@ PRIVACY EDUCATION<br/>
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][7471] = array(
+    'lid' => 7471,
+    'source' => 'Filters',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مرشحات',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][304] = array(
     'lid' => 304,
     'source' => 'Summary',
@@ -7220,6 +7364,15 @@ PRIVACY EDUCATION<br/>
     'context' => '',
     'location' => '',
     'translation' => 'وضع الصيانة',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1840] = array(
+    'lid' => 1840,
+    'source' => 'Item',
+    'context' => '',
+    'location' => '',
+    'translation' => 'عنصر',
     'plid' => 0,
     'plural' => 0,
   );
@@ -7697,6 +7850,15 @@ PRIVACY EDUCATION<br/>
     'context' => '',
     'location' => '',
     'translation' => 'إخفاق محاولة الاتصال بالخادم حيث أعطى الرسالة التالية: !message للحصول على تعليمات إضافية حول تثبيت أو تحديث الكود على الخادك الخاص بك، راجع <a href="@handbook_url">الدليل</a>.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][7474] = array(
+    'lid' => 7474,
+    'source' => 'Other',
+    'context' => '',
+    'location' => '',
+    'translation' => 'آخر',
     'plid' => 0,
     'plural' => 0,
   );
@@ -8291,6 +8453,15 @@ PRIVACY EDUCATION<br/>
     'context' => '',
     'location' => '',
     'translation' => 'اسم نوع المحتوى',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1847] = array(
+    'lid' => 1847,
+    'source' => 'Entity is new',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الكيان جديد',
     'plid' => 0,
     'plural' => 0,
   );
@@ -9182,6 +9353,15 @@ PRIVACY EDUCATION<br/>
     'context' => '',
     'location' => '',
     'translation' => 'هذا الصندوق سيظهر فقط في حال <a href="@languages">وجود لغتين مفعلتين على اﻷقل</a> و <a href="@configuration">مفاوض اللغة</a> هو إما <em>URL</em> أو <em>Session</em>.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][317] = array(
+    'lid' => 317,
+    'source' => 'Node ID',
+    'context' => '',
+    'location' => '',
+    'translation' => 'معرف العقدة',
     'plid' => 0,
     'plural' => 0,
   );
@@ -10476,7 +10656,7 @@ PRIVACY EDUCATION<br/>
     'lid' => 3141,
     'source' => 'Not restricted',
     'context' => '',
-    'location' => '; sites/all/modules/i18n/i18n_block/i18n_block.js; modules/block/block.js',
+    'location' => '; modules/block/block.js; sites/all/modules/i18n/i18n_block/i18n_block.js',
     'translation' => 'غير مقيد',
     'plid' => 0,
     'plural' => 0,
@@ -12181,6 +12361,15 @@ Unless you know what you are doing, it is highly recommended that you prefix the
     'context' => '',
     'location' => '',
     'translation' => 'لا يمكن نسخ الملف %file لأنه غير موجود.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][79] = array(
+    'lid' => 79,
+    'source' => 'Depth',
+    'context' => '',
+    'location' => '',
+    'translation' => 'العمق',
     'plid' => 0,
     'plural' => 0,
   );
@@ -14044,6 +14233,15 @@ Unless you know what you are doing, it is highly recommended that you prefix the
     'context' => '',
     'location' => '',
     'translation' => 'وحدات البحث النشط',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][90] = array(
+    'lid' => 90,
+    'source' => 'author',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مؤلف',
     'plid' => 0,
     'plural' => 0,
   );
@@ -16863,6 +17061,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][7530] = array(
+    'lid' => 7530,
+    'source' => 'Rearrange',
+    'context' => '',
+    'location' => '',
+    'translation' => 'أعد الترتيب',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1131] = array(
     'lid' => 1131,
     'source' => 'Settings for the site\'s default time zone and country.',
@@ -17007,6 +17214,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10603] = array(
+    'lid' => 10603,
+    'source' => 'title',
+    'context' => '',
+    'location' => '',
+    'translation' => 'عنوان',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][364] = array(
     'lid' => 364,
     'source' => 'The optional description of the taxonomy vocabulary.',
@@ -17148,6 +17364,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'إذا لم يتم رفع أية صورة، سيتم إظهار هذه الصورة عند العرض وستحل محل الصورة الافتراضية لهذا الحقل.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10604] = array(
+    'lid' => 10604,
+    'source' => 'Links',
+    'context' => '',
+    'location' => '',
+    'translation' => 'روابط',
     'plid' => 0,
     'plural' => 0,
   );
@@ -17322,6 +17547,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10605] = array(
+    'lid' => 10605,
+    'source' => 'Read more',
+    'context' => '',
+    'location' => '',
+    'translation' => 'اقرأ المزيد',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][110] = array(
     'lid' => 110,
     'source' => 'Blog entry',
@@ -17337,6 +17571,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'عدد المصطلحات التي تنتمي إلى معجم التصنيف.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][878] = array(
+    'lid' => 878,
+    'source' => 'more',
+    'context' => '',
+    'location' => '',
+    'translation' => 'المزيد',
     'plid' => 0,
     'plural' => 0,
   );
@@ -17490,6 +17733,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'لم يتم العثور على حقل التصنيف @field_name.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10606] = array(
+    'lid' => 10606,
+    'source' => 'Access control',
+    'context' => '',
+    'location' => '',
+    'translation' => 'صلاحيات الوصول',
     'plid' => 0,
     'plural' => 0,
   );
@@ -17664,12 +17916,39 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10607] = array(
+    'lid' => 10607,
+    'source' => 'Small',
+    'context' => '',
+    'location' => '',
+    'translation' => 'صغير',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][368] = array(
     'lid' => 368,
     'source' => 'The unique ID of the user account.',
     'context' => '',
     'location' => '',
     'translation' => 'المعرف الوحيد (ID) لحساب المستخدم.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][624] = array(
+    'lid' => 624,
+    'source' => 'Entity type',
+    'context' => '',
+    'location' => '',
+    'translation' => 'نوع الكيان',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][880] = array(
+    'lid' => 880,
+    'source' => 'fields',
+    'context' => '',
+    'location' => '',
+    'translation' => 'خانات',
     'plid' => 0,
     'plural' => 0,
   );
@@ -17715,6 +17994,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'يجب أن يكون حجم الملفات أقل من !size.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2928] = array(
+    'lid' => 2928,
+    'source' => 'Block settings',
+    'context' => '',
+    'location' => '',
+    'translation' => 'إعدادات الصناديق',
     'plid' => 0,
     'plural' => 0,
   );
@@ -17853,12 +18141,30 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10608] = array(
+    'lid' => 10608,
+    'source' => 'Large',
+    'context' => '',
+    'location' => '',
+    'translation' => 'كبير',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][369] = array(
     'lid' => 369,
     'source' => 'The login name of the user account.',
     'context' => '',
     'location' => '',
     'translation' => 'اسم الدخول لحساب المستخدم.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][881] = array(
+    'lid' => 881,
+    'source' => 'field',
+    'context' => '',
+    'location' => '',
+    'translation' => 'حقل',
     'plid' => 0,
     'plural' => 0,
   );
@@ -17884,7 +18190,7 @@ password: Your password
     'lid' => 1649,
     'source' => 'Disabled',
     'context' => '',
-    'location' => '; modules/filter/filter.admin.js',
+    'location' => '; sites/all/modules/search_api/search_api.admin.js',
     'translation' => 'معطل',
     'plid' => 0,
     'plural' => 0,
@@ -18033,6 +18339,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10609] = array(
+    'lid' => 10609,
+    'source' => 'Term name',
+    'context' => '',
+    'location' => '',
+    'translation' => 'اسم المفردة',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][370] = array(
     'lid' => 370,
     'source' => 'Email',
@@ -18066,6 +18381,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'تفعيل دعم تعدد اللغات لهذا النوع من المحتوى. إذا تم التفعيل سوف يظهر حقل لاختيار اللغة في استمارة إضافة هذا النوع من المحتوى لكي يسمح لك باختيار واحدة من <a href="!languages">اللغات المفعلة</a>. إذا لم تُفعّل هذه الخاصية فستُدرج كل الرسائل الجديدة تحت اللغة المبدئية للموقع. المحتوى الموجود مسبقا بالموقع لن يتأثر بأي تغيير يطرأ على هذه الخاصية.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1906] = array(
+    'lid' => 1906,
+    'source' => 'Set a data value',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تحديد قيمة أحدى البيانات',
     'plid' => 0,
     'plural' => 0,
   );
@@ -18201,6 +18525,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'المستخدون المسجلون فقط',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10610] = array(
+    'lid' => 10610,
+    'source' => 'Up',
+    'context' => '',
+    'location' => '',
+    'translation' => 'اعلى',
     'plid' => 0,
     'plural' => 0,
   );
@@ -18384,6 +18717,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10611] = array(
+    'lid' => 10611,
+    'source' => 'All views',
+    'context' => '',
+    'location' => '',
+    'translation' => 'في كل العروض',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][372] = array(
     'lid' => 372,
     'source' => 'The URL of the account profile page.',
@@ -18408,6 +18750,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'يشغل كود بي.إتش.بي. يجب أن يتاح استخدام هذا المرشح للإداريين فقط!',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1652] = array(
+    'lid' => 1652,
+    'source' => 'Node type',
+    'context' => '',
+    'location' => '',
+    'translation' => 'نوع العقدة',
     'plid' => 0,
     'plural' => 0,
   );
@@ -18534,6 +18885,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'الأغورية',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10612] = array(
+    'lid' => 10612,
+    'source' => '<All>',
+    'context' => '',
+    'location' => '',
+    'translation' => '<الكل>',
     'plid' => 0,
     'plural' => 0,
   );
@@ -18699,6 +19059,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10613] = array(
+    'lid' => 10613,
+    'source' => 'Down',
+    'context' => '',
+    'location' => '',
+    'translation' => 'أسفل',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][118] = array(
     'lid' => 118,
     'source' => 'Page',
@@ -18861,6 +19230,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10614] = array(
+    'lid' => 10614,
+    'source' => 'Enter one page per line as Drupal paths. The \'*\' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. %front is the front page.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'أدخل مسارات دروبال: عنوان صفحة واحد في كل سطر. علامة \'*\' تحل محل أي سلسلة حرفية. على سبيل المثال %blog هو مسار المدونات، %blog-wildcard لمدونة كل مستخدم. %front هي الصفحة الرئيسية.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1143] = array(
     'lid' => 1143,
     'source' => 'Local site search, metadata and SEO.',
@@ -18993,6 +19371,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'تعذر نسخ الملف %file (%realpath) لأنه غير موجود.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10615] = array(
+    'lid' => 10615,
+    'source' => 'Edit term',
+    'context' => '',
+    'location' => '',
+    'translation' => 'حرر المفردة',
     'plid' => 0,
     'plural' => 0,
   );
@@ -19158,6 +19545,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10616] = array(
+    'lid' => 10616,
+    'source' => '!a comments per page',
+    'context' => '',
+    'location' => '',
+    'translation' => '!a تعليقات في الصفحة',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1145] = array(
     'lid' => 1145,
     'source' => 'Enable or disable clean URLs for your site.',
@@ -19173,6 +19569,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'القياس والاقتصاص',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1657] = array(
+    'lid' => 1657,
+    'source' => 'Theme',
+    'context' => '',
+    'location' => '',
+    'translation' => 'حلة',
     'plid' => 0,
     'plural' => 0,
   );
@@ -19311,6 +19716,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10617] = array(
+    'lid' => 10617,
+    'source' => 'all',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الكل',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][122] = array(
     'lid' => 122,
     'source' => '@node_type comment',
@@ -19326,6 +19740,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'الإنشاء',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1658] = array(
+    'lid' => 1658,
+    'source' => 'Country',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الدولة',
     'plid' => 0,
     'plural' => 0,
   );
@@ -19461,6 +19884,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'تعذر نسخ الملف المحدد %file إلى %destination.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10618] = array(
+    'lid' => 10618,
+    'source' => 'OR',
+    'context' => '',
+    'location' => '',
+    'translation' => 'أو',
     'plid' => 0,
     'plural' => 0,
   );
@@ -19644,6 +20076,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10619] = array(
+    'lid' => 10619,
+    'source' => 'Granularity',
+    'context' => '',
+    'location' => '',
+    'translation' => 'النعومة',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][124] = array(
     'lid' => 124,
     'source' => 'Full content',
@@ -19797,6 +20238,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10620] = array(
+    'lid' => 10620,
+    'source' => 'AND',
+    'context' => '',
+    'location' => '',
+    'translation' => 'و',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1661] = array(
     'lid' => 1661,
     'source' => 'Date format',
@@ -19938,6 +20388,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'تعذر حفظ البيانات لأن الوجهة %destination غير صالحة. قد يكون هذا بسبب استخدام غير سليم لـ file_save() أو غياب حاوية تدفق.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10621] = array(
+    'lid' => 10621,
+    'source' => 'Length',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الطول',
     'plid' => 0,
     'plural' => 0,
   );
@@ -20091,6 +20550,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'إعدادات PHP الخاص بك تدعم نوع واحد فقط من قواعد البيانات، لذا تم اختيارها تلقائياً.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10622] = array(
+    'lid' => 10622,
+    'source' => '1 user',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مستخدم واحد',
     'plid' => 0,
     'plural' => 0,
   );
@@ -20607,6 +21075,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][898] = array(
+    'lid' => 898,
+    'source' => 'header',
+    'context' => '',
+    'location' => '',
+    'translation' => 'ترويسة',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1154] = array(
     'lid' => 1154,
     'source' => 'Add alias',
@@ -20631,6 +21108,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'عنوان البريد الإلكتروني',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2690] = array(
+    'lid' => 2690,
+    'source' => 'After saving a new user account',
+    'context' => '',
+    'location' => '',
+    'translation' => 'قبل حفظ حساب مستخدم جديد',
     'plid' => 0,
     'plural' => 0,
   );
@@ -20922,6 +21408,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][900] = array(
+    'lid' => 900,
+    'source' => 'footer',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تذييل',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1156] = array(
     'lid' => 1156,
     'source' => 'Actions',
@@ -21054,6 +21549,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'ضبط صناديق لوحة التحكم المتوفرة',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10628] = array(
+    'lid' => 10628,
+    'source' => 'Contains',
+    'context' => '',
+    'location' => '',
+    'translation' => 'يحتوي',
     'plid' => 0,
     'plural' => 0,
   );
@@ -21201,6 +21705,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10629] = array(
+    'lid' => 10629,
+    'source' => 'Ascending',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تصاعديا',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][390] = array(
     'lid' => 390,
     'source' => 'Login page',
@@ -21345,6 +21858,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10630] = array(
+    'lid' => 10630,
+    'source' => 'Descending',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تنازليا',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][391] = array(
     'lid' => 391,
     'source' => 'The URL of the site\'s login page.',
@@ -21378,6 +21900,15 @@ password: Your password
     'context' => '',
     'location' => '; modules/locale/locale.datepicker.js',
     'translation' => 'السبت',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2695] = array(
+    'lid' => 2695,
+    'source' => 'Before saving a user account',
+    'context' => '',
+    'location' => '',
+    'translation' => 'قبل حفظ حسال مستخدم',
     'plid' => 0,
     'plural' => 0,
   );
@@ -21504,6 +22035,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'يسمح لك سجل قاعدة البيانات بمشاهدة تسجيل حدث على صفحة <a href="@dblog">آخر رسائل السجل</a>. السجل هو قائمة بالتسلسل الزمني للأحداث المسجلة يحتوي على البيانات المستخدمة، بيانات الأداء، الأخطاء، التحذيرات والمعلومات التنفيذية. يجب على الإداريين التحقق من السجل بصفة منتظمة للتأكد من عمل الموقع بشكل الصحيح.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10631] = array(
+    'lid' => 10631,
+    'source' => 'translate',
+    'context' => '',
+    'location' => '',
+    'translation' => 'ترجمة',
     'plid' => 0,
     'plural' => 0,
   );
@@ -21651,6 +22191,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10632] = array(
+    'lid' => 10632,
+    'source' => 'Upgrade',
+    'context' => '',
+    'location' => '',
+    'translation' => 'ترقية',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][137] = array(
     'lid' => 137,
     'source' => 'Search index',
@@ -21666,6 +22215,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'إدارة مهام الصيانة التلقائية للموقع.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1929] = array(
+    'lid' => 1929,
+    'source' => 'Added variable',
+    'context' => '',
+    'location' => '',
+    'translation' => 'المتغير المضاف',
     'plid' => 0,
     'plural' => 0,
   );
@@ -21795,6 +22353,24 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10633] = array(
+    'lid' => 10633,
+    'source' => 'enabled',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مُفَعَّل',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][906] = array(
+    'lid' => 906,
+    'source' => 'Apply',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تطبيق',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1162] = array(
     'lid' => 1162,
     'source' => 'Site information',
@@ -21819,6 +22395,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'مصدر الروابط الرئيسية',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1930] = array(
+    'lid' => 1930,
+    'source' => 'Convert data type',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تحويل نوع بيانات',
     'plid' => 0,
     'plural' => 0,
   );
@@ -21948,6 +22533,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10634] = array(
+    'lid' => 10634,
+    'source' => 'here',
+    'context' => '',
+    'location' => '',
+    'translation' => 'هنا',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][139] = array(
     'lid' => 139,
     'source' => 'File',
@@ -21984,12 +22578,30 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1931] = array(
+    'lid' => 1931,
+    'source' => 'Target type',
+    'context' => '',
+    'location' => '',
+    'translation' => 'نوع الهدف',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][2187] = array(
     'lid' => 2187,
     'source' => '<em>Edit @type</em> @title',
     'context' => '',
     'location' => '',
     'translation' => 'تعديل @title (@type)',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2699] = array(
+    'lid' => 2699,
+    'source' => 'After a user account has been deleted',
+    'context' => '',
+    'location' => '',
+    'translation' => 'بعد حذف حساب مستخدم',
     'plid' => 0,
     'plural' => 0,
   );
@@ -22110,12 +22722,30 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10635] = array(
+    'lid' => 10635,
+    'source' => 'Previous',
+    'context' => '',
+    'location' => '',
+    'translation' => 'السابق',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][140] = array(
     'lid' => 140,
     'source' => 'Taxonomy term',
     'context' => '',
     'location' => '',
     'translation' => 'مصطلح تصنيف',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][908] = array(
+    'lid' => 908,
+    'source' => 'Sort by',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الترتيب حسب',
     'plid' => 0,
     'plural' => 0,
   );
@@ -22254,12 +22884,30 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10636] = array(
+    'lid' => 10636,
+    'source' => 'No fields have been defined for any content type yet.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'لم تحدد حتى الآن أي حقول لنوع المحتوى هذا.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][141] = array(
     'lid' => 141,
     'source' => 'Taxonomy term page',
     'context' => '',
     'location' => '',
     'translation' => 'صفحة مصطلح تصنيف',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][909] = array(
+    'lid' => 909,
+    'source' => 'Asc',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تصاعدي',
     'plid' => 0,
     'plural' => 0,
   );
@@ -22398,6 +23046,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10637] = array(
+    'lid' => 10637,
+    'source' => 'Multiple select',
+    'context' => '',
+    'location' => '',
+    'translation' => 'اختيار متعدد',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][142] = array(
     'lid' => 142,
     'source' => 'Taxonomy vocabulary',
@@ -22413,6 +23070,15 @@ password: Your password
     'context' => '',
     'location' => '',
     'translation' => 'المسار',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][910] = array(
+    'lid' => 910,
+    'source' => 'Desc',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تنازلي',
     'plid' => 0,
     'plural' => 0,
   );
@@ -22551,6 +23217,15 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10638] = array(
+    'lid' => 10638,
+    'source' => 'The directory %directory is not writable, because it does not have the correct permissions set.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الدليل %directory لا يمكن الكتابة فيه؛ إذ ليست له الصلاحيات الصحيحة.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][143] = array(
     'lid' => 143,
     'source' => 'User',
@@ -22686,6 +23361,24 @@ password: Your password
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10639] = array(
+    'lid' => 10639,
+    'source' => 'Quantity',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الكمية',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][144] = array(
+    'lid' => 144,
+    'source' => 'Rules configuration',
+    'context' => '',
+    'location' => '',
+    'translation' => 'ضبط القواعد',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3472] = array(
     'lid' => 3472,
     'source' => 'Find content',
@@ -22813,6 +23506,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10640] = array(
+    'lid' => 10640,
+    'source' => 'Total',
+    'context' => '',
+    'location' => '',
+    'translation' => 'المجموع',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][401] = array(
     'lid' => 401,
     'source' => 'File ID',
@@ -22828,6 +23530,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'وصف الوسم',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2705] = array(
+    'lid' => 2705,
+    'source' => 'comment',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تعليق',
     'plid' => 0,
     'plural' => 0,
   );
@@ -22940,6 +23651,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'لا يوجد أي حقل مخفي.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10641] = array(
+    'lid' => 10641,
+    'source' => 'Price',
+    'context' => '',
+    'location' => '',
+    'translation' => 'السعر',
     'plid' => 0,
     'plural' => 0,
   );
@@ -23105,6 +23825,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10642] = array(
+    'lid' => 10642,
+    'source' => 'Insert',
+    'context' => '',
+    'location' => '',
+    'translation' => 'أدرج',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][147] = array(
     'lid' => 147,
     'source' => 'Nodes',
@@ -23138,6 +23867,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'نص متعدد الأسطر لوصف المصطلح',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1939] = array(
+    'lid' => 1939,
+    'source' => 'Identifier',
+    'context' => '',
+    'location' => '',
+    'translation' => 'المعرف',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2707] = array(
+    'lid' => 2707,
+    'source' => 'created comment',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تم',
     'plid' => 0,
     'plural' => 0,
   );
@@ -23267,6 +24014,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10643] = array(
+    'lid' => 10643,
+    'source' => 'Week',
+    'context' => '',
+    'location' => '',
+    'translation' => 'بالأسبوع',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][148] = array(
     'lid' => 148,
     'source' => 'Users',
@@ -23282,6 +24038,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'اسم الملف على القرص.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1684] = array(
+    'lid' => 1684,
+    'source' => 'Length of trimmed posts',
+    'context' => '',
+    'location' => '',
+    'translation' => 'طول مقطتفات المواضيع',
     'plid' => 0,
     'plural' => 0,
   );
@@ -23402,6 +24167,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][7060] = array(
+    'lid' => 7060,
+    'source' => 'Close',
+    'context' => '',
+    'location' => '',
+    'translation' => 'إغلاق',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10644] = array(
+    'lid' => 10644,
+    'source' => 'Optional Title',
+    'context' => '',
+    'location' => '',
+    'translation' => 'عنوان اختياري',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][149] = array(
     'lid' => 149,
     'source' => 'Files',
@@ -23426,6 +24209,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'عناصر استمارة الحساب لوحدة المستخدم.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1685] = array(
+    'lid' => 1685,
+    'source' => 'The maximum number of characters used in the trimmed version of a post. Drupal will use this setting to determine at which offset long posts should be trimmed. The trimmed version of a post is typically used as a teaser when displaying the post on the main page, in XML feeds, etc. To disable teasers, set to \'Unlimited\'. Note that this setting will only affect new or updated content and will not affect existing teasers.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'أقصى عدد للحروف في مقتطفات المواضيع. يستخدم دروبال هذا الرقم ليحدد الطول الذي سيتم بناء عليه قطع المواضيع. تستخدم المقتطفات كمثير للعقدة يعرض في الصفحة الرئيسية، وفي تلقيمات إكس.إم.إل... لتوقف المثيرات، غير القيمة إلى "غير محدود". لاحظ أن هذه القيمة تؤثر على المحتوى الجديد أو المحدث فقط، ولن تؤثر على المقتطفات الموجودة فعلا.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -23561,6 +24353,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'ربط الصورة إلى',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10645] = array(
+    'lid' => 10645,
+    'source' => 'No Title',
+    'context' => '',
+    'location' => '',
+    'translation' => 'بدون عنوان',
     'plid' => 0,
     'plural' => 0,
   );
@@ -23717,6 +24518,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10646] = array(
+    'lid' => 10646,
+    'source' => 'Link Title',
+    'context' => '',
+    'location' => '',
+    'translation' => 'عنوان الرابط',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][407] = array(
     'lid' => 407,
     'source' => 'File size',
@@ -23732,6 +24542,33 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'عقدة',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1687] = array(
+    'lid' => 1687,
+    'source' => 'Must users preview posts before submitting?',
+    'context' => '',
+    'location' => '',
+    'translation' => 'هل يجب على المستخدمين معاينة الموضوع قبل إرساله؟',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1943] = array(
+    'lid' => 1943,
+    'source' => 'Property',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الخاصية',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2711] = array(
+    'lid' => 2711,
+    'source' => 'Before saving a comment',
+    'context' => '',
+    'location' => '',
+    'translation' => 'قبل حفظ تعليق',
     'plid' => 0,
     'plural' => 0,
   );
@@ -23861,6 +24698,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10647] = array(
+    'lid' => 10647,
+    'source' => 'Available variables are:',
+    'context' => '',
+    'location' => '',
+    'translation' => 'المتغيرات المتاحة:',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1176] = array(
     'lid' => 1176,
     'source' => 'Web services',
@@ -23885,6 +24731,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'الخيارات المبدئية',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1944] = array(
+    'lid' => 1944,
+    'source' => 'The property by which the entity is to be selected.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الخاصية التي ينبغي تحديد الكيان بحسبها',
     'plid' => 0,
     'plural' => 0,
   );
@@ -23996,6 +24851,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10648] = array(
+    'lid' => 10648,
+    'source' => 'You have tried to use a one-time login for an account which has been blocked.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'لقد حاولت استخدام رابط ولوج لحساب ممنوع.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][153] = array(
     'lid' => 153,
     'source' => 'Comments',
@@ -24020,6 +24884,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'أدوات متعلقة بخدمات الويب.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1689] = array(
+    'lid' => 1689,
+    'source' => 'Users with the <em>administer nodes</em> permission will be able to override these options.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'يمكن للمستخدمين أصحاب صلاحية <em>إدارة العقد</em> تخطي هذه الخيارات.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2713] = array(
+    'lid' => 2713,
+    'source' => 'A comment is viewed',
+    'context' => '',
+    'location' => '',
+    'translation' => 'يتم عرض تعليق',
     'plid' => 0,
     'plural' => 0,
   );
@@ -24128,6 +25010,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'تسمح وحدة القوائم بإنشاء روابط في القائمة عن طريق استمارات إنشاء المحتوى. لضبط هذه الإعدادات لنوع معين من المحتوى، يرجى زيارة صفحة <a href="@content-types">أنواع المحتوى</a>، والنقر على رابط <em>تعديل</em> لنوع المحتوى والانتقال إلى جزء <em>إعدادات القائمة</em>.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10649] = array(
+    'lid' => 10649,
+    'source' => 'enable',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تفعيل',
     'plid' => 0,
     'plural' => 0,
   );
@@ -24281,6 +25172,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'لغة غير معينة (@lagncode)',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10650] = array(
+    'lid' => 10650,
+    'source' => 'Event',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الحدث',
     'plid' => 0,
     'plural' => 0,
   );
@@ -24464,6 +25364,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10651] = array(
+    'lid' => 10651,
+    'source' => 'Loop',
+    'context' => '',
+    'location' => '',
+    'translation' => 'حلقة',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][412] = array(
     'lid' => 412,
     'source' => 'Owner',
@@ -24608,6 +25517,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10652] = array(
+    'lid' => 10652,
+    'source' => 'Defaults',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الوضعيات الافتراضية',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][413] = array(
     'lid' => 413,
     'source' => 'The user who originally uploaded the file.',
@@ -24632,6 +25550,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'سير عمل المحتوى، أدوات سير العمل الافتتاحي.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1693] = array(
+    'lid' => 1693,
+    'source' => 'The name of this website.',
+    'context' => '',
+    'location' => '',
+    'translation' => '﻿اسم هذا الموقع.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2717] = array(
+    'lid' => 2717,
+    'source' => 'After saving a new term',
+    'context' => '',
+    'location' => '',
+    'translation' => 'بعد حفظ مصطلح جديد',
     'plid' => 0,
     'plural' => 0,
   );
@@ -24758,6 +25694,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'اختيار وحدات البحث النشطة من بين الوحدات المتاحة.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10653] = array(
+    'lid' => 10653,
+    'source' => 'minutes',
+    'context' => '',
+    'location' => '',
+    'translation' => 'دقائق',
     'plid' => 0,
     'plural' => 0,
   );
@@ -24893,6 +25838,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'وحدة البحث الافتراضية',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10654] = array(
+    'lid' => 10654,
+    'source' => 'equals',
+    'context' => '',
+    'location' => '',
+    'translation' => 'يساوي',
     'plid' => 0,
     'plural' => 0,
   );
@@ -25049,6 +26003,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10655] = array(
+    'lid' => 10655,
+    'source' => 'None.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'لا شيء.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][928] = array(
     'lid' => 928,
     'source' => 'last »',
@@ -25193,6 +26156,33 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10656] = array(
+    'lid' => 10656,
+    'source' => 'Convert',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تحويل',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][929] = array(
+    'lid' => 929,
+    'source' => 'Loading...',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تحميل...',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1697] = array(
+    'lid' => 1697,
+    'source' => 'Your site\'s motto, tag line, or catchphrase (often displayed alongside the title of the site).',
+    'context' => '',
+    'location' => '',
+    'translation' => 'شعار الموقع أو العبارة التي تميزه (عادة ما تعرض بجوار عنوان الموقع).',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3489] = array(
     'lid' => 3489,
     'source' => 'Update options',
@@ -25316,6 +26306,42 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'البحث معطل حالياً.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10657] = array(
+    'lid' => 10657,
+    'source' => 'contains',
+    'context' => '',
+    'location' => '',
+    'translation' => 'يحتوي على',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1186] = array(
+    'lid' => 1186,
+    'source' => 'Add new rule',
+    'context' => '',
+    'location' => '',
+    'translation' => 'إضافة قاعدة جديدة',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1698] = array(
+    'lid' => 1698,
+    'source' => 'Anonymous user',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مستخدم مجهول',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2722] = array(
+    'lid' => 2722,
+    'source' => 'Before saving a taxonomy term',
+    'context' => '',
+    'location' => '',
+    'translation' => 'قبل حفظ مصطلح قاموس',
     'plid' => 0,
     'plural' => 0,
   );
@@ -25445,12 +26471,39 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10658] = array(
+    'lid' => 10658,
+    'source' => 'clone',
+    'context' => '',
+    'location' => '',
+    'translation' => 'استنساخ',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1187] = array(
+    'lid' => 1187,
+    'source' => 'Import rule',
+    'context' => '',
+    'location' => '',
+    'translation' => 'استيراد قاعدة',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1699] = array(
     'lid' => 1699,
     'source' => 'The name used to indicate anonymous users.',
     'context' => '',
     'location' => '',
     'translation' => 'الاسم المستخدم للإشارة إلى المستخدمين المجهولين.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1955] = array(
+    'lid' => 1955,
+    'source' => 'Delete entity',
+    'context' => '',
+    'location' => '',
+    'translation' => 'حذف كيان',
     'plid' => 0,
     'plural' => 0,
   );
@@ -25580,11 +26633,20 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10659] = array(
+    'lid' => 10659,
+    'source' => 'Parameter',
+    'context' => '',
+    'location' => '',
+    'translation' => 'معامل',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][420] = array(
     'lid' => 420,
     'source' => 'Enabled',
     'context' => '',
-    'location' => '; modules/filter/filter.admin.js',
+    'location' => '; sites/all/modules/search_api/search_api.admin.js',
     'translation' => 'مفعل',
     'plid' => 0,
     'plural' => 0,
@@ -25742,6 +26804,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10660] = array(
+    'lid' => 10660,
+    'source' => 'rule',
+    'context' => '',
+    'location' => '',
+    'translation' => 'قاعدة',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1701] = array(
+    'lid' => 1701,
+    'source' => 'The home page displays content from this relative URL. If unsure, specify "node".',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تعرض الصفحة الأولى المحتوى الموجود في هذا المسار النسبي. إذا كنت لا تستخدم المسارات النظيفة، أدخل الجزء بعد ?q=". إذا لم تكن متأكدا، أدخل "node".',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1957] = array(
     'lid' => 1957,
     'source' => 'Publish content',
@@ -25877,12 +26957,39 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10661] = array(
+    'lid' => 10661,
+    'source' => 'export',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تصدير',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1702] = array(
+    'lid' => 1702,
+    'source' => 'Number of posts on main page',
+    'context' => '',
+    'location' => '',
+    'translation' => 'عدد المواضيع في الصفحة الرئيسية',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1958] = array(
     'lid' => 1958,
     'source' => 'Unpublish content',
     'context' => '',
     'location' => '',
     'translation' => 'إلغاء نشر المحتوى',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2726] = array(
+    'lid' => 2726,
+    'source' => 'After saving a new vocabulary',
+    'context' => '',
+    'location' => '',
+    'translation' => 'بعد حفظ قاموس جديد',
     'plid' => 0,
     'plural' => 0,
   );
@@ -26009,6 +27116,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'صفحات اﻷخطاء',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10662] = array(
+    'lid' => 10662,
+    'source' => 'Filter by event',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الانتقاء حسب الأحداث',
     'plid' => 0,
     'plural' => 0,
   );
@@ -26153,6 +27269,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'المسار \'@path\' إما غير صحيح أو لا تملك صلاحية الوصول إليه.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10663] = array(
+    'lid' => 10663,
+    'source' => 'Inactive rules',
+    'context' => '',
+    'location' => '',
+    'translation' => 'القواعد غير النشطة',
     'plid' => 0,
     'plural' => 0,
   );
@@ -26309,6 +27434,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10664] = array(
+    'lid' => 10664,
+    'source' => 'ends with',
+    'context' => '',
+    'location' => '',
+    'translation' => 'ينتهي ب',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][169] = array(
     'lid' => 169,
     'source' => 'Field name',
@@ -26462,6 +27596,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10665] = array(
+    'lid' => 10665,
+    'source' => 'is greater than',
+    'context' => '',
+    'location' => '',
+    'translation' => 'هو أكبر من',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1706] = array(
     'lid' => 1706,
     'source' => 'Default 404 (not found) page',
@@ -26597,6 +27740,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10666] = array(
+    'lid' => 10666,
+    'source' => 'rules',
+    'context' => '',
+    'location' => '',
+    'translation' => 'القواعد',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][683] = array(
     'lid' => 683,
     'source' => 'E-mail',
@@ -26639,6 +27791,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'العمليات',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2731] = array(
+    'lid' => 2731,
+    'source' => 'Before saving a vocabulary',
+    'context' => '',
+    'location' => '',
+    'translation' => 'قبل حفظ قاموس',
     'plid' => 0,
     'plural' => 0,
   );
@@ -26765,6 +27926,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'وزن المصطلح المُضاف',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10667] = array(
+    'lid' => 10667,
+    'source' => 'Rule sets',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مجموعات قواعد',
     'plid' => 0,
     'plural' => 0,
   );
@@ -26900,6 +28070,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'رفع صورة لإضافتها لهذا المقال',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10668] = array(
+    'lid' => 10668,
+    'source' => 'Rules Scheduler',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مجدول Rules',
     'plid' => 0,
     'plural' => 0,
   );
@@ -27092,6 +28271,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10669] = array(
+    'lid' => 10669,
+    'source' => 'Add event',
+    'context' => '',
+    'location' => '',
+    'translation' => 'إضافة حدث',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][686] = array(
     'lid' => 686,
     'source' => 'Picture',
@@ -27272,6 +28460,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10670] = array(
+    'lid' => 10670,
+    'source' => 'is one of',
+    'context' => '',
+    'location' => '',
+    'translation' => 'هو واحد من',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][943] = array(
     'lid' => 943,
     'source' => 'Confirm',
@@ -27443,6 +28640,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10671] = array(
+    'lid' => 10671,
+    'source' => 'React on events and conditionally evaluate actions.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'رد الفعل عند الأحداث وتقييم الإجراءات ظرفيا.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][944] = array(
+    'lid' => 944,
+    'source' => 'Submit',
+    'context' => '',
+    'location' => '',
+    'translation' => 'إضافة',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1200] = array(
     'lid' => 1200,
     'source' => 'Modules',
@@ -27602,6 +28817,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'استعلام مزج غير صالح: لا توجد شروط',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10672] = array(
+    'lid' => 10672,
+    'source' => 'NOT @condition',
+    'context' => '',
+    'location' => '',
+    'translation' => 'نفي @condition',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][433] = array(
+    'lid' => 433,
+    'source' => 'Read only',
+    'context' => '',
+    'location' => '',
+    'translation' => 'للقراءة فقط',
     'plid' => 0,
     'plural' => 0,
   );
@@ -27776,6 +29009,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10673] = array(
+    'lid' => 10673,
+    'source' => 'NOT AND',
+    'context' => '',
+    'location' => '',
+    'translation' => 'نفي و',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][178] = array(
     'lid' => 178,
     'source' => 'Date created',
@@ -27938,6 +29180,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10674] = array(
+    'lid' => 10674,
+    'source' => 'Create a data structure',
+    'context' => '',
+    'location' => '',
+    'translation' => 'إنشاء هيكل بيانات',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1203] = array(
     'lid' => 1203,
     'source' => 'Install new module',
@@ -28097,6 +29348,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'الموافقة على التعليق',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10675] = array(
+    'lid' => 10675,
+    'source' => 'Reload form',
+    'context' => '',
+    'location' => '',
+    'translation' => 'إعادة تحميل الاستمارة',
     'plid' => 0,
     'plural' => 0,
   );
@@ -28280,6 +29540,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10676] = array(
+    'lid' => 10676,
+    'source' => 'is lower than',
+    'context' => '',
+    'location' => '',
+    'translation' => 'هو أصغر من',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][437] = array(
     'lid' => 437,
     'source' => 'The number of comments posted on a node.',
@@ -28448,6 +29717,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'عرض وتخصيص لوحة المعلومات الخاصة بك.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10677] = array(
+    'lid' => 10677,
+    'source' => 'cloned',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مستنسخ',
     'plid' => 0,
     'plural' => 0,
   );
@@ -28631,6 +29909,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10678] = array(
+    'lid' => 10678,
+    'source' => 'Are you sure you want to disable the %plugin %label?',
+    'context' => '',
+    'location' => '',
+    'translation' => 'هل أنت متأكد من رغبتك في تعطيل %plugin %label؟',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][439] = array(
     'lid' => 439,
     'source' => 'The number of comments posted on a node since the reader last viewed it.',
@@ -28802,6 +30089,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10679] = array(
+    'lid' => 10679,
+    'source' => 'Disabled %plugin %label.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تم تعطيل %plugin %label',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][696] = array(
     'lid' => 696,
     'source' => 'Signature',
@@ -28955,12 +30251,30 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10680] = array(
+    'lid' => 10680,
+    'source' => 'React on event',
+    'context' => '',
+    'location' => '',
+    'translation' => 'رد الفعل عند الحدث',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][441] = array(
     'lid' => 441,
     'source' => 'This account\'s default language for e-mails, and preferred language for site presentation.',
     'context' => '',
     'location' => '',
     'translation' => 'اللغة المبدئية للرسائل البريدية و لعرض الموقع الخاصة بهذا الحساب.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][953] = array(
+    'lid' => 953,
+    'source' => 'HTML filter',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مرشح إتش.تي.إم.إل',
     'plid' => 0,
     'plural' => 0,
   );
@@ -29096,6 +30410,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'تتم إزالة تنسيقات النص المعطلة تماما من واجهة الإدارة، ولن يتم عرض أي محتوى محفوظ بهذا التنسيق. لا يمكن التراجع هذا الإجراء.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10681] = array(
+    'lid' => 10681,
+    'source' => 'Delete data',
+    'context' => '',
+    'location' => '',
+    'translation' => 'حذف البيانات',
     'plid' => 0,
     'plural' => 0,
   );
@@ -29252,6 +30575,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10682] = array(
+    'lid' => 10682,
+    'source' => 'Task %tid has been deleted.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تم حذف المهمة %tid.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][187] = array(
     'lid' => 187,
     'source' => 'The unique ID of the comment.',
@@ -29402,6 +30734,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'تنسيقات النص',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10683] = array(
+    'lid' => 10683,
+    'source' => 'There are no inactive rules.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'لا توجد قواعد غير النشطة.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -29567,12 +30908,30 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10684] = array(
+    'lid' => 10684,
+    'source' => 'Completed.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تم.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][189] = array(
     'lid' => 189,
     'source' => 'The IP address of the computer the comment was posted from.',
     'context' => '',
     'location' => '',
     'translation' => 'عنوان الإيبي للجهاز الذي أرسل منه التعليق.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][701] = array(
+    'lid' => 701,
+    'source' => 'Data',
+    'context' => '',
+    'location' => '',
+    'translation' => 'البيانات',
     'plid' => 0,
     'plural' => 0,
   );
@@ -29726,6 +31085,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'موضوع ساخن',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10685] = array(
+    'lid' => 10685,
+    'source' => 'Export %name',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تصدير %name',
     'plid' => 0,
     'plural' => 0,
   );
@@ -29900,6 +31268,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10686] = array(
+    'lid' => 10686,
+    'source' => 'rule set',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مجموعة قواعد',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][191] = array(
     'lid' => 191,
     'source' => 'Email address',
@@ -29951,6 +31328,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'منطقة زمنية فارغة.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1983] = array(
+    'lid' => 1983,
+    'source' => 'Paths',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مسارات',
     'plid' => 0,
     'plural' => 0,
   );
@@ -30086,6 +31472,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'موضوع مغلق',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10687] = array(
+    'lid' => 10687,
+    'source' => 'starts with',
+    'context' => '',
+    'location' => '',
+    'translation' => 'يبدأ ب',
     'plid' => 0,
     'plural' => 0,
   );
@@ -30260,6 +31655,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10688] = array(
+    'lid' => 10688,
+    'source' => 'Rules tags autocomplete',
+    'context' => '',
+    'location' => '',
+    'translation' => 'إتمام تلقائي لوسوم Rules',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][193] = array(
     'lid' => 193,
     'source' => 'Home page',
@@ -30419,6 +31823,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'وحيث %property هي %value',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10689] = array(
+    'lid' => 10689,
+    'source' => 'Filter by tag',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الانتقاء حسب الوسم',
     'plid' => 0,
     'plural' => 0,
   );
@@ -30593,6 +32006,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10690] = array(
+    'lid' => 10690,
+    'source' => 'edit configuration',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تحرير الإعدادات',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][195] = array(
     'lid' => 195,
     'source' => 'Subject',
@@ -30746,6 +32168,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10691] = array(
+    'lid' => 10691,
+    'source' => '@plugin "@name"',
+    'context' => '',
+    'location' => '',
+    'translation' => '@plugin "@name"',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1220] = array(
     'lid' => 1220,
     'source' => 'View \'access denied\' errors (403s).',
@@ -30878,6 +32309,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'الرابط الحالي هو @url.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10692] = array(
+    'lid' => 10692,
+    'source' => 'Unknown event "!event_name"',
+    'context' => '',
+    'location' => '',
+    'translation' => 'حدث مجهول "!event_name"',
     'plid' => 0,
     'plural' => 0,
   );
@@ -31031,6 +32471,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'عنوان الصفحة @actual مطابق لـ @expected.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10693] = array(
+    'lid' => 10693,
+    'source' => 'Tags associated with this configuration, used for filtering in the admin interface. Separate multiple tags with commas.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الوسوم المرتبطة بهذا الإعداد، تستعمل في التصفية في واجهة الإدارة. افصل الوسوم المتعددة بفواصل لاتينية.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -31205,6 +32654,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10694] = array(
+    'lid' => 10694,
+    'source' => 'Added event %event.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'إضافة الحدث %event.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][199] = array(
     'lid' => 199,
     'source' => 'The URL of the comment\'s edit page.',
@@ -31238,6 +32696,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'الخيارات المتقدمة',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1991] = array(
+    'lid' => 1991,
+    'source' => 'From',
+    'context' => '',
+    'location' => '',
+    'translation' => 'من',
     'plid' => 0,
     'plural' => 0,
   );
@@ -31367,12 +32834,30 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10695] = array(
+    'lid' => 10695,
+    'source' => 'Event %event has been removed.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تمت إزالة الحدث %event.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][200] = array(
     'lid' => 200,
     'source' => 'The date the comment was posted.',
     'context' => '',
     'location' => '',
     'translation' => 'تاريخ إرسال التعليق.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][456] = array(
+    'lid' => 456,
+    'source' => 'Entity',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الكيان',
     'plid' => 0,
     'plural' => 0,
   );
@@ -31538,6 +33023,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10696] = array(
+    'lid' => 10696,
+    'source' => 'default',
+    'context' => '',
+    'location' => '',
+    'translation' => 'المبدئي',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][201] = array(
     'lid' => 201,
     'source' => 'Parent',
@@ -31700,6 +33194,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10697] = array(
+    'lid' => 10697,
+    'source' => 'Error reporting',
+    'context' => '',
+    'location' => '',
+    'translation' => 'التبليغ بالأخطاء',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1226] = array(
     'lid' => 1226,
     'source' => 'Field list',
@@ -31841,6 +33344,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'شريط الأدوات الإداري',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10698] = array(
+    'lid' => 10698,
+    'source' => 'Variable',
+    'context' => '',
+    'location' => '',
+    'translation' => 'متغير',
     'plid' => 0,
     'plural' => 0,
   );
@@ -31997,6 +33509,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10699] = array(
+    'lid' => 10699,
+    'source' => 'Filtered text (user selects input format)',
+    'context' => '',
+    'location' => '',
+    'translation' => 'النص المرشح (يختار المستخدم طريقة الإدخال)',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][716] = array(
     'lid' => 716,
     'source' => 'PHP',
@@ -32111,6 +33632,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'لا شيء',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10700] = array(
+    'lid' => 10700,
+    'source' => 'Groups',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مجموعات',
     'plid' => 0,
     'plural' => 0,
   );
@@ -32249,6 +33779,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][7117] = array(
+    'lid' => 7117,
+    'source' => 'Clear',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مسح',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10701] = array(
+    'lid' => 10701,
+    'source' => 'User settings',
+    'context' => '',
+    'location' => '',
+    'translation' => 'إعدادات المستخدم',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1742] = array(
     'lid' => 1742,
     'source' => 'Cached pages will not be re-created until at least this much time has elapsed.',
@@ -32372,6 +33920,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => '%type :!message في %function (السطر %line من %file).',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10702] = array(
+    'lid' => 10702,
+    'source' => 'Visitors can create accounts and no administrator approval is required.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'يمكن للزائرين إنشاء حسابات دون موافقة الإداريين.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -32501,6 +34058,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10703] = array(
+    'lid' => 10703,
+    'source' => 'Visitors can create accounts but administrator approval is required.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'يمكن للزائرين إنشاء حسابات بموافقة الإداريين.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2768] = array(
+    'lid' => 2768,
+    'source' => 'Recent posts',
+    'context' => '',
+    'location' => '',
+    'translation' => 'المحتوى الحديث',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3536] = array(
     'lid' => 3536,
     'source' => 'Vocabulary name',
@@ -32615,6 +34190,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'اسم فريد مقروء من طرف الجهاز. يمكن أن يحتوي فقط على أحرف لاتينية صغيرة وأرقام وشرطات سفلية.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10704] = array(
+    'lid' => 10704,
+    'source' => 'Hierarchy',
+    'context' => '',
+    'location' => '',
+    'translation' => 'التدرج',
     'plid' => 0,
     'plural' => 0,
   );
@@ -32744,6 +34328,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10705] = array(
+    'lid' => 10705,
+    'source' => 'settings',
+    'context' => '',
+    'location' => '',
+    'translation' => 'إعدادات',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1746] = array(
     'lid' => 1746,
     'source' => 'Compress cached pages.',
@@ -32867,6 +34460,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'يجب أن يحتوي الاسم المقروء من طرف الجهاز على أحرف لاتينية صغيرة، أرقام وعلامات الوصل فقط.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10706] = array(
+    'lid' => 10706,
+    'source' => 'Alignment',
+    'context' => '',
+    'location' => '',
+    'translation' => 'المحاذاة',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][723] = array(
+    'lid' => 723,
+    'source' => 'Random',
+    'context' => '',
+    'location' => '',
+    'translation' => 'عشوائي',
     'plid' => 0,
     'plural' => 0,
   );
@@ -32996,6 +34607,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10707] = array(
+    'lid' => 10707,
+    'source' => 'or',
+    'context' => '',
+    'location' => '',
+    'translation' => 'أو',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][1748] = array(
     'lid' => 1748,
     'source' => 'Aggregate JavaScript files.',
@@ -33122,6 +34742,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][7124] = array(
+    'lid' => 7124,
+    'source' => 'Confirm e-mail address',
+    'context' => '',
+    'location' => '',
+    'translation' => 'تأكيد عنوان البريد الإلكتروني',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][10708] = array(
+    'lid' => 10708,
+    'source' => 'Link class',
+    'context' => '',
+    'location' => '',
+    'translation' => 'صنف الرابط',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][469] = array(
     'lid' => 469,
     'source' => 'Field',
@@ -33137,6 +34775,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'الهيكلية',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1749] = array(
+    'lid' => 1749,
+    'source' => 'Public registrations',
+    'context' => '',
+    'location' => '',
+    'translation' => 'التسجيلات العامة',
     'plid' => 0,
     'plural' => 0,
   );
@@ -33257,6 +34904,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10709] = array(
+    'lid' => 10709,
+    'source' => 'Title only',
+    'context' => '',
+    'location' => '',
+    'translation' => 'العناوين فقط',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][214] = array(
     'lid' => 214,
     'source' => 'This field stores the ID of a file as an integer value.',
@@ -33272,6 +34928,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'إدارة الصناديق، أنواع المحتوى، القوائم، إلخ.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1750] = array(
+    'lid' => 1750,
+    'source' => 'Require e-mail verification when a visitor creates an account',
+    'context' => '',
+    'location' => '',
+    'translation' => 'اطلب تأكيد البريد الإلكتروني عندما ينشئ زائر حسابا جديدا',
     'plid' => 0,
     'plural' => 0,
   );
@@ -33401,6 +35066,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10710] = array(
+    'lid' => 10710,
+    'source' => 'Display type',
+    'context' => '',
+    'location' => '',
+    'translation' => 'نوعية العرض',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][215] = array(
     'lid' => 215,
     'source' => 'Image',
@@ -33416,6 +35090,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'الصناديق',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1495] = array(
+    'lid' => 1495,
+    'source' => 'Parents',
+    'context' => '',
+    'location' => '',
+    'translation' => 'أمهات',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1751] = array(
+    'lid' => 1751,
+    'source' => 'If this box is checked, new users will be required to validate their e-mail address prior to logging into the site, and will be assigned a system-generated password. With it unchecked, users will be logged in immediately upon registering, and may select their own passwords during registration.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'عند التأشير على هذا المربع، سيطلب من المستخدمين الجدد تأكيد عناوين بريدهم الإلكتروني قبل الولوج للموقع، كما ستعين لهم كلمات سر يولدها النظام. إذا ترك المربع غير مؤشر، سيلج المستجدون الجدد الموقع بعد تسجيلهم مباشرة، و سيتاح لهم اختيار كلمات سرهم خلال التسجيل.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -33536,6 +35228,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][10711] = array(
+    'lid' => 10711,
+    'source' => 'Gallery page',
+    'context' => '',
+    'location' => '',
+    'translation' => 'اسم المعرض',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][216] = array(
     'lid' => 216,
     'source' => 'This field stores the ID of an image file as an integer value.',
@@ -33551,6 +35252,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'اضبط محتويات الصناديق التي تظهر في الأعمدة الجانبية و في المناطق الأخرى من موقعك.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1752] = array(
+    'lid' => 1752,
+    'source' => 'User registration guidelines',
+    'context' => '',
+    'location' => '',
+    'translation' => 'إرشادات تسجيل المستخدمين',
     'plid' => 0,
     'plural' => 0,
   );
@@ -33677,6 +35387,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'أضف صندوقا',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1753] = array(
+    'lid' => 1753,
+    'source' => 'This text is displayed at the top of the user registration form and is useful for helping or instructing your users.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'يظهر هذا النص أعلى استمارة تسجيل المستخدمين، و يفيد بإرشاد مستخدميك.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -33986,6 +35705,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1755] = array(
+    'lid' => 1755,
+    'source' => 'Welcome, new user created by administrator',
+    'context' => '',
+    'location' => '',
+    'translation' => 'رسالة ترحيب حساب أنشأه إداري',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3035] = array(
     'lid' => 3035,
     'source' => 'Administer site configuration',
@@ -34118,6 +35846,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'إضافة نوع محتوى',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1756] = array(
+    'lid' => 1756,
+    'source' => 'Customize welcome e-mail messages sent to new member accounts created by an administrator.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'طَوِّع متن رسالة الترحيب التي ترسل لحسابات الأعضاء الجدد التي ينشئها إداريون.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -34274,6 +36011,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1757] = array(
+    'lid' => 1757,
+    'source' => 'Welcome, no approval required',
+    'context' => '',
+    'location' => '',
+    'translation' => 'رسالة ترحيب في حالة عدم تطلب تأكيد',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3037] = array(
     'lid' => 3037,
     'source' => 'Administer software updates',
@@ -34424,6 +36170,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '; modules/locale/locale.datepicker.js',
     'translation' => 'أربعاء',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1758] = array(
+    'lid' => 1758,
+    'source' => 'Customize welcome e-mail messages sent to new members upon registering, when no administrator approval is required.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'طَوِّع رسالة الترحيب التي ترسل إلى الأعضاء الجدد في حالة عدم الاحتياج الى موافقة إداريو الموقع.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -34580,6 +36335,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1759] = array(
+    'lid' => 1759,
+    'source' => 'Welcome, awaiting administrator approval',
+    'context' => '',
+    'location' => '',
+    'translation' => 'رسالة ترحيب بانتظار موافقة الإداريين',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3039] = array(
     'lid' => 3039,
     'source' => 'Use the administration pages and help',
@@ -34721,6 +36485,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'يقوم هذا الحقل بتخزين القيم العشرية من قائمة القيم ’القيمة => التسمية’ المسموح بها. على سبيل المثال: ’الكسور’: 0 => 0، 0.25 => 1/4، 0.75 => 3/4، 1 => 1.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1760] = array(
+    'lid' => 1760,
+    'source' => 'Customize welcome e-mail messages sent to new members upon registering, when administrative approval is required.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'طَوِّع رسالة الترحيب التي ترسل إلى الأعضاء الجدد في حالة الاحتياج الى موافقة إداريو الموقع.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -34868,6 +36641,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1761] = array(
+    'lid' => 1761,
+    'source' => 'Password recovery email',
+    'context' => '',
+    'location' => '',
+    'translation' => 'متن رسالة استرجاع كلمة السر',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3041] = array(
     'lid' => 3041,
     'source' => 'View the administration theme',
@@ -35012,6 +36794,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1762] = array(
+    'lid' => 1762,
+    'source' => 'Customize e-mail messages sent to users who request a new password.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'طوع نص الرسالة المرسلة عند طلب كلمة سر جديدة.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3042] = array(
     'lid' => 3042,
     'source' => 'View site reports',
@@ -35147,6 +36938,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1763] = array(
+    'lid' => 1763,
+    'source' => 'Account activation email',
+    'context' => '',
+    'location' => '',
+    'translation' => 'رسالة تفعيل حساب المستخدم',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2019] = array(
+    'lid' => 2019,
+    'source' => 'Current list item',
+    'context' => '',
+    'location' => '',
+    'translation' => 'عنصر اللائحة التالي',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3043] = array(
     'lid' => 3043,
     'source' => 'Block IP addresses',
@@ -35279,6 +37088,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'يخزن هذا الحقل خيارات ابتدائية مثل مشغل/معطل أو نعم/لا.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1764] = array(
+    'lid' => 1764,
+    'source' => 'Enable and customize e-mail messages sent to users upon account activation (when an administrator activates an account of a user who has already registered, on a site where administrative approval is required).',
+    'context' => '',
+    'location' => '',
+    'translation' => 'فعّل وطوّع رسائل البريد المرسلة للمستخدمين عند تفعيل الحساب (عندما يفعّل إداري حسابا لمستخدم سجّل قبلا في موقع يتطلب موافقة الإداري).',
     'plid' => 0,
     'plural' => 0,
   );
@@ -35570,6 +37388,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1766] = array(
+    'lid' => 1766,
+    'source' => 'Account blocked email',
+    'context' => '',
+    'location' => '',
+    'translation' => 'رسالة منع حساب المستخدم',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][2022] = array(
+    'lid' => 2022,
+    'source' => 'The value of the variable.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'قيمة المتغير',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][2790] = array(
     'lid' => 2790,
     'source' => 'Page top',
@@ -35711,6 +37547,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'عدد عشري',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1767] = array(
+    'lid' => 1767,
+    'source' => 'Enable and customize e-mail messages sent to users when their accounts are blocked.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'فعّل وطوّع رسائل البريد المرسلة للمستخدمين عند منع الحسابات.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -36290,6 +38135,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1771] = array(
+    'lid' => 1771,
+    'source' => 'Account deleted email',
+    'context' => '',
+    'location' => '',
+    'translation' => 'رسالة حذف حساب المستخدم',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3563] = array(
     'lid' => 3563,
     'source' => 'The categories have been saved.',
@@ -36422,6 +38276,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'النسخة',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1772] = array(
+    'lid' => 1772,
+    'source' => 'Enable and customize e-mail messages sent to users when their accounts are deleted.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'فعّل وطوّع رسائل البريد المرسلة للمستخدمين عند حذف الحسابات.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -36578,6 +38441,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1773] = array(
+    'lid' => 1773,
+    'source' => 'Notify user when account is deleted.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'أخطِر المستخدم عند حذف حسابه.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3053] = array(
     'lid' => 3053,
     'source' => 'Administer users',
@@ -36650,6 +38522,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][5357] = array(
+    'lid' => 5357,
+    'source' => 'Disabled themes',
+    'context' => '',
+    'location' => '',
+    'translation' => 'سمات مُعَطَّلة',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][5613] = array(
     'lid' => 5613,
     'source' => 'You must <em>either</em> upload a file or enter a URL.',
@@ -36710,6 +38591,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'يخزن هذا الحقل مرجعا لمصطلح تصنيف.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1774] = array(
+    'lid' => 1774,
+    'source' => 'Signature support',
+    'context' => '',
+    'location' => '',
+    'translation' => 'دعم التوقيعات',
     'plid' => 0,
     'plural' => 0,
   );
@@ -36854,6 +38744,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'نص',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1775] = array(
+    'lid' => 1775,
+    'source' => 'Picture support',
+    'context' => '',
+    'location' => '',
+    'translation' => 'دعم الصور',
     'plid' => 0,
     'plural' => 0,
   );
@@ -37631,6 +39530,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1780] = array(
+    'lid' => 1780,
+    'source' => 'Picture maximum dimensions',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الحد الأقصى لأبعاد الصورة',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][3572] = array(
     'lid' => 3572,
     'source' => 'The feed %feed has been added.',
@@ -37763,6 +39671,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'التصنيف',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1781] = array(
+    'lid' => 1781,
+    'source' => 'Maximum dimensions for pictures, in pixels.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الحد الأقصى لأبعاد الصور بالعنصورة.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -37919,6 +39836,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1782] = array(
+    'lid' => 1782,
+    'source' => 'Picture maximum file size',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الحد الأقصى لحجم ملف الصورة',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][2806] = array(
     'lid' => 2806,
     'source' => 'Recent content',
@@ -38069,6 +39995,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'إضافة معجم',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1783] = array(
+    'lid' => 1783,
+    'source' => 'Maximum file size for pictures, in kB.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'الحد الأقصى لحجم ملف الصور بالكيلوبايت.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -38504,6 +40439,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][1274] = array(
+    'lid' => 1274,
+    'source' => 'Views',
+    'context' => '',
+    'location' => '',
+    'translation' => 'العرض',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][2042] = array(
     'lid' => 2042,
     'source' => 'anonymous user',
@@ -38801,6 +40745,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:default'][764] = array(
+    'lid' => 764,
+    'source' => 'term',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مصطلح',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:default'][2044] = array(
     'lid' => 2044,
     'source' => 'authenticated user',
@@ -39068,6 +41021,15 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'إعادة ترتيب عرض الصناديق على <a href="@dashboard-url">صفحة لوحة التحكم</a>.لا يتم عرض الصناديق الموضوعة في منطقة لوحة التحكم(غير نشط) أثناء معاينة صفحة لوحة التحكم، ولكن يمكن الوصول إليها في واجهة <em>تخصيص لوحة التحكم</em>.  عند إزالة صندوق من واجهة لوحة التحكم نشطة يمكن الوصول له من خلال <a href="@blocks-url">صفحة إدارة الصتاديق</a>.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:default'][1790] = array(
+    'lid' => 1790,
+    'source' => 'Enable multilingual support for this content type. If enabled, a language selection field will be added to the editing form, allowing you to select from one of the <a href="!languages">enabled languages</a>. You can also turn on translation for this content type, which lets you have content translated to any of the enabled languages. If disabled, new posts are saved with the default language. Existing content will not be affected by changing this option.',
+    'context' => '',
+    'location' => '',
+    'translation' => 'فعّل دعم تعدد اللغات لنوع المحتوى هذا. عند تفعيله سيظهر حقل لاختيار اللغة في استمارة التحرير، يتيح لك اختيار واحدة من <a href="!languages">اللغات المفعّلة</a>. يمكن أيضا تفعيل ترجمة نوع المحتوى هذا، ما سيتيح لك ترجمة المحتوى إلى أي من اللغات المفعّلة. عند تعطيله ستُحفظ المواضيع الجديدة باللغة المبدئية. لن يتأثر المحتوى الموجود بتغيير هذا الخيار.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -40403,15 +42365,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 5132,
     'plural' => 5,
   );
-  $translations['ar:default'][5357] = array(
-    'lid' => 5357,
-    'source' => 'Disabled themes',
-    'context' => '',
-    'location' => '',
-    'translation' => 'الحلل المعطلة',
-    'plid' => 5357,
-    'plural' => 5,
-  );
   $translations['ar:default'][5471] = array(
     'lid' => 5471,
     'source' => '@count debug messages',
@@ -41042,6 +42995,51 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 6980,
     'plural' => 5,
   );
+  $translations['ar:default'][10623] = array(
+    'lid' => 10623,
+    'source' => '@count users',
+    'context' => '',
+    'location' => '',
+    'translation' => 'لا مستخدمين',
+    'plid' => 10622,
+    'plural' => 1,
+  );
+  $translations['ar:default'][10624] = array(
+    'lid' => 10624,
+    'source' => '@count[2] users',
+    'context' => '',
+    'location' => '',
+    'translation' => 'مستخدمان',
+    'plid' => 10623,
+    'plural' => 2,
+  );
+  $translations['ar:default'][10625] = array(
+    'lid' => 10625,
+    'source' => '@count[3] users',
+    'context' => '',
+    'location' => '',
+    'translation' => '@count[3] مستخدمون',
+    'plid' => 10624,
+    'plural' => 3,
+  );
+  $translations['ar:default'][10626] = array(
+    'lid' => 10626,
+    'source' => '@count[4] users',
+    'context' => '',
+    'location' => '',
+    'translation' => '@count[4] مستخدما',
+    'plid' => 10625,
+    'plural' => 4,
+  );
+  $translations['ar:default'][10627] = array(
+    'lid' => 10627,
+    'source' => '@count[5] users',
+    'context' => '',
+    'location' => '',
+    'translation' => '@count[5] مستخدم',
+    'plid' => 10626,
+    'plural' => 5,
+  );
   $translations['ar:field'][2304] = array(
     'lid' => 2304,
     'source' => 'Type',
@@ -41605,7 +43603,7 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'source' => 'About the Index',
     'context' => 'item:413:title',
     'location' => 'menu:item:413:title',
-    'translation' => 'حول المؤشر',
+    'translation' => 'About the Index',
     'plid' => 0,
     'plural' => 0,
   );
@@ -41843,60 +43841,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['ar:rules'][7447] = array(
-    'lid' => 7447,
-    'source' => 'Claim Status is now Sourced with Claim Score : ',
-    'context' => 'rules:updateclaimstatus:1',
-    'location' => 'rules:updateclaimstatus:1',
-    'translation' => 'حالة الادعاء الآن "له مصدر" ومجموع نقاط الادعاء:',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:rules'][7448] = array(
-    'lid' => 7448,
-    'source' => 'Claim Status stays Sourced with same Claim Score : ',
-    'context' => 'rules:updateclaimstatus:2',
-    'location' => 'rules:updateclaimstatus:2',
-    'translation' => 'تبقى حالة الادعاء "له مصدر" بنفس مجموع نقاط الادعاء:',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:rules'][7449] = array(
-    'lid' => 7449,
-    'source' => 'Claim Status is now Disputed with Claim Score : No',
-    'context' => 'rules:updateclaimstatus:3',
-    'location' => 'rules:updateclaimstatus:3',
-    'translation' => 'حالة الإدعاء الآن "موضع خلاف" ومجموع نقاط الادعاء: ',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:rules'][7450] = array(
-    'lid' => 7450,
-    'source' => 'Claim Status stays disputed with same Claim Score',
-    'context' => 'rules:updateclaimstatus:4',
-    'location' => 'rules:updateclaimstatus:4',
-    'translation' => 'تبقى حالة الادعاء "موضع خلاف" بنفس مجموع نقاط الادعاء:',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:rules'][7451] = array(
-    'lid' => 7451,
-    'source' => 'Claim Status becomes Peer Reviewed and Disputed with same Claim Score : ',
-    'context' => 'rules:updateclaimstatus:5',
-    'location' => 'rules:updateclaimstatus:5',
-    'translation' => 'تصبح حالة الادعاء "مراجع من قبل الأقران وموضع خلاف" وبنفس مجموع نقاط الادعاء:',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:rules'][7452] = array(
-    'lid' => 7452,
-    'source' => 'Claim Status is now Peer Reviewed with Claim Score : ',
-    'context' => 'rules:updateclaimstatus:6',
-    'location' => 'rules:updateclaimstatus:6',
-    'translation' => 'حالة الادعاء الآن "مراجعة من قبل الأقران" ومجموع نقاط الادعاء:',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['ar:taxonomy'][3328] = array(
     'lid' => 3328,
     'source' => 'Disclosure of confidentiality failures',
@@ -42065,24 +44009,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => 'term:70:name',
     'location' => 'taxonomy:term:70:name',
     'translation' => 'الكل',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy'][7445] = array(
-    'lid' => 7445,
-    'source' => 'Data Sharing',
-    'context' => 'term:116:name',
-    'location' => 'taxonomy:term:116:name',
-    'translation' => 'مشاركة البيانات',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy'][7446] = array(
-    'lid' => 7446,
-    'source' => 'Documented sharing of user data',
-    'context' => 'term:128:name',
-    'location' => 'taxonomy:term:128:name',
-    'translation' => 'مشاركة موثقة لبيانات المستخدمين',
     'plid' => 0,
     'plural' => 0,
   );
