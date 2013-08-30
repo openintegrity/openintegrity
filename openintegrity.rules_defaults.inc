@@ -287,7 +287,7 @@ function openintegrity_default_rules_configuration() {
       "LABEL" : "Test Entry Index SubIndex Claim",
       "PLUGIN" : "reaction rule",
       "ACTIVE" : false,
-      "REQUIRES" : [ "views_rules", "rules", "php" ],
+      "REQUIRES" : [ "views_rules", "rules" ],
       "ON" : [],
       "DO" : [
         { "VIEW LOOP" : {
@@ -348,7 +348,7 @@ function openintegrity_default_rules_configuration() {
   $items['rules_update_claim_status'] = entity_import('rules_config', '{ "rules_update_claim_status" : {
       "LABEL" : "Update Claim Status",
       "PLUGIN" : "reaction rule",
-      "REQUIRES" : [ "rules", "php", "rules_i18n" ],
+      "REQUIRES" : [ "rules" ],
       "ON" : [ "node_insert", "node_update" ],
       "IF" : [
         { "node_is_of_type" : {
@@ -377,7 +377,7 @@ function openintegrity_default_rules_configuration() {
       "LABEL" : "Update Entry Score",
       "PLUGIN" : "reaction rule",
       "TAGS" : [ "Update" ],
-      "REQUIRES" : [ "rules", "php", "rules_i18n", "views_rules" ],
+      "REQUIRES" : [ "rules", "views_rules" ],
       "ON" : [ "node_update", "node_insert" ],
       "IF" : [
         { "node_is_of_type" : { "node" : [ "node" ], "type" : { "value" : { "index" : "index" } } } }
@@ -411,7 +411,7 @@ function openintegrity_default_rules_configuration() {
       "LABEL" : "Update Index Score",
       "PLUGIN" : "reaction rule",
       "TAGS" : [ "Update" ],
-      "REQUIRES" : [ "rules", "php", "rules_i18n", "views_rules" ],
+      "REQUIRES" : [ "rules", "views_rules" ],
       "ON" : [ "node_update", "node_insert" ],
       "IF" : [
         { "node_is_of_type" : {
@@ -453,10 +453,7 @@ function openintegrity_default_rules_configuration() {
               { "drupal_message" : { "message" : "\\u003C?php\\r\\n$subindex = node_load($subindex_instance-\\u003Enid);\\r\\nif ($subindex-\\u003Enid == $node-\\u003Enid) $subindex = $node;\\r\\n$subindex_wrapper = entity_metadata_wrapper(\\u0027node\\u0027, $subindex);\\r\\n$subindex_score = $subindex_wrapper-\\u003Efield_subindex_score-\\u003Ename-\\u003Evalue();\\r\\n$index_wrapper = entity_metadata_wrapper(\\u0027node\\u0027, $index);\\r\\n$sum = $index_wrapper-\\u003Efield_index_sum-\\u003Evalue();\\r\\n$score = ($subindex_score == \\u0022All\\u0022)?1:0;\\r\\n\\/\\/echo $subindex-\\u003Etitle . \\u0022 SubIndex score is : \\u0022 . $subindex_score . \\u0022(\\u0022 . $score . \\u0022) \\u003Cbr\\u003E\\u0022;\\r\\n$index_wrapper-\\u003Efield_index_sum = $sum + $score;\\r\\n\\/\\/echo \\u0022Index Sum was : \\u0022 . $sum . \\u0022 and is now : \\u0022 . $index_wrapper-\\u003Efield_index_sum-\\u003Evalue();\\r\\n?\\u003E" } },
               { "data_set" : {
                   "data" : [ "subindex-number" ],
-                  "value" : {
-                    "select" : "subindex-number",
-                    "php" : { "code" : "return $value + 1;" }
-                  }
+                  "value" : { "select" : "subindex-number" }
                 }
               }
             ]
@@ -470,7 +467,7 @@ function openintegrity_default_rules_configuration() {
   $items['rules_update_subindex_score'] = entity_import('rules_config', '{ "rules_update_subindex_score" : {
       "LABEL" : "Update SubIndex Score",
       "PLUGIN" : "reaction rule",
-      "REQUIRES" : [ "rules", "php", "rules_i18n", "views_rules" ],
+      "REQUIRES" : [ "rules", "views_rules" ],
       "ON" : [ "node_insert", "node_update" ],
       "IF" : [
         { "node_is_of_type" : { "node" : [ "node" ], "type" : { "value" : { "claim" : "claim" } } } }
