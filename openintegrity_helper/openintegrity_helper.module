@@ -44,20 +44,21 @@ function openintegrity_helper_form_entry_node_form_alter(&$form, &$form_state, $
 
 function openintegrity_helper_form_evidence_node_form_alter(&$form, &$form_state, $form_id) {
 //  $form['field_evidence_date']['und']['#access'] = 0;
-  $form['#prefix'] = '<div class="entry-form-links"><div class="submit-evidence">Submit evidence to support/contradict this claim<span class="submit-bubble"></span></div><a href="#" class="share-claim">Share this claim</a></div>';
 
+  if (!(strpos($form['#action'],'node/add/evidence') || strpos($form['#action'],'/edit'))) {
+    $form['#prefix'] = '<div class="entry-form-links"><div class="submit-evidence">Submit evidence to support/contradict this claim<span class="submit-bubble"></span></div><a href="#" class="share-claim">Share this claim</a></div>';
+  }
+
+/*
   unset($form['menu']);
   unset($form['options']);
   unset($form['revision_information']);
   unset($form['comment_settings']);
-
   unset($form['author']);
-
   $form['#after_build'][] = 'openintegrity_helper_after_build';
-
   $form['actions']['submit']['#value'] = t('Submit Evidence');
 
-/*
+ *
  * Removing Ajax for now.
  *
   $form['#validate'] = array();
@@ -72,15 +73,15 @@ function openintegrity_helper_form_evidence_node_form_alter(&$form, &$form_state
 */
 }
 
+/*
 function openintegrity_helper_after_build ($form, &$form_state) {
   $form['path']['#access'] = false;
   return $form;
 }
+*/
 
 /*
 function openintegrity_helper_forms_ajax_callback($form, &$form_state){
-//echo  dprint_r($form['field_evidence_claim_id']['#value'],true);
-//  watchdog('oii', dprint_r($form_state,true));
   module_load_include('inc', 'node', 'node.pages');
   node_form_validate($form, $form_state);
 
@@ -89,7 +90,6 @@ function openintegrity_helper_forms_ajax_callback($form, &$form_state){
   }
 
   $claimid = $form_state['input']['field_evidence_claim_id'];
-//  echo dprint_r($claimid,true);
   // Get view's content
   $content = views_embed_view('entry_evidence', 'default', $claimid);
 
@@ -106,10 +106,8 @@ function openintegrity_helper_forms_ajax_callback($form, &$form_state){
 function openintegrity_helper_form_user_register_form_alter(&$form, &$form_state) {
 // JUN: Changing the title of the buttons on the inline_entity_form (https://drupal.org/node/1880850#comment-6936976)
  
-//   var_dump($form['profile_developer']['field_tool']['und']['actions']);
    switch ($form['#action']) {
      case '/developer/register':
-//      echo dprint_r($form['profile_developer']['field_tool']['und']['form'],true);
       $form['profile_developer']['field_tool']['und']['actions']['ief_add']['#value'] = t('Submit a new Tool');
       $form['profile_developer']['field_tool']['und']['actions']['ief_add_existing']['#value'] = t('Search for a Tool');
       $form['profile_developer']['field_tool']['und']['form']['entity_id']['#title'] = t('Tool name');
