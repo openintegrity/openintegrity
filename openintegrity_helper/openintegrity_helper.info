@@ -4,5 +4,6 @@ name = Open Integrity Helper
 description = Helper code for Open Integrity Index
 package = Open Integrity
 core = 7.x
+version = 7.x-1.0-alpha1
 project = openintegrity_helper
 files[] = openintegrity_helper.module
