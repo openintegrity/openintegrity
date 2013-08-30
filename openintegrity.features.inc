@@ -250,34 +250,28 @@ function openintegrity_default_search_api_index() {
           "settings" : { "default" : "0", "bundles" : { "entry" : "entry" } }
         },
         "search_api_alter_node_access" : { "status" : 1, "weight" : "0", "settings" : [] },
-        "search_api_alter_node_status" : { "status" : 1, "weight" : "0", "settings" : [] },
-        "search_api_alter_add_hierarchy" : { "status" : 0, "weight" : "0", "settings" : { "fields" : [] } },
+        "search_api_alter_node_status" : { "status" : 0, "weight" : "0", "settings" : [] },
+        "search_api_alter_language_control" : {
+          "status" : 0,
+          "weight" : "0",
+          "settings" : { "lang_field" : "", "languages" : [] }
+        },
         "search_api_alter_add_viewed_entity" : { "status" : 0, "weight" : "0", "settings" : { "mode" : "full" } },
         "search_api_alter_add_url" : { "status" : 0, "weight" : "0", "settings" : [] },
-        "search_api_alter_add_aggregation" : { "status" : 0, "weight" : "0", "settings" : [] }
+        "search_api_alter_add_aggregation" : { "status" : 0, "weight" : "0", "settings" : [] },
+        "search_api_alter_add_hierarchy" : { "status" : 0, "weight" : "0", "settings" : { "fields" : [] } }
       },
       "processors" : {
         "search_api_case_ignore" : {
           "status" : 1,
           "weight" : "0",
-          "settings" : { "fields" : {
-              "title" : true,
-              "body:value" : true,
-              "field_entry_type:name" : true,
-              "field_entry_score:uuid" : true
-            }
-          }
+          "settings" : { "fields" : { "title" : true, "body:value" : true } }
         },
         "search_api_html_filter" : {
           "status" : 1,
           "weight" : "10",
           "settings" : {
-            "fields" : {
-              "title" : true,
-              "body:value" : true,
-              "field_entry_type:name" : true,
-              "field_entry_score:uuid" : true
-            },
+            "fields" : { "title" : true, "body:value" : true },
             "title" : 0,
             "alt" : 1,
             "tags" : "h1 = 5\\r\\nh2 = 3\\r\\nh3 = 2\\r\\nstrong = 2\\r\\nb = 2\\r\\nem = 1.5\\r\\nu = 1.5"
@@ -287,12 +281,7 @@ function openintegrity_default_search_api_index() {
           "status" : 1,
           "weight" : "20",
           "settings" : {
-            "fields" : {
-              "title" : true,
-              "body:value" : true,
-              "field_entry_type:name" : true,
-              "field_entry_score:uuid" : true
-            },
+            "fields" : { "title" : true, "body:value" : true },
             "spaces" : "[^\\\\p{L}\\\\p{N}]",
             "ignorable" : "[-]"
           }
@@ -301,12 +290,7 @@ function openintegrity_default_search_api_index() {
           "status" : 0,
           "weight" : "30",
           "settings" : {
-            "fields" : {
-              "title" : true,
-              "body:value" : true,
-              "field_entry_type:name" : true,
-              "field_entry_score:uuid" : true
-            },
+            "fields" : { "title" : true, "body:value" : true },
             "file" : "",
             "stopwords" : "but\\r\\ndid\\r\\nthe this that those\\r\\netc"
           }
