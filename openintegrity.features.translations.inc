@@ -24171,7 +24171,7 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'lid' => 7060,
     'source' => 'Close',
     'context' => '',
-    'location' => '',
+    'location' => '; sites/all/modules/taxonomy_manager/js/tree.js',
     'translation' => 'إغلاق',
     'plid' => 0,
     'plural' => 0,
