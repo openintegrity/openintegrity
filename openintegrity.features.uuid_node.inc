@@ -115,21 +115,21 @@ function openintegrity_uuid_features_default_content() {
 
 ## كيف يمكنك المساهمة؟ ##         {#contribute}
 
-### Tool Users ###
+### مستخدمو الأدوات ###
 
-As a Tool user wondering about which tools to choose we need your input to make sure the Open Integrity Index is meeting your expectations and is in fact helping you to make better informed decisions.
+إذا كنت مستخدماً وتتساءل عن أي من الأدوات تختار، نحن نحتاج آراءك لنضمن أن مؤشر النزاهة المفتوح يلبي احتياجاتك ويساعدك فعلياً على اتخاذ قرارات مطلعة أفضل.
 
-  * If you\'d like to be part of the beta testers [subscribe to beta@openintegrity.org](mailto:beta-join@openintegrity.org)
-  * If you have language skills and are interested in contributing to OII translations [subscribe to translation@openintegrity.org](translation-join@openintegrity.org) or go ahead and [start a new translation on transifex](https://www.transifex.com/projects/p/openintegrity/)
+  * إذا كنت ترغب بأن تكون أحد مختبري النسخ التجريبية beta  [اشترك بالقائمة البريدية التالية beta@openintegrity.org](mailto:beta-join@openintegrity.org)
+  * إذا كنت تملك مهارات لغوية وترغب بالمساهمة بترجمة المؤشر [اشترك بـ translation@openintegrity.org](translation-join@openintegrity.org) أو يمكنك [بدء ترجمة جديدة على transifex](https://www.transifex.com/projects/p/openintegrity/)
 
-### Digital Security Experts ###
+### خبراء الأمن الرقمي ###
 
-You can volunteer to be part of the OII peer review process. This means you will be notified when dispute arise in the determination of claims that count toward the Open Integrity Index of particular tools. You will work with other experts and be asked to reach consensus on claims. You might also be asked to participate in full reviews that are commissioned by tool makers or other stakeholders, in which case you will be compensated for your time.
+يمكنك التطوع لتكون جزءاً من عملية مراجعة الأقران. هذا يعني أنه سيتم تنبيهك عندما تظهر نزاعات في تحديد صحة ادعاءات تحسب في مجموع نقاط المؤشر لأدوات معينة. ستعمل مع خبراء آخرين وسيطلب منكم التوصل لإجماع حول الادعاءات والمزاعم المختلفة. يمكن أن يطلب منكم أيضاً المشاركة في مراجعة شاملة يطلبها مطورو الأداة أو أصحاب مصلحة آخرون، وفي تلك الحالة سيتم تعويضكم على الوقت الذي عملتم فيه.
 
-  * If you\'d like to contact us directly to discuss the OII peer review process or participate in developing and improving the peer review process itself contact us at (mailto:contact@openintegrity.org)
-  * If you\'d like to discuss with other digital security experts about topics regarding the evaluation of claims for specific tools please [Subscribe to peer-review@openintegrity.org](mailto:peer-review-join@openintegrity.org)
+  * إذا كنتم ترغبون بالاتصال بنا مباشرة لمناقشة عملية مراجعة الأقران ضمن مؤشر النزاهة المفتوح أو المشاركة في تطوير وتحسين عملية مراجة الأقران نفسها يرجى إرسالة رسالة إلى [contact@openintegrity.org](mailto:contact@openintegrity.org)
+  *إذا كنتم ترغبون بالنقاش مع خبراء أمن رقمي آخرين حول مواضيع تتعلق بتقييم ادعاءات أداة معينة يرجى [الاشتراك بـ peer-review@openintegrity.org](mailto:peer-review-join@openintegrity.org)
 
-### Tool Developers ###
+### مطورو الأدوات ###
 
 As a tool developer we are hoping that you will be interested in submitting a self-evaluation of your tool using the OII framework, and will display the OII badge in your download pages to signify your adhesion to the principles of OII about user education, and help users make better informed decisions.
 
@@ -326,25 +326,25 @@ Use our [Feedback form](contact) to let us know about your question and we\'ll m
 
 <h2 id="contribute">كيف يمكنك المساهمة؟</h2>
 
-<h3>Tool Users</h3>
+<h3>مستخدمو الأدوات</h3>
 
-<p>As a Tool user wondering about which tools to choose we need your input to make sure the Open Integrity Index is meeting your expectations and is in fact helping you to make better informed decisions.</p>
-
-<ul>
-<li>If you\'d like to be part of the beta testers <a href="mailto:beta-join@openintegrity.org">subscribe to beta@openintegrity.org</a></li>
-<li>If you have language skills and are interested in contributing to OII translations <a href="translation-join@openintegrity.org">subscribe to translation@openintegrity.org</a> or go ahead and <a href="https://www.transifex.com/projects/p/openintegrity/">start a new translation on transifex</a></li>
-</ul>
-
-<h3>Digital Security Experts</h3>
-
-<p>You can volunteer to be part of the OII peer review process. This means you will be notified when dispute arise in the determination of claims that count toward the Open Integrity Index of particular tools. You will work with other experts and be asked to reach consensus on claims. You might also be asked to participate in full reviews that are commissioned by tool makers or other stakeholders, in which case you will be compensated for your time.</p>
+<p>إذا كنت مستخدماً وتتساءل عن أي من الأدوات تختار، نحن نحتاج آراءك لنضمن أن مؤشر النزاهة المفتوح يلبي احتياجاتك ويساعدك فعلياً على اتخاذ قرارات مطلعة أفضل.</p>
 
 <ul>
-<li>If you\'d like to contact us directly to discuss the OII peer review process or participate in developing and improving the peer review process itself contact us at (mailto:contact@openintegrity.org)</li>
-<li>If you\'d like to discuss with other digital security experts about topics regarding the evaluation of claims for specific tools please <a href="mailto:peer-review-join@openintegrity.org">Subscribe to peer-review@openintegrity.org</a></li>
+<li>إذا كنت ترغب بأن تكون أحد مختبري النسخ التجريبية beta  <a href="mailto:beta-join@openintegrity.org">اشترك بالقائمة البريدية التالية beta@openintegrity.org</a></li>
+<li>إذا كنت تملك مهارات لغوية وترغب بالمساهمة بترجمة المؤشر <a href="translation-join@openintegrity.org">اشترك بـ translation@openintegrity.org</a> أو يمكنك <a href="https://www.transifex.com/projects/p/openintegrity/">بدء ترجمة جديدة على transifex</a></li>
 </ul>
 
-<h3>Tool Developers</h3>
+<h3>خبراء الأمن الرقمي</h3>
+
+<p>يمكنك التطوع لتكون جزءاً من عملية مراجعة الأقران. هذا يعني أنه سيتم تنبيهك عندما تظهر نزاعات في تحديد صحة ادعاءات تحسب في مجموع نقاط المؤشر لأدوات معينة. ستعمل مع خبراء آخرين وسيطلب منكم التوصل لإجماع حول الادعاءات والمزاعم المختلفة. يمكن أن يطلب منكم أيضاً المشاركة في مراجعة شاملة يطلبها مطورو الأداة أو أصحاب مصلحة آخرون، وفي تلك الحالة سيتم تعويضكم على الوقت الذي عملتم فيه.</p>
+
+<ul>
+<li>إذا كنتم ترغبون بالاتصال بنا مباشرة لمناقشة عملية مراجعة الأقران ضمن مؤشر النزاهة المفتوح أو المشاركة في تطوير وتحسين عملية مراجة الأقران نفسها يرجى إرسالة رسالة إلى <a href="mailto:contact@openintegrity.org">contact@openintegrity.org</a>
+*إذا كنتم ترغبون بالنقاش مع خبراء أمن رقمي آخرين حول مواضيع تتعلق بتقييم ادعاءات أداة معينة يرجى <a href="mailto:peer-review-join@openintegrity.org">الاشتراك بـ peer-review@openintegrity.org</a></li>
+</ul>
+
+<h3>مطورو الأدوات</h3>
 
 <p>As a tool developer we are hoping that you will be interested in submitting a self-evaluation of your tool using the OII framework, and will display the OII badge in your download pages to signify your adhesion to the principles of OII about user education, and help users make better informed decisions.</p>
 
@@ -1093,7 +1093,7 @@ Use our [Feedback form](contact) to let us know about your question and we\'ll m
         'status' => 1,
         'translate' => 0,
         'created' => 1377735686,
-        'changed' => 1377890600,
+        'changed' => 1377906821,
       ),
     ),
   ),
