@@ -2170,6 +2170,32 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Unsubstantiated',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '86bb1de6-febe-4680-9549-92f7688de661',
+    'language' => 'en',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'subindex_status',
+    'translations' => array(
+      'original' => 'en',
+      'data' => array(
+        'en' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 146,
+          'language' => 'en',
+          'source' => '',
+          'uid' => 1,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1378301945,
+          'changed' => 1378301945,
+        ),
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'Code available on request',
     'description' => 'The source code is available on request.',
     'format' => 'full_html',
@@ -3073,6 +3099,32 @@ function openintegrity_uuid_features_default_terms() {
     'translations' => array(
       'original' => NULL,
       'data' => array(),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Instant Messaging',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'c2f751f5-4a7f-4417-a431-14cc566b4002',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'entry_category',
+    'translations' => array(
+      'original' => 'en',
+      'data' => array(
+        'en' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 145,
+          'language' => 'en',
+          'source' => '',
+          'uid' => 100,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1377959792,
+          'changed' => 1377959792,
+        ),
+      ),
     ),
   );
   $terms[] = array(
