@@ -273,6 +273,7 @@ features[field_instance][] = taxonomy_term-criteria-field_threshold
 features[filter][] = full_html
 features[filter][] = php_code
 features[filter][] = plain_text
+features[formatters][] = badge
 features[formatters][] = static_badge
 features[image][] = index-full
 features[image][] = logo-list
