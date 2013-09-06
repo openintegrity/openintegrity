@@ -378,6 +378,34 @@ function openintegrity_default_rules_configuration() {
       ]
     }
   }');
+  $items['rules_update_claim_status_delete_'] = entity_import('rules_config', '{ "rules_update_claim_status_delete_" : {
+      "LABEL" : "Update Claim Status (delete)",
+      "PLUGIN" : "reaction rule",
+      "REQUIRES" : [ "rules" ],
+      "ON" : [ "node_delete" ],
+      "IF" : [
+        { "node_is_of_type" : {
+            "node" : [ "node" ],
+            "type" : { "value" : { "evidence" : "evidence" } }
+          }
+        }
+      ],
+      "DO" : [
+        { "entity_fetch" : {
+            "USING" : {
+              "type" : "node",
+              "id" : [ "node:field-evidence-claim:nid" ],
+              "revision_id" : [ "node:field-evidence-claim:vid" ]
+            },
+            "PROVIDE" : { "entity_fetched" : { "claim" : "Claim" } }
+          }
+        },
+        { "drupal_message" : { "message" : "\\u003C?php\\r\\n\\r\\n\\/\\/ UPDATE CLAIM STATUS \\/ DELETE\\r\\n\\/\\/ Should apply the flag rules to the evidences. I should probably move the Flags into Claim Status. I need to add Flags for SbIndex nodes?.\\r\\n\\/\\/ if evidence from Developer or Community\\r\\n\\/\\/    If Claim Status = Unsubstantiated \\u2192 Claim status = Evidence Status (Supporting \\u2192 Supported \\/ Negating \\u2192 Negated)\\r\\n\\/\\/    If Claim Status = Supported or Negated\\r\\n\\/\\/    if Claim Status == Evidence Status confirmation \\u2192 Do nothing * if Claim Status != Evidence Status \\u2192 Claim Status = Disputed * If Claim Status = Supported (Peer Reviewed) or Negated (Peer Reviewed) * if Claim Status == Evidence Status confirmation \\u2192 Do nothing\\r\\n\\/\\/    if Claim Status != Evidence Status \\u2192 Claim Status = Supported (Peer Reviewed \\/ Disputed) or Negated (Peer Reviewed \\/ Disputed)\\r\\n\\/\\/ If evidence from Peer Reviewer\\r\\n\\/\\/    Claim Status = Supported (Peer Reviewed) or Negated (Peer Reviewed)\\r\\n\\r\\n$ret=\\u0022\\u0022;\\r\\n$author = user_load($node-\\u003Euid);\\r\\n\\r\\n$claim_status = taxonomy_term_load($claim-\\u003Efield_claim_status[\\u0027und\\u0027][0][\\u0027tid\\u0027]);\\r\\n$evidence_status = taxonomy_term_load($node-\\u003Efield_evidence_status[\\u0027und\\u0027][0][\\u0027tid\\u0027]);\\r\\n\\r\\nif (!in_array(\\u0022peer-reviewer\\u0022, $author-\\u003Eroles)) {\\r\\n\\/\\/  echo dprint_r($author-\\u003Eroles, true);\\r\\n  switch ($claim_status-\\u003Ename) {\\r\\n    case \\u0022Unsubstantiated\\u0022:\\r\\n      $arr = taxonomy_get_term_by_name(\\u0022Sourced\\u0022, \\u0022claim_status\\u0022);\\r\\n       $sourced = array_shift($arr);\\r\\n\\/\\/     echo dprint_r($sourced,true);\\r\\n      $claim-\\u003Efield_claim_status[\\u0027und\\u0027][0][\\u0027tid\\u0027] = $sourced-\\u003Etid;\\r\\n      $claim-\\u003Efield_claim_score[\\u0027und\\u0027][0][\\u0027value\\u0027] = ($evidence_status-\\u003Ename == \\u0022Supporting\\u0022)?1:0;\\r\\n      $ret .= $claim-\\u003Etitle . \\u0022 Claim Status stays Unsubstantiated (probably stale Index tree) with Claim Score : \\u0022;\\r\\n      $ret .= ($claim-\\u003Efield_claim_score[\\u0027und\\u0027][0][\\u0027value\\u0027] == 1)?\\u0022Yes\\u0022:\\u0022No\\u0022;\\r\\n      break;\\r\\n    case \\u0022Sourced\\u0022:\\r\\n    case \\u0022Disputed\\u0022:\\r\\n    case \\u0022Peer Reviewed\\u0022:\\r\\n      $ret .= $claim-\\u003Etitle . \\u0022 Claim Status should be changed but doing nothing for now. \\u003Ca href=\\u0022\\/contact\\u0022\\u003EPlease file a report\\u003C\\/a\\u003E to let us know there is a problem with the data.\\u0022;\\r\\n      break;\\r\\n  }\\r\\n} else {\\r\\n      $ret .= $claim-\\u003Etitle . \\u0022 Claim Status should be changed but doing nothing for now. \\u003Ca href=\\u0022\\/contact\\u0022\\u003EPlease file a report\\u003C\\/a\\u003E to let us know there is a problem with the data.\\u0022;\\r\\n}\\r\\n\\r\\necho $ret;\\r\\n?\\u003E" } },
+        { "entity_save" : { "data" : [ "claim" ], "immediate" : 1 } },
+        { "redirect" : { "url" : "\\u003C?php \\r\\n\\/\\/echo dprint_r($claim-\\u003Efield_claim_subindex[\\u0027und\\u0027][0],true);\\r\\n$sub = node_load($claim-\\u003Efield_claim_subindex[\\u0027und\\u0027][0][\\u0027target_id\\u0027]);\\r\\n$ind = node_load($sub-\\u003Efield_subindex_index[\\u0027und\\u0027][0][\\u0027target_id\\u0027]);\\r\\nreturn \\u0027node\\/\\u0027.$ind-\\u003Efield_index_entry[\\u0027und\\u0027][0][\\u0027target_id\\u0027];\\r\\n?\\u003E" } }
+      ]
+    }
+  }');
   $items['rules_update_entry_score'] = entity_import('rules_config', '{ "rules_update_entry_score" : {
       "LABEL" : "Update Entry Score",
       "PLUGIN" : "reaction rule",
