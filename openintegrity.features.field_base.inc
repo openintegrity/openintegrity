@@ -539,6 +539,9 @@ function openintegrity_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_evidence_claim',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'foreign keys' => array(
       'node' => array(
         'columns' => array(
@@ -556,19 +559,21 @@ function openintegrity_field_default_field_bases() {
     'module' => 'entityreference',
     'settings' => array(
       'entity_translation_sync' => FALSE,
-      'handler' => 'views',
+      'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
           'views-select-list' => array(
             'status' => 0,
           ),
         ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => 'entityreference_1',
-          'view_name' => 'select_claim',
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'claim' => 'claim',
         ),
       ),
+      'profile2_private' => FALSE,
       'target_type' => 'node',
     ),
     'translatable' => 0,
