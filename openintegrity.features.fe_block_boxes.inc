@@ -11,6 +11,24 @@ function openintegrity_default_fe_block_boxes() {
   $export = array();
 
   $fe_block_boxes = new stdClass();
+  $fe_block_boxes->info = 'Contact Text';
+  $fe_block_boxes->format = 'plain_text';
+  $fe_block_boxes->machine_name = 'contact_text';
+  $fe_block_boxes->body = 'Get in touch with us to let us know about your ideas, suggestions and the problems you\'ve encountered. 
+
+Please make sure you take a look at:
+
+  * [our FAQ](about#faq),
+  * [our wiki](https://wiki.openintegrity.org),
+  * [our roadmap](https://wiki.openintegrity.org/doku.php?id=roadmap) 
+  * and [our issue queue](https://github.com/iilab/openintegrity/issues) as well to see if others have provided similar feedback.
+
+We really appreciate your interest in the Open Integrity Index!
+';
+
+  $export['contact_text'] = $fe_block_boxes;
+
+  $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'entry-1';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'entry_1';

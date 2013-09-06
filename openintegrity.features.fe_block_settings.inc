@@ -12,6 +12,35 @@ function openintegrity_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
+  $export['block-contact_text'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'i18n_block_language' => array(),
+    'i18n_mode' => 1,
+    'machine_name' => 'contact_text',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'bootstrap' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bootstrap',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 0,
+  );
+
   $export['block-entry_1'] = array(
     'cache' => -1,
     'css_class' => 'span4 entry1',
