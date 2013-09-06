@@ -154,3 +154,12 @@ function openintegrity_helper_views_pre_view(&$view, &$display_id, &$args) {
     $view->set_item($display_id, 'footer', 'area', $options);
   }
 }
+
+function openintegrity_helper_node_presave($node) {
+  if (!empty($node->nid)) {
+    $status_before = db_query("SELECT status FROM {node} WHERE nid = :nid", array(':nid' => $node->nid))->fetchObject();
+    if ($node->status == 0 && $status_before->status == 1) {
+      $node->revision_moderation = FALSE;
+    }
+  }
+}
