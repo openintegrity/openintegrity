@@ -1185,7 +1185,7 @@ views-exposed-form-browse-page';
   $strongarm->name = 'features_codecache';
   $strongarm->value = array(
     'openintegrity' => array(
-      'uuid_term' => 'e8aa35a5150a9200e8f2bf9605c798ff',
+      'uuid_term' => '28ae382eff2d169fda685833f9654d06',
       'field_base' => '122afb5d9f27b5402e9c5583f652407c',
       'field_instance' => '77b1dd4f098cda803212397ae52c7382',
       'taxonomy' => 'd5f8653bcfd22754cb24635a234c907a',
@@ -1825,7 +1825,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'less_dir';
-  $strongarm->value = 'xfv2fTV3nYcr7ChBg4YlUWUfvrrhsvq10btMXeUwk0w';
+  $strongarm->value = '3QoMfdvdLB7cZWapvGcO_dcZqi9gMOMdhhPKupyYMrI';
   $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();
