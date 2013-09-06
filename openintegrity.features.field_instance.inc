@@ -564,6 +564,12 @@ function openintegrity_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 8,
       ),
+      'overlay_teaser' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
       'static_badge' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -649,6 +655,27 @@ function openintegrity_field_default_field_instances() {
         'type' => 'textformatter_list',
         'weight' => 10,
       ),
+      'overlay_teaser' => array(
+        'label' => 'above',
+        'module' => 'textformatter',
+        'settings' => array(
+          'textformatter_class' => 'textformatter-list',
+          'textformatter_comma_and' => 0,
+          'textformatter_comma_full_stop' => 0,
+          'textformatter_comma_override' => 0,
+          'textformatter_comma_tag' => 0,
+          'textformatter_contrib' => array(
+            'entityreference_link' => 0,
+          ),
+          'textformatter_separator_custom' => '',
+          'textformatter_separator_custom_class' => 'textformatter-separator',
+          'textformatter_separator_custom_tag' => 'span',
+          'textformatter_term_plain' => 0,
+          'textformatter_type' => 'comma',
+        ),
+        'type' => 'textformatter_list',
+        'weight' => 6,
+      ),
       'static_badge' => array(
         'label' => 'above',
         'settings' => array(),
@@ -696,6 +723,12 @@ function openintegrity_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 7,
+      ),
+      'overlay_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
       ),
       'static_badge' => array(
         'label' => 'above',
@@ -758,6 +791,13 @@ function openintegrity_field_default_field_instances() {
         'type' => 'taxonomy_term_reference_link',
         'weight' => 3,
       ),
+      'overlay_teaser' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 4,
+      ),
       'static_badge' => array(
         'label' => 'above',
         'settings' => array(),
@@ -805,6 +845,15 @@ function openintegrity_field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 2,
+      ),
+      'overlay_teaser' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 3,
       ),
       'static_badge' => array(
         'label' => 'above',
@@ -857,6 +906,12 @@ function openintegrity_field_default_field_instances() {
         'type' => 'custom_formatters_static_badge',
         'weight' => 5,
       ),
+      'overlay_teaser' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
       'static_badge' => array(
         'label' => 'hidden',
         'module' => 'custom_formatters',
@@ -902,6 +957,13 @@ function openintegrity_field_default_field_instances() {
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 1,
+      ),
+      'overlay_teaser' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
       ),
       'static_badge' => array(
         'label' => 'above',
@@ -950,6 +1012,13 @@ function openintegrity_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 4,
+      ),
+      'overlay_teaser' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
       ),
       'static_badge' => array(
         'label' => 'above',
@@ -1019,6 +1088,12 @@ function openintegrity_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 9,
       ),
+      'overlay_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
+      ),
       'static_badge' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1081,6 +1156,16 @@ function openintegrity_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 0,
+      ),
+      'overlay_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'index-full',
+        ),
+        'type' => 'image',
+        'weight' => 1,
       ),
       'static_badge' => array(
         'label' => 'above',
