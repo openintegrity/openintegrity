@@ -28,6 +28,24 @@ function openintegrity_user_default_roles() {
     'weight' => 5,
   );
 
+  // Exported role: editor.
+  $roles['editor'] = array(
+    'name' => 'editor',
+    'weight' => 4,
+  );
+
+  // Exported role: moderator.
+  $roles['moderator'] = array(
+    'name' => 'moderator',
+    'weight' => 3,
+  );
+
+  // Exported role: partner.
+  $roles['partner'] = array(
+    'name' => 'partner',
+    'weight' => 8,
+  );
+
   // Exported role: peer-reviewer.
   $roles['peer-reviewer'] = array(
     'name' => 'peer-reviewer',

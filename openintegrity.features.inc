@@ -202,6 +202,14 @@ function openintegrity_default_profile2_type() {
     "weight" : "0",
     "data" : { "registration" : 0 }
   }');
+  $items['partner'] = entity_import('profile2_type', '{
+    "userCategory" : true,
+    "userView" : true,
+    "type" : "partner",
+    "label" : "Partner",
+    "weight" : "0",
+    "data" : { "registration" : 0 }
+  }');
   $items['peer_reviewer'] = entity_import('profile2_type', '{
     "userCategory" : true,
     "userView" : true,
