@@ -2698,20 +2698,6 @@ function openintegrity_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Instant Messenging',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => 'a67fbe5d-da56-4da2-a71f-ceb39b15981b',
-    'language' => 'und',
-    'i18n_tsid' => 0,
-    'vocabulary_machine_name' => 'entry_category',
-    'translations' => array(
-      'original' => NULL,
-      'data' => array(),
-    ),
-  );
-  $terms[] = array(
     'name' => 'Outdated',
     'description' => '',
     'format' => 'full_html',
