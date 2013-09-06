@@ -42,6 +42,8 @@ function openintegrity_user_default_permissions() {
     'name' => 'access comments',
     'roles' => array(
       'administrator' => 'administrator',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'comment',
   );
@@ -54,6 +56,7 @@ function openintegrity_user_default_permissions() {
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
       'editor' => 'editor',
+      'unverified' => 'unverified',
     ),
     'module' => 'node',
   );
@@ -64,6 +67,9 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'moderator' => 'moderator',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'node',
   );
@@ -83,6 +89,8 @@ function openintegrity_user_default_permissions() {
     'name' => 'access devel information',
     'roles' => array(
       'administrator' => 'administrator',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'devel',
   );
@@ -329,6 +337,8 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'moderator' => 'moderator',
+      'partner' => 'partner',
     ),
     'module' => 'node',
   );
@@ -511,6 +521,8 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'node',
   );
@@ -576,6 +588,8 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'node',
   );
@@ -606,6 +620,8 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'node',
   );
@@ -624,6 +640,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'delete any entry content',
     'roles' => array(
       'administrator' => 'administrator',
+      'moderator' => 'moderator',
     ),
     'module' => 'node',
   );
@@ -633,6 +650,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'delete any evidence content',
     'roles' => array(
       'administrator' => 'administrator',
+      'moderator' => 'moderator',
     ),
     'module' => 'node',
   );
@@ -671,6 +689,8 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'node',
   );
@@ -689,6 +709,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'delete own entry content',
     'roles' => array(
       'administrator' => 'administrator',
+      'moderator' => 'moderator',
     ),
     'module' => 'node',
   );
@@ -738,6 +759,9 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'moderator' => 'moderator',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'node',
   );
@@ -800,6 +824,8 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'node',
   );
@@ -833,6 +859,9 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit any entry content',
     'roles' => array(
       'administrator' => 'administrator',
+      'moderator' => 'moderator',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'node',
   );
@@ -842,6 +871,7 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit any evidence content',
     'roles' => array(
       'administrator' => 'administrator',
+      'moderator' => 'moderator',
     ),
     'module' => 'node',
   );
@@ -869,6 +899,8 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'node',
   );
@@ -895,6 +927,8 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit field_entry_score',
     'roles' => array(
       'administrator' => 'administrator',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'field_permissions',
   );
@@ -905,6 +939,8 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'node',
   );
@@ -924,6 +960,8 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit own comments',
     'roles' => array(
       'administrator' => 'administrator',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'comment',
   );
@@ -950,6 +988,9 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
+      'moderator' => 'moderator',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'node',
   );
@@ -969,6 +1010,9 @@ function openintegrity_user_default_permissions() {
     'name' => 'edit own field_entry_score',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'field_permissions',
   );
@@ -998,6 +1042,8 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'node',
   );
@@ -1122,6 +1168,8 @@ function openintegrity_user_default_permissions() {
     'name' => 'post comments',
     'roles' => array(
       'administrator' => 'administrator',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'comment',
   );
@@ -1132,6 +1180,9 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'moderator' => 'moderator',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'node',
   );
@@ -1256,7 +1307,10 @@ function openintegrity_user_default_permissions() {
   // Exported permission: 'use search_api_autocomplete for search_api_views_browse'.
   $permissions['use search_api_autocomplete for search_api_views_browse'] = array(
     'name' => 'use search_api_autocomplete for search_api_views_browse',
-    'roles' => array(),
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'search_api_autocomplete',
   );
 
@@ -1360,7 +1414,10 @@ function openintegrity_user_default_permissions() {
   // Exported permission: 'view own peer_reviewer profile'.
   $permissions['view own peer_reviewer profile'] = array(
     'name' => 'view own peer_reviewer profile',
-    'roles' => array(),
+    'roles' => array(
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
+    ),
     'module' => 'profile2',
   );
 
@@ -1372,6 +1429,7 @@ function openintegrity_user_default_permissions() {
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
       'editor' => 'editor',
+      'unverified' => 'unverified',
     ),
     'module' => 'node',
   );
@@ -1382,6 +1440,9 @@ function openintegrity_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'moderator' => 'moderator',
+      'partner' => 'partner',
+      'peer-reviewer' => 'peer-reviewer',
     ),
     'module' => 'node',
   );

@@ -801,6 +801,10 @@ views-exposed-form-browse-page';
         'label' => 'Organisation Logo',
         'custom settings' => 1,
       ),
+      'overlay_teaser' => array(
+        'label' => 'Overlay Teaser',
+        'custom settings' => 1,
+      ),
     ),
   );
   $export['entity_view_modes'] = $strongarm;
@@ -1185,14 +1189,14 @@ views-exposed-form-browse-page';
       'field_base' => '35395c813092ffbc9ae4b5b82bca5899',
       'field_instance' => '54cc1ff3c1269b81baf8923f75772daa',
       'taxonomy' => 'd5f8653bcfd22754cb24635a234c907a',
-      'dependencies' => 'd9542c6161689119a61a8b92f951437d',
+      'dependencies' => '3d546b32522187b619881177a511682d',
       'node' => '96523e4ef5eb0d97080c03ddb17e423d',
       'cer' => '53fa2b876a05aa40c961f2008f570428',
       'search_api_index' => 'b262dbf991a9736d93e74a5bf9612cf5',
       'search_api_server' => '95070ced1251c82ecd8a7f78f50ff7b5',
       'rules_config' => 'c0bb0911a8a0e43599fb01ef43ef9d26',
-      'views_view' => '1527f95b2d537ec9a0e758a82565202e',
-      'variable' => 'f55e2aca28d9623e2e358e5c3dccf836',
+      'views_view' => '89fb324e940e8307d1deaaae5280a675',
+      'variable' => '39e88bb32cd0db616ee3874c73ff8df4',
       'filter' => '441b0a98276c787c23b78630e908a3fe',
       'user_role' => '515c77078e9f3b84f6238701c433fbcc',
       'user_permission' => 'df289aa0907bb27f7270b2e1ed8a2b1c',
@@ -1210,7 +1214,7 @@ views-exposed-form-browse-page';
       'menu_links' => '5c37e5b415bfa21d24c1047d447da527',
       'field_group' => '164fa807a4b2962e08420674153dbc16',
       'uuid_node' => '8da6d066cbad5794a689b003d45ec6db',
-      'translations' => '88f9f75c662cf74b614b1c49dc9969e9',
+      'translations' => '0fd4fed7852b16bf38c7624025cf612a',
     ),
   );
   $export['features_codecache'] = $strongarm;
@@ -1271,6 +1275,9 @@ views-exposed-form-browse-page';
       'organisation_logo' => array(
         'custom_settings' => FALSE,
       ),
+      'overlay_teaser' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
@@ -1289,6 +1296,9 @@ views-exposed-form-browse-page';
         'custom_settings' => FALSE,
       ),
       'organisation_logo' => array(
+        'custom_settings' => FALSE,
+      ),
+      'overlay_teaser' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -1333,6 +1343,9 @@ views-exposed-form-browse-page';
       'organisation_logo' => array(
         'custom_settings' => FALSE,
       ),
+      'overlay_teaser' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -1354,9 +1367,17 @@ views-exposed-form-browse-page';
             'weight' => '7',
             'visible' => FALSE,
           ),
+          'overlay_teaser' => array(
+            'weight' => '8',
+            'visible' => FALSE,
+          ),
         ),
         'submitted_by' => array(
           'default' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'overlay_teaser' => array(
             'weight' => '0',
             'visible' => TRUE,
           ),
@@ -1376,6 +1397,9 @@ views-exposed-form-browse-page';
         'custom_settings' => FALSE,
       ),
       'organisation_logo' => array(
+        'custom_settings' => FALSE,
+      ),
+      'overlay_teaser' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -1424,6 +1448,9 @@ views-exposed-form-browse-page';
       'organisation_logo' => array(
         'custom_settings' => FALSE,
       ),
+      'overlay_teaser' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -1462,6 +1489,9 @@ views-exposed-form-browse-page';
       ),
       'organisation_logo' => array(
         'custom_settings' => TRUE,
+      ),
+      'overlay_teaser' => array(
+        'custom_settings' => FALSE,
       ),
     ),
     'extra_fields' => array(
@@ -1517,6 +1547,9 @@ views-exposed-form-browse-page';
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'overlay_teaser' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -1539,6 +1572,9 @@ views-exposed-form-browse-page';
         'custom_settings' => FALSE,
       ),
       'organisation_logo' => array(
+        'custom_settings' => FALSE,
+      ),
+      'overlay_teaser' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -1789,7 +1825,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'less_dir';
-  $strongarm->value = 'TlOH2QDDV8vOQpfCDFdoeCJoJk5d3p63hfSVuANmZbY';
+  $strongarm->value = 'ww9Umf8b77s-6m_6TIZ6muGoFwNa0FwtoBxjKqlnWR4';
   $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2062,6 +2098,7 @@ views-exposed-form-browse-page';
   $strongarm->value = array(
     0 => 'promote',
     1 => 'revision',
+    2 => 'revision_moderation',
   );
   $export['node_options_entry'] = $strongarm;
 
@@ -2100,8 +2137,9 @@ views-exposed-form-browse-page';
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_page';
   $strongarm->value = array(
-    0 => 'status',
-    1 => 'promote',
+    0 => 'promote',
+    1 => 'revision',
+    2 => 'revision_moderation',
   );
   $export['node_options_page'] = $strongarm;
 
@@ -2303,7 +2341,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'search_api_solr_last_optimize';
-  $strongarm->value = 1377986440;
+  $strongarm->value = 1378432674;
   $export['search_api_solr_last_optimize'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2431,14 +2469,14 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1378070207;
+  $strongarm->value = 1378468203;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_email_notification';
-  $strongarm->value = 1377986440;
+  $strongarm->value = 1378432674;
   $export['update_last_email_notification'] = $strongarm;
 
   $strongarm = new stdClass();

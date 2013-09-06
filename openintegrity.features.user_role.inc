@@ -19,25 +19,25 @@ function openintegrity_user_default_roles() {
   // Exported role: community.
   $roles['community'] = array(
     'name' => 'community',
-    'weight' => 5,
+    'weight' => 6,
   );
 
   // Exported role: developer.
   $roles['developer'] = array(
     'name' => 'developer',
-    'weight' => 4,
+    'weight' => 5,
   );
 
   // Exported role: peer-reviewer.
   $roles['peer-reviewer'] = array(
     'name' => 'peer-reviewer',
-    'weight' => 6,
+    'weight' => 7,
   );
 
   // Exported role: unverified.
   $roles['unverified'] = array(
     'name' => 'unverified',
-    'weight' => 8,
+    'weight' => 9,
   );
 
   return $roles;
