@@ -58,7 +58,6 @@ dependencies[] = filefield_sources
 dependencies[] = filter
 dependencies[] = formblock
 dependencies[] = fpa
-dependencies[] = get_form_id
 dependencies[] = i18n
 dependencies[] = i18n_block
 dependencies[] = i18n_contact
