@@ -98,9 +98,7 @@ function openintegrity_user_default_permissions() {
   // Exported permission: 'access get form id contextual links'.
   $permissions['access get form id contextual links'] = array(
     'name' => 'access get form id contextual links',
-    'roles' => array(
-      'anonymous user' => 'anonymous user',
-    ),
+    'roles' => array(),
     'module' => 'get_form_id',
   );
 

@@ -43598,15 +43598,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['ar:menu'][3356] = array(
-    'lid' => 3356,
-    'source' => 'About the Index',
-    'context' => 'item:413:title',
-    'location' => 'menu:item:413:title',
-    'translation' => 'About the Index',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['ar:menu'][3357] = array(
     'lid' => 3357,
     'source' => 'User account',
@@ -43622,6 +43613,24 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => 'item:729:title',
     'location' => 'menu:item:729:title',
     'translation' => 'أنشئ حساباً',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:menu'][12469] = array(
+    'lid' => 12469,
+    'source' => 'About',
+    'context' => 'item:1264:title',
+    'location' => 'menu:item:1264:title',
+    'translation' => 'About',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:menu'][12470] = array(
+    'lid' => 12470,
+    'source' => 'About the Open Integrity Index',
+    'context' => 'item:1264:description',
+    'location' => 'menu:item:1264:description',
+    'translation' => 'About the Open Integrity Index',
     'plid' => 0,
     'plural' => 0,
   );
