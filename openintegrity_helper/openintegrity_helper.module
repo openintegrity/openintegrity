@@ -28,6 +28,11 @@ function openintegrity_helper_locale($op = 'groups') {
 
 function openintegrity_helper_form_alter(&$form, &$form_state, $form_id) {
   $form['#attributes']['class'] = 'container';
+  if($form_state['view']->name == 'browse') {
+    $form['field_entry_category']['#options']['All'] = t('Categories'); // overrides <All> on the dropdown
+    $form['field_entry_type']['#options']['All'] = t('Platforms'); // overrides <All> on the dropdown
+
+  }
 }
 
 function openintegrity_helper_form_entry_node_form_alter(&$form, &$form_state, $form_id) {
