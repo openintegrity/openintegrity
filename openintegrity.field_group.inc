@@ -51,10 +51,10 @@ function openintegrity_field_group_info() {
     'label' => 'Evidence Information',
     'weight' => '2',
     'children' => array(
-      0 => 'field_evidence_status',
-      1 => 'field_evidence_link',
-      2 => 'field_evidence_date',
-      3 => 'group_additional_information',
+      0 => 'body',
+      1 => 'field_evidence_status',
+      2 => 'field_evidence_link',
+      3 => 'field_evidence_date',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

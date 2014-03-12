@@ -1293,14 +1293,14 @@ function openintegrity_field_default_field_instances() {
       ),
       'display_summary' => 0,
       'entity_translation_sync' => FALSE,
-      'text_processing' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 8,
+        'rows' => 2,
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
