@@ -84,7 +84,7 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_entitylabel_node_evidence';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['auto_entitylabel_node_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -194,7 +194,7 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'clean_url';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['clean_url'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -243,7 +243,7 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_claim';
-  $strongarm->value = '2';
+  $strongarm->value = 2;
   $export['comment_claim'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -292,56 +292,56 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_per_page_claim';
-  $strongarm->value = '50';
+  $strongarm->value = 50;
   $export['comment_default_per_page_claim'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_per_page_entry';
-  $strongarm->value = '50';
+  $strongarm->value = 50;
   $export['comment_default_per_page_entry'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_per_page_evidence';
-  $strongarm->value = '50';
+  $strongarm->value = 50;
   $export['comment_default_per_page_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_per_page_organisation';
-  $strongarm->value = '50';
+  $strongarm->value = 50;
   $export['comment_default_per_page_organisation'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_per_page_page';
-  $strongarm->value = '50';
+  $strongarm->value = 50;
   $export['comment_default_per_page_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_per_page_subindex';
-  $strongarm->value = '50';
+  $strongarm->value = 50;
   $export['comment_default_per_page_subindex'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_entry';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['comment_entry'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_evidence';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['comment_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -390,63 +390,63 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_organisation';
-  $strongarm->value = '2';
+  $strongarm->value = 2;
   $export['comment_organisation'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_page';
-  $strongarm->value = '2';
+  $strongarm->value = 2;
   $export['comment_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_claim';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['comment_preview_claim'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_entry';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['comment_preview_entry'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_evidence';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['comment_preview_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_organisation';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['comment_preview_organisation'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_page';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['comment_preview_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_subindex';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['comment_preview_subindex'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_subindex';
-  $strongarm->value = '2';
+  $strongarm->value = 2;
   $export['comment_subindex'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -518,7 +518,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'compact_forms_stars';
-  $strongarm->value = '2';
+  $strongarm->value = 2;
   $export['compact_forms_stars'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -532,7 +532,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'date_api_version';
-  $strongarm->value = '7.2';
+  $strongarm->value = 7.2;
   $export['date_api_version'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -546,7 +546,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'default_nodes_main';
-  $strongarm->value = '10';
+  $strongarm->value = 10;
   $export['default_nodes_main'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -561,7 +561,7 @@ views-exposed-form-browse-page';
   $strongarm->api_version = 1;
   $strongarm->name = 'devel_error_handlers';
   $strongarm->value = array(
-    1 => '1',
+    4 => '4',
   );
   $export['devel_error_handlers'] = $strongarm;
 
@@ -1187,9 +1187,9 @@ views-exposed-form-browse-page';
     'openintegrity' => array(
       'uuid_term' => '28ae382eff2d169fda685833f9654d06',
       'field_base' => '122afb5d9f27b5402e9c5583f652407c',
-      'field_instance' => '77b1dd4f098cda803212397ae52c7382',
+      'field_instance' => '5b4dd7f6add209d87baafee76f6610c9',
       'taxonomy' => 'd5f8653bcfd22754cb24635a234c907a',
-      'dependencies' => '5b837c90797c63ffe20bd0c198697e56',
+      'dependencies' => '4876a0f1a74f6fc58f5cfbb36d627224',
       'node' => '96523e4ef5eb0d97080c03ddb17e423d',
       'cer' => '53fa2b876a05aa40c961f2008f570428',
       'search_api_index' => 'b262dbf991a9736d93e74a5bf9612cf5',
@@ -1199,14 +1199,14 @@ views-exposed-form-browse-page';
       'variable' => '31236bc3711cd073c72b685f8212881d',
       'filter' => '441b0a98276c787c23b78630e908a3fe',
       'user_role' => '9ec5e537fec4afd4c6f667c28773d9a2',
-      'user_permission' => 'ffdc45a90633ea9b2cb0f487b47dd3c8',
+      'user_permission' => '0c443ff85c50e391cd151c4a415f3b53',
       'context' => '98847c1ecdaacb6bff592951b6308aae',
       'formatters' => 'dda3f1c3a30aaca380721e997b310f23',
       'profile2_type' => 'b169472728fa229bdbffba2a9480a243',
       'search_api_autocomplete_search' => 'dc491a4d35da4b4f9fde7cbd7ed1577d',
       'password_policy' => 'b61100d69391863ce17951108d434eba',
-      'fe_block_settings' => '0ecfbb70d7804965d1b0010b7f528da6',
-      'variable_realm' => 'ac9fc3392b59080ea7845ac113564023',
+      'fe_block_settings' => '6043dd78ebfff7215438278fce0841a5',
+      'variable_realm' => '7302c5da6e554e7832ac41a2b97799ac',
       'fe_block_boxes' => '591a07f7619141fb1d50c3dc53b5a460',
       'image' => '28983ec56478c9db314d15cd95c978cb',
       'language' => 'b80cd822a18508d39717b5693f436aa3',
@@ -1308,7 +1308,7 @@ views-exposed-form-browse-page';
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => 0,
         ),
       ),
       'display' => array(),
@@ -1353,35 +1353,35 @@ views-exposed-form-browse-page';
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => 0,
         ),
       ),
       'display' => array(
         'entry_entity_view_1' => array(
           'teaser' => array(
-            'weight' => '7',
+            'weight' => 7,
             'visible' => FALSE,
           ),
           'default' => array(
-            'weight' => '6',
+            'weight' => 6,
             'visible' => TRUE,
           ),
           'static_badge' => array(
-            'weight' => '7',
+            'weight' => 7,
             'visible' => FALSE,
           ),
           'overlay_teaser' => array(
-            'weight' => '8',
+            'weight' => 8,
             'visible' => FALSE,
           ),
         ),
         'submitted_by' => array(
           'default' => array(
-            'weight' => '0',
+            'weight' => 0,
             'visible' => TRUE,
           ),
           'overlay_teaser' => array(
-            'weight' => '0',
+            'weight' => 0,
             'visible' => TRUE,
           ),
         ),
@@ -1409,13 +1409,13 @@ views-exposed-form-browse-page';
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => 0,
         ),
       ),
       'display' => array(
         'submitted_by' => array(
           'teaser' => array(
-            'weight' => '2',
+            'weight' => 2,
             'visible' => TRUE,
           ),
         ),
@@ -1458,7 +1458,7 @@ views-exposed-form-browse-page';
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => -5,
         ),
       ),
       'display' => array(),
@@ -1500,21 +1500,21 @@ views-exposed-form-browse-page';
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => 0,
         ),
       ),
       'display' => array(
         'submitted_by' => array(
           'default' => array(
-            'weight' => '0',
+            'weight' => 0,
             'visible' => TRUE,
           ),
           'organisation_logo' => array(
-            'weight' => '0',
+            'weight' => 0,
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '0',
+            'weight' => 0,
             'visible' => FALSE,
           ),
         ),
@@ -1557,7 +1557,7 @@ views-exposed-form-browse-page';
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => -5,
         ),
       ),
       'display' => array(),
@@ -1584,7 +1584,7 @@ views-exposed-form-browse-page';
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => 0,
         ),
       ),
       'display' => array(),
@@ -1631,10 +1631,10 @@ views-exposed-form-browse-page';
     'extra_fields' => array(
       'form' => array(
         'name' => array(
-          'weight' => '0',
+          'weight' => 0,
         ),
         'description' => array(
-          'weight' => '1',
+          'weight' => 1,
         ),
       ),
       'display' => array(),
@@ -1793,49 +1793,49 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'jquery_update_jquery_version';
-  $strongarm->value = '1.7';
+  $strongarm->value = 1.7;
   $export['jquery_update_jquery_version'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_claim';
-  $strongarm->value = '0';
+  $strongarm->value = 0;
   $export['language_content_type_claim'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_entry';
-  $strongarm->value = '4';
+  $strongarm->value = 4;
   $export['language_content_type_entry'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_page';
-  $strongarm->value = '4';
+  $strongarm->value = 4;
   $export['language_content_type_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_subindex';
-  $strongarm->value = '0';
+  $strongarm->value = 0;
   $export['language_content_type_subindex'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'less_dir';
-  $strongarm->value = '7H7jc09Fef-NjaRj4LFm4BCyjTAsOWv1vUNvq-PKsAI';
+  $strongarm->value = 'TD1-NiuP1gFC06fBc3ahY-1Rc3EvGwcvT0mehJWevAM';
   $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'logintoboggan_confirm_email_at_registration';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['logintoboggan_confirm_email_at_registration'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1849,21 +1849,21 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'logintoboggan_login_successful_message';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['logintoboggan_login_successful_message'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'logintoboggan_login_with_email';
-  $strongarm->value = '0';
+  $strongarm->value = 0;
   $export['logintoboggan_login_with_email'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'logintoboggan_minimum_password_length';
-  $strongarm->value = '6';
+  $strongarm->value = 6;
   $export['logintoboggan_minimum_password_length'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1877,14 +1877,14 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'logintoboggan_pre_auth_role';
-  $strongarm->value = '7';
+  $strongarm->value = 7;
   $export['logintoboggan_pre_auth_role'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'logintoboggan_purge_unvalidated_user_interval';
-  $strongarm->value = '0';
+  $strongarm->value = 0;
   $export['logintoboggan_purge_unvalidated_user_interval'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2161,49 +2161,49 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_claim';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['node_preview_claim'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_entry';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['node_preview_entry'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_evidence';
-  $strongarm->value = '0';
+  $strongarm->value = 0;
   $export['node_preview_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_index';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['node_preview_index'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_organisation';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['node_preview_organisation'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_page';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['node_preview_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_subindex';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['node_preview_subindex'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2282,7 +2282,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'rules_debug';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['rules_debug'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2310,7 +2310,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'rules_log_errors';
-  $strongarm->value = '3';
+  $strongarm->value = 3;
   $export['rules_log_errors'] = $strongarm;
 
   $strongarm = new stdClass();

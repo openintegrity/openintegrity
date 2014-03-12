@@ -43589,24 +43589,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['ar:menu'][3355] = array(
-    'lid' => 3355,
-    'source' => 'Submit an Entry',
-    'context' => 'item:411:title',
-    'location' => 'menu:item:411:title',
-    'translation' => 'أدخل سجلاً جديداً',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:menu'][3357] = array(
-    'lid' => 3357,
-    'source' => 'User account',
-    'context' => 'item:2:title',
-    'location' => 'menu:item:2:title',
-    'translation' => 'حساب المستخدم',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['ar:menu'][3358] = array(
     'lid' => 3358,
     'source' => 'Create an Account',
