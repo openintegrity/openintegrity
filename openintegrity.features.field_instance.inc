@@ -821,12 +821,21 @@ function openintegrity_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'taxonomy',
+      'module' => 'term_reference_tree',
       'settings' => array(
         'autocomplete_path' => 'taxonomy/autocomplete',
+        'cascading_selection' => 0,
+        'filter_view' => '',
+        'leaves_only' => 0,
+        'max_depth' => '',
+        'parent_term_id' => '',
+        'select_parents' => 0,
         'size' => 60,
+        'start_minimized' => 0,
+        'token_display' => '',
+        'track_list' => 0,
       ),
-      'type' => 'taxonomy_autocomplete',
+      'type' => 'term_reference_tree',
       'weight' => 4,
     ),
   );
