@@ -212,7 +212,7 @@ function openintegrity_views_default_views() {
   $handler->display->display_options['filters']['search_api_views_fulltext']['group'] = 1;
   $handler->display->display_options['filters']['search_api_views_fulltext']['exposed'] = TRUE;
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator_id'] = 'search_api_views_fulltext_op';
-  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['label'] = 'Browse tools';
+  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['label'] = 'Search by Name';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator'] = 'search_api_views_fulltext_op';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['identifier'] = 'search_api_views_fulltext';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['remember_roles'] = array(
@@ -231,6 +231,29 @@ function openintegrity_views_default_views() {
     'title' => 'title',
     'body:value' => 'body:value',
   );
+  /* Filter criterion: Indexed Node: Category */
+  $handler->display->display_options['filters']['field_entry_category']['id'] = 'field_entry_category';
+  $handler->display->display_options['filters']['field_entry_category']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['filters']['field_entry_category']['field'] = 'field_entry_category';
+  $handler->display->display_options['filters']['field_entry_category']['value'] = array();
+  $handler->display->display_options['filters']['field_entry_category']['group'] = 1;
+  $handler->display->display_options['filters']['field_entry_category']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_entry_category']['expose']['operator_id'] = 'field_entry_category_op';
+  $handler->display->display_options['filters']['field_entry_category']['expose']['operator'] = 'field_entry_category_op';
+  $handler->display->display_options['filters']['field_entry_category']['expose']['identifier'] = 'field_entry_category';
+  $handler->display->display_options['filters']['field_entry_category']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    10 => 0,
+    9 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
+    8 => 0,
+    7 => 0,
+  );
+  $handler->display->display_options['filters']['field_entry_category']['expose']['reduce'] = 0;
   /* Filter criterion: Indexed Node: Type */
   $handler->display->display_options['filters']['field_entry_type']['id'] = 'field_entry_type';
   $handler->display->display_options['filters']['field_entry_type']['table'] = 'search_api_index_default_node_index';
@@ -245,9 +268,12 @@ function openintegrity_views_default_views() {
     2 => '2',
     1 => 0,
     3 => 0,
+    10 => 0,
+    9 => 0,
     4 => 0,
     5 => 0,
     6 => 0,
+    8 => 0,
     7 => 0,
   );
   $handler->display->display_options['filters']['field_entry_type']['expose']['reduce'] = 0;
