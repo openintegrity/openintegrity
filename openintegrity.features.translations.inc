@@ -57,10 +57,10 @@ function openintegrity_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['ar:blocks']['c46e85e1b29ab66f4fb133cf561ab7df'] = array(
-    'source' => '<h2>DATA DRIVEN<br/>
-SECURITY AND<br/>
-PRIVACY EDUCATION<br/>
+  $translations['ar:blocks']['c709a8d0db0686307c3c3c318bb606f8'] = array(
+    'source' => '<h2>HELPING YOU<br/>
+CHOOSE SECURE AND<br/>
+PRIVATE TOOLS<br/>
 </h2>',
     'context' => 'block:3:body',
     'location' => 'blocks:block:3:body',
@@ -37998,7 +37998,7 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'يحتوي %archive_file على إصدارات من الوحدات أو theme غير متوافقة مع دروبال !version :%names',
-    'plid' => '6f02d851c92bb82a40140bbdff2b8f74',
+    'plid' => 0,
     'plural' => 5,
   );
   $translations['ar:default']['6f21789e1557faf0fcae509a2eccd4a2'] = array(
@@ -38102,7 +38102,7 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'الحلل النشطة',
-    'plid' => 'cae125d24bf2caac65ead737ee81d20e',
+    'plid' => 0,
     'plural' => 5,
   );
   $translations['ar:default']['d4a8968f52233729744797511ed0b4c0'] = array(
@@ -38110,7 +38110,7 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'هل أنت متأكد من حذف هذه العناصر؟',
-    'plid' => 'd4a8968f52233729744797511ed0b4c0',
+    'plid' => 0,
     'plural' => 5,
   );
   $translations['ar:default']['d95b406cfade80493880b140d9236608'] = array(
@@ -38118,7 +38118,7 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'وحدة @module مفقودة، لذلك سيتم تعطيل: @depends.',
-    'plid' => 'd95b406cfade80493880b140d9236608',
+    'plid' => 0,
     'plural' => 5,
   );
   $translations['ar:default']['e79782f1fb58f37232a23b31394b12ae'] = array(
@@ -38134,7 +38134,7 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => '',
     'location' => '',
     'translation' => 'لإزالة @module، يجب أولاً إزالة الوحدات التالية: @required_modules',
-    'plid' => 'efd0b6cbb3f2b03fcb127e490a4d7b0a',
+    'plid' => 0,
     'plural' => 5,
   );
   $translations['ar:default']['f1db2b0820edb68286ba58895d4f0650'] = array(
