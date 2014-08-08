@@ -1,6 +1,7 @@
+"vocabulary_id", "term_id", "term_name", "term_description", "parent_id"
 "1","1","Policy","","0"
 "1","4","Publicly Verifiable","","1"
-"1","52","Open Source License","The system has an open source license as defined by OSI (http://opensource.org/licenses/) or FSF (https://www.gnu.org/philosophy/license-list.html).","4"
+"1","52","Open Source License","The system has an open source license as defined by OSI (http://opensource.org/licenses/) or FSF (https://www.gnu.org/philosophy/license-list.html).<br><br><em>How can I find out?</em><ol><li>find the project page</li><li>find the active code repository</li><li>look for the license</li><li>read it and link to it.</li></ol>","4"
 "1","53","Deterministic build process","The system can be compiled or built and consistently create the same binary files.","4"
 "1","54","Open audit agreement","The system developers allow any organisation to perform and publish an audit of their code.","4"
 "1","56","Audit with NDA","The tool developers allow organisations to audit their tool under an non disclosure agreement.","4"
