@@ -19,9 +19,25 @@ function openintegrity_uuid_features_default_terms() {
     'language' => 'und',
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'entry_category',
+    'parent' => array(
+      0 => '41d11c1b-a5b5-4a87-960e-c400eb14f848',
+      1 => '41d11c1b-a5b5-4a87-960e-c400eb14f848',
+    ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 141,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -101,8 +117,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => 'df9fb481-1f2f-40e9-a600-04794ec5e5ce',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 94,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -137,8 +165,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '709c334a-5352-4437-886d-62fab676ca1d',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 36,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -180,8 +220,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '709c334a-5352-4437-886d-62fab676ca1d',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 39,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -194,8 +246,20 @@ function openintegrity_uuid_features_default_terms() {
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'claim_variables',
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 82,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -230,8 +294,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '8a8844b9-15ff-4466-98aa-43d480efb05c',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 105,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -311,8 +387,46 @@ function openintegrity_uuid_features_default_terms() {
       1 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 41,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Publish online content',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 1,
+    'uuid' => '16bad306-4541-4197-a9cb-25905fe83dbe',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'entry_category',
+    'translations' => array(
+      'original' => 'en',
+      'data' => array(
+        'en' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 174,
+          'language' => 'en',
+          'source' => '',
+          'uid' => 1,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1394832907,
+          'changed' => 1394832907,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -347,8 +461,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '059541f8-00ce-41b0-b7ea-0e6d20bb14d2',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 98,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -383,8 +509,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '81afbcc8-f229-4b46-88a6-8c1bcd74cf3a',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 84,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -419,8 +557,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '958b8189-17cf-4e28-9124-d85e03270a7b',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 126,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -455,8 +605,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 33,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -498,8 +660,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '8a8844b9-15ff-4466-98aa-43d480efb05c',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 108,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -534,8 +708,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '35802634-3643-45bd-b1a3-c6b0ac037fff',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 113,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -602,8 +788,20 @@ function openintegrity_uuid_features_default_terms() {
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'entry_type',
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 57,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -638,8 +836,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '709c334a-5352-4437-886d-62fab676ca1d',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 37,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -651,9 +861,25 @@ function openintegrity_uuid_features_default_terms() {
     'language' => 'und',
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'entry_category',
+    'parent' => array(
+      0 => 'c2fb539c-fd63-43f8-bed0-7f308f2291fd',
+      1 => 'c2fb539c-fd63-43f8-bed0-7f308f2291fd',
+    ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 139,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -688,8 +914,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '81afbcc8-f229-4b46-88a6-8c1bcd74cf3a',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 88,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -778,8 +1016,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '2972ce3f-3150-47ea-93f8-0a637d996bd8',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 123,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -792,8 +1042,20 @@ function openintegrity_uuid_features_default_terms() {
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'claim_status',
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 137,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -828,8 +1090,46 @@ function openintegrity_uuid_features_default_terms() {
       1 => '7679c053-253e-431d-b8b2-52c1a571f4f0',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 111,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Protect myself',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 1,
+    'uuid' => '41d11c1b-a5b5-4a87-960e-c400eb14f848',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'entry_category',
+    'translations' => array(
+      'original' => 'en',
+      'data' => array(
+        'en' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 159,
+          'language' => 'en',
+          'source' => '',
+          'uid' => 1,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1394832907,
+          'changed' => 1394832907,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -871,8 +1171,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '709c334a-5352-4437-886d-62fab676ca1d',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 35,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -961,8 +1273,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 56,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -997,8 +1321,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '8a8844b9-15ff-4466-98aa-43d480efb05c',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 107,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1033,8 +1369,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '896490e6-12f2-4755-9cc2-84cfdf1d23fa',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 117,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1069,8 +1417,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '059541f8-00ce-41b0-b7ea-0e6d20bb14d2',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 100,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1105,8 +1465,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '059541f8-00ce-41b0-b7ea-0e6d20bb14d2',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 96,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1141,8 +1513,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => 'b599c21e-7428-4442-9f22-fd988aabe11b',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 131,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1184,8 +1568,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '059541f8-00ce-41b0-b7ea-0e6d20bb14d2',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 99,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1220,8 +1616,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '2972ce3f-3150-47ea-93f8-0a637d996bd8',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 122,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1247,8 +1655,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '2972ce3f-3150-47ea-93f8-0a637d996bd8',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 125,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1283,8 +1703,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => 'b599c21e-7428-4442-9f22-fd988aabe11b',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 133,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1310,8 +1742,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 42,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1372,8 +1816,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '149346c9-9cff-4e7f-b5f1-100cd96f0f31',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 49,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1408,8 +1864,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '74443e40-4865-460b-9511-6a528ada87f9',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 102,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1444,8 +1912,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 53,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1480,8 +1960,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 54,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1516,8 +2008,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '35802634-3643-45bd-b1a3-c6b0ac037fff',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 115,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1552,8 +2056,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '74443e40-4865-460b-9511-6a528ada87f9',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 103,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1565,9 +2081,25 @@ function openintegrity_uuid_features_default_terms() {
     'language' => 'und',
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'entry_category',
+    'parent' => array(
+      0 => 'c2fb539c-fd63-43f8-bed0-7f308f2291fd',
+      1 => 'c2fb539c-fd63-43f8-bed0-7f308f2291fd',
+    ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 140,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1580,8 +2112,20 @@ function openintegrity_uuid_features_default_terms() {
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'claim_status',
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 21,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1593,9 +2137,25 @@ function openintegrity_uuid_features_default_terms() {
     'language' => 'und',
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'entry_category',
+    'parent' => array(
+      0 => 'c6fd47ac-492d-4b1a-946c-4fa2d0a552f1',
+      1 => 'c6fd47ac-492d-4b1a-946c-4fa2d0a552f1',
+    ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 79,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1630,8 +2190,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '8a8844b9-15ff-4466-98aa-43d480efb05c',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 106,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1774,8 +2346,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '149346c9-9cff-4e7f-b5f1-100cd96f0f31',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 51,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1810,8 +2394,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '709c334a-5352-4437-886d-62fab676ca1d',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 38,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1900,8 +2496,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 28,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1936,8 +2544,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => 'b599c21e-7428-4442-9f22-fd988aabe11b',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 132,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -1972,8 +2592,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '149346c9-9cff-4e7f-b5f1-100cd96f0f31',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 48,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2088,8 +2720,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '35802634-3643-45bd-b1a3-c6b0ac037fff',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 114,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2102,8 +2746,20 @@ function openintegrity_uuid_features_default_terms() {
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'score',
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 70,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2138,8 +2794,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 34,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2165,8 +2833,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 40,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2227,8 +2907,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 29,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2254,8 +2946,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => 'df9fb481-1f2f-40e9-a600-04794ec5e5ce',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 93,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2398,8 +3102,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '81afbcc8-f229-4b46-88a6-8c1bcd74cf3a',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 86,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2434,8 +3150,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '958b8189-17cf-4e28-9124-d85e03270a7b',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 129,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2524,8 +3252,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '958b8189-17cf-4e28-9124-d85e03270a7b',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 127,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2541,8 +3281,20 @@ function openintegrity_uuid_features_default_terms() {
     'field_expiration' => array(),
     'field_threshold' => array(),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 2,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2574,8 +3326,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => 'df9fb481-1f2f-40e9-a600-04794ec5e5ce',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 90,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2588,8 +3352,20 @@ function openintegrity_uuid_features_default_terms() {
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'claim_status',
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 22,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2669,8 +3445,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '709c334a-5352-4437-886d-62fab676ca1d',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 83,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2705,8 +3493,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '059541f8-00ce-41b0-b7ea-0e6d20bb14d2',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 97,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2719,8 +3519,20 @@ function openintegrity_uuid_features_default_terms() {
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'entry_type',
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 60,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2772,8 +3584,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => 'df9fb481-1f2f-40e9-a600-04794ec5e5ce',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 95,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2786,8 +3610,20 @@ function openintegrity_uuid_features_default_terms() {
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'entry_type',
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 59,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2819,8 +3655,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => 'df9fb481-1f2f-40e9-a600-04794ec5e5ce',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 91,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2846,8 +3694,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 46,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2882,8 +3742,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '7679c053-253e-431d-b8b2-52c1a571f4f0',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 109,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -2979,8 +3851,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 31,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3015,8 +3899,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '896490e6-12f2-4755-9cc2-84cfdf1d23fa',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 120,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3029,8 +3925,20 @@ function openintegrity_uuid_features_default_terms() {
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'claim_status',
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 18,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3097,8 +4005,20 @@ function openintegrity_uuid_features_default_terms() {
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'score',
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 68,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3110,19 +4030,49 @@ function openintegrity_uuid_features_default_terms() {
     'language' => 'und',
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'entry_category',
+    'parent' => array(
+      0 => 'c2fb539c-fd63-43f8-bed0-7f308f2291fd',
+      1 => 'c2fb539c-fd63-43f8-bed0-7f308f2291fd',
+    ),
     'translations' => array(
-      'original' => 'en',
+      'original' => 'und',
       'data' => array(
-        'en' => array(
+        'und' => array(
           'entity_type' => 'taxonomy_term',
           'entity_id' => 145,
-          'language' => 'en',
+          'language' => 'und',
           'source' => '',
           'uid' => 100,
           'status' => 1,
           'translate' => 0,
           'created' => 1377959792,
           'changed' => 1377959792,
+        ),
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Communicate with others',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 1,
+    'uuid' => 'c2fb539c-fd63-43f8-bed0-7f308f2291fd',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'entry_category',
+    'translations' => array(
+      'original' => 'en',
+      'data' => array(
+        'en' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 153,
+          'language' => 'en',
+          'source' => '',
+          'uid' => 1,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1394832907,
+          'changed' => 1394832907,
         ),
       ),
     ),
@@ -3159,8 +4109,46 @@ function openintegrity_uuid_features_default_terms() {
       1 => '896490e6-12f2-4755-9cc2-84cfdf1d23fa',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 118,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Access information',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => 'c6fd47ac-492d-4b1a-946c-4fa2d0a552f1',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'entry_category',
+    'translations' => array(
+      'original' => 'en',
+      'data' => array(
+        'en' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 147,
+          'language' => 'en',
+          'source' => '',
+          'uid' => 1,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1394832907,
+          'changed' => 1394832907,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3186,8 +4174,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '81afbcc8-f229-4b46-88a6-8c1bcd74cf3a',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 87,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3270,8 +4270,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '7679c053-253e-431d-b8b2-52c1a571f4f0',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 110,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3306,8 +4318,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => 'b599c21e-7428-4442-9f22-fd988aabe11b',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 130,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3323,8 +4347,20 @@ function openintegrity_uuid_features_default_terms() {
     'field_expiration' => array(),
     'field_threshold' => array(),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 3,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3359,8 +4395,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '149346c9-9cff-4e7f-b5f1-100cd96f0f31',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 50,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3372,9 +4420,25 @@ function openintegrity_uuid_features_default_terms() {
     'language' => 'und',
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'entry_category',
+    'parent' => array(
+      0 => 'c2fb539c-fd63-43f8-bed0-7f308f2291fd',
+      1 => 'c2fb539c-fd63-43f8-bed0-7f308f2291fd',
+    ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 142,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3387,8 +4451,20 @@ function openintegrity_uuid_features_default_terms() {
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'evidence_status',
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 61,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3484,8 +4560,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '149346c9-9cff-4e7f-b5f1-100cd96f0f31',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 89,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3511,8 +4599,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '9f3f200f-b0de-4005-adb1-c0544ebe8bc9',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 45,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3547,8 +4647,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '74443e40-4865-460b-9511-6a528ada87f9',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 104,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3583,8 +4695,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '81afbcc8-f229-4b46-88a6-8c1bcd74cf3a',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 85,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3619,8 +4743,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '896490e6-12f2-4755-9cc2-84cfdf1d23fa',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 119,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3655,8 +4791,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '47f3dd80-c83a-4e94-ab0a-02e4062cab6a',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 30,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3669,8 +4817,20 @@ function openintegrity_uuid_features_default_terms() {
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'score',
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 69,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3705,8 +4865,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '35802634-3643-45bd-b1a3-c6b0ac037fff',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 112,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3722,12 +4894,12 @@ function openintegrity_uuid_features_default_terms() {
     'field_expiration' => array(),
     'field_threshold' => array(),
     'translations' => array(
-      'original' => 'en',
+      'original' => 'und',
       'data' => array(
-        'en' => array(
+        'und' => array(
           'entity_type' => 'taxonomy_term',
           'entity_id' => 1,
-          'language' => 'en',
+          'language' => 'und',
           'source' => '',
           'uid' => 1,
           'status' => 1,
@@ -3748,8 +4920,20 @@ function openintegrity_uuid_features_default_terms() {
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'entry_type',
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 58,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3761,9 +4945,25 @@ function openintegrity_uuid_features_default_terms() {
     'language' => 'und',
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'entry_category',
+    'parent' => array(
+      0 => 'c6fd47ac-492d-4b1a-946c-4fa2d0a552f1',
+      1 => 'c6fd47ac-492d-4b1a-946c-4fa2d0a552f1',
+    ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 80,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3789,14 +4989,26 @@ function openintegrity_uuid_features_default_terms() {
       1 => '2972ce3f-3150-47ea-93f8-0a637d996bd8',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 124,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
     'name' => 'Open Source License',
-    'description' => 'The system has an open source license as defined by OSI (http://opensource.org/licenses/) or FSF (https://www.gnu.org/philosophy/license-list.html).',
-    'format' => 'plain_text',
+    'description' => 'The system has an open source license as defined by OSI (http://opensource.org/licenses/) or FSF (https://www.gnu.org/philosophy/license-list.html).<br><br><em>How can I find out?</em><ol><li>find the project page</li><li>find the active code repository</li><li>look for the license</li><li>read it and link to it.</li></ol>',
+    'format' => 'full_html',
     'weight' => 0,
     'uuid' => 'f5416e14-562d-466b-9d00-837ef5b3c3b7',
     'language' => 'und',
@@ -3825,8 +5037,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => 'bd0dfb65-6612-43a7-984b-d7658d50e54b',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 52,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3861,8 +5085,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => '2972ce3f-3150-47ea-93f8-0a637d996bd8',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 121,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3874,9 +5110,25 @@ function openintegrity_uuid_features_default_terms() {
     'language' => 'und',
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'entry_category',
+    'parent' => array(
+      0 => '16bad306-4541-4197-a9cb-25905fe83dbe',
+      1 => '16bad306-4541-4197-a9cb-25905fe83dbe',
+    ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 81,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3908,8 +5160,20 @@ function openintegrity_uuid_features_default_terms() {
       1 => 'df9fb481-1f2f-40e9-a600-04794ec5e5ce',
     ),
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 92,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   $terms[] = array(
@@ -3922,8 +5186,20 @@ function openintegrity_uuid_features_default_terms() {
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'claim_status',
     'translations' => array(
-      'original' => NULL,
-      'data' => array(),
+      'original' => 'und',
+      'data' => array(
+        'und' => array(
+          'entity_type' => 'taxonomy_term',
+          'entity_id' => 19,
+          'language' => 'und',
+          'source' => '',
+          'uid' => 0,
+          'status' => 1,
+          'translate' => 0,
+          'created' => 1407513454,
+          'changed' => 1407513454,
+        ),
+      ),
     ),
   );
   return $terms;

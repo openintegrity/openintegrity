@@ -5378,7 +5378,7 @@ PRIVATE TOOLS<br/>
   $translations['ar:default']['26035f5354afb729c61d704ecbd14053'] = array(
     'source' => 'New revision',
     'context' => '',
-    'location' => '; modules/node/node.js; sites/all/modules/contrib/revisioning/revision-radios.js; sites/all/modules/contrib/revisioning/js/revisioning-radios.js',
+    'location' => '; modules/node/node.js; sites/all/modules/contrib/revisioning/revision-radios.js; sites/all/modules/contrib/revisioning/js/revisioning-radios.js; sites/all/modules/revisioning/js/revisioning-radios.js',
     'translation' => 'مراجعة جديدة',
     'plid' => 0,
     'plural' => 0,
@@ -11172,7 +11172,7 @@ Unless you know what you are doing, it is highly recommended that you prefix the
   $translations['ar:default']['4db85a6b2b06c0fc8ebff6f19c41eddc'] = array(
     'source' => 'No revision',
     'context' => '',
-    'location' => '; modules/node/node.js; sites/all/modules/contrib/revisioning/revision-radios.js; sites/all/modules/contrib/revisioning/js/revisioning-radios.js',
+    'location' => '; modules/node/node.js; sites/all/modules/contrib/revisioning/revision-radios.js; sites/all/modules/contrib/revisioning/js/revisioning-radios.js; sites/all/modules/revisioning/js/revisioning-radios.js',
     'translation' => 'لا توجد أي مراجعة',
     'plid' => 0,
     'plural' => 0,
@@ -22474,7 +22474,7 @@ password: Your password
   $translations['ar:default']['9b9d8a976b42e0bd66381797644943d5'] = array(
     'source' => 'Published',
     'context' => '',
-    'location' => '; sites/all/modules/contrib/revisioning/revision-radios.js; sites/all/modules/contrib/revisioning/js/revisioning-radios.js',
+    'location' => '; sites/all/modules/contrib/revisioning/revision-radios.js; sites/all/modules/contrib/revisioning/js/revisioning-radios.js; sites/all/modules/revisioning/js/revisioning-radios.js',
     'translation' => 'منشور',
     'plid' => 0,
     'plural' => 0,
@@ -30866,7 +30866,7 @@ password: Your password
   $translations['ar:default']['d470b5cb00092952c8de5c17e7531b8c'] = array(
     'source' => 'Not published',
     'context' => '',
-    'location' => '; modules/node/node.js; modules/node/content_types.js; sites/all/modules/contrib/revisioning/revision-radios.js; sites/all/modules/contrib/revisioning/js/revisioning-radios.js',
+    'location' => '; modules/node/node.js; modules/node/content_types.js; sites/all/modules/contrib/revisioning/revision-radios.js; sites/all/modules/contrib/revisioning/js/revisioning-radios.js; sites/all/modules/revisioning/js/revisioning-radios.js',
     'translation' => 'لم ينشر',
     'plid' => 0,
     'plural' => 0,
@@ -35612,7 +35612,7 @@ Thank you for registering at [site:name]. Your application for an account is cur
   $translations['ar:default']['f8733c4e7ad36bdd75b0e81cc799758c'] = array(
     'source' => 'Not restricted',
     'context' => '',
-    'location' => '; modules/block/block.js; sites/all/modules/i18n/i18n_block/i18n_block.js',
+    'location' => '; modules/block/block.js; sites/all/modules/i18n/i18n_block/i18n_block.js; sites/all/modules/contrib/password_policy/password_policy.js',
     'translation' => 'غير مقيد',
     'plid' => 0,
     'plural' => 0,
@@ -38505,8 +38505,8 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['ar:menu']['2fe4fe0a0ebea41ce43eb3dc3fce4ea3'] = array(
-    'source' => 'Create an Account',
+  $translations['ar:menu']['0ba7583639a274c434bbe6ef797115a4'] = array(
+    'source' => 'Register',
     'context' => 'item:729:title',
     'location' => 'menu:item:729:title',
     'translation' => 'أنشئ حساباً',
@@ -38657,14 +38657,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['ar:profile2']['7d61983c34edc2a8cabbea71c4732f62'] = array(
-    'source' => 'Community',
-    'context' => 'profile2_type:community:label',
-    'location' => 'profile2:profile2_type:community:label',
-    'translation' => 'مجتمع',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['ar:taxonomy']['02a7873f07b6733a170142d3a2b04b05'] = array(
     'source' => 'Fail Closed',
     'context' => 'term:102:name',
@@ -38694,6 +38686,14 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => 'term:123:name',
     'location' => 'taxonomy:term:123:name',
     'translation' => 'تسجيل "loggin" بأقل قدر ممكن بشكل افتراضي',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['ar:taxonomy']['0576cfd678948f8e5e7a2a0fbd94638d'] = array(
+    'source' => 'The system has an open source license as defined by OSI (http://opensource.org/licenses/) or FSF (https://www.gnu.org/philosophy/license-list.html).<br><br><em>How can I find out?</em><ol><li>find the project page</li><li>find the active code repository</li><li>look for the license</li><li>read it and link to it.</li></ol>',
+    'context' => 'term:52:description',
+    'location' => 'taxonomy:term:52:description',
+    'translation' => 'النظام له رخصة مفتوحة المصدر كما تعرفها OSI (مبادرة المصادرة المفتوحة http://opensource.org/licenses/ ) أو FSF (مبادرة البرمجيات الحرة https://www.gnu.org/philosophy/license-list.html ).',
     'plid' => 0,
     'plural' => 0,
   );
@@ -40150,14 +40150,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => 'term:40:name',
     'location' => 'taxonomy:term:40:name',
     'translation' => 'توثيق السياسات الهامة',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['fb517aeeb06734ea6eb8c4c7c98438ec'] = array(
-    'source' => 'The system has an open source license as defined by OSI (http://opensource.org/licenses/) or FSF (https://www.gnu.org/philosophy/license-list.html).',
-    'context' => 'term:52:description',
-    'location' => 'taxonomy:term:52:description',
-    'translation' => 'النظام له رخصة مفتوحة المصدر كما تعرفها OSI (مبادرة المصادرة المفتوحة http://opensource.org/licenses/ ) أو FSF (مبادرة البرمجيات الحرة https://www.gnu.org/philosophy/license-list.html ).',
     'plid' => 0,
     'plural' => 0,
   );
