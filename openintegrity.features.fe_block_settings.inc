@@ -134,6 +134,35 @@ function openintegrity_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['block-hero'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'i18n_block_language' => array(),
+    'i18n_mode' => 1,
+    'machine_name' => 'hero',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '<front>',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'bootstrap' => array(
+        'region' => 'highlighted',
+        'status' => 1,
+        'theme' => 'bootstrap',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 1,
+  );
+
   $export['block-home_1'] = array(
     'cache' => -1,
     'css_class' => 'span4 home1',
@@ -186,6 +215,35 @@ function openintegrity_default_fe_block_settings() {
         'status' => 1,
         'theme' => 'bootstrap',
         'weight' => -24,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 1,
+  );
+
+  $export['block-home_3'] = array(
+    'cache' => -1,
+    'css_class' => 'span4 home3',
+    'custom' => 0,
+    'i18n_block_language' => array(),
+    'i18n_mode' => 1,
+    'machine_name' => 'home_3',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '<front>',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'bootstrap' => array(
+        'region' => 'icons',
+        'status' => 1,
+        'theme' => 'bootstrap',
+        'weight' => -23,
       ),
     ),
     'title' => '<none>',
