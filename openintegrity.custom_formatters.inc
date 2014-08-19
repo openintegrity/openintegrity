@@ -35,15 +35,15 @@ $alt = $t0c->name . \' : \' . $t0s->name . \' / \' . $t1c->name . \' : \' . $t1s
 
 
 $ret = \'\';
-$ret .= \'<div class="badge">\';
-$ret .= \'   <div class="icon">\';
+$ret .= \'<div class="oii-badge">\';
+$ret .= \'   <div class="oii-icon">\';
 $ret .= \'     <img width="34" height="34" src="\' . $path_icon . \'" alt="\' . $alt . \'" title="\' . $title . \'"/>\';
 $ret .= \'   </div>\';
-$ret .= \'   <div class="drawer">\';
+$ret .= \'   <div class="oii-drawer">\';
 $ret .= \'     <img width="96" height="34" src="\' . $path_drawer . \'"/>\';
 $ret .= \'   </div>\';
 $ret .= \'</div>\';
-$ret .= \'<div class="teaser">\';
+$ret .= \'<div class="oii-teaser">\';
 //$ret .= \'  <img width="506" height="406" src="img/SampleTeaser.png"/>\';
 $ret .= \'</div>\';
       
