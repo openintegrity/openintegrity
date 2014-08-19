@@ -483,12 +483,13 @@ function openintegrity_default_rules_configuration() {
             "USING" : { "nid" : [ "index:nid" ], "field_entry_type_tid" : [ "entry-type" ] },
             "ROW VARIABLES" : { "subindex" : { "subindex_instance" : "SubIndex Instance" } },
             "DO" : [
-              { "drupal_message" : { "message" : "\\u003C?php\\r\\n$subindex = node_load($subindex_instance-\\u003Enid);\\r\\nif ($subindex-\\u003Enid == $node-\\u003Enid) $subindex = $node;\\r\\n$subindex_wrapper = entity_metadata_wrapper(\\u0027node\\u0027, $subindex);\\r\\n$subindex_score = $subindex_wrapper-\\u003Efield_subindex_score-\\u003Ename-\\u003Evalue();\\r\\n$index_wrapper = entity_metadata_wrapper(\\u0027node\\u0027, $index);\\r\\n$sum = $index_wrapper-\\u003Efield_index_sum-\\u003Evalue();\\r\\n$score = ($subindex_score == \\u0022All\\u0022)?1:0;\\r\\n\\/\\/echo $subindex-\\u003Etitle . \\u0022 SubIndex score is : \\u0022 . $subindex_score . \\u0022(\\u0022 . $score . \\u0022) \\u003Cbr\\u003E\\u0022;\\r\\n$index_wrapper-\\u003Efield_index_sum = $sum + $score;\\r\\n\\/\\/echo \\u0022Index Sum was : \\u0022 . $sum . \\u0022 and is now : \\u0022 . $index_wrapper-\\u003Efield_index_sum-\\u003Evalue();\\r\\n?\\u003E" } },
-              { "data_set" : {
-                  "data" : [ "subindex-number" ],
-                  "value" : { "select" : "subindex-number" }
+              { "drupal_message" : { "message" : "\\u003C?php\\r\\n$subindex = node_load($subindex_instance-\\u003Enid);\\r\\nif ($subindex-\\u003Enid == $node-\\u003Enid) $subindex = $node;\\r\\n$subindex_wrapper = entity_metadata_wrapper(\\u0027node\\u0027, $subindex);\\r\\n$subindex_score = $subindex_wrapper-\\u003Efield_subindex_score-\\u003Ename-\\u003Evalue();\\r\\n$index_wrapper = entity_metadata_wrapper(\\u0027node\\u0027, $index);\\r\\n$sum = $index_wrapper-\\u003Efield_index_sum-\\u003Evalue();\\r\\n$score = ($subindex_score == \\u0022All\\u0022)?1:0;\\r\\n\\/\\/echo $subindex-\\u003Etitle . \\u0022 SubIndex score is : \\u0022 . $subindex_score . \\u0022(\\u0022 . $score . \\u0022) \\u003Cbr\\u003E\\u0022;\\r\\n$index_wrapper-\\u003Efield_index_sum = $sum + $score;\\r\\n\\/\\/echo \\u0022Index Sum was : \\u0022 . $sum . \\u0022 and is now : \\u0022 . $index_wrapper-\\u003Efield_index_sum-\\u003Evalue();\\r\\n\\/\\/echo \\u0022index-\\u003Enid: \\u0022 . $index-\\u003Enid . \\u0022 and entry_type: \\u0022 . $entry_type . \\u0022\\u003Cbr\\u003E\\u0022;\\r\\n\\/\\/echo \\u0022Counter is: \\u0022 . $subindex_counter. \\u0022 and subindex_number is: \\u0022 . $subindex_number . \\u0022\\u003Cbr\\u003E\\u0022;\\r\\n?\\u003E" } },
+              { "data_calc" : {
+                  "USING" : { "input_1" : [ "subindex-number" ], "op" : "+", "input_2" : "1" },
+                  "PROVIDE" : { "result" : { "result" : "Calculation result" } }
                 }
-              }
+              },
+              { "data_set" : { "data" : [ "subindex-number" ], "value" : [ "result" ] } }
             ]
           }
         },
