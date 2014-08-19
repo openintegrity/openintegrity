@@ -194,32 +194,43 @@ function openintegrity_default_profile2_type() {
     "userView" : true,
     "type" : "developer",
     "label" : "Developer",
-    "weight" : "0",
-    "data" : { "registration" : 0 }
+    "weight" : "3",
+    "data" : { "registration" : 0, "roles" : { "4" : "4" } }
   }');
   $items['main'] = entity_import('profile2_type', '{
     "userCategory" : true,
     "userView" : true,
     "type" : "main",
-    "label" : "Main",
-    "weight" : "0",
-    "data" : { "registration" : 0 }
+    "label" : "Profile",
+    "weight" : "2",
+    "data" : {
+      "registration" : 1,
+      "roles" : {
+        "2" : "2",
+        "3" : "3",
+        "10" : "10",
+        "9" : "9",
+        "4" : "4",
+        "6" : "6",
+        "8" : "8"
+      }
+    }
   }');
   $items['partner'] = entity_import('profile2_type', '{
     "userCategory" : true,
     "userView" : true,
     "type" : "partner",
     "label" : "Partner",
-    "weight" : "0",
-    "data" : { "registration" : 0 }
+    "weight" : "3",
+    "data" : { "registration" : 0, "roles" : { "8" : "8" } }
   }');
   $items['peer_reviewer'] = entity_import('profile2_type', '{
     "userCategory" : true,
     "userView" : true,
     "type" : "peer_reviewer",
     "label" : "Peer-reviewer",
-    "weight" : "0",
-    "data" : { "registration" : 0 }
+    "weight" : "3",
+    "data" : { "registration" : 0, "roles" : { "6" : "6" } }
   }');
   return $items;
 }
@@ -255,22 +266,22 @@ function openintegrity_default_search_api_index() {
       "index_directly" : 1,
       "cron_limit" : "50",
       "data_alter_callbacks" : {
+        "search_api_alter_node_status" : { "status" : 1, "weight" : "-50", "settings" : [] },
         "search_api_alter_bundle_filter" : {
           "status" : 1,
-          "weight" : "-10",
+          "weight" : "-49",
           "settings" : { "default" : "0", "bundles" : { "entry" : "entry" } }
         },
-        "search_api_alter_node_access" : { "status" : 1, "weight" : "0", "settings" : [] },
-        "search_api_alter_node_status" : { "status" : 0, "weight" : "0", "settings" : [] },
+        "search_api_alter_node_access" : { "status" : 1, "weight" : "-48", "settings" : [] },
         "search_api_alter_language_control" : {
           "status" : 0,
-          "weight" : "0",
+          "weight" : "-47",
           "settings" : { "lang_field" : "", "languages" : [] }
         },
-        "search_api_alter_add_viewed_entity" : { "status" : 0, "weight" : "0", "settings" : { "mode" : "full" } },
-        "search_api_alter_add_url" : { "status" : 0, "weight" : "0", "settings" : [] },
-        "search_api_alter_add_aggregation" : { "status" : 0, "weight" : "0", "settings" : [] },
-        "search_api_alter_add_hierarchy" : { "status" : 0, "weight" : "0", "settings" : { "fields" : [] } }
+        "search_api_alter_add_viewed_entity" : { "status" : 0, "weight" : "-46", "settings" : { "mode" : "full" } },
+        "search_api_alter_add_url" : { "status" : 0, "weight" : "-45", "settings" : [] },
+        "search_api_alter_add_aggregation" : { "status" : 0, "weight" : "-44", "settings" : [] },
+        "search_api_alter_add_hierarchy" : { "status" : 0, "weight" : "-43", "settings" : { "fields" : [] } }
       },
       "processors" : {
         "search_api_case_ignore" : {
@@ -323,7 +334,8 @@ function openintegrity_default_search_api_index() {
         },
         "field_entry_category" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "search_api_language" : { "type" : "string" },
-        "body:value" : { "type" : "text" }
+        "body:value" : { "type" : "text" },
+        "field_entry_category:tid" : { "type" : "list\\u003Cinteger\\u003E" }
       }
     },
     "enabled" : "1",

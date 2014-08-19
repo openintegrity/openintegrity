@@ -28,7 +28,7 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_evidence';
-  $strongarm->value = 'edit-display';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -306,7 +306,7 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_per_page_evidence';
-  $strongarm->value = 50;
+  $strongarm->value = '50';
   $export['comment_default_per_page_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -341,7 +341,7 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_evidence';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['comment_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -418,7 +418,7 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_evidence';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['comment_preview_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1189,14 +1189,14 @@ views-exposed-form-browse-page';
       'field_base' => '122afb5d9f27b5402e9c5583f652407c',
       'field_instance' => 'b9ed2c5c769bf2055be1ec3bf559cebf',
       'taxonomy' => 'd5f8653bcfd22754cb24635a234c907a',
-      'dependencies' => '4876a0f1a74f6fc58f5cfbb36d627224',
+      'dependencies' => '2d709d9d35911354032c2506b177dd74',
       'node' => '96523e4ef5eb0d97080c03ddb17e423d',
       'cer' => '53fa2b876a05aa40c961f2008f570428',
       'search_api_index' => 'b262dbf991a9736d93e74a5bf9612cf5',
       'search_api_server' => '95070ced1251c82ecd8a7f78f50ff7b5',
       'rules_config' => '1df2e389c58015b4e5ff7658e6c1f444',
-      'views_view' => 'e2d45ef83c701f3a4513d636acf7304b',
-      'variable' => '31236bc3711cd073c72b685f8212881d',
+      'views_view' => '15a25bf9e48d90836fc8526d7a24d360',
+      'variable' => '07256f2f2ce3e9a85b0e05403151f8ed',
       'filter' => '441b0a98276c787c23b78630e908a3fe',
       'user_role' => '9ec5e537fec4afd4c6f667c28773d9a2',
       'user_permission' => '0c443ff85c50e391cd151c4a415f3b53',
@@ -1206,15 +1206,15 @@ views-exposed-form-browse-page';
       'search_api_autocomplete_search' => 'dc491a4d35da4b4f9fde7cbd7ed1577d',
       'password_policy' => 'b61100d69391863ce17951108d434eba',
       'fe_block_settings' => 'a932fa4d636123989f9ff9f16e8d3865',
-      'variable_realm' => '161cefb25a14bb1fabd6475e586d614c',
+      'variable_realm' => 'ba8c3e5e71e63cf77dd2834237e1237f',
       'fe_block_boxes' => '591a07f7619141fb1d50c3dc53b5a460',
       'image' => '28983ec56478c9db314d15cd95c978cb',
       'language' => 'b80cd822a18508d39717b5693f436aa3',
       'menu_custom' => '9e8c70956b4ab6a2405133fb08ac8106',
-      'menu_links' => '5c37e5b415bfa21d24c1047d447da527',
-      'field_group' => '164fa807a4b2962e08420674153dbc16',
+      'menu_links' => 'a42df715b1e092e925bdeae2b5fb3752',
+      'field_group' => '75d952299707a535d81e7f5358b72b1c',
       'uuid_node' => '8b57b3cb83bb242cbb9379c182505d15',
-      'translations' => '288133073c71619280ed8f19541583ee',
+      'translations' => 'a7bfdb057eb05def4a17aa2e8105d6df',
       'services_endpoint' => '4e6b26a9555d0ff59ce9e74dd7fd72b0',
     ),
   );
@@ -1708,6 +1708,13 @@ views-exposed-form-browse-page';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_node_extended_evidence';
+  $strongarm->value = 1;
+  $export['i18n_node_extended_evidence'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'i18n_node_extended_page';
   $strongarm->value = 1;
   $export['i18n_node_extended_page'] = $strongarm;
@@ -1732,6 +1739,13 @@ views-exposed-form-browse-page';
   $strongarm->name = 'i18n_node_options_entry';
   $strongarm->value = array();
   $export['i18n_node_options_entry'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_node_options_evidence';
+  $strongarm->value = array();
+  $export['i18n_node_options_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -1813,6 +1827,13 @@ views-exposed-form-browse-page';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_evidence';
+  $strongarm->value = '0';
+  $export['language_content_type_evidence'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_page';
   $strongarm->value = 4;
   $export['language_content_type_page'] = $strongarm;
@@ -1828,7 +1849,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'less_dir';
-  $strongarm->value = 'Gz27WzVL1r22M4Fav4IFPM6fKcyIYyrADEZKBEeTpH4';
+  $strongarm->value = 'gfPjagfg53va5lJ-00ezG4xXmp9-F_Zu1iO9qxkxx5A';
   $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2175,7 +2196,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_evidence';
-  $strongarm->value = 0;
+  $strongarm->value = '0';
   $export['node_preview_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2428,6 +2449,7 @@ views-exposed-form-browse-page';
     'diff_standard' => '',
     'static_badge' => '',
     'organisation_logo' => '',
+    'overlay_teaser' => '',
     'token' => '',
   );
   $export['submitted_by_evidence'] = $strongarm;
@@ -2473,7 +2495,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1394667959;
+  $strongarm->value = 1408126175;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2526,7 +2548,8 @@ views-exposed-form-browse-page';
     3 => 'diff_standard',
     4 => 'static_badge',
     5 => 'organisation_logo',
-    6 => 'token',
+    6 => 'overlay_teaser',
+    7 => 'token',
   );
   $export['view_modes_evidence'] = $strongarm;
 
