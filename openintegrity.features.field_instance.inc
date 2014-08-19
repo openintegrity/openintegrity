@@ -2399,6 +2399,179 @@ function openintegrity_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'profile2-main-field_bio'
+  $field_instances['profile2-main-field_bio'] = array(
+    'bundle' => 'main',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Tell us a little about yourself. This will be displayed alongside your contributions on the site.
+
+<em>For instance: I am a student interested in computer security / I live in a country where I need to protect my communications / I think privacy should be the default for everyone on the web / ...</em>',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_bio',
+    'label' => 'Bio',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'full_html' => 'full_html',
+          'php_code' => 'php_code',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'full_html' => array(
+              'weight' => 0,
+            ),
+            'php_code' => array(
+              'weight' => 11,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-partner-field_purpose'
+  $field_instances['profile2-partner-field_purpose'] = array(
+    'bundle' => 'partner',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Tell us more about why you would like to engage with the Open Integrity Index. This will only be shared with our team.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_purpose',
+    'label' => 'Purpose',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'full_html' => 'full_html',
+          'php_code' => 'php_code',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'full_html' => array(
+              'weight' => 0,
+            ),
+            'php_code' => array(
+              'weight' => 11,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-peer_reviewer-field_experience'
+  $field_instances['profile2-peer_reviewer-field_experience'] = array(
+    'bundle' => 'peer_reviewer',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Please describe why you would make a good reviewer for the Open Integrity Index. This will only be shared with the Open Integrity Index team and other peer-reviewers.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_experience',
+    'label' => 'Experience',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'full_html' => 'full_html',
+          'php_code' => 'php_code',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'full_html' => array(
+              'weight' => 0,
+            ),
+            'php_code' => array(
+              'weight' => 11,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-criteria-field_entry_type'
   $field_instances['taxonomy_term-criteria-field_entry_type'] = array(
     'bundle' => 'criteria',
@@ -2515,6 +2688,7 @@ function openintegrity_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('A link to the tool\'s download page (Do not directly link to the executable or download package)');
+  t('Bio');
   t('Body');
   t('Category');
   t('Claim Score');
@@ -2533,6 +2707,7 @@ function openintegrity_field_default_field_instances() {
   t('Evidence Date');
   t('Evidence Link');
   t('Evidence Status');
+  t('Experience');
   t('Expiration');
   t('Explanation');
   t('Home Page');
@@ -2544,14 +2719,20 @@ function openintegrity_field_default_field_instances() {
   t('Indicate whether the Evidence you are submitting is <strong>Supporting</strong> the claim or <strong>Negating</strong> the claim.');
   t('Logo');
   t('Please describe the tool in a few sentences.');
+  t('Please describe why you would make a good reviewer for the Open Integrity Index. This will only be shared with the Open Integrity Index team and other peer-reviewers.');
   t('Please provide a link to the Tool\'s home-page.');
   t('Provide a link to the evidence in the format "http://example.com/link/to/evidence"');
+  t('Purpose');
   t('SubCriteria');
   t('SubIndex Index');
   t('SubIndex Score');
   t('SubIndex Status');
   t('SubIndex Sum');
   t('Submit new tools to the Open Integrity Index or search for tools that have already submitted to claim them.');
+  t('Tell us a little about yourself. This will be displayed alongside your contributions on the site.
+
+<em>For instance: I am a student interested in computer security / I live in a country where I need to protect my communications / I think privacy should be the default for everyone on the web / ...</em>');
+  t('Tell us more about why you would like to engage with the Open Integrity Index. This will only be shared with our team.');
   t('Threshold');
   t('Title');
   t('Tool Details');
