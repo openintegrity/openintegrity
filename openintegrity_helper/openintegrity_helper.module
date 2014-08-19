@@ -31,8 +31,8 @@ function openintegrity_helper_form_alter(&$form, &$form_state, $form_id) {
   switch($form_id) {
     case 'views_exposed_form':
       if($form_state['view']->name == 'browse') {
-        $form['field_entry_category']['#options']['All'] = t('Categories'); // overrides <All> on the dropdown
-        $form['field_entry_type']['#options']['All'] = t('Platforms'); // overrides <All> on the dropdown
+        $form['field_entry_category']['#options']['All'] = t('I want to...'); // overrides <All> on the dropdown
+        $form['field_entry_type']['#options']['All'] = t('Using...'); // overrides <All> on the dropdown
       }
     break;
   }
@@ -112,16 +112,49 @@ function openintegrity_helper_forms_ajax_callback($form, &$form_state){
 */
 
 function openintegrity_helper_form_user_register_form_alter(&$form, &$form_state) {
+   $form['introtext'] = array(
+     '#type' => 'item',
+     '#markup' => 'Register with the Open Integrity Index with the <strong>role that describes you best</strong>:<br/><br/><ul><li>Create a <a href="/user/register">community account</a> if you want to inform yourself or submit evidence on the tools that matter to you.</li><li>Create a <a href="/developer/register">developer account</a> if you are a tool developer</li><li>Create a <a href="/peer-reviewer/register">peer-reviewer account</a> if you would like to register as a peer-reviewer</li><li>Create a <a href="/partner/register">partner account</a> if you would like to use the Open Integrity Index API and use the badge on your website</li></ul><br/>',
+     '#weight' => -10, // Adjust so that you can place it whereever 
+   );
+  $form['account']['mail']['#weight']=-1;
+  $form['account']['mail_confirm'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Confirm e-mail address'),
+    '#maxlength' => EMAIL_MAX_LENGTH,
+    '#description' => t('Please confirm your e-mail address.'),
+    '#required' => TRUE,
+    '#weight' => 0,
+  );
+  $form['#validate'][] = 'openintegrity_user_register_form_validate';
+}
+
+function openintegrity_helper_form_profile2_edit_developer_form_alter(&$form, &$form_state) {
 // JUN: Changing the title of the buttons on the inline_entity_form (https://drupal.org/node/1880850#comment-6936976)
+
+   $form['introtext'] = array(
+     '#type' => 'item',
+     '#markup' => 'Register with the Open Integrity Index with the <strong>role that describes you best</strong>:<br/><br/><ul><li>Create a <a href="/user/register">community account</a> if you want to inform yourself or submit evidence on the tools that matter to you.</li><li>Create a <a href="/developer/register">developer account</a> if you are a tool developer</li><li>Create a <a href="/peer-reviewer/register">peer-reviewer account</a> if you would like to register as a peer-reviewer</li><li>Create a <a href="/partner/register">partner account</a> if you would like to use the Open Integrity Index API and use the badge on your website</li></ul><br/>',
+     '#weight' => -10, // Adjust so that you can place it whereever 
+   );
  
    switch ($form['#action']) {
-     case '/developer/register':
-      $form['profile_developer']['field_tool']['und']['actions']['ief_add']['#value'] = t('Submit a new Tool');
-      $form['profile_developer']['field_tool']['und']['actions']['ief_add_existing']['#value'] = t('Search for a Tool');
-      $form['profile_developer']['field_tool']['und']['form']['entity_id']['#title'] = t('Tool name');
-      $form['profile_developer']['field_tool']['und']['form']['actions']['ief_reference_save']['#value'] = t('Select Tool');
-      $form['profile_developer']['field_tool']['und']['form']['#title'] = t('Add your Tool');
-      $form['profile_developer']['field_tool']['und']['form']['actions']['ief_add_save']['#value'] = t('Save your Tool');
+     case '/en/developer/register':
+      $form['profile_developer']['field_tool'][LANGUAGE_NONE]['actions']['ief_add']['#value'] = t('Submit a new Tool');
+      $form['profile_developer']['field_tool'][LANGUAGE_NONE]['#description'] = t('Search for tools that you have develop to claim them. After you register you will be able to submit a new tool.<br/><br/>');
+      $form['profile_developer']['field_tool'][LANGUAGE_NONE]['actions']['ief_add_existing']['#value'] = t('Search for a Tool');
+      $form['profile_developer']['field_tool'][LANGUAGE_NONE]['form']['entity_id']['#title'] = t('Tool name');
+      $form['profile_developer']['field_tool'][LANGUAGE_NONE]['form']['actions']['ief_reference_save']['#value'] = t('Select Tool');
+      $form['profile_developer']['field_tool'][LANGUAGE_NONE]['form']['#title'] = t('Add your Tool');
+      $form['profile_developer']['field_tool'][LANGUAGE_NONE]['form']['actions']['ief_add_save']['#value'] = t('Save your Tool');
+      $form['profile_developer']['field_entry_developer'][LANGUAGE_NONE]['actions']['ief_add']['#value'] = t('Submit a new Organisation');
+      $form['profile_developer']['field_entry_developer'][LANGUAGE_NONE]['#description'] = t('Search for a developer organisation to join it. After you register you will be able to submit a new organisation.<br/><br/>');
+      $form['profile_developer']['field_entry_developer'][LANGUAGE_NONE]['actions']['ief_add_existing']['#value'] = t('Search for an Organisation');
+      $form['profile_developer']['field_entry_developer'][LANGUAGE_NONE]['form']['entity_id']['#title'] = t('Organisation name');
+      $form['profile_developer']['field_entry_developer'][LANGUAGE_NONE]['form']['actions']['ief_reference_save']['#value'] = t('Select Organisation');
+      $form['profile_developer']['field_entry_developer'][LANGUAGE_NONE]['form']['#title'] = t('Add your Organisation');
+      $form['profile_developer']['field_entry_developer'][LANGUAGE_NONE]['form']['actions']['ief_add_save']['#value'] = t('Save your Organisation');
+      break;
       break;
   }
 }
@@ -169,5 +202,41 @@ function openintegrity_helper_node_presave($node) {
     if ($node->status == 0 && $status_before->status == 1) {
       $node->revision_moderation = FALSE;
     }
+  }
+}
+
+/**
+ * Implements hook_menu().
+ * Note: You can define your own menu callback optionally.
+ */
+function openintegrity_helper_menu() {
+  $items['openintegrity-signup'] = array(
+    'title' => 'Create new account',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('user_register_form'),
+    'access callback' => 'user_register_access',
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+function openintegrity_helper_form_user_register_form_alter(&$form, &$form_state, $form_id) {
+  $form['account']['mail_confirm'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Confirm e-mail address'),
+    '#maxlength' => EMAIL_MAX_LENGTH,
+    '#description' => t('Please confirm your e-mail address.'),
+    '#required' => TRUE,
+  );
+  $form['#validate'][] = 'foo_user_register_form_validate';
+}
+**
+ * Implements validation callback.
+ */
+function openintegrity_helper_user_register_form_validate(&$form, &$form_state) {
+  if ($form_state['values']['mail'] != $form_state['values']['mail_confirm']) {
+    form_set_error('mail_confirm', 'The email addresses must match.');
   }
 }
