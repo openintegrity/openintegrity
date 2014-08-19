@@ -31,6 +31,24 @@ function openintegrity_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 0,
   );
+  // Exported menu link: user-menu_log-in:user/login
+  $menu_links['user-menu_log-in:user/login'] = array(
+    'menu_name' => 'user-menu',
+    'link_path' => 'user/login',
+    'router_path' => 'user/login',
+    'link_title' => 'Log in',
+    'options' => array(
+      'identifier' => 'user-menu_log-in:user/login',
+    ),
+    'module' => 'system',
+    'hidden' => -1,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'user-menu_user-account:user',
+  );
   // Exported menu link: user-menu_log-out:user/logout
   $menu_links['user-menu_log-out:user/logout'] = array(
     'menu_name' => 'user-menu',
@@ -47,6 +65,27 @@ function openintegrity_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 10,
     'customized' => 0,
+  );
+  // Exported menu link: user-menu_register:user/register
+  $menu_links['user-menu_register:user/register'] = array(
+    'menu_name' => 'user-menu',
+    'link_path' => 'user/register',
+    'router_path' => 'user/register',
+    'link_title' => 'Register',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'user-menu_register:user/register',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
   );
   // Exported menu link: user-menu_user-account:user
   $menu_links['user-menu_user-account:user'] = array(
@@ -68,7 +107,9 @@ function openintegrity_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Log in');
   t('Log out');
+  t('Register');
   t('Submit an Entry');
   t('User account');
 
