@@ -586,7 +586,7 @@ function openintegrity_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'body',
     'label' => 'Description',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
@@ -990,7 +990,7 @@ function openintegrity_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_entry_type',
     'label' => 'Type',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
@@ -998,11 +998,7 @@ function openintegrity_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => 0,
-        'autocomplete_deluxe_path' => 'autocomplete_deluxe/taxonomy',
-        'size' => 60,
-      ),
+      'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 1,
     ),
