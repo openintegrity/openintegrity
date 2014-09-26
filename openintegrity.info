@@ -378,7 +378,6 @@ features[user_permission][] = administer masquerade
 features[user_permission][] = administer menu
 features[user_permission][] = administer modules
 features[user_permission][] = administer nodes
-features[user_permission][] = administer password policy
 features[user_permission][] = administer permissions
 features[user_permission][] = administer profile types
 features[user_permission][] = administer profile2_regpath

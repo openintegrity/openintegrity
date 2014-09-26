@@ -3082,7 +3082,7 @@ PRIVATE TOOLS<br/>
   $translations['ar:default']['16bfbf9c462762cf1cba4134ec53c504'] = array(
     'source' => 'Loading',
     'context' => '',
-    'location' => '',
+    'location' => '; modules/overlay/overlay-child.js',
     'translation' => 'جاري التحميل',
     'plid' => 0,
     'plural' => 0,
@@ -7842,7 +7842,7 @@ PRIVATE TOOLS<br/>
   $translations['ar:default']['379ec449674dc0a370ff167306831cd8'] = array(
     'source' => 'Hide shortcuts',
     'context' => '',
-    'location' => '',
+    'location' => '; modules/toolbar/toolbar.js',
     'translation' => 'إخفاء الاختصارات',
     'plid' => 0,
     'plural' => 0,
@@ -11180,7 +11180,7 @@ Unless you know what you are doing, it is highly recommended that you prefix the
   $translations['ar:default']['4dd719582964d16c95c8cd43803a7497'] = array(
     'source' => '@title dialog',
     'context' => '',
-    'location' => '',
+    'location' => '; modules/overlay/overlay-parent.js',
     'translation' => 'حوار @title',
     'plid' => 0,
     'plural' => 0,
@@ -19922,7 +19922,7 @@ password: Your password
   $translations['ar:default']['8a6ffdf95e2949a1fb4e69b1e5db084b'] = array(
     'source' => 'Show shortcuts',
     'context' => '',
-    'location' => '',
+    'location' => '; modules/toolbar/toolbar.js',
     'translation' => 'عرض الاختصارات',
     'plid' => 0,
     'plural' => 0,
@@ -28882,7 +28882,7 @@ password: Your password
   $translations['ar:default']['c5cd248cc1aff55242d21952ce5099cb'] = array(
     'source' => '(active tab)',
     'context' => '',
-    'location' => '; misc/vertical-tabs.js',
+    'location' => '; misc/vertical-tabs.js; modules/overlay/overlay-child.js',
     'translation' => '(علامة التبويب النشطة)',
     'plid' => 0,
     'plural' => 0,
@@ -38675,9 +38675,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['03a11d8cc5242b05359543e6641071f5'] = array(
     'source' => 'The tool notifies user when the distribution or updates are not secure or binaries don\'t authenticate. ',
-    'context' => 'term:104:description',
-    'location' => 'taxonomy:term:104:description',
-    'translation' => 'الأداة تنبه المستخدمين عندما يكون التوزيع أو التحديثات غير آمنين أو عندما لا يتم مصادقة الملفات الثنائية binaries.',
+    'context' => 'term:108:description',
+    'location' => 'taxonomy:term:108:description',
+    'translation' => 'يتم الاستجابة لطلبات الدعم خلال أسبوعين.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -38691,25 +38691,17 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['0576cfd678948f8e5e7a2a0fbd94638d'] = array(
     'source' => 'The system has an open source license as defined by OSI (http://opensource.org/licenses/) or FSF (https://www.gnu.org/philosophy/license-list.html).<br><br><em>How can I find out?</em><ol><li>find the project page</li><li>find the active code repository</li><li>look for the license</li><li>read it and link to it.</li></ol>',
-    'context' => 'term:52:description',
-    'location' => 'taxonomy:term:52:description',
-    'translation' => 'النظام له رخصة مفتوحة المصدر كما تعرفها OSI (مبادرة المصادرة المفتوحة http://opensource.org/licenses/ ) أو FSF (مبادرة البرمجيات الحرة https://www.gnu.org/philosophy/license-list.html ).',
+    'context' => 'term:118:description',
+    'location' => 'taxonomy:term:118:description',
+    'translation' => 'هل تحجب الأداة إمكانية التعرف على هوية المستخدم عبر موقعه على الشبكة؟',
     'plid' => 0,
     'plural' => 0,
   );
   $translations['ar:taxonomy']['072711dbbea5236f1f7f373da1d347ca'] = array(
     'source' => 'The most recent activity on the issue tracker occured in the past 6 months, as a reflection of the activity of issue posting and resolution.',
-    'context' => 'term:31:description',
-    'location' => 'taxonomy:term:31:description',
-    'translation' => 'حصل أخر نشاط على سجل تتبع المشاكل ضمن الأشهر الستة الماضية، كانعكاس على إضافة مشكلة وحلها ضمن تلك الفترة.',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['08bf382177757fafcf57325ef94b4158'] = array(
-    'source' => 'The source code is available on request.',
-    'context' => 'term:29:description',
-    'location' => 'taxonomy:term:29:description',
-    'translation' => 'الكود المصدري متوفر عند الطلب.',
+    'context' => 'term:88:description',
+    'location' => 'taxonomy:term:88:description',
+    'translation' => 'هل تم توثيق المحتوى المفلتر بشكل متوفر للمستخدمين؟ هل يتم إعلام المستخدمين بتحديثات الفلترة؟',
     'plid' => 0,
     'plural' => 0,
   );
@@ -38731,9 +38723,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['0be7548fa11d728c114cc7035ddd8a2c'] = array(
     'source' => 'Is the organisation disclosing that they are subject to formal or informal jurisdictional liability to comply with government requests?',
-    'context' => 'term:45:description',
-    'location' => 'taxonomy:term:45:description',
-    'translation' => 'هل تفصح المنظمة عن تعرضها لمسؤولية قانونية ضمن نطاق صلاحية معين يفرض عليها التماشي مع الطلبات الحكومية؟',
+    'context' => 'term:107:description',
+    'location' => 'taxonomy:term:107:description',
+    'translation' => 'توفر منتدى أو عنوان بريد إلكتروني لإرسال طلبات الدعم.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -38755,9 +38747,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['100eead7c60782d1e1e4fda5e661a514'] = array(
     'source' => 'Does the tool requires reasonable personal data?',
-    'context' => 'term:119:description',
-    'location' => 'taxonomy:term:119:description',
-    'translation' => 'هل تتطلب الأداة كماً معقولاً من المعلومات الشخصية؟',
+    'context' => 'term:110:description',
+    'location' => 'taxonomy:term:110:description',
+    'translation' => 'توثيق أسلوب تصميم الواجهات وتصميم تجربة المستخدم بما يدل على الجهود المبذولة لتقديم تجربة استخدام جيدة.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -38771,9 +38763,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['14bca7a7f97bd5c73f9287601b34ebec'] = array(
     'source' => 'Is the platform disclosing its data retention policy to its users. Does the organisation documents the data, meta-data that is being kept for technical or regulatory reasons. ',
-    'context' => 'term:125:description',
-    'location' => 'taxonomy:term:125:description',
-    'translation' => 'هل المنصة تفصح عن سياسات الاحتفاظ بالبيانات الخاصة بها إلى مستخدميها؟ هل توثق المنظمة البيانات والبيانات الوصفية metadata التي يتم الاحتفاظ بها لأسباب تقنية أو تشريعية؟',
+    'context' => 'term:37:description',
+    'location' => 'taxonomy:term:37:description',
+    'translation' => 'المنظمة التي تقوم بمراجعة وتدقيق الكود ذات خبرة وسمعة جيدة.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -38795,9 +38787,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['16e561e9a885bf7f7209a5c00b78f95a'] = array(
     'source' => 'Is the platform subject to comply with data retention law?',
-    'context' => 'term:124:description',
-    'location' => 'taxonomy:term:124:description',
-    'translation' => 'هل المنصة ضمن نطاق صلاحية يجعلها خاضعة لقانون للاحتفاظ بالبيانات؟',
+    'context' => 'term:117:description',
+    'location' => 'taxonomy:term:117:description',
+    'translation' => 'رابط لاستراتيجية تجنب المخاطر لمقاومة تحليل البيانات التي تمر عبر الشبكة.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -38843,9 +38835,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['1d8d8d19ae388fabaa355b9e5b8cb789'] = array(
     'source' => 'Does the tool provide forward secrecy.',
-    'context' => 'term:131:description',
-    'location' => 'taxonomy:term:131:description',
-    'translation' => 'هل توفر الأداة السرية المستقبلية pfs؟',
+    'context' => 'term:34:description',
+    'location' => 'taxonomy:term:34:description',
+    'translation' => 'توفر خطة تطوير مستقبلية تدل على الأولويات وجدول إصلاح بعض المشاكل أو تطبيق مزايا جديدة محددة.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -38873,27 +38865,19 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['ar:taxonomy']['21e77e5a461d9bf27992411bca90288d'] = array(
-    'source' => 'The tool alerts its users about disclosed vulnerabilities.',
-    'context' => 'term:97:description',
-    'location' => 'taxonomy:term:97:description',
-    'translation' => 'الأداة تنبه مستخدميها حول الثغرات المصرح عنها.',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['ar:taxonomy']['22e026db9e562977a53f5541f2bfe428'] = array(
     'source' => 'Does the tool provide privacy by default?',
-    'context' => 'term:120:description',
-    'location' => 'taxonomy:term:120:description',
-    'translation' => 'هل توفر الأداة الخصوصية بشكل افتراضي؟',
+    'context' => 'term:89:description',
+    'location' => 'taxonomy:term:89:description',
+    'translation' => 'تم ضم آخر تغيير على الكود commit خلال الأشهر الستة الماضية، ما يدل على عملية تطوير مستمرة للأداة.',
     'plid' => 0,
     'plural' => 0,
   );
   $translations['ar:taxonomy']['245893ef28badacee2eeab89bfd41fa5'] = array(
     'source' => 'Target user base is able to successfully complete tasks.',
-    'context' => 'term:109:description',
-    'location' => 'taxonomy:term:109:description',
-    'translation' => 'فئة المستخدمين المستهدفة قادرة على أداة المهام والاستخدام بنجاح.',
+    'context' => 'term:86:description',
+    'location' => 'taxonomy:term:86:description',
+    'translation' => 'هل يفرض النظام ابطاء تبادل البيانات أو يضع حداً أعلى لكم البيانات المتبادلة دون أن يضعها المستخدم؟',
     'plid' => 0,
     'plural' => 0,
   );
@@ -38907,9 +38891,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['2691d244f0553a3ea3c0649589d79d94'] = array(
     'source' => 'Are breaches of policy documented?',
-    'context' => 'term:46:description',
-    'location' => 'taxonomy:term:46:description',
-    'translation' => 'هل يتم توثيق خروقات السياسات؟',
+    'context' => 'term:85:description',
+    'location' => 'taxonomy:term:85:description',
+    'translation' => 'هل يقدم النظام خيارات إضافية لفلترة وحجب المحتوى لا يتطلبها القانون؟',
     'plid' => 0,
     'plural' => 0,
   );
@@ -38931,17 +38915,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['28c60fcb4b324718e9b9e54e37479125'] = array(
     'source' => 'The tool\'s integrity can be verified (through checksums...)',
-    'context' => 'term:91:description',
-    'location' => 'taxonomy:term:91:description',
-    'translation' => 'يمكن التحقق من سلامة ونزاهة الأداة (عبر القيام بـ checksum...)',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['2c40aef46d41ef483f09f12eab7b8aae'] = array(
-    'source' => 'The system developers allow any organisation to perform and publish an audit of their code.',
-    'context' => 'term:54:description',
-    'location' => 'taxonomy:term:54:description',
-    'translation' => 'يسمح المطورون لأي منظمة بإجراء كشف ونشر مراجعة للكود الخاص بهم.',
+    'context' => 'term:84:description',
+    'location' => 'taxonomy:term:84:description',
+    'translation' => 'هل يفلتر النظام المحتوى في مناطق لا يفرض عليه القانون حجبها؟',
     'plid' => 0,
     'plural' => 0,
   );
@@ -38979,17 +38955,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['32c7dba4c5fc44ef2a8370f106dd2d9a'] = array(
     'source' => 'Last commit submitted within 6 months indicating an ongoing development of the tool.',
-    'context' => 'term:89:description',
-    'location' => 'taxonomy:term:89:description',
-    'translation' => 'تم ضم آخر تغيير على الكود commit خلال الأشهر الستة الماضية، ما يدل على عملية تطوير مستمرة للأداة.',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['3322a3d96ab23158eb4f6449ac432d81'] = array(
-    'source' => 'Regular publication of bug and bug fixes with new releases such as a changelog.',
-    'context' => 'term:33:description',
-    'location' => 'taxonomy:term:33:description',
-    'translation' => 'إصدارات دورية للمشاكل وحلولها bugfixes منشورة ضمن سجل تغيرات مع الإصدارات الجديدة.',
+    'context' => 'term:106:description',
+    'location' => 'taxonomy:term:106:description',
+    'translation' => 'رابط للوثائق المترجمة وواجهة الاستخدام الموجهة للغات التي تدعمها الأداة.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39019,9 +38987,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['3840b1e70ff994be8a05ab67744f345c'] = array(
     'source' => 'The tool automatically updates by default.',
-    'context' => 'term:92:description',
-    'location' => 'taxonomy:term:92:description',
-    'translation' => 'الأداة تحدث نفسها تلقائياً بالإعدادات الافتراضية',
+    'context' => 'term:121:description',
+    'location' => 'taxonomy:term:121:description',
+    'translation' => 'هل تقوم الأداة أو المنصة بتسجيل إجمالي للبيانات التي لا تدل على الهوية؟',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39065,14 +39033,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['ar:taxonomy']['3e72e63792ad455f979c74dafc2a74b5'] = array(
-    'source' => 'The audit document is publicly available on the internet.',
-    'context' => 'term:36:description',
-    'location' => 'taxonomy:term:36:description',
-    'translation' => 'وثيقة مراجعة الكود متوفرة بشكل علني على الإنترنت.',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['ar:taxonomy']['3f5573b77aed57191dce70c9ba70eee5'] = array(
     'source' => 'Security Posture',
     'context' => 'term:12:name',
@@ -39083,41 +39043,33 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['4052896a262901be5efc3dcb41d32e18'] = array(
     'source' => 'Does the organisation disclose how, when and for which purpose user data or meta-data will be shared with third parties (including monetization)',
-    'context' => 'term:128:description',
-    'location' => 'taxonomy:term:128:description',
-    'translation' => 'هل تفصح المنظمة عن كيف ومتى ولماذا تتم مشاركات بيانات المستخدمين أو بياناتهم الوصفية metadata مع أطراف ثالثة (يتضمن التربّح)',
+    'context' => 'term:98:description',
+    'location' => 'taxonomy:term:98:description',
+    'translation' => 'يمكن للمستخدمين إرسال تقارير حول الأخطاء والأعطال في الأداة.',
     'plid' => 0,
     'plural' => 0,
   );
   $translations['ar:taxonomy']['40f7fb7c5a7155784a3b8e74243c24a5'] = array(
     'source' => 'Users are alerted when security features are not in operation or failing.',
-    'context' => 'term:103:description',
-    'location' => 'taxonomy:term:103:description',
-    'translation' => 'يتلقى المستخدمون تنبيهاً عندما تكون المزايا الأمنية لا تعمل أو عندما تفشل في العمل.',
+    'context' => 'term:46:description',
+    'location' => 'taxonomy:term:46:description',
+    'translation' => 'هل يتم توثيق خروقات السياسات؟',
     'plid' => 0,
     'plural' => 0,
   );
   $translations['ar:taxonomy']['42d6a5b201562845fbeac434ac00f71e'] = array(
     'source' => 'The tool alerts its users about risks associated with the tool\'s use.',
-    'context' => 'term:96:description',
-    'location' => 'taxonomy:term:96:description',
-    'translation' => 'الأداة تنبه مستخدميها حول المخاطر المرتبطة باستخدام الأداة.',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['4316d9bfb0faa19632f3a789a0a0eadb'] = array(
-    'source' => 'Does the system enforce data transfers throttling or throughput cap without user action?',
-    'context' => 'term:86:description',
-    'location' => 'taxonomy:term:86:description',
-    'translation' => 'هل يفرض النظام ابطاء تبادل البيانات أو يضع حداً أعلى لكم البيانات المتبادلة دون أن يضعها المستخدم؟',
+    'context' => 'term:33:description',
+    'location' => 'taxonomy:term:33:description',
+    'translation' => 'إصدارات دورية للمشاكل وحلولها bugfixes منشورة ضمن سجل تغيرات مع الإصدارات الجديدة.',
     'plid' => 0,
     'plural' => 0,
   );
   $translations['ar:taxonomy']['449b4d4e2fc121bc94fb78d473d28d29'] = array(
     'source' => 'Documentation of the approach to code defensively.',
-    'context' => 'term:112:description',
-    'location' => 'taxonomy:term:112:description',
-    'translation' => 'توثيق أسلوب التطوير بشكل دفاعي.',
+    'context' => 'term:113:description',
+    'location' => 'taxonomy:term:113:description',
+    'translation' => 'هل الإعدادات الافتراضية للأداة آمنة بشكل كاف دون الحاجة إلى إجراءات تعزيز إضافية.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39147,17 +39099,17 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['4959ba184578df0dd27765100f123cac'] = array(
     'source' => 'Documentation for building binaries.',
-    'context' => 'term:49:description',
-    'location' => 'taxonomy:term:49:description',
-    'translation' => 'توثيق لتكوين الملفات الثنائية binaries',
+    'context' => 'term:41:description',
+    'location' => 'taxonomy:term:41:description',
+    'translation' => 'هل يتم تنبيه الأداة أو المنصة بشكل واضح حول التغيرات في السياسة؟',
     'plid' => 0,
     'plural' => 0,
   );
   $translations['ar:taxonomy']['4df2cb1e269b1aae99d7830de5d0455b'] = array(
     'source' => 'Have significant vulnerabilities, having an impact on security or privacy, identified during the audit been addressed through a fix or a published workaround?',
-    'context' => 'term:38:description',
-    'location' => 'taxonomy:term:38:description',
-    'translation' => 'هل تمت معالجة الثغرات التي أشير إليها ضمن المراجعة والتي لها أثر على الأمن أو الخصوصية، أو تم نشر معلومات حول الطرق الممكنة لتجنب أخطارها.',
+    'context' => 'term:54:description',
+    'location' => 'taxonomy:term:54:description',
+    'translation' => 'يسمح المطورون لأي منظمة بإجراء كشف ونشر مراجعة للكود الخاص بهم.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39179,9 +39131,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['4f80e23e625b96b1f212868c9986cff3'] = array(
     'source' => 'Does the tool encrypt communications end to end?',
-    'context' => 'term:130:description',
-    'location' => 'taxonomy:term:130:description',
-    'translation' => 'هل تقوم الأداة بتشفير الاتصالات من الطرف إلى الطرف؟',
+    'context' => 'term:100:description',
+    'location' => 'taxonomy:term:100:description',
+    'translation' => 'هل هناك توثيق لنموذج الخطر الذي تم تصميم الأداة لمواجهته؟',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39209,14 +39161,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['ar:taxonomy']['533df039146771a1d62d66f94a218f06'] = array(
-    'source' => 'The tool automatically uses encrypted channels for distribution of code and content.',
-    'context' => 'term:93:description',
-    'location' => 'taxonomy:term:93:description',
-    'translation' => 'الأداة تستخدم قنوات مشفرة بشكل أوتوماتيكي لتوزيع الكود والمحتوى.',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['ar:taxonomy']['545b5b1564028be0d008a01d48c8ace3'] = array(
     'source' => 'Minimal personal data requirements',
     'context' => 'term:119:name',
@@ -39230,14 +39174,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => 'term:120:name',
     'location' => 'taxonomy:term:120:name',
     'translation' => 'خصوصي بشكل افتراضي',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['58023e4e989d9c2afe0805a2c2ccfde3'] = array(
-    'source' => 'The auditing organisation is reputed and experienced.',
-    'context' => 'term:37:description',
-    'location' => 'taxonomy:term:37:description',
-    'translation' => 'المنظمة التي تقوم بمراجعة وتدقيق الكود ذات خبرة وسمعة جيدة.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39339,9 +39275,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['698400b871b7523761eeb00dff79d0e8'] = array(
     'source' => 'Disclosed and significant vulnerabilities where fixed within 2 months.',
-    'context' => 'term:99:description',
-    'location' => 'taxonomy:term:99:description',
-    'translation' => 'يتم إصلاح الثغرات المصرح عنها والثغرات الكبيرة خلال شهرين.',
+    'context' => 'term:35:description',
+    'location' => 'taxonomy:term:35:description',
+    'translation' => 'تم إجراء مراجعة للكود في السنتين الماضيتين.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39377,14 +39313,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['ar:taxonomy']['6b00d04f2517e87ea2a6048de5379ed6'] = array(
-    'source' => 'Link to user documentation or user forum request about basic operation.',
-    'context' => 'term:105:description',
-    'location' => 'taxonomy:term:105:description',
-    'translation' => 'رابط للوثائق المخصصة للمستخدمين أو لمنتدى للمستخدمين حول أساسيات طريقة الاستخدام.',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['ar:taxonomy']['6c41acacb652f59bd6584a46d0367cdf'] = array(
     'source' => 'Transparent Development',
     'context' => 'term:5:name',
@@ -39395,17 +39323,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['6d41ff923442896967b87afa8c376acf'] = array(
     'source' => 'Does the tool or platform logs aggregated anonymised data.',
-    'context' => 'term:121:description',
-    'location' => 'taxonomy:term:121:description',
-    'translation' => 'هل تقوم الأداة أو المنصة بتسجيل إجمالي للبيانات التي لا تدل على الهوية؟',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['6d851a7b9b6ab3631b64510b4377aaf9'] = array(
-    'source' => 'An audit is known to have been accomplished within the past 2 years.',
-    'context' => 'term:35:description',
-    'location' => 'taxonomy:term:35:description',
-    'translation' => 'تم إجراء مراجعة للكود في السنتين الماضيتين.',
+    'context' => 'term:119:description',
+    'location' => 'taxonomy:term:119:description',
+    'translation' => 'هل تتطلب الأداة كماً معقولاً من المعلومات الشخصية؟',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39427,9 +39347,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['70500cc853f218a543ba1864a620de11'] = array(
     'source' => 'Does the platform or tool use a decentralised architecture?',
-    'context' => 'term:115:description',
-    'location' => 'taxonomy:term:115:description',
-    'translation' => 'هل تستخدم المنصة أو الأداة معمارية لا مركزية؟',
+    'context' => 'term:45:description',
+    'location' => 'taxonomy:term:45:description',
+    'translation' => 'هل تفصح المنظمة عن تعرضها لمسؤولية قانونية ضمن نطاق صلاحية معين يفرض عليها التماشي مع الطلبات الحكومية؟',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39475,17 +39395,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['73867b55044c069026607e35ba7dc0ed'] = array(
     'source' => 'Is the system offering additional content filtering options not required by law?',
-    'context' => 'term:85:description',
-    'location' => 'taxonomy:term:85:description',
-    'translation' => 'هل يقدم النظام خيارات إضافية لفلترة وحجب المحتوى لا يتطلبها القانون؟',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['73977624247e1eaa0f5dfcf8da2d2540'] = array(
-    'source' => 'Are the terms of use of the tool or the platform clearly documented and available?',
-    'context' => 'term:40:description',
-    'location' => 'taxonomy:term:40:description',
-    'translation' => 'هل تم توثيق شروط استخدام الأداة أو المنصة بشكل واضح ومتوفر علنياً؟',
+    'context' => 'term:109:description',
+    'location' => 'taxonomy:term:109:description',
+    'translation' => 'فئة المستخدمين المستهدفة قادرة على أداة المهام والاستخدام بنجاح.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39523,17 +39435,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['7b67723598651bb7b4cd2447b0edfc65'] = array(
     'source' => 'Availability of a forum or email to request support.',
-    'context' => 'term:107:description',
-    'location' => 'taxonomy:term:107:description',
-    'translation' => 'توفر منتدى أو عنوان بريد إلكتروني لإرسال طلبات الدعم.',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['7cddb22efa39fca01df42198632d026a'] = array(
-    'source' => 'The system can be compiled or built and consistently create the same binary files.',
-    'context' => 'term:53:description',
-    'location' => 'taxonomy:term:53:description',
-    'translation' => 'يمكن بناء النظم بنفس الشكل باستمرار وإنشاء نفس الملفات الثنائية.',
+    'context' => 'term:30:description',
+    'location' => 'taxonomy:term:30:description',
+    'translation' => 'هناك سجل علني tracker لتتبع المشاكل ومتابعة عملية تطوير الأداة.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39545,35 +39449,11 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['ar:taxonomy']['7df68de4dba83d92b5641fc74c2f984f'] = array(
-    'source' => 'Availability of functional build tree.',
-    'context' => 'term:48:description',
-    'location' => 'taxonomy:term:48:description',
-    'translation' => 'توافر شجرة بناء فعالة',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['7f8ec5fbd1c2178e697cbeafd31d5630'] = array(
-    'source' => 'Users can submit bugs about the tool.',
-    'context' => 'term:98:description',
-    'location' => 'taxonomy:term:98:description',
-    'translation' => 'يمكن للمستخدمين إرسال تقارير حول الأخطاء والأعطال في الأداة.',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['8181e939175c9dd0bfda892674c7c223'] = array(
-    'source' => 'Is there documentation of the threat model the tool is designed for?',
-    'context' => 'term:100:description',
-    'location' => 'taxonomy:term:100:description',
-    'translation' => 'هل هناك توثيق لنموذج الخطر الذي تم تصميم الأداة لمواجهته؟',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['ar:taxonomy']['82b09a29800224939853a541b21d1bc3'] = array(
     'source' => 'Does the tool or platform publish aggregated anonymised data?',
-    'context' => 'term:122:description',
-    'location' => 'taxonomy:term:122:description',
-    'translation' => 'هل تنشر الأداة أو المنصة بيانات جمعية لا تحتوي على ما يدل على الهوية؟',
+    'context' => 'term:36:description',
+    'location' => 'taxonomy:term:36:description',
+    'translation' => 'وثيقة مراجعة الكود متوفرة بشكل علني على الإنترنت.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39590,14 +39470,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => 'term:30:name',
     'location' => 'taxonomy:term:30:name',
     'translation' => 'سجل علني لتتبع المشاكل tracker',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['889ed268f678f8c378b3b868e169639b'] = array(
-    'source' => 'Availability of a roadmap indicating the priorities and schedule of the resolution of certain issues or the implementation of certain features.',
-    'context' => 'term:34:description',
-    'location' => 'taxonomy:term:34:description',
-    'translation' => 'توفر خطة تطوير مستقبلية تدل على الأولويات وجدول إصلاح بعض المشاكل أو تطبيق مزايا جديدة محددة.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39641,19 +39513,11 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['ar:taxonomy']['94b13fce8cfa26358eabae16b99002b7'] = array(
-    'source' => 'Have significant vulnerabilities, having an impact on security or privacy, identified during the audit been addressed within 2 months of the audit (through a fix or a published workaround)?',
-    'context' => 'term:39:description',
-    'location' => 'taxonomy:term:39:description',
-    'translation' => 'هل تم معالجة الثغرات الكبيرة، والتي لها أثر على الأمن أو الخصوصية، والتي تم تحديدها خلال مراجعة الكود، خلال شهرين من تاريخ المراجعة (إما عبر إصلاحها أو نشر طرق لتجنب مخاطرها)؟',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['ar:taxonomy']['9593a9995089e8dcd2a5f8ac9950dcec'] = array(
     'source' => 'The source code is publicly available on the internet.',
-    'context' => 'term:28:description',
-    'location' => 'taxonomy:term:28:description',
-    'translation' => 'الكود المصدري متوفر للعموم على الإنترنت.',
+    'context' => 'term:56:description',
+    'location' => 'taxonomy:term:56:description',
+    'translation' => 'يسمح مطورو الأداة للمنظمات بمراجعة أداتهم تحت اتفاقية عدم تصريح non disclosure agreement.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39705,27 +39569,11 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['ar:taxonomy']['a2d1721b09b2e768a14b8f45b76a61c0'] = array(
-    'source' => 'The tool uses the HSTS protocol or uses SSL certificate pinning for distribution of code and content.',
-    'context' => 'term:95:description',
-    'location' => 'taxonomy:term:95:description',
-    'translation' => 'تستخدم الأداة بروتوكول HSTS أو تثبيت شهادات SSL لتوزيع الكود والمحتوى.',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['ar:taxonomy']['a2dffeb91d550277b51631e5cd9d9c3e'] = array(
     'source' => 'Defence in Depth',
     'context' => 'term:114:name',
     'location' => 'taxonomy:term:114:name',
     'translation' => 'الدفاع في العمق',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['a37aaf01c5484ca2e5a943d1fd5f9bb8'] = array(
-    'source' => 'The tool correctly implements SSL.',
-    'context' => 'term:94:description',
-    'location' => 'taxonomy:term:94:description',
-    'translation' => 'الأداة تطبق SSL بشكل صحيح.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39739,25 +39587,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['a804994a4053a0cf5ca9b2bb4fd2b70d'] = array(
     'source' => 'Link to mitigation strategy to resist traffic analysis.',
-    'context' => 'term:117:description',
-    'location' => 'taxonomy:term:117:description',
-    'translation' => 'رابط لاستراتيجية تجنب المخاطر لمقاومة تحليل البيانات التي تمر عبر الشبكة.',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['aa1f8a24eda54865335e39ba45112aac'] = array(
-    'source' => 'Indication of performance being satisfying for operating the tool under normal conditions.',
-    'context' => 'term:111:description',
-    'location' => 'taxonomy:term:111:description',
-    'translation' => 'إشارة إلى مستوى مرضٍ للأداء أثناء استخدام الأداة تحت الظروف العادية.',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['ab2dd7138e45d556bf54fed80f7940a9'] = array(
-    'source' => 'The audit was not performed by an automated process.',
-    'context' => 'term:83:description',
-    'location' => 'taxonomy:term:83:description',
-    'translation' => 'لم يتم إجراء مراجعة وتدقيق الكود عبر عملية آلية مؤتمتة.',
+    'context' => 'term:31:description',
+    'location' => 'taxonomy:term:31:description',
+    'translation' => 'حصل أخر نشاط على سجل تتبع المشاكل ضمن الأشهر الستة الماضية، كانعكاس على إضافة مشكلة وحلها ضمن تلك الفترة.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39851,9 +39683,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['be872430ace665242602ec0fae55eace'] = array(
     'source' => 'Legally possible to replicate the platform.',
-    'context' => 'term:51:description',
-    'location' => 'taxonomy:term:51:description',
-    'translation' => 'يمكن استنساخ المنصة بشكل قانوني',
+    'context' => 'term:53:description',
+    'location' => 'taxonomy:term:53:description',
+    'translation' => 'يمكن بناء النظم بنفس الشكل باستمرار وإنشاء نفس الملفات الثنائية.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39886,22 +39718,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => 'term:100:name',
     'location' => 'taxonomy:term:100:name',
     'translation' => 'توثيق نموذج الخطر',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['cac4ceb3637815dde9faf53283a87595'] = array(
-    'source' => 'Are users of the tool or platform clearly informed about changes in the policy?',
-    'context' => 'term:41:description',
-    'location' => 'taxonomy:term:41:description',
-    'translation' => 'هل يتم تنبيه الأداة أو المنصة بشكل واضح حول التغيرات في السياسة؟',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['cdbe637f4510e08dfa5f0d41b183d1f2'] = array(
-    'source' => 'Does the tool have sensible secure defaults without needing additional hardening.',
-    'context' => 'term:113:description',
-    'location' => 'taxonomy:term:113:description',
-    'translation' => 'هل الإعدادات الافتراضية للأداة آمنة بشكل كاف دون الحاجة إلى إجراءات تعزيز إضافية.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39939,9 +39755,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['cfbc751addbc289bb04577a22cff5adb'] = array(
     'source' => 'Is the organisation releasing a transparency report on government surveillance and interventions (indicating for example requests by LEA, third parties to take down, or disclose data or meta-data).',
-    'context' => 'term:42:description',
-    'location' => 'taxonomy:term:42:description',
-    'translation' => 'هل تصدر المنظمة تقرير شفافية حول المراقبة والتدخلات الحكومية (مشيرة مثلاً إلى الطلبات الحكومية للحصول على المعلومات، أو إزالة حسابات أطراف ثالثة، أو الإفصاح عن البيانات والبيانات الوصفية).',
+    'context' => 'term:39:description',
+    'location' => 'taxonomy:term:39:description',
+    'translation' => 'هل تم معالجة الثغرات الكبيرة، والتي لها أثر على الأمن أو الخصوصية، والتي تم تحديدها خلال مراجعة الكود، خلال شهرين من تاريخ المراجعة (إما عبر إصلاحها أو نشر طرق لتجنب مخاطرها)؟',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39955,9 +39771,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['d17ecd36883e53e6af1e62a0cf2389a5'] = array(
     'source' => 'Does the tool allow its user to not be identifiable through their network location?',
-    'context' => 'term:118:description',
-    'location' => 'taxonomy:term:118:description',
-    'translation' => 'هل تحجب الأداة إمكانية التعرف على هوية المستخدم عبر موقعه على الشبكة؟',
+    'context' => 'term:95:description',
+    'location' => 'taxonomy:term:95:description',
+    'translation' => 'تستخدم الأداة بروتوكول HSTS أو تثبيت شهادات SSL لتوزيع الكود والمحتوى.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39966,14 +39782,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => 'term:10:name',
     'location' => 'taxonomy:term:10:name',
     'translation' => 'توزيع بشكل آمن',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['d53c08fbeb9744ecdd415c7436703eff'] = array(
-    'source' => 'Is the content filtering documented and available? Are user notified of filtering updates?',
-    'context' => 'term:88:description',
-    'location' => 'taxonomy:term:88:description',
-    'translation' => 'هل تم توثيق المحتوى المفلتر بشكل متوفر للمستخدمين؟ هل يتم إعلام المستخدمين بتحديثات الفلترة؟',
     'plid' => 0,
     'plural' => 0,
   );
@@ -39987,9 +39795,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['d99cbcf29608c155916ebd07c2809738'] = array(
     'source' => 'Documentation of the approach to interface or user experience design indicating an effort to provide good user experience.',
-    'context' => 'term:110:description',
-    'location' => 'taxonomy:term:110:description',
-    'translation' => 'توثيق أسلوب تصميم الواجهات وتصميم تجربة المستخدم بما يدل على الجهود المبذولة لتقديم تجربة استخدام جيدة.',
+    'context' => 'term:99:description',
+    'location' => 'taxonomy:term:99:description',
+    'translation' => 'يتم إصلاح الثغرات المصرح عنها والثغرات الكبيرة خلال شهرين.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -40009,19 +39817,11 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['ar:taxonomy']['db80c98f69e3b47c5a71c69f784e89cb'] = array(
-    'source' => 'Does the system provide multiple layers of defence against potential threats?',
-    'context' => 'term:114:description',
-    'location' => 'taxonomy:term:114:description',
-    'translation' => 'هل يوفر النظام عدة طبقات من الدفاعات في مواجهة الأخطار المحتملة؟',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['ar:taxonomy']['dccccd7adbb75f60c3dd0fb461604096'] = array(
     'source' => 'Commitment to release the code if the organisation fails to allow continuation of service provision.',
-    'context' => 'term:50:description',
-    'location' => 'taxonomy:term:50:description',
-    'translation' => 'الالتزام بإطلاق الكود إذا ما فشلت المنظمة بالاستمرار بتقديم الخدمة',
+    'context' => 'term:102:description',
+    'location' => 'taxonomy:term:102:description',
+    'translation' => 'هل يغلق النظام نفسه عند الفشل؟',
     'plid' => 0,
     'plural' => 0,
   );
@@ -40035,9 +39835,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['debb82ca265a224e0cff70816246c1ee'] = array(
     'source' => 'The tool developers allow organisations to audit their tool under an non disclosure agreement.',
-    'context' => 'term:56:description',
-    'location' => 'taxonomy:term:56:description',
-    'translation' => 'يسمح مطورو الأداة للمنظمات بمراجعة أداتهم تحت اتفاقية عدم تصريح non disclosure agreement.',
+    'context' => 'term:29:description',
+    'location' => 'taxonomy:term:29:description',
+    'translation' => 'الكود المصدري متوفر عند الطلب.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -40051,9 +39851,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['e5df0d06c0de82262f08648c8f227683'] = array(
     'source' => 'Does the platform accept or require payment for the prioritisation or placement of specific content, tiered pricing on the user side or paid SLAs? (This doesn\'t include payment for access to different performance tiers)',
-    'context' => 'term:87:description',
-    'location' => 'taxonomy:term:87:description',
-    'translation' => 'هل تقبل المنصة أو تتطلب الدفعات المالية لإعطاء الأولوية لمحتوى محدد، مع تسعير على عدة مستويات للمستخدم أو عبر اتفاقيات مستوى الخدمة مدفوعة؟ (هذا لا يتضمن الدفع للحصول على مستويات أداء أعلى)',
+    'context' => 'term:97:description',
+    'location' => 'taxonomy:term:97:description',
+    'translation' => 'الأداة تنبه مستخدميها حول الثغرات المصرح عنها.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -40062,14 +39862,6 @@ Thank you for registering at [site:name]. Your application for an account is cur
     'context' => 'term:36:name',
     'location' => 'taxonomy:term:36:name',
     'translation' => 'مراجعة الكود متوفرة',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['ea69e5f79d6a810e80252ca2c804105c'] = array(
-    'source' => 'Is the system filtering content that is not required by law in the jurisdiction where its operating?',
-    'context' => 'term:84:description',
-    'location' => 'taxonomy:term:84:description',
-    'translation' => 'هل يفلتر النظام المحتوى في مناطق لا يفرض عليه القانون حجبها؟',
     'plid' => 0,
     'plural' => 0,
   );
@@ -40099,33 +39891,17 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['ef5fcc79aec43ae3d8c5a06792201295'] = array(
     'source' => 'There is an issue tracker publicly available to follow the development of the tool.',
-    'context' => 'term:30:description',
-    'location' => 'taxonomy:term:30:description',
-    'translation' => 'هناك سجل علني tracker لتتبع المشاكل ومتابعة عملية تطوير الأداة.',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['f095de9ddba9e138f52527dfa495df95'] = array(
-    'source' => 'User support requests where addressed within 2 weeks.',
-    'context' => 'term:108:description',
-    'location' => 'taxonomy:term:108:description',
-    'translation' => 'يتم الاستجابة لطلبات الدعم خلال أسبوعين.',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:taxonomy']['f201e550b6106f741a0a67df0aed2514'] = array(
-    'source' => 'The tool and any updates are distributed via encrypted channels by default.',
-    'context' => 'term:90:description',
-    'location' => 'taxonomy:term:90:description',
-    'translation' => 'يتم توزيع الأداة وتحديثاتها دائماً عبر قنوات مشفرة.',
+    'context' => 'term:111:description',
+    'location' => 'taxonomy:term:111:description',
+    'translation' => 'إشارة إلى مستوى مرضٍ للأداء أثناء استخدام الأداة تحت الظروف العادية.',
     'plid' => 0,
     'plural' => 0,
   );
   $translations['ar:taxonomy']['f2a73e59d4c3a4ff7e3c5dc95adcfa8e'] = array(
     'source' => 'Link to localized user documentation and localised user interface for supported languages.',
-    'context' => 'term:106:description',
-    'location' => 'taxonomy:term:106:description',
-    'translation' => 'رابط للوثائق المترجمة وواجهة الاستخدام الموجهة للغات التي تدعمها الأداة.',
+    'context' => 'term:50:description',
+    'location' => 'taxonomy:term:50:description',
+    'translation' => 'الالتزام بإطلاق الكود إذا ما فشلت المنظمة بالاستمرار بتقديم الخدمة',
     'plid' => 0,
     'plural' => 0,
   );
@@ -40139,9 +39915,9 @@ Thank you for registering at [site:name]. Your application for an account is cur
   );
   $translations['ar:taxonomy']['f8ee68637b7a281f6d50f38717b0d9d2'] = array(
     'source' => 'Does the system fail closed?',
-    'context' => 'term:102:description',
-    'location' => 'taxonomy:term:102:description',
-    'translation' => 'هل يغلق النظام نفسه عند الفشل؟',
+    'context' => 'term:42:description',
+    'location' => 'taxonomy:term:42:description',
+    'translation' => 'هل تصدر المنظمة تقرير شفافية حول المراقبة والتدخلات الحكومية (مشيرة مثلاً إلى الطلبات الحكومية للحصول على المعلومات، أو إزالة حسابات أطراف ثالثة، أو الإفصاح عن البيانات والبيانات الوصفية).',
     'plid' => 0,
     'plural' => 0,
   );

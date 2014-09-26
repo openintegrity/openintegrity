@@ -173,6 +173,7 @@ function openintegrity_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
 
@@ -187,7 +188,8 @@ function openintegrity_default_profile2_type() {
     "type" : "community",
     "label" : "Community",
     "weight" : "0",
-    "data" : { "registration" : 0 }
+    "data" : { "registration" : 0 },
+    "rdf_mapping" : []
   }');
   $items['developer'] = entity_import('profile2_type', '{
     "userCategory" : true,
@@ -195,7 +197,8 @@ function openintegrity_default_profile2_type() {
     "type" : "developer",
     "label" : "Developer",
     "weight" : "3",
-    "data" : { "registration" : 0, "roles" : { "4" : "4" } }
+    "data" : { "registration" : 0, "roles" : { "4" : "4" } },
+    "rdf_mapping" : []
   }');
   $items['main'] = entity_import('profile2_type', '{
     "userCategory" : true,
@@ -214,7 +217,8 @@ function openintegrity_default_profile2_type() {
         "6" : "6",
         "8" : "8"
       }
-    }
+    },
+    "rdf_mapping" : []
   }');
   $items['partner'] = entity_import('profile2_type', '{
     "userCategory" : true,
@@ -222,7 +226,8 @@ function openintegrity_default_profile2_type() {
     "type" : "partner",
     "label" : "Partner",
     "weight" : "3",
-    "data" : { "registration" : 0, "roles" : { "8" : "8" } }
+    "data" : { "registration" : 0, "roles" : { "8" : "8" } },
+    "rdf_mapping" : []
   }');
   $items['peer_reviewer'] = entity_import('profile2_type', '{
     "userCategory" : true,
@@ -230,7 +235,8 @@ function openintegrity_default_profile2_type() {
     "type" : "peer_reviewer",
     "label" : "Peer-reviewer",
     "weight" : "3",
-    "data" : { "registration" : 0, "roles" : { "6" : "6" } }
+    "data" : { "registration" : 0, "roles" : { "6" : "6" } },
+    "rdf_mapping" : []
   }');
   return $items;
 }
@@ -246,7 +252,8 @@ function openintegrity_default_search_api_autocomplete_search() {
     "index_id" : "default_node_index",
     "type" : "search_api_views",
     "enabled" : "1",
-    "options" : { "result count" : true, "fields" : [] }
+    "options" : { "result count" : true, "fields" : [] },
+    "rdf_mapping" : []
   }');
   return $items;
 }
@@ -339,7 +346,8 @@ function openintegrity_default_search_api_index() {
       }
     },
     "enabled" : "1",
-    "read_only" : "0"
+    "read_only" : "0",
+    "rdf_mapping" : []
   }');
   return $items;
 }
@@ -421,7 +429,8 @@ function openintegrity_default_search_api_server() {
         }
       }
     },
-    "enabled" : "0"
+    "enabled" : "0",
+    "rdf_mapping" : []
   }');
   $items['solr'] = entity_import('search_api_server', '{
     "name" : "Solr",
@@ -442,7 +451,8 @@ function openintegrity_default_search_api_server() {
       "autocorrect_spell" : 1,
       "autocorrect_suggest_words" : 1
     },
-    "enabled" : "1"
+    "enabled" : "1",
+    "rdf_mapping" : []
   }');
   return $items;
 }

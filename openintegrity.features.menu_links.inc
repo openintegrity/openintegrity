@@ -30,6 +30,8 @@ function openintegrity_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -50,
     'customized' => 0,
+    'language' => 'und',
+    'menu_links_customized' => 0,
   );
   // Exported menu link: user-menu_log-in:user/login
   $menu_links['user-menu_log-in:user/login'] = array(
@@ -47,6 +49,8 @@ function openintegrity_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 0,
     'customized' => 0,
+    'language' => 'und',
+    'menu_links_customized' => 0,
     'parent_identifier' => 'user-menu_user-account:user',
   );
   // Exported menu link: user-menu_log-out:user/logout
@@ -65,6 +69,8 @@ function openintegrity_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 10,
     'customized' => 0,
+    'language' => 'und',
+    'menu_links_customized' => 0,
   );
   // Exported menu link: user-menu_register:user/register
   $menu_links['user-menu_register:user/register'] = array(
@@ -86,6 +92,8 @@ function openintegrity_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 0,
     'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
   );
   // Exported menu link: user-menu_user-account:user
   $menu_links['user-menu_user-account:user'] = array(
@@ -104,6 +112,8 @@ function openintegrity_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -10,
     'customized' => 0,
+    'language' => 'und',
+    'menu_links_customized' => 0,
   );
   // Translatables
   // Included for use with string extractors like potx.

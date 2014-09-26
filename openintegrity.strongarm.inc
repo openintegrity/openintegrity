@@ -306,7 +306,7 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_per_page_evidence';
-  $strongarm->value = '50';
+  $strongarm->value = 50;
   $export['comment_default_per_page_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -341,7 +341,7 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_evidence';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['comment_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -418,7 +418,7 @@ function openintegrity_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_evidence';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['comment_preview_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -532,7 +532,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'date_api_version';
-  $strongarm->value = 7.2;
+  $strongarm->value = 7.2000000000000002;
   $export['date_api_version'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -667,7 +667,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'drupal_http_request_fails';
-  $strongarm->value = FALSE;
+  $strongarm->value = TRUE;
   $export['drupal_http_request_fails'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1187,7 +1187,7 @@ views-exposed-form-browse-page';
     'openintegrity' => array(
       'uuid_term' => 'e9fb091b97fbe8be75e3468ced9d409a',
       'field_base' => '76b603d3e6942a34b1f9802d37001138',
-      'field_instance' => 'fb261fcd5c0758323b9052853db26dd1',
+      'field_instance' => '855b589476654f8d8faaf2cbd86648b6',
       'taxonomy' => 'd5f8653bcfd22754cb24635a234c907a',
       'dependencies' => '2d709d9d35911354032c2506b177dd74',
       'node' => '96523e4ef5eb0d97080c03ddb17e423d',
@@ -1195,7 +1195,7 @@ views-exposed-form-browse-page';
       'search_api_index' => 'c4a7b4edbf563bcf4fd973020cc98c58',
       'search_api_server' => '95070ced1251c82ecd8a7f78f50ff7b5',
       'rules_config' => '7e8b2f665775855d8cccc9c3764f3289',
-      'views_view' => '47f0a166cf0cebde3b34b0df4ecef1c8',
+      'views_view' => 'a506ef3b51c6c130323b9af76625f0fb',
       'variable' => 'e406c5e63755c844579439b6dd83ecad',
       'filter' => '441b0a98276c787c23b78630e908a3fe',
       'user_role' => '9ec5e537fec4afd4c6f667c28773d9a2',
@@ -1206,7 +1206,7 @@ views-exposed-form-browse-page';
       'search_api_autocomplete_search' => 'dc491a4d35da4b4f9fde7cbd7ed1577d',
       'password_policy' => '3e5c145c9f24f5f6f6fbe5a119a68b74',
       'fe_block_settings' => 'f42d9297a3edb682a03e30f5921b7d45',
-      'variable_realm' => 'ba8c3e5e71e63cf77dd2834237e1237f',
+      'variable_realm' => '499d0ca5f3fe721d6c1b00a14f4c3188',
       'fe_block_boxes' => '35f43ca8eb48e41a56302ad29bb39661',
       'image' => '28983ec56478c9db314d15cd95c978cb',
       'language' => 'b80cd822a18508d39717b5693f436aa3',
@@ -1826,7 +1826,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_evidence';
-  $strongarm->value = '0';
+  $strongarm->value = 0;
   $export['language_content_type_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1847,7 +1847,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'less_dir';
-  $strongarm->value = 'ZyRlIgcpfKQDqsgMoKouEo3oRn4YAFI--xlR478tzUA';
+  $strongarm->value = '09V5z57CSQ8vrIJNUuk9MdSqIfZ6s33lw7-_4cjTZHE';
   $export['less_dir'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1954,50 +1954,49 @@ views-exposed-form-browse-page';
     12 => 242,
     13 => 238,
     14 => 234,
-    15 => 127,
-    16 => 126,
-    17 => 125,
-    18 => 124,
-    19 => 123,
-    20 => 122,
-    21 => 121,
-    22 => 119,
-    23 => 118,
-    24 => 117,
-    25 => 112,
-    26 => 108,
-    27 => 96,
-    28 => 63,
-    29 => 62,
-    30 => 61,
-    31 => 60,
-    32 => 59,
-    33 => 58,
-    34 => 56,
-    35 => 54,
-    36 => 44,
-    37 => 31,
-    38 => 30,
-    39 => 29,
-    40 => 28,
-    41 => 27,
-    42 => 26,
-    43 => 24,
-    44 => 23,
-    45 => 22,
-    46 => 21,
-    47 => 15,
-    48 => 14,
-    49 => 13,
-    50 => 12,
-    51 => 11,
-    52 => 10,
-    53 => 7,
-    54 => 6,
-    55 => 5,
-    56 => 3,
-    57 => 2,
-    58 => 1,
+    15 => 126,
+    16 => 125,
+    17 => 124,
+    18 => 123,
+    19 => 122,
+    20 => 121,
+    21 => 119,
+    22 => 118,
+    23 => 117,
+    24 => 112,
+    25 => 108,
+    26 => 96,
+    27 => 63,
+    28 => 62,
+    29 => 61,
+    30 => 60,
+    31 => 59,
+    32 => 58,
+    33 => 56,
+    34 => 54,
+    35 => 44,
+    36 => 31,
+    37 => 30,
+    38 => 29,
+    39 => 28,
+    40 => 27,
+    41 => 26,
+    42 => 24,
+    43 => 23,
+    44 => 22,
+    45 => 21,
+    46 => 15,
+    47 => 14,
+    48 => 13,
+    49 => 12,
+    50 => 11,
+    51 => 10,
+    52 => 7,
+    53 => 6,
+    54 => 5,
+    55 => 3,
+    56 => 2,
+    57 => 1,
   );
   $export['menu_masks'] = $strongarm;
 
@@ -2194,7 +2193,7 @@ views-exposed-form-browse-page';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_evidence';
-  $strongarm->value = '0';
+  $strongarm->value = 0;
   $export['node_preview_evidence'] = $strongarm;
 
   $strongarm = new stdClass();
