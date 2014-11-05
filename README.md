@@ -4,9 +4,11 @@ Open Integrity Index
 *** This software is currently under development and considered in beta ***
 
 This repository contains a [Drupal](https://www.drupal.org/) [feature](https://www.drupal.org/project/features) for the [Open Integrity Index](https://openintegrity.org). There are other software components required to deploy the Open Integrity Index website:
- - [Drush Make repository](https://github.com/iilab/openintegritymake)
- - [Open Integrity Badge repository](https://github.com/iilab/openintegritybadge)
- - [Open Integrity Theme](https://github.com/iilab/openintegritytheme)
+ - [Drush Make repository](https://github.com/iilab/openintegritymake) - a make file to deploy drupal core and modules
+ - Feature - Open Integrity configuration in code.
+ - [Badge repository](https://github.com/iilab/openintegritybadge) - code for the embeddable badge
+ - [Theme](https://github.com/iilab/openintegritytheme) - drupal theme
+ - [Open Intention](https://github.com/iilab/openintention) - taxonomy to help identify tools based on user intentions
 
 # Contributing to this project
 
