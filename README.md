@@ -6,6 +6,7 @@ Open Integrity Index
 This repository contains a [Drupal](https://www.drupal.org/) [feature](https://www.drupal.org/project/features) for the [Open Integrity Index](https://openintegrity.org). There are other software components required to deploy the Open Integrity Index website:
  - [Drush Make repository](https://github.com/iilab/openintegritymake)
  - [Open Integrity Badge repository](https://github.com/iilab/openintegritybadge)
+ - [Open Integrity Theme](https://github.com/iilab/openintegritytheme)
 
 # Contributing to this project
 
