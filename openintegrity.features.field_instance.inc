@@ -562,7 +562,7 @@ function openintegrity_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 11,
       ),
       'overlay_teaser' => array(
         'label' => 'hidden',
@@ -653,7 +653,7 @@ function openintegrity_field_default_field_instances() {
           'textformatter_type' => 'comma',
         ),
         'type' => 'textformatter_list',
-        'weight' => 10,
+        'weight' => 8,
       ),
       'overlay_teaser' => array(
         'label' => 'above',
@@ -701,7 +701,6 @@ function openintegrity_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'apply_chosen' => 0,
         'match_operator' => 'CONTAINS',
         'path' => '',
         'size' => 60,
@@ -720,9 +719,10 @@ function openintegrity_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 7,
+        'type' => 'link_url',
+        'weight' => 9,
       ),
       'overlay_teaser' => array(
         'label' => 'above',
@@ -789,7 +789,7 @@ function openintegrity_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'overlay_teaser' => array(
         'label' => 'above',
@@ -853,7 +853,7 @@ function openintegrity_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'overlay_teaser' => array(
         'label' => 'above',
@@ -913,7 +913,7 @@ function openintegrity_field_default_field_instances() {
         'module' => 'custom_formatters',
         'settings' => array(),
         'type' => 'custom_formatters_static_badge',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'overlay_teaser' => array(
         'label' => 'hidden',
@@ -965,7 +965,7 @@ function openintegrity_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'overlay_teaser' => array(
         'label' => 'above',
@@ -1016,7 +1016,7 @@ function openintegrity_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'overlay_teaser' => array(
         'label' => 'above',
@@ -1089,9 +1089,10 @@ function openintegrity_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 9,
+        'type' => 'link_url',
+        'weight' => 10,
       ),
       'overlay_teaser' => array(
         'label' => 'above',
@@ -1160,7 +1161,7 @@ function openintegrity_field_default_field_instances() {
           'image_style' => 'index-full',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'overlay_teaser' => array(
         'label' => 'hidden',

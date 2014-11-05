@@ -189,6 +189,27 @@ function openintegrity_default_profile2_type() {
     "weight" : "0",
     "data" : { "registration" : 0 }
   }');
+  $items['default'] = entity_import('profile2_type', '{
+    "userCategory" : true,
+    "userView" : true,
+    "type" : "default",
+    "label" : "Default",
+    "weight" : "0",
+    "data" : {
+      "registration" : 0,
+      "roles" : {
+        "2" : "2",
+        "3" : "3",
+        "10" : "10",
+        "9" : "9",
+        "4" : "4",
+        "11" : "11",
+        "6" : "6",
+        "8" : "8",
+        "12" : "12"
+      }
+    }
+  }');
   $items['developer'] = entity_import('profile2_type', '{
     "userCategory" : true,
     "userView" : true,

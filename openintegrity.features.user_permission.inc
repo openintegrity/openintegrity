@@ -1374,9 +1374,7 @@ function openintegrity_user_default_permissions() {
   // Exported permission: 'view own community profile'.
   $permissions['view own community profile'] = array(
     'name' => 'view own community profile',
-    'roles' => array(
-      'authenticated user' => 'authenticated user',
-    ),
+    'roles' => array(),
     'module' => 'profile2',
   );
 

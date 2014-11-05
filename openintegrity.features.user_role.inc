@@ -16,12 +16,6 @@ function openintegrity_user_default_roles() {
     'weight' => 2,
   );
 
-  // Exported role: community.
-  $roles['community'] = array(
-    'name' => 'community',
-    'weight' => 6,
-  );
-
   // Exported role: developer.
   $roles['developer'] = array(
     'name' => 'developer',
