@@ -53,12 +53,29 @@ We really appreciate your interest in the Open Integrity Index!
   $export['entry_3'] = $fe_block_boxes;
 
   $fe_block_boxes = new stdClass();
+  $fe_block_boxes->info = 'Disclaimer';
+  $fe_block_boxes->format = 'plain_text';
+  $fe_block_boxes->machine_name = 'footer_disclaimer';
+  $fe_block_boxes->body = 'The Open Integrity Index is meant to help you make better decisions about the tools you use, but to guarantee your security and privacy you need to consider much more than your tools! Make sure you understand more about the threats you\'re facing and your practices outside of the digital world before you take any risks.';
+
+  $export['footer_disclaimer'] = $fe_block_boxes;
+
+  $fe_block_boxes = new stdClass();
+  $fe_block_boxes->info = 'Follow Open Integrity Index';
+  $fe_block_boxes->format = 'full_html';
+  $fe_block_boxes->machine_name = 'footer_follow';
+  $fe_block_boxes->body = '<ul class="social-links"><li><a href="http://twitter.com/openintegrity">Twitter</a></li><li class="facebook"><a href="http://facebook.com/openintegrity">Facebook</a></li><li class="google"><a href="http://plus.google.com/openintegrity">Google+</a></li><li class="github"><a href="https://github.com/iilab/openintegrity">Github</a></li></ul>';
+
+  $export['footer_follow'] = $fe_block_boxes;
+
+  $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'Hero';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'hero';
   $fe_block_boxes->body = '<h2>HELPING YOU<br/>
 CHOOSE SECURE AND<br/>
-PRIVATE TOOLS<br/>
+PRIVATE TOOLS - 
+<font style="color:red;">BETA</font>
 </h2>';
 
   $export['hero'] = $fe_block_boxes;
