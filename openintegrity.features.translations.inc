@@ -25,6 +25,21 @@ function openintegrity_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['ar:blocks']['249a978551e970e753396f18ccc6d693'] = array(
+    'source' => '<h2>HELPING YOU<br/>
+CHOOSE SECURE AND<br/>
+PRIVATE TOOLS - 
+<font style="color:red;">BETA</font>
+</h2>',
+    'context' => 'block:3:body',
+    'location' => 'blocks:block:3:body',
+    'translation' => '<h2>تعليم الأمان<br/>
+والخصوصية المعتمد<br/>
+على البيانات<br/>
+</h2>',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['ar:blocks']['2cd0bf6d7ee875fddf240ae3b21fa08d'] = array(
     'source' => 'ARE YOU A DIGITAL SECURITY AND PRIVACY EXPERT? JOIN THE PEER REVIEWING COMMUNITY',
     'context' => 'block:9:body',
@@ -54,20 +69,6 @@ function openintegrity_translations_defaults() {
     'context' => 'block:4:body',
     'location' => 'blocks:block:4:body',
     'translation' => 'كيف يعمل المؤشر وكيف يمكنك المساهمة؟',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['ar:blocks']['c709a8d0db0686307c3c3c318bb606f8'] = array(
-    'source' => '<h2>HELPING YOU<br/>
-CHOOSE SECURE AND<br/>
-PRIVATE TOOLS<br/>
-</h2>',
-    'context' => 'block:3:body',
-    'location' => 'blocks:block:3:body',
-    'translation' => '<h2>تعليم الأمان<br/>
-والخصوصية المعتمد<br/>
-على البيانات<br/>
-</h2>',
     'plid' => 0,
     'plural' => 0,
   );
