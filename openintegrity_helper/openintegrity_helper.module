@@ -126,7 +126,7 @@ function openintegrity_helper_form_user_register_form_alter(&$form, &$form_state
     '#required' => TRUE,
     '#weight' => 0,
   );
-  $form['#validate'][] = 'openintegrity_user_register_form_validate';
+  //$form['#validate'][] = 'openintegrity_user_register_form_validate';
 }
 
 function openintegrity_helper_form_profile2_edit_developer_form_alter(&$form, &$form_state) {
