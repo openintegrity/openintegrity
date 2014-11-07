@@ -341,13 +341,6 @@ function openintegrity_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'administer password policy'.
-  $permissions['administer password policy'] = array(
-    'name' => 'administer password policy',
-    'roles' => array(),
-    'module' => 'password_policy',
-  );
-
   // Exported permission: 'administer permissions'.
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
