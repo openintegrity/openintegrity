@@ -1,6 +1,12 @@
 Open Integrity Index
 ====================
 
+*** UPDATE: This software and the methodological framework that supports it, are currently under heavy redesign. You can join the discussion on the gitter chat room.*** 
+
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/openintegrity/openintegrity?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+# About OII 1.0
+
 *** This software is currently under development and considered in beta ***
 
 This repository contains a [Drupal](https://www.drupal.org/) [feature](https://www.drupal.org/project/features) for the [Open Integrity Index](https://openintegrity.org). There are other software components required to deploy the Open Integrity Index website:
